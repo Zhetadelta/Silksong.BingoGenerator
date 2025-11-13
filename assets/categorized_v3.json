@@ -965,6 +965,8 @@
       ],
       "range": [
         8,
+        10,
+        12,
         14
       ]
     },
@@ -1197,7 +1199,7 @@
       ]
     },
     {
-      "name": "Buy {{X}} maps",
+      "name": "Obtain {{X}} maps",
       "types": [
         "npc"
       ],
@@ -1228,7 +1230,7 @@
       ]
     },
     {
-      "name": "Save Jubliana",
+      "name": "Save Jubilana",
       "types": [
         "npc",
         "quest"
@@ -1267,16 +1269,6 @@
       ],
       "progression": [
         "walljump"
-      ]
-    },
-    {
-      "name": "Open White Ward",
-      "types": [
-        "location",
-        "lockout"
-      ],
-      "progression": [
-        "act2"
       ]
     },
     {
@@ -1335,8 +1327,32 @@
   "exclusions": [
     {
       "unique": [
-        "Sharpdart",
-        "Plasmium Phial"
+        "Have {{X}} Rosary Strings (no purchasing)",
+        "Break {{X}} Rosary Strings (no purchasing)"
+      ]
+    },
+    {
+      "unique": [
+        "{{X}} Memory Lockets",
+        "Fully Unlock a Non-Hunter's Crest"
+      ]
+    },
+    {
+      "unique": [
+        "Obtain {{X}} Tool Pouch Upgrade/Crafting Kits",
+        "Obtain {{X}} Tool Pouch Upgrade"
+      ]
+    },
+    {
+      "unique": [
+        "Curveclaw & Sawtooth Circlet",
+        "Magma Bell & Curveclaw"
+      ]
+    },
+    {
+      "unique": [
+        "{{X}} Red Tools",
+        "Straight, Threefold, and Long Pin"
       ]
     },
     {
@@ -1347,8 +1363,33 @@
     },
     {
       "unique": [
+        "Pay for a Flea Spa",
+        "Greymoor Fleas [2] + Kratt"
+      ]
+    },
+    {
+      "unique": [
+        "Shellwood Mask Shard",
+        "Defeat a Covetous Pilgrim"
+      ]
+    },
+    {
+      "unique": [
+        "Sharpdart",
+        "Plasmium Phial"
+      ]
+    },
+    {
+      "unique": [
+        "Complete a Loddie Minigame",
+        "Fail a Loddie Minigame"
+      ]
+    },
+    {
+      "unique": [
         "Moss Mother Duo",
-        "Weavelight"
+        "Weavelight",
+        "Evolved Hunter's Crest"
       ]
     },
     {
@@ -1359,8 +1400,8 @@
     },
     {
       "unique": [
-        "Deep Docks Fleas [3]",
-        "Forebrothers Signis & Gron"
+        "Save Jubilana",
+        "Sting Shard & Asendant's Grip"
       ]
     },
     {
@@ -1378,39 +1419,38 @@
     },
     {
       "unique": [
-        "Have {{X}} Rosary Strings (no purchasing)",
-        "Break {{X}} Rosary Strings (no purchasing)"
-      ]
-    },
-    {
-      "unique": [
-        "{{X}} Memory Lockets",
-        "Fully Unlock a Non-Hunter's Crest"
-      ]
-    },
-    {
-      "unique": [
-        "Pay for a Flea Spa",
-        "Greymoor Fleas [2] + Kratt"
-      ]
-    },
-    {
-      "unique": [
-        "Complete a Loddie Minigame",
-        "Fail a Loddie Minigame"
+        "Cogwork Core Mask Shard",
+        "Defeat a Cogwork Clapper"
       ]
     },
     {
       "unique":[
-        "Open White Ward",
         "Injector Band",
         "Injector Band & Claw Mirror"
       ]
     },
     {
-      "unique" : [
-        "Talk to Vog",
-        "Talk to Huntress"
+      "unique": [
+        "Trobbio",
+        "Vaultkeeper's Melody"
+      ]
+    },
+    {
+      "unique": [
+        "Trobbio",
+        "Injector Band & Claw Mirror"
+      ]
+    },
+    {
+      "unique": [
+        "Rosary Cannon",
+        "Cogfly"
+      ]
+    },
+    {
+      "unique": [
+        "Both Free Simple Keys",
+        "Sands of Karak Flea [1]"
       ]
     },
     {
@@ -1420,10 +1460,15 @@
       ]
     },
     {
+      "unique": [
+        "Deep Docks Fleas [3]",
+        "Forebrothers Signis & Gron"
+      ]
+    },
+    {
       "unique" : [
-        "Free {{X}} Fleas",
-        "Meet Caravan at the Grand Gate",
-        "Meet Caravan in Greymoor"
+        "Talk to Vog",
+        "Talk to Huntress"
       ]
     },
     {
@@ -1434,80 +1479,8 @@
     },
     {
       "unique": [
-        "Obtain {{X}} Tool Pouch Upgrade/Crafting Kits",
-        "Obtain {{X}} Tool Pouch Upgrade"
-      ]
-    },
-    {
-      "unique": [
-        "Obtain {{X}} Tool Pouch Upgrade/Crafting Kits",
-        "Obtain {{X}} Crafting Kit"
-      ]
-    },
-    {
-      "unique": [
-        "Shellwood Mask Shard",
-        "Defeat a Covetous Pilgrim"
-      ]
-    },
-    {
-      "unique": [
-        "Cogwork Core Mask Shard",
-        "Defeat a Cogwork Clapper"
-      ]
-    },
-    {
-      "unique": [
         "Father Of The Flame",
         "Underworks Fleas [2]"
-      ]
-    },
-    {
-      "unique": [
-        "Both Free Simple Keys",
-        "Sands of Karak Flea [1]"
-      ]
-    },
-    {
-      "unique": [
-        "{{X}} Red Tools",
-        "Straight, Threefold, and Long Pin"
-      ]
-    },
-    {
-      "unique": [
-        "Trobbio",
-        "Injector Band & Claw Mirror"
-      ]
-    },
-    {
-      "unique": [
-        "Curveclaw & Sawtooth Circlet",
-        "Magma Bell & Curveclaw"
-      ]
-    },
-    {
-      "unique": [
-        "Save Jubliana",
-        "Sting Shard & Asendant's Grip"
-      ]
-    },
-    {
-      "unique": [
-        "Rosary Cannon",
-        "Cogfly"
-      ]
-    },
-    {
-      "unique": [
-        "Rosary Cannon",
-        "Cogfly"
-      ]
-    },
-    {
-      "unique": [
-        "Trobbio",
-        "Vaultkeeper's Melody"
       ]
     },
     {
@@ -1520,6 +1493,12 @@
         "Shellwood Mask Shard",
         "Blasted Steps Mask Shard",
         "Cogwork Core Mask Shard"
+      ]
+    },
+    {
+      "unique" : [
+        "Free {{X}} Fleas",
+        "Meet Caravan at the Grand Gate"
       ]
     }
   ]
