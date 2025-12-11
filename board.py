@@ -186,6 +186,9 @@ def bingosyncBoard(noTags=[], **kwargs):
     else: #exclude silly by default
         noTags.append("silly")
 
+    if "noBlocking" in kwargs.keys() and kwargs["noBlocking"]:
+        noTags.append("blocking")
+
     if "size" in kwargs.keys():
         boardList = board(*getAllGoals(noTags=noTags), size=int(kwargs["size"]), lockout=(not "lockout" in noTags), tagLimits=limits)
     else:

@@ -87,25 +87,25 @@ def progStringToTags(progression):
 @app_commands.describe(preset="Tags to exclude based on preset categories.")
 @app_commands.choices(preset=prog_options())
 @app_commands.choices(size=size_options())
-async def newboard(interaction: discord.Interaction, lockout: bool = False, preset: Optional[app_commands.Choice[str]] = None, size: Optional[app_commands.Choice[str]]="5"):
+async def newboard(interaction: discord.Interaction, lockout: bool = False, preset: Optional[app_commands.Choice[str]] = None, pattern: bool = False, size: Optional[app_commands.Choice[str]]="5"):
     """Generates a new board for bingo."""
     noTags = progStringToTags(preset)
     if not lockout:
         noTags.append("lockout")
-    thisBoard = board.bingosyncBoard(noTags=noTags, **BOARD_KWARGS, size=int(size.value)**2)
+    thisBoard = board.bingosyncBoard(noTags=noTags, **BOARD_KWARGS, noBlocking = pattern, size=int(size.value)**2)
     await interaction.response.send_message(json.dumps(thisBoard), ephemeral=True)
 
 @client.tree.command()
 @app_commands.describe(preset="Tags to exclude based on preset categories.")
 @app_commands.choices(preset=prog_options())
-async def newroom(interaction: discord.Interaction, lockout: bool = False, preset: Optional[app_commands.Choice[str]] = None):
+async def newroom(interaction: discord.Interaction, lockout: bool = False, pattern: bool = False, preset: Optional[app_commands.Choice[str]] = None):
     """Generates a new board and creates a bingosync room."""
     await interaction.response.defer(thinking=True)
 
     noTags = progStringToTags(preset)
     if not lockout:
         noTags.append("lockout") #exclude lockout-only goals
-    thisBoard = board.bingosyncBoard(noTags=noTags, **BOARD_KWARGS)
+    thisBoard = board.bingosyncBoard(noTags=noTags, **BOARD_KWARGS, noBlocking = pattern)
     bsSession = network.bingosyncClient()
     n, rId = bsSession.newRoom(json.dumps(thisBoard), lockout=lockout)
     bsSession.close()
@@ -114,14 +114,14 @@ async def newroom(interaction: discord.Interaction, lockout: bool = False, prese
 @client.tree.command()
 @app_commands.describe(preset="Tags to exclude based on preset categories.")
 @app_commands.choices(preset=prog_options())
-async def newcaravan(interaction: discord.Interaction, lockout: bool = False, preset: Optional[app_commands.Choice[str]] = None):
+async def newcaravan(interaction: discord.Interaction, lockout: bool = False, pattern: bool = False, preset: Optional[app_commands.Choice[str]] = None):
     """Generates a new 6x6 board and creates a caravan room."""
     await interaction.response.defer(thinking=True)
 
     noTags = progStringToTags(preset)
     if not lockout:
         noTags.append("lockout") #exclude lockout-only goals
-    thisBoard = board.bingosyncBoard(noTags=noTags, **BOARD_KWARGS, size=36)
+    thisBoard = board.bingosyncBoard(noTags=noTags, **BOARD_KWARGS, noBlocking = pattern, size=36)
     bsSession = network.caravanClient()
     n, rId = bsSession.newRoom(json.dumps(thisBoard), lockout=lockout)
     bsSession.close()
