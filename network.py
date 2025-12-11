@@ -41,7 +41,7 @@ ROOM_NAMES = [
     "Archies Mossberry",
     "Key Route",
     "Silver Bells Loop",
-    "Sawtooth",
+    "Shawtoof",
     "Hang_08",
     "Lets Go Gambling",
     "Cog_08",
