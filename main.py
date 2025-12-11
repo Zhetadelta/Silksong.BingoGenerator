@@ -58,7 +58,10 @@ async def on_ready():
 
 @client.tree.error
 async def on_app_command_error(interaction, error):
-    await interaction.response.send_message(f"The following error was encountered: {str(error.__cause__)}. Let Abyss know!", ephemeral=True)
+    try:
+        await interaction.response.send_message(f"The following error was encountered: {str(error.__cause__)}. Let Abyss know!", ephemeral=True)
+    except:
+        await interaction.followup.send(f"The following error was encountered: {str(error.__cause__)}. Let Abyss know!", ephemeral=True)
 
 def prog_options():
     opt = ["Act 1 Only", "No Clawline", "No Faydown", "Act 2 Only"]
