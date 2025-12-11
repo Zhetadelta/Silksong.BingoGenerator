@@ -16,7 +16,8 @@
     {
       "name": "{{X}} Hunt Quests",
       "types": [
-        "quest"
+        "quest",
+        "blocking"
       ],
       "progression": [
         "cloak"
@@ -30,7 +31,8 @@
       "name": "{{X}} Wayfarer Quests",
       "types": [
         "quest",
-        "flea"
+        "flea",
+        "blocking"
       ],
       "progression": [
         "widow",
@@ -44,7 +46,8 @@
     {
       "name": "{{X}} Gather Quests",
       "types": [
-        "quest"
+        "quest",
+        "blocking"
       ],
       "progression": [
         "walljump"
@@ -99,7 +102,8 @@
       "name": "{{X}} Red Tools",
       "types": [
         "tool",
-        "craft"
+        "craft",
+        "blocking"
       ],
       "progression": [
         "dash",
@@ -113,7 +117,8 @@
     {
       "name": "{{X}} Blue Tools",
       "types": [
-        "tool"
+        "tool",
+        "blocking"
       ],
       "progression": [
         "dash"
@@ -125,7 +130,8 @@
     {
       "name": "{{X}} Yellow Tools",
       "types": [
-        "tool"
+        "tool",
+        "blocking"
       ],
       "progression": [
         "early",
@@ -140,7 +146,8 @@
     {
       "name": "{{X}} of each tool type",
       "types": [
-        "tool"
+        "tool",
+        "blocking"
       ],
       "progression": [
         "early",
@@ -393,7 +400,8 @@
       "name": "Beast's Crest",
       "types": [
         "upgrade",
-        "hardsave"
+        "hardsave",
+        "hard"
       ],
       "progression": [
         "cloak"
@@ -404,7 +412,8 @@
       "types": [
         "upgrade",
         "hardsave",
-        "lockout"
+        "lockout",
+        "blocking"
       ],
       "progression": [
         "act2",
@@ -477,7 +486,8 @@
       "name": "Faydown Cloak",
       "types": [
         "upgrade",
-        "hardsave"
+        "hardsave",
+        "blocking"
       ],
       "progression": [
         "clawline",
@@ -500,7 +510,8 @@
     {
       "name": "Farfields Escape Mask Shard",
       "types": [
-        "upgrade"
+        "upgrade",
+        "hard"
       ],
       "progression": [
         "clawline"
@@ -518,7 +529,8 @@
     {
       "name": "Bilewater Mask Shard",
       "types": [
-        "upgrade"
+        "upgrade",
+        "hard"
       ],
       "progression": [
         "faydown"
@@ -581,7 +593,8 @@
     {
       "name": "Savage Beastfly",
       "types": [
-        "fight"
+        "fight",
+        "hard"
       ],
       "progression": [
         "dash"
@@ -590,7 +603,8 @@
     {
       "name": "Great Conchflies",
       "types": [
-        "fight"
+        "fight",
+        "blocking"
       ],
       "progression": [
         "walljump"
@@ -609,7 +623,8 @@
       "name": "Widow",
       "types": [
         "fight",
-        "lockout"
+        "lockout",
+        "blocking"
       ],
       "progression": [
         "walljump"
@@ -618,7 +633,8 @@
     {
       "name": "Defeat a Rhinogrund",
       "types": [
-        "fight"
+        "fight",
+        "hard"
       ],
       "progression": [
         "walljump"
@@ -643,7 +659,8 @@
     {
       "name": "Cogwork Dancers",
       "types": [
-        "fight"
+        "fight",
+        "blocking"
       ],
       "progression": [
         "act2"
@@ -655,13 +672,14 @@
         "fight"
       ],
       "progression": [
-        "widow"
+        "widow",
+        "blocking"
       ]
     },
     {
       "name": "Phantom",
       "types": [
-        "fight"
+        "fight",
       ],
       "progression": [
         "widow"
@@ -681,7 +699,9 @@
     {
       "name": "Trobbio",
       "types": [
-        "fight"
+        "fight",
+        "tool",
+        "blocking"
       ],
       "progression": [
         "act2"
@@ -690,7 +710,8 @@
     {
       "name": "Disgraced Chef Lugoli",
       "types": [
-        "fight"
+        "fight",
+        "hard"
       ],
       "progression": [
         "faydown"
@@ -700,7 +721,8 @@
       "name": "Father Of The Flame",
       "types": [
         "fight",
-        "tool"
+        "tool",
+        "hard"
       ],
       "progression": [
         "faydown"
@@ -709,7 +731,8 @@
     {
       "name": "Forebrothers Signis & Gron",
       "types": [
-        "fight"
+        "fight",
+        "hard"
       ],
       "progression": [
         "clawline"
@@ -991,7 +1014,8 @@
     {
       "name": "Deep Docks Fleas [3]",
       "types": [
-        "flea"
+        "flea",
+        "hard"
       ],
       "progression": [
         "clawline"
@@ -1107,7 +1131,6 @@
       "types": [
         "flea",
         "npc",
-        "location"
       ],
       "progression": [
         "faydown"
@@ -1404,7 +1427,7 @@
         "silly"
       ],
       "progression": [
-        "faydown"
+        "walljump"
       ]
     },
     {
@@ -1433,7 +1456,8 @@
     {
       "name": "Talk to Forge Daughter and Twelfth Architect",
       "types": [
-        "npc"
+        "npc",
+        "blocking"
       ],
       "progression": [
         "clawline"
@@ -1466,7 +1490,8 @@
       "name": "Conductor's Melody",
       "types": [
         "fight",
-        "melody"
+        "melody",
+        "hard"
       ],
       "progression": [
         "clawline"

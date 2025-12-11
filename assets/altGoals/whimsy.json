@@ -1,0 +1,535 @@
+{
+    "goals": [
+        {
+            "name": "Free Space",
+            "type": [],
+            "progression": [],
+            "weight": 3
+        },
+        {
+            "name": "Crush that one Pharlid with rock",
+            "type": ["location"],
+            "progression": ["clawline"]
+        },
+        {
+            "name": "Earn a Rosary from the Treadmill",
+            "type": ["location"],
+            "progression": ["act2"]
+        },
+        {
+            "name": "Hit Lugoli Bell with Rosary Cannon",
+            "type": ["location", "tool", "key"],
+            "progression": ["faydown"]
+        },
+        {
+            "name": "Kill Savage Beastfly with rock",
+            "type": ["quest", "fight"],
+            "progression": ["widow"]
+        },
+        {
+            "name": "Kill a boss using only Tools",
+            "type": ["fight", "tool", "hard"],
+            "progression": ["clawline"]
+        },
+        {
+            "name": "Kill a boss using only Needle Strike",
+            "type": ["fight", "upgrade"],
+            "progression": ["walljump"]
+        },
+        {
+            "name": "Kill a boss using only Pogos",
+            "type": ["fight"],
+            "progression": ["early"]
+        },
+        {
+            "name": "Kill a boss while Barbed",
+            "type": ["fight", "hard"],
+            "progression": ["cloak"]
+        },
+        {
+            "name": "Steel Soul Moss Mother",
+            "type": ["fight"],
+            "progression": ["early"]
+        },
+        {
+            "name": "Let the Rhinogrund into Pilgrim's Rest",
+            "type": ["location"],
+            "progression": ["walljump"]
+        },
+        {
+            "name": "Seth",
+            "type": ["fight", "hard"],
+            "progression": ["faydown"]
+        },
+        {
+            "name": "Grand Mother Silk",
+            "type": ["fight"],
+            "progression": ["clawline"]
+        },
+        {
+            "name": "Best Garmond",
+            "type": ["fight"],
+            "progression": ["clawline"]
+        },
+        {
+            "name": "Snap a Wardenfly's Neck",
+            "type": ["location"],
+            "progression": ["walljump"]
+        },
+        {
+            "name": "Get Rejected by Eva (Walled off)",
+            "type": ["quest", "upgrade", "npc"],
+            "progression": ["clawline"]
+        },
+        {
+            "name": "Disrespect Zango's resting place",
+            "type": ["location", "key"],
+            "progression": ["dash"]
+        },
+        {
+            "name": "Talk to Green Prince at Cogwork Dancers",
+            "type": ["npc", "key"],
+            "progression": ["act2"]
+        },
+        {
+            "name": "Give Loddie 200 Rosaries",
+            "type": ["npc"],
+            "progression": ["widow"]
+        },
+        {
+            "name": "Float to the bottom of Bone Bottom hole",
+            "type": ["location"],
+            "progression": ["cloak"]
+        },
+        {
+            "name": "Sharpdart skip with Sharpdart",
+            "type": ["upgrade", "key", "hardsave"],
+            "progression": ["dash"]
+        },
+        {
+            "name": "Ring all 6 bells",
+            "type": ["location", "hardsave"],
+            "progression": ["act2"]
+        },
+        {
+            "name": "Kill Dave's cousin",
+            "type": ["fight"],
+            "progression": ["widow"]
+        },
+        {
+            "name": "Die to a trapped Bench",
+            "type": ["location"],
+            "progression": ["early"]
+        },
+        {
+            "name": "Visit 4 Weavenests",
+            "type": ["location"],
+            "progression": ["widow", "key"]
+        },
+        {
+            "name": "Win Dice from Lumble by actually gambling",
+            "type": ["tool", "npc"],
+            "progression": ["walljump"]
+        },
+        {
+            "name": "See all 8 Mist rooms (Use debug for names)",
+            "type": ["location"],
+            "progression": ["widow"]
+        },
+        {
+            "name": "Go through High Halls backwards",
+            "type": ["location"],
+            "progression": ["clawline"]
+        },
+        {
+            "name": "Hit Big Flea with a Flea Bottle",
+            "type": ["fight", "tool", "quest"],
+            "progression": ["faydown"]
+        },
+        {
+            "name": "Unbind Bind for 10 minutes",
+            "type": ["hard"],
+            "progression": ["early"]
+        },
+        {
+            "name": "Faydown Cloak deathless from The Slab",
+            "type": ["upgrade", "hardsave"],
+            "progression": ["clawline"]
+        },
+        {
+            "name": "Cogwork Dancers with Needle 0",
+            "type": ["fight", "hard"],
+            "progression": ["act2"]
+        },
+        {
+            "name": "Phantom without buying any Bellways",
+            "type": ["fight", "hard"],
+            "progression": ["widow"]
+        },
+        {
+            "name": "Kill 2 Skarrguards without dashing",
+            "type": ["fight", "hard"],
+            "progression": ["early"]
+        },
+        {
+            "name": "Wanderer Crest without Cling Grip",
+            "type": ["upgrade", "hardsave"],
+            "progression": ["dash"]
+        },
+        {
+            "name": "Lace 1 without Swift Step",
+            "type": ["fight", "hard"],
+            "progression": ["early"]
+        },
+        {
+            "name": "Choral Chambers fan column Flea without floating",
+            "type": ["flea"],
+            "progression": ["act2"]
+        },
+        {
+            "name": "Architect's Melody without harpooning",
+            "type": ["melody"],
+            "progression": ["clawline"]
+        },
+        {
+            "name": "Needle only Conductor's Melody",
+            "type": ["melody", "hard"],
+            "progression": ["clawline"]
+        },
+        {
+            "name": "Talk to Skynx",
+            "type": ["npc", "hard"],
+            "progression": ["walljump"]
+        },
+        {
+            "name": "Talk to Pious Isamor",
+            "type": ["npc"],
+            "progression": ["clawline"]
+        },
+        {
+            "name": "Talk to Sherma in 4 Locations",
+            "type": ["npc"],
+            "progression": ["widow"]
+        },
+        {
+            "name": "Talk to Gilly in 3 Locations",
+            "type": ["npc"],
+            "progression": ["act2"]
+        },
+        {
+            "name": "Talk to Grindle in 3 Locations",
+            "type": ["npc"],
+            "progression": ["act2"]
+        },
+        {
+            "name": "Beat up Kratt",
+            "type": ["npc"],
+            "progression": ["cloak"]
+        },
+        {
+            "name": "Decline Travelling with the Fleas",
+            "type": ["quest"],
+            "progression": ["dash"]
+        },
+        {
+            "name": "Sell a Relic to Scounge while Muckmaggoted",
+            "type": ["relic", "location", "npc"],
+            "progression": ["walljump"]
+        },
+        {
+            "name": "Unmask Mask Maker",
+            "type": ["npc"],
+            "progression": ["faydown"]
+        },
+        {
+            "name": "Play Needolin with Spider Strings for Mort",
+            "type": ["tool", "npc"],
+            "progression": ["act2"]
+        },
+        {
+            "name": "Learn Pilby's name",
+            "type": ["npc"],
+            "progression": ["widow"]
+        },
+        {
+            "name": "Multibinder",
+            "type": ["tool", "quest"],
+            "progression": []
+        },
+        {
+            "name": "Conchcutter",
+            "type": ["tool", "fight"],
+            "progression": ["clawline"]
+        },
+        {
+            "name": "Voltvessels",
+            "type": ["tool"],
+            "progression": ["faydown"]
+        },
+        {
+            "name": "Volt Filament",
+            "type": ["tool", "fight"],
+            "progression": ["faydown"]
+        },
+        {
+            "name": "Snare Setter",
+            "type": ["tool"],
+            "progression": ["faydown"]
+        },
+        {
+            "name": "Tacks",
+            "type": ["quest", "tool"],
+            "progression": ["walljump"]
+        },
+        {
+            "name": "Break Wreath of Purity",
+            "type": ["tool", "location"],
+            "progression": ["faydown"]
+        },
+        {
+            "name": "Mount Fay Silkshot",
+            "type": ["tool", "location"],
+            "progression": ["faydown"]
+        },
+        {
+            "name": "Skuttlebrace & Pimpillo",
+            "type": ["tool", "craft"],
+            "progression": ["clawline"]
+        },
+        {
+            "name": "Claw Mirror & Injector Band",
+            "type": ["tool", "fight"],
+            "progression": ["act2"]
+        },
+        {
+            "name": "Witch Crest",
+            "type": ["quest", "upgrade", "hardsave"],
+            "progression": ["clawline"]
+        },
+        {
+            "name": "Architect Crest",
+            "type": ["tool", "upgrade", "hardsave"],
+            "progression": ["clawline"]
+        },
+        {
+            "name": "Vesticrest",
+            "type": ["npc", "memory", "upgrade", "hardsave"],
+            "progression": ["cloak"]
+        },
+        {
+            "name": "4 Crests",
+            "type": ["upgrade", "hardsave"],
+            "progression": []
+        },
+        {
+            "name": "Seeker's Soul",
+            "type": ["fight", "hard"],
+            "progression": ["faydown"]
+        },
+        {
+            "name": "2 Rune Harps",
+            "type": ["collection", "hardsave"],
+            "progression": ["widow"]
+        },
+        {
+            "name": "2 Weaver Effigies",
+            "type": ["collection"],
+            "progression": ["clawline"]
+        },
+        {
+            "name": "4 Choral Commandments",
+            "type": ["collection", "hard"],
+            "progression": ["faydown"]
+        },
+        {
+            "name": "5 Sacred/Psalm Cylinders",
+            "type": ["collection"],
+            "progression": ["clawline"]
+        },
+        {
+            "name": "Buy out Pebb",
+            "type": ["npc"],
+            "progression": ["early"]
+        },
+        {
+            "name": "Fleas to Grand Gate",
+            "type": ["fleas"],
+            "progression": ["act2"]
+        },
+        {
+            "name": "5 types of Wishes",
+            "type": ["quest"],
+            "progression": ["cloak"]
+        },
+        {
+            "name": "Bugs of Pharloom",
+            "type": ["quest"],
+            "progression": ["cloak"]
+        },
+        {
+            "name": "Fine Pins",
+            "type": ["quest"],
+            "progression": ["act2"]
+        },
+        {
+            "name": "Silver Bells",
+            "type": ["quest"],
+            "progression": ["widow"]
+        },
+        {
+            "name": "The Lost Merchant",
+            "type": ["quest"],
+            "progression": ["faydown"]
+        },
+        {
+            "name": "Deliver Queen Egg",
+            "type": ["quest", "location"],
+            "progression": ["act2"]
+        },
+        {
+            "name": "Let Courier's Rasher expire",
+            "type": ["quest"],
+            "progression": ["act2"]
+        },
+        {
+            "name": "Decorate your Bellhome",
+            "type": ["quest"],
+            "progression": ["act2"]
+        },
+        {
+            "name": "Attend Pilby's funeral",
+            "type": ["quest", "fight"],
+            "progression": ["walljump"]
+        },
+        {
+            "name": "Vintage Nectar",
+            "type": ["quest"],
+            "progression": ["act2"]
+        },
+        {
+            "name": "Broodmother",
+            "type": ["quest", "fight"],
+            "progression": ["faydown"]
+        },
+        {
+            "name": "First Sinner",
+            "type": ["fight"],
+            "progression": ["faydown"]
+        },
+        {
+            "name": "Muckmaggot journal entry",
+            "type": ["location", "tool"],
+            "progression": ["walljump"]
+        },
+        {
+            "name": "Cragglite journal entry",
+            "type": ["fight"],
+            "progression": ["cloak"]
+        },
+        {
+            "name": "Grom journal entry",
+            "type": ["location", "key"],
+            "progression": ["cloak"]
+        },
+        {
+            "name": "Tarmite journal entry",
+            "type": ["location"],
+            "progression": ["widow"]
+        },
+        {
+            "name": "Snitchfly journal entry",
+            "type": ["location"],
+            "progression": ["cloak"]
+        },
+        {
+            "name": "Lavalarga journal entry",
+            "type": ["fight"],
+            "progression": ["clawline"]
+        },
+        {
+            "name": "Flintflame Flyer & Brushflit journal entries",
+            "type": ["location"],
+            "progression": ["cloak"]
+        },
+        {
+            "name": "Slubberlug journal entry",
+            "type": ["location"],
+            "progression": ["faydown"]
+        },
+        {
+            "name": "Wraith & Swamp Squit journal entries",
+            "type": ["location"],
+            "progression": ["widow"]
+        },
+        {
+            "name": "Ductsucker journal entry",
+            "type": ["location"],
+            "progression": ["faydown"]
+        },
+        {
+            "name": "Coral Furm journal entry",
+            "type": ["location"],
+            "progression": ["faydown"]
+        },
+        {
+            "name": "Elder Pilgrim journal entry",
+            "type": ["location"],
+            "progression": ["walljump"]
+        },
+        {
+            "name": "Flintstone Materium entry",
+            "type": ["quest", "fight"],
+            "progression": ["faydown"]
+        },
+        {
+            "name": "Voltridian Materium entry",
+            "type": ["quest", "location"],
+            "progression": ["faydown"]
+        },
+        {
+            "name": "Pearl Rosaries Materium entry",
+            "type": ["quest"],
+            "progression": ["faydown"]
+        },
+        {
+            "name": "Mossberry Stew Materium entry",
+            "type": ["quest"],
+            "progression": ["faydown"]
+        }
+    ],
+    "exclusions": [
+        {
+            "unique": [
+                "Play Needolin with Spider Strings for Mort",
+                "The Lost Merchant"
+            ]
+        },
+        {
+            "limit": 2,
+            "unique": [
+                "Flintstone Materium entry",
+                "Voltridian Materium entry",
+                "Pearl Rosaries Materium entry",
+                "Mossberry Stew Materium entry",
+                "Decorate your Bellhome"
+            ]
+        },
+        {
+            "limit": 4,
+            "unique": [
+                "Muckmaggot journal entry",
+                "Cragglite journal entry",
+                "Grom journal entry",
+                "Tarmite journal entry",
+                "Snitchfly journal entry",
+                "Lavalarga journal entry",
+                "Flintflame Flyer & Brushflit journal entries",
+                "Slubberlug journal entry",
+                "Wraith & Swamp Squit journal entries",
+                "Ductsucker journal entry",
+                "Coral Furm journal entry",
+                "Elder Pilgrim journal entry"
+            ]
+        }
+    ]
+}
