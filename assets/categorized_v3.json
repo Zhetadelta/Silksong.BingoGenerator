@@ -680,6 +680,7 @@
       "name": "Phantom",
       "types": [
         "fight",
+        "blocking"
       ],
       "progression": [
         "widow"
@@ -1130,7 +1131,7 @@
       "name": "Talk to Vog",
       "types": [
         "flea",
-        "npc",
+        "npc"
       ],
       "progression": [
         "faydown"
