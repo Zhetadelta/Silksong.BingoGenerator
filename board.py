@@ -13,7 +13,7 @@ BOARD_TYPES = [
 
 #Ordered progression
 orderedProg = ['early','dash','cloak','walljump', 'widow', 'act2', 'clawline','faydown']
-maxWeightScale = 2.5
+maxWeightScale = 2
     
 LL_LIMITS = {
             "board" : {
