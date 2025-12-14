@@ -176,7 +176,7 @@
       ]
     },
     {
-      "name": "Barbed Bracelet + Fractured Mask",
+      "name": "Barbed Bracelet & Fractured Mask",
       "types": [
         "tool"
       ],
@@ -194,7 +194,16 @@
       ]
     },
     {
-      "name": "Injector Band & Claw Mirror",
+      "name": "Compass, Pendant, Brooch",
+      "types": [
+        "tool"
+      ],
+      "progression": [
+        "early"
+      ]
+    },
+    {
+      "name": "Warding Bell & Claw Mirror",
       "types": [
         "tool"
       ],
@@ -203,7 +212,7 @@
       ]
     },
     {
-      "name": "Curveclaw & Sawtooth Circlet",
+      "name": "Warding Bell & Sawtooth Circlet",
       "types": [
         "tool",
         "craft"
@@ -223,13 +232,22 @@
       ]
     },
     {
-      "name": "Sting Shard & Asendant's Grip",
+      "name": "Weighted Belt & Ascendant's Grip",
+      "types": [
+        "tool"
+      ],
+      "progression": [
+        "act2"
+      ]
+    },
+    {
+      "name": "Scuttlebrace & Silkspeed",
       "types": [
         "tool",
         "craft"
       ],
       "progression": [
-        "act2"
+        "clawline"
       ]
     },
     {
@@ -262,13 +280,22 @@
       ]
     },
     {
-      "name": "Weavelight",
+      "name": "Quick Sling",
+      "types": [
+        "tool"
+      ],
+      "progression": [
+        "faydown"
+      ]
+    },
+    {
+      "name": "Weavelight & Injector Band",
       "types": [
         "tool",
         "fight"
       ],
       "progression": [
-        "widow"
+        "act2"
       ]
     },
     {
@@ -370,6 +397,26 @@
       ]
     },
     {
+      "name": "Conchcutter",
+      "types": [
+        "tool",
+        "fight"
+      ],
+      "progression": [
+        "clawline"
+      ]
+    },
+    {
+      "name": "Pale Lake Craftmetal",
+      "types": [
+        "location",
+        "collection"
+      ],
+      "progression": [
+        "faydown"
+      ]
+    },
+    {
       "name": "Upgrade Druid's Eye",
       "types": [
         "collection",
@@ -377,6 +424,15 @@
       ],
       "progression": [
         "faydown"
+      ]
+    },
+    {
+      "name": "Sell a Mossberry",
+      "types": [
+        "collection"
+      ],
+      "progression": [
+        "early"
       ]
     },
     {
@@ -611,6 +667,15 @@
       ],
       "progression": [
         "walljump"
+      ]
+    },
+    {
+      "name": "Raging Conchflies",
+      "types": [
+        "fight"
+      ],
+      "progression": [
+        "clawline"
       ]
     },
     {
@@ -1182,6 +1247,15 @@
       ]
     },
     {
+      "name": "Buy Frey's Spool Fragment",
+      "types": [
+        "upgrade"
+      ],
+      "progression": [
+        "widow"
+      ]
+    },
+    {
       "name": "Grand Gate Spool Fragment",
       "types": [
         "upgrade"
@@ -1387,6 +1461,16 @@
       ]
     },
     {
+      "name": "Talk to Shakra in Sands of Karak",
+      "types": [
+        "npc",
+        "location"
+      ],
+      "progression": [
+        "clawline"
+      ]
+    },
+    {
       "name": "Talk to Huntress",
       "types": [
         "npc"
@@ -1421,6 +1505,43 @@
       ],
       "progression": [
         "widow"
+      ]
+    },
+    {
+      "name": "Cragglite Journal Entry",
+      "types": [
+        "collection"
+      ],
+      "progression": [
+        "act2"
+      ]
+    },
+    {
+      "name": "Gromling & Grom Journal Entries",
+      "types": [
+        "collection",
+        "key"
+      ],
+      "progression": [
+        "dash"
+      ]
+    },
+    {
+      "name": "Mite Mother Journal Entry",
+      "types": [
+        "collection"
+      ],
+      "progression": [
+        "dash"
+      ]
+    },
+    {
+      "name": "Vaultborn Journal Entry",
+      "types": [
+        "collection"
+      ],
+      "progression": [
+        "act2"
       ]
     },
     {
@@ -1478,6 +1599,16 @@
       "range": [
         1,
         2
+      ]
+    },
+    {
+      "name": "Activate Second Sentinel",
+      "types": [
+        "collection",
+        "npc"
+      ],
+      "progression": [
+        "faydown"
       ]
     },
     {
@@ -1588,13 +1719,6 @@
     },
     {
       "unique": [
-        "Moss Mother Duo",
-        "Weavelight",
-        "Evolved Hunter's Crest"
-      ]
-    },
-    {
-      "unique": [
         "Win Against Lumble The Lucky",
         "Magnetite Dice & Magnetite Brooch"
       ]
@@ -1625,21 +1749,9 @@
       ]
     },
     {
-      "unique":[
-        "Injector Band",
-        "Injector Band & Claw Mirror"
-      ]
-    },
-    {
       "unique": [
         "Trobbio",
         "Vaultkeeper's Melody"
-      ]
-    },
-    {
-      "unique": [
-        "Trobbio",
-        "Injector Band & Claw Mirror"
       ]
     },
     {
@@ -1719,6 +1831,12 @@
       "unique" : [
         "Free {{X}} Fleas",
         "Meet Caravan at the Grand Gate"
+      ]
+    },
+    {
+      "unique" : [
+        "{{X}} Cogheart Pieces",
+        "Activate Second Sentinel"
       ]
     },
     {
