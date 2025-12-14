@@ -89,11 +89,13 @@ def progStringToTags(progression):
 @app_commands.describe(preset="Tags to exclude based on preset categories.")
 @app_commands.choices(preset=prog_options())
 @app_commands.choices(size=size_options())
-async def newboard(interaction: discord.Interaction, lockout: bool = False, preset: Optional[app_commands.Choice[str]] = None, pattern: bool = False, size: Optional[app_commands.Choice[str]]="5"):
+async def newboard(interaction: discord.Interaction, lockout: bool = False, preset: Optional[app_commands.Choice[str]] = None, pattern: bool = False, size: Optional[app_commands.Choice[str]]=None):
     """Generates a new board for bingo."""
     noTags = progStringToTags(preset)
     if not lockout:
         noTags.append("lockout")
+    if size is None:
+        size = app_commands.Choice(name="5", value="5")
     thisBoard = board.bingosyncBoard(noTags=noTags, **BOARD_KWARGS, noBlocking = pattern, size=int(size.value)**2)
     await interaction.response.send_message(json.dumps(thisBoard), ephemeral=True)
 
@@ -131,9 +133,11 @@ async def newcaravan(interaction: discord.Interaction, lockout: bool = False, pa
 
 @client.tree.command()
 @app_commands.choices(size=size_options())
-async def newdoublingy(interaction: discord.Interaction, size: Optional[app_commands.Choice[str]]="5"):
+async def newdoublingy(interaction: discord.Interaction, size: Optional[app_commands.Choice[str]]=None):
     """Generates a pair of doublingy rooms."""
     await interaction.response.defer(thinking=True)
+    if size is None:
+        size = app_commands.Choice(name="5", value="5")
     size = int(size.value)
     if size == 5:
         session = network.bingosyncClient()
