@@ -64,7 +64,7 @@ async def on_app_command_error(interaction, error):
         await interaction.followup.send(f"The following error was encountered: {str(error.__cause__)}. Let Abyss know!", ephemeral=True)
 
 def prog_options():
-    opt = ["Act 1 Only", "No Clawline", "No Faydown", "Act 2 Only"]
+    opt = ["Act 1 Only", "No Clawline", "No Faydown", "Easier Mode", "Act 2 Only"]
     return [app_commands.Choice(name=i, value=i) for i in opt]
 
 def size_options():
@@ -79,6 +79,8 @@ def progStringToTags(progression):
         noTags = ["clawline", "faydown"]
     elif progression.value == "No Faydown":
         noTags = ["faydown"]
+    elif progression.value == "Easier Mode":
+        noTags = ["hard", "faydown"]
     elif progression.value == "Act 2 Only":
         noTags = ["early", "dash", "cloak", "walljump", "widow"]
     return noTags
@@ -128,18 +130,24 @@ async def newcaravan(interaction: discord.Interaction, lockout: bool = False, pa
     await interaction.followup.send(f"Room: {n} created at https://caravan.kobold60.com/room/{rId}")
 
 @client.tree.command()
-async def newdoublingy(interaction: discord.Interaction):
+@app_commands.choices(size=size_options())
+async def newdoublingy(interaction: discord.Interaction, size: Optional[app_commands.Choice[str]]="5"):
     """Generates a pair of doublingy rooms."""
     await interaction.response.defer(thinking=True)
-    
+    size = int(size.value)
+    if size == 5:
+        session = network.bingosyncClient()
+        baseName = "https://bingosync.com"
+    elif size == 6:
+        session = network.caravanClient()
+        baseName = "https://caravan.kobold60.com"
     act1Tags = ["act2", "clawline", "faydown", "lockout"]
     act2Tags = ["early", "dash", "cloak", "walljump", "widow", "lockout"]
-    act1Board, act2Board = board.linkedBoards(noTags=(act1Tags, act2Tags))
-    bsSession = network.bingosyncClient()
-    n1, rId1 = bsSession.newRoom(json.dumps(act1Board), lockout=False)
-    n2, rId2 = bsSession.newRoom(json.dumps(act2Board), lockout=False)
-    bsSession.close()
-    await interaction.followup.send(f"Act 1 room: {n1} at https://bingosync.com/room/{rId1}\nAct 2 room: {n2} at https://bingosync.com/room/{rId2}")
+    act1Board, act2Board = board.linkedBoards(noTags=(act1Tags, act2Tags), size=size)
+    n1, rId1 = session.newRoom(json.dumps(act1Board), lockout=False)
+    n2, rId2 = session.newRoom(json.dumps(act2Board), lockout=False)
+    session.close()
+    await interaction.followup.send(f"Act 1 room: {n1} at {baseName}/room/{rId1}\nAct 2 room: {n2} at {baseName}/room/{rId2}")
 
 @client.tree.command()
 @app_commands.describe(tags="Comma-seperated tags to exclude from board generation")

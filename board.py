@@ -13,7 +13,7 @@ BOARD_TYPES = [
 
 #Ordered progression
 orderedProg = ['early','dash','cloak','walljump', 'widow', 'act2', 'clawline','faydown']
-maxWeightScale = 2.3
+maxWeightScale = 2.4
     
 LL_LIMITS = {
             "board" : {
@@ -198,7 +198,7 @@ def bingosyncBoard(noTags=[], **kwargs):
         out.append({"name": name})
     return out
 
-def linkedBoards(noTags, **kwargs):
+def linkedBoards(noTags, size=5, **kwargs):
     b1Tags, b2Tags = noTags
     #set up tag limits and such
     if "tagLimits" in kwargs.keys():
@@ -213,9 +213,9 @@ def linkedBoards(noTags, **kwargs):
         b2Tags.append("silly")
 
     #generating a first board
-    board1List = board(*getAllGoals(noTags=b1Tags), lockout=(not "lockout" in noTags), tagLimits=limits)
+    board1List = board(*getAllGoals(noTags=b1Tags), lockout=(not "lockout" in noTags), tagLimits=limits, size=size)
     #generate a second board after applying exclusions based on already chosen boards
-    board2List = board(*getAllGoals(noTags=b2Tags), lockout=(not "lockout" in noTags), tagLimits=limits, priorGoals=board1List)
+    board2List = board(*getAllGoals(noTags=b2Tags), lockout=(not "lockout" in noTags), tagLimits=limits, size=size, priorGoals=board1List)
     b1 = []
     b2 = []
     for name in board1List:
