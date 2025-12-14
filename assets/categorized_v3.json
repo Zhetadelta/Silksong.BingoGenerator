@@ -205,7 +205,8 @@
     {
       "name": "Curveclaw & Sawtooth Circlet",
       "types": [
-        "tool"
+        "tool",
+        "craft"
       ],
       "progression": [
         "clawline"
@@ -214,7 +215,8 @@
     {
       "name": "Magma Bell & Curveclaw",
       "types": [
-        "tool"
+        "tool",
+        "craft"
       ],
       "progression": [
         "early"
@@ -223,7 +225,8 @@
     {
       "name": "Sting Shard & Asendant's Grip",
       "types": [
-        "tool"
+        "tool",
+        "craft"
       ],
       "progression": [
         "act2"
