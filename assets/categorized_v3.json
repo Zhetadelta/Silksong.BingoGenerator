@@ -1538,7 +1538,8 @@
     {
       "name": "Vaultborn Journal Entry",
       "types": [
-        "collection"
+        "collection",
+        "silly"
       ],
       "progression": [
         "act2"
