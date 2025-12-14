@@ -109,7 +109,7 @@ def board(allGoals:dict, exclusionDic, size=25, **kwargs):
     """
     goals = []
     lockout = kwargs["lockout"] if "lockout" in kwargs.keys() else False
-    tagLimits = kwargs["tagLimits"] if "tagLimits" in kwargs.keys() else None
+    tagLimits = kwargs["tagLimits"].copy() if "tagLimits" in kwargs.keys() else None
 
     if "priorGoals" in kwargs.keys(): #linked boards, apply exclusions now
         for goal in kwargs["priorGoals"]:
