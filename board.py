@@ -261,8 +261,8 @@ def lockoutFormat():
         bTypes = []
         lTypes = []
         for t in totTypes:
-            if t == "widow":    #the difference between widow and walljump progression was small enough that categorizing things was hard
-                t = "walljump"  #it was also causing balance issues. get outta here
+            if t == "widow":    #the difference between widow and walljump progression was causing balance issues
+                t = "walljump"  #get outta here
             if t in BOARD_TYPES:
                 bTypes.append(t)
             else:
