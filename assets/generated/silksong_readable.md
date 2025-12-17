@@ -2,17 +2,17 @@
 
 **3 Donations Quests** | Progression level(s): ['cloak'] | Other tags: ['quest']
 
-**2 Hunt Quests** | Progression level(s): ['cloak'] | Other tags: ['quest']
+**2 Hunt Quests** | Progression level(s): ['cloak'] | Other tags: ['quest', 'blocking']
 
-**4 Hunt Quests** | Progression level(s): ['cloak'] | Other tags: ['quest']
+**4 Hunt Quests** | Progression level(s): ['cloak'] | Other tags: ['quest', 'blocking']
 
-**2 Wayfarer Quests** | Progression level(s): ['widow', 'act2'] | Other tags: ['quest', 'flea']
+**2 Wayfarer Quests** | Progression level(s): ['widow', 'act2'] | Other tags: ['quest', 'flea', 'blocking']
 
-**4 Wayfarer Quests** | Progression level(s): ['widow', 'act2'] | Other tags: ['quest', 'flea']
+**4 Wayfarer Quests** | Progression level(s): ['widow', 'act2'] | Other tags: ['quest', 'flea', 'blocking']
 
-**2 Gather Quests** | Progression level(s): ['walljump'] | Other tags: ['quest']
+**2 Gather Quests** | Progression level(s): ['walljump'] | Other tags: ['quest', 'blocking']
 
-**3 Gather Quests** | Progression level(s): ['walljump'] | Other tags: ['quest']
+**3 Gather Quests** | Progression level(s): ['walljump'] | Other tags: ['quest', 'blocking']
 
 **Complete 5 Quests** | Progression level(s): ['cloak'] | Other tags: ['quest']
 
@@ -24,33 +24,37 @@
 
 **Volatile Flintbeetles** | Progression level(s): ['cloak'] | Other tags: ['quest', 'locket']
 
-**3 Red Tools** | Progression level(s): ['dash', 'cloak'] | Other tags: ['tool', 'craft']
+**3 Red Tools** | Progression level(s): ['dash', 'cloak'] | Other tags: ['tool', 'craft', 'blocking']
 
-**5 Red Tools** | Progression level(s): ['dash', 'cloak'] | Other tags: ['tool', 'craft']
+**5 Red Tools** | Progression level(s): ['dash', 'cloak'] | Other tags: ['tool', 'craft', 'blocking']
 
-**3 Blue Tools** | Progression level(s): ['dash'] | Other tags: ['tool']
+**3 Blue Tools** | Progression level(s): ['dash'] | Other tags: ['tool', 'blocking']
 
-**3 Yellow Tools** | Progression level(s): ['early', 'dash', 'cloak'] | Other tags: ['tool']
+**3 Yellow Tools** | Progression level(s): ['early', 'dash', 'cloak'] | Other tags: ['tool', 'blocking']
 
-**5 Yellow Tools** | Progression level(s): ['early', 'dash', 'cloak'] | Other tags: ['tool']
+**5 Yellow Tools** | Progression level(s): ['early', 'dash', 'cloak'] | Other tags: ['tool', 'blocking']
 
-**2 of each tool type** | Progression level(s): ['early', 'dash'] | Other tags: ['tool']
+**2 of each tool type** | Progression level(s): ['early', 'dash'] | Other tags: ['tool', 'blocking']
 
 **Straight, Threefold, and Long Pin** | Progression level(s): ['cloak'] | Other tags: ['tool']
 
 **Dead Bug's Purse + Silkeater** | Progression level(s): ['walljump'] | Other tags: ['tool']
 
-**Barbed Bracelet + Fractured Mask** | Progression level(s): ['walljump'] | Other tags: ['tool']
+**Barbed Bracelet & Fractured Mask** | Progression level(s): ['walljump'] | Other tags: ['tool']
 
 **Magnetite Dice & Magnetite Brooch** | Progression level(s): ['walljump'] | Other tags: ['tool']
 
-**Injector Band & Claw Mirror** | Progression level(s): ['act2'] | Other tags: ['tool']
+**Compass, Pendant, Brooch** | Progression level(s): ['early'] | Other tags: ['tool']
 
-**Curveclaw & Sawtooth Circlet** | Progression level(s): ['clawline'] | Other tags: ['tool']
+**Warding Bell & Claw Mirror** | Progression level(s): ['act2'] | Other tags: ['tool']
 
-**Magma Bell & Curveclaw** | Progression level(s): ['early'] | Other tags: ['tool']
+**Warding Bell & Sawtooth Circlet** | Progression level(s): ['clawline'] | Other tags: ['tool', 'craft']
 
-**Sting Shard & Asendant's Grip** | Progression level(s): ['act2'] | Other tags: ['tool']
+**Magma Bell & Curveclaw** | Progression level(s): ['early'] | Other tags: ['tool', 'craft']
+
+**Weighted Belt & Ascendant's Grip** | Progression level(s): ['act2'] | Other tags: ['tool']
+
+**Scuttlebrace & Silkspeed** | Progression level(s): ['clawline'] | Other tags: ['tool', 'craft']
 
 **Delver's Drill** | Progression level(s): ['act2'] | Other tags: ['tool']
 
@@ -58,7 +62,9 @@
 
 **Tacks** | Progression level(s): ['walljump'] | Other tags: ['tool', 'quest']
 
-**Weavelight** | Progression level(s): ['widow'] | Other tags: ['tool', 'fight']
+**Quick Sling** | Progression level(s): ['faydown'] | Other tags: ['tool']
+
+**Weavelight & Injector Band** | Progression level(s): ['act2'] | Other tags: ['tool', 'fight']
 
 **Plasmium Phial** | Progression level(s): ['walljump'] | Other tags: ['tool', 'quest', 'key']
 
@@ -80,15 +86,21 @@
 
 **Snare Setter** | Progression level(s): ['faydown'] | Other tags: ['tool']
 
+**Conchcutter** | Progression level(s): ['clawline'] | Other tags: ['tool', 'fight']
+
+**Pale Lake Craftmetal** | Progression level(s): ['faydown'] | Other tags: ['location', 'collection']
+
 **Upgrade Druid's Eye** | Progression level(s): ['faydown'] | Other tags: ['collection', 'tool']
+
+**Sell a Mossberry** | Progression level(s): ['early'] | Other tags: ['collection']
 
 **Wanderer's Crest** | Progression level(s): ['walljump'] | Other tags: ['upgrade', 'hardsave']
 
 **Reaper's Crest** | Progression level(s): ['cloak'] | Other tags: ['upgrade', 'hardsave']
 
-**Beast's Crest** | Progression level(s): ['cloak'] | Other tags: ['upgrade', 'hardsave']
+**Beast's Crest** | Progression level(s): ['cloak'] | Other tags: ['upgrade', 'hardsave', 'hard']
 
-**Clawline** | Progression level(s): ['act2', 'clawline'] | Other tags: ['upgrade', 'hardsave', 'lockout']
+**Clawline** | Progression level(s): ['act2', 'clawline'] | Other tags: ['upgrade', 'hardsave', 'lockout', 'blocking']
 
 **Needle Art** | Progression level(s): ['walljump'] | Other tags: ['upgrade', 'fight']
 
@@ -102,15 +114,15 @@
 
 **Use a Simple Key in Deep Docks** | Progression level(s): ['early'] | Other tags: ['key', 'location', 'fight']
 
-**Faydown Cloak** | Progression level(s): ['clawline', 'faydown'] | Other tags: ['upgrade', 'hardsave']
+**Faydown Cloak** | Progression level(s): ['clawline', 'faydown'] | Other tags: ['upgrade', 'hardsave', 'blocking']
 
 **3 Silk Skills** | Progression level(s): ['walljump'] | Other tags: ['upgrade', 'hardsave']
 
-**Farfields Escape Mask Shard** | Progression level(s): ['clawline'] | Other tags: ['upgrade']
+**Farfields Escape Mask Shard** | Progression level(s): ['clawline'] | Other tags: ['upgrade', 'hard']
 
 **Slab Mask Shard** | Progression level(s): ['faydown'] | Other tags: ['upgrade']
 
-**Bilewater Mask Shard** | Progression level(s): ['faydown'] | Other tags: ['upgrade']
+**Bilewater Mask Shard** | Progression level(s): ['faydown'] | Other tags: ['upgrade', 'hard']
 
 **Shellwood Mask Shard** | Progression level(s): ['cloak'] | Other tags: ['upgrade']
 
@@ -124,35 +136,37 @@
 
 **Moorwing** | Progression level(s): ['cloak'] | Other tags: ['fight']
 
-**Savage Beastfly** | Progression level(s): ['dash'] | Other tags: ['fight']
+**Savage Beastfly** | Progression level(s): ['dash'] | Other tags: ['fight', 'hard']
 
-**Great Conchflies** | Progression level(s): ['walljump'] | Other tags: ['fight']
+**Great Conchflies** | Progression level(s): ['walljump'] | Other tags: ['fight', 'blocking']
+
+**Raging Conchflies** | Progression level(s): ['clawline'] | Other tags: ['fight']
 
 **Moss Mother Duo** | Progression level(s): ['dash'] | Other tags: ['fight']
 
-**Widow** | Progression level(s): ['walljump'] | Other tags: ['fight', 'lockout']
+**Widow** | Progression level(s): ['walljump'] | Other tags: ['fight', 'lockout', 'blocking']
 
-**Defeat a Rhinogrund** | Progression level(s): ['walljump'] | Other tags: ['fight']
+**Defeat a Rhinogrund** | Progression level(s): ['walljump'] | Other tags: ['fight', 'hard']
 
 **Disable the Clawmaidens** | Progression level(s): ['faydown'] | Other tags: ['fight']
 
 **Fourth Chorus** | Progression level(s): ['cloak'] | Other tags: ['fight']
 
-**Cogwork Dancers** | Progression level(s): ['act2'] | Other tags: ['fight']
+**Cogwork Dancers** | Progression level(s): ['act2'] | Other tags: ['fight', 'blocking']
 
-**Last Judge** | Progression level(s): ['widow'] | Other tags: ['fight']
+**Last Judge** | Progression level(s): ['widow', 'blocking'] | Other tags: ['fight']
 
-**Phantom** | Progression level(s): ['widow'] | Other tags: ['fight']
+**Phantom** | Progression level(s): ['widow'] | Other tags: ['fight', 'blocking']
 
 **Fail the Phantom Cutscene** | Progression level(s): ['widow'] | Other tags: ['fight', 'silly']
 
-**Trobbio** | Progression level(s): ['act2'] | Other tags: ['fight']
+**Trobbio** | Progression level(s): ['act2'] | Other tags: ['fight', 'tool', 'blocking']
 
-**Disgraced Chef Lugoli** | Progression level(s): ['faydown'] | Other tags: ['fight']
+**Disgraced Chef Lugoli** | Progression level(s): ['faydown'] | Other tags: ['fight', 'hard']
 
-**Father Of The Flame** | Progression level(s): ['faydown'] | Other tags: ['fight', 'tool']
+**Father Of The Flame** | Progression level(s): ['faydown'] | Other tags: ['fight', 'tool', 'hard']
 
-**Forebrothers Signis & Gron** | Progression level(s): ['clawline'] | Other tags: ['fight']
+**Forebrothers Signis & Gron** | Progression level(s): ['clawline'] | Other tags: ['fight', 'hard']
 
 **Defeat a Covetous Pilgrim** | Progression level(s): ['cloak'] | Other tags: ['fight']
 
@@ -214,7 +228,7 @@
 
 **Shellwood & Bellhart Fleas [2]** | Progression level(s): ['walljump'] | Other tags: ['flea']
 
-**Deep Docks Fleas [3]** | Progression level(s): ['clawline'] | Other tags: ['flea']
+**Deep Docks Fleas [3]** | Progression level(s): ['clawline'] | Other tags: ['flea', 'hard']
 
 **Wormways & Blasted Steps Flea [2]** | Progression level(s): ['walljump'] | Other tags: ['flea']
 
@@ -230,7 +244,7 @@
 
 **Free 14 fleas** | Progression level(s): ['cloak'] | Other tags: ['flea']
 
-**Meet Caravan at the Grand Gate** | Progression level(s): ['act2'] | Other tags: ['flea']
+**Meet Caravan at the Grand Gate [12]** | Progression level(s): ['act2'] | Other tags: ['flea']
 
 **Sinner's Road & Marrow Flea [2]** | Progression level(s): ['walljump'] | Other tags: ['flea']
 
@@ -244,7 +258,7 @@
 
 **Fight Big Flea** | Progression level(s): ['faydown'] | Other tags: ['fight']
 
-**Talk to Vog** | Progression level(s): ['faydown'] | Other tags: ['flea', 'npc', 'location']
+**Talk to Vog** | Progression level(s): ['faydown'] | Other tags: ['flea', 'npc']
 
 **Meet Caravan in Greymoor** | Progression level(s): ['dash'] | Other tags: ['quest', 'tool', 'flea']
 
@@ -253,6 +267,8 @@
 **Deep Docks Spool Fragments (2)** | Progression level(s): ['clawline'] | Other tags: ['upgrade']
 
 **Greymoor Spool Fragment** | Progression level(s): ['walljump'] | Other tags: ['upgrade']
+
+**Buy Frey's Spool Fragment** | Progression level(s): ['widow'] | Other tags: ['upgrade']
 
 **Grand Gate Spool Fragment** | Progression level(s): ['act2'] | Other tags: ['upgrade']
 
@@ -294,6 +310,8 @@
 
 **Talk to Shakra in Bilewater** | Progression level(s): ['faydown'] | Other tags: ['npc', 'location']
 
+**Talk to Shakra in Sands of Karak** | Progression level(s): ['clawline'] | Other tags: ['npc', 'location']
+
 **Talk to Huntress** | Progression level(s): ['faydown'] | Other tags: ['npc']
 
 **Save Jubilana** | Progression level(s): ['act2'] | Other tags: ['npc', 'quest']
@@ -302,7 +320,15 @@
 
 **Skullwing Journal Entry** | Progression level(s): ['widow'] | Other tags: ['collection']
 
-**Slap Nuu** | Progression level(s): ['faydown'] | Other tags: ['quest', 'collection', 'silly']
+**Cragglite Journal Entry** | Progression level(s): ['act2'] | Other tags: ['collection']
+
+**Gromling & Grom Journal Entries** | Progression level(s): ['dash'] | Other tags: ['collection', 'key']
+
+**Mite Mother Journal Entry** | Progression level(s): ['dash'] | Other tags: ['collection']
+
+**Vaultborn Journal Entry** | Progression level(s): ['act2'] | Other tags: ['collection', 'silly']
+
+**Slap Nuu** | Progression level(s): ['act2'] | Other tags: ['quest', 'collection', 'silly']
 
 **Obtain 2 Beast Shards** | Progression level(s): ['walljump'] | Other tags: ['fight']
 
@@ -312,15 +338,17 @@
 
 **Bilewater Bellway** | Progression level(s): ['walljump'] | Other tags: ['location']
 
-**Talk to Forge Daughter and Twelfth Architect** | Progression level(s): ['clawline'] | Other tags: ['npc']
+**Talk to Forge Daughter and Twelfth Architect** | Progression level(s): ['clawline'] | Other tags: ['npc', 'blocking']
 
 **1 Cogheart Pieces** | Progression level(s): ['act2'] | Other tags: ['collection']
 
 **2 Cogheart Pieces** | Progression level(s): ['act2'] | Other tags: ['collection']
 
+**Activate Second Sentinel** | Progression level(s): ['faydown'] | Other tags: ['collection', 'npc']
+
 **Architect's Melody** | Progression level(s): ['clawline'] | Other tags: ['location', 'melody']
 
-**Conductor's Melody** | Progression level(s): ['clawline'] | Other tags: ['fight', 'melody']
+**Conductor's Melody** | Progression level(s): ['clawline'] | Other tags: ['fight', 'melody', 'hard']
 
 **Vaultkeeper's Melody** | Progression level(s): ['act2'] | Other tags: ['fight', 'melody']
 

@@ -55,7 +55,8 @@
                 "cloak"
             ],
             "line_categories": [
-                "quest"
+                "quest",
+                "blocking"
             ],
             "tooltip": "",
             "icons": []
@@ -73,7 +74,8 @@
                 "flea"
             ],
             "line_categories": [
-                "quest"
+                "quest",
+                "blocking"
             ],
             "tooltip": "",
             "icons": []
@@ -89,7 +91,8 @@
                 "walljump"
             ],
             "line_categories": [
-                "quest"
+                "quest",
+                "blocking"
             ],
             "tooltip": "",
             "icons": []
@@ -163,7 +166,9 @@
                 "tool",
                 "craft"
             ],
-            "line_categories": [],
+            "line_categories": [
+                "blocking"
+            ],
             "tooltip": "",
             "icons": []
         },
@@ -177,7 +182,9 @@
                 "dash",
                 "tool"
             ],
-            "line_categories": [],
+            "line_categories": [
+                "blocking"
+            ],
             "tooltip": "",
             "icons": []
         },
@@ -194,7 +201,9 @@
                 "cloak",
                 "tool"
             ],
-            "line_categories": [],
+            "line_categories": [
+                "blocking"
+            ],
             "tooltip": "",
             "icons": []
         },
@@ -209,7 +218,9 @@
                 "dash",
                 "tool"
             ],
-            "line_categories": [],
+            "line_categories": [
+                "blocking"
+            ],
             "tooltip": "",
             "icons": []
         },
@@ -238,7 +249,7 @@
             "icons": []
         },
         {
-            "goal": "Barbed Bracelet + Fractured Mask",
+            "goal": "Barbed Bracelet & Fractured Mask",
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -262,31 +273,7 @@
             "icons": []
         },
         {
-            "goal": "Injector Band & Claw Mirror",
-            "range": [],
-            "individual_limit": 1,
-            "board_categories": [
-                "act2",
-                "tool"
-            ],
-            "line_categories": [],
-            "tooltip": "",
-            "icons": []
-        },
-        {
-            "goal": "Curveclaw & Sawtooth Circlet",
-            "range": [],
-            "individual_limit": 1,
-            "board_categories": [
-                "clawline",
-                "tool"
-            ],
-            "line_categories": [],
-            "tooltip": "",
-            "icons": []
-        },
-        {
-            "goal": "Magma Bell & Curveclaw",
+            "goal": "Compass, Pendant, Brooch",
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -298,12 +285,63 @@
             "icons": []
         },
         {
-            "goal": "Sting Shard & Asendant's Grip",
+            "goal": "Warding Bell & Claw Mirror",
             "range": [],
             "individual_limit": 1,
             "board_categories": [
                 "act2",
                 "tool"
+            ],
+            "line_categories": [],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Warding Bell & Sawtooth Circlet",
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "clawline",
+                "tool",
+                "craft"
+            ],
+            "line_categories": [],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Magma Bell & Curveclaw",
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "early",
+                "tool",
+                "craft"
+            ],
+            "line_categories": [],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Weighted Belt & Ascendant's Grip",
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "act2",
+                "tool"
+            ],
+            "line_categories": [],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Scuttlebrace & Silkspeed",
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "clawline",
+                "tool",
+                "craft"
             ],
             "line_categories": [],
             "tooltip": "",
@@ -350,11 +388,23 @@
             "icons": []
         },
         {
-            "goal": "Weavelight",
+            "goal": "Quick Sling",
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "walljump",
+                "faydown",
+                "tool"
+            ],
+            "line_categories": [],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Weavelight & Injector Band",
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "act2",
                 "tool"
             ],
             "line_categories": [
@@ -494,12 +544,53 @@
             "icons": []
         },
         {
+            "goal": "Conchcutter",
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "clawline",
+                "tool"
+            ],
+            "line_categories": [
+                "fight"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Pale Lake Craftmetal",
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "faydown"
+            ],
+            "line_categories": [
+                "location",
+                "collection"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
             "goal": "Upgrade Druid's Eye",
             "range": [],
             "individual_limit": 1,
             "board_categories": [
                 "faydown",
                 "tool"
+            ],
+            "line_categories": [
+                "collection"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Sell a Mossberry",
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "early"
             ],
             "line_categories": [
                 "collection"
@@ -544,7 +635,8 @@
                 "hardsave"
             ],
             "line_categories": [
-                "upgrade"
+                "upgrade",
+                "hard"
             ],
             "tooltip": "",
             "icons": []
@@ -560,7 +652,8 @@
             ],
             "line_categories": [
                 "upgrade",
-                "lockout"
+                "lockout",
+                "blocking"
             ],
             "tooltip": "",
             "icons": []
@@ -661,7 +754,8 @@
                 "hardsave"
             ],
             "line_categories": [
-                "upgrade"
+                "upgrade",
+                "blocking"
             ],
             "tooltip": "",
             "icons": []
@@ -690,7 +784,8 @@
                 "clawline"
             ],
             "line_categories": [
-                "upgrade"
+                "upgrade",
+                "hard"
             ],
             "tooltip": "",
             "icons": []
@@ -716,7 +811,8 @@
                 "faydown"
             ],
             "line_categories": [
-                "upgrade"
+                "upgrade",
+                "hard"
             ],
             "tooltip": "",
             "icons": []
@@ -807,7 +903,8 @@
                 "dash"
             ],
             "line_categories": [
-                "fight"
+                "fight",
+                "hard"
             ],
             "tooltip": "",
             "icons": []
@@ -818,6 +915,20 @@
             "individual_limit": 1,
             "board_categories": [
                 "walljump"
+            ],
+            "line_categories": [
+                "fight",
+                "blocking"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Raging Conchflies",
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "clawline"
             ],
             "line_categories": [
                 "fight"
@@ -847,7 +958,8 @@
             ],
             "line_categories": [
                 "fight",
-                "lockout"
+                "lockout",
+                "blocking"
             ],
             "tooltip": "",
             "icons": []
@@ -860,7 +972,8 @@
                 "walljump"
             ],
             "line_categories": [
-                "fight"
+                "fight",
+                "hard"
             ],
             "tooltip": "",
             "icons": []
@@ -899,7 +1012,8 @@
                 "act2"
             ],
             "line_categories": [
-                "fight"
+                "fight",
+                "blocking"
             ],
             "tooltip": "",
             "icons": []
@@ -912,6 +1026,7 @@
                 "walljump"
             ],
             "line_categories": [
+                "blocking",
                 "fight"
             ],
             "tooltip": "",
@@ -925,7 +1040,8 @@
                 "walljump"
             ],
             "line_categories": [
-                "fight"
+                "fight",
+                "blocking"
             ],
             "tooltip": "",
             "icons": []
@@ -949,10 +1065,12 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "act2"
+                "act2",
+                "tool"
             ],
             "line_categories": [
-                "fight"
+                "fight",
+                "blocking"
             ],
             "tooltip": "",
             "icons": []
@@ -965,7 +1083,8 @@
                 "faydown"
             ],
             "line_categories": [
-                "fight"
+                "fight",
+                "hard"
             ],
             "tooltip": "",
             "icons": []
@@ -979,7 +1098,8 @@
                 "tool"
             ],
             "line_categories": [
-                "fight"
+                "fight",
+                "hard"
             ],
             "tooltip": "",
             "icons": []
@@ -992,7 +1112,8 @@
                 "clawline"
             ],
             "line_categories": [
-                "fight"
+                "fight",
+                "hard"
             ],
             "tooltip": "",
             "icons": []
@@ -1390,7 +1511,9 @@
                 "clawline",
                 "flea"
             ],
-            "line_categories": [],
+            "line_categories": [
+                "hard"
+            ],
             "tooltip": "",
             "icons": []
         },
@@ -1448,7 +1571,7 @@
             "icons": []
         },
         {
-            "goal": "Meet Caravan at the Grand Gate",
+            "goal": "Meet Caravan at the Grand Gate [12]",
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1541,8 +1664,7 @@
                 "flea"
             ],
             "line_categories": [
-                "npc",
-                "location"
+                "npc"
             ],
             "tooltip": "",
             "icons": []
@@ -1593,6 +1715,19 @@
         },
         {
             "goal": "Greymoor Spool Fragment",
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "walljump"
+            ],
+            "line_categories": [
+                "upgrade"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Buy Frey's Spool Fragment",
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1859,6 +1994,20 @@
             "icons": []
         },
         {
+            "goal": "Talk to Shakra in Sands of Karak",
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "clawline"
+            ],
+            "line_categories": [
+                "npc",
+                "location"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
             "goal": "Talk to Huntress",
             "range": [],
             "individual_limit": 1,
@@ -1912,11 +2061,65 @@
             "icons": []
         },
         {
+            "goal": "Cragglite Journal Entry",
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "act2"
+            ],
+            "line_categories": [
+                "collection"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Gromling & Grom Journal Entries",
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "dash",
+                "key"
+            ],
+            "line_categories": [
+                "collection"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Mite Mother Journal Entry",
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "dash"
+            ],
+            "line_categories": [
+                "collection"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Vaultborn Journal Entry",
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "act2"
+            ],
+            "line_categories": [
+                "collection",
+                "silly"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
             "goal": "Slap Nuu",
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "faydown"
+                "act2"
             ],
             "line_categories": [
                 "quest",
@@ -1964,7 +2167,8 @@
                 "clawline"
             ],
             "line_categories": [
-                "npc"
+                "npc",
+                "blocking"
             ],
             "tooltip": "",
             "icons": []
@@ -1981,6 +2185,20 @@
             ],
             "line_categories": [
                 "collection"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Activate Second Sentinel",
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "faydown"
+            ],
+            "line_categories": [
+                "collection",
+                "npc"
             ],
             "tooltip": "",
             "icons": []
@@ -2008,7 +2226,8 @@
                 "melody"
             ],
             "line_categories": [
-                "fight"
+                "fight",
+                "hard"
             ],
             "tooltip": "",
             "icons": []

@@ -1133,7 +1133,7 @@
       ]
     },
     {
-      "name": "Meet Caravan at the Grand Gate",
+      "name": "Meet Caravan at the Grand Gate [12]",
       "types": [
         "flea"
       ],
@@ -1831,7 +1831,7 @@
     {
       "unique" : [
         "Free {{X}} Fleas",
-        "Meet Caravan at the Grand Gate"
+        "Meet Caravan at the Grand Gate [12]"
       ]
     },
     {

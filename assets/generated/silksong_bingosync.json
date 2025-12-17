@@ -63,22 +63,28 @@
         "name": "Dead Bug's Purse + Silkeater"
     },
     {
-        "name": "Barbed Bracelet + Fractured Mask"
+        "name": "Barbed Bracelet & Fractured Mask"
     },
     {
         "name": "Magnetite Dice & Magnetite Brooch"
     },
     {
-        "name": "Injector Band & Claw Mirror"
+        "name": "Compass, Pendant, Brooch"
     },
     {
-        "name": "Curveclaw & Sawtooth Circlet"
+        "name": "Warding Bell & Claw Mirror"
+    },
+    {
+        "name": "Warding Bell & Sawtooth Circlet"
     },
     {
         "name": "Magma Bell & Curveclaw"
     },
     {
-        "name": "Sting Shard & Asendant's Grip"
+        "name": "Weighted Belt & Ascendant's Grip"
+    },
+    {
+        "name": "Scuttlebrace & Silkspeed"
     },
     {
         "name": "Delver's Drill"
@@ -90,7 +96,10 @@
         "name": "Tacks"
     },
     {
-        "name": "Weavelight"
+        "name": "Quick Sling"
+    },
+    {
+        "name": "Weavelight & Injector Band"
     },
     {
         "name": "Plasmium Phial"
@@ -123,7 +132,16 @@
         "name": "Snare Setter"
     },
     {
+        "name": "Conchcutter"
+    },
+    {
+        "name": "Pale Lake Craftmetal"
+    },
+    {
         "name": "Upgrade Druid's Eye"
+    },
+    {
+        "name": "Sell a Mossberry"
     },
     {
         "name": "Wanderer's Crest"
@@ -193,6 +211,9 @@
     },
     {
         "name": "Great Conchflies"
+    },
+    {
+        "name": "Raging Conchflies"
     },
     {
         "name": "Moss Mother Duo"
@@ -348,7 +369,7 @@
         "name": "Free 14 fleas"
     },
     {
-        "name": "Meet Caravan at the Grand Gate"
+        "name": "Meet Caravan at the Grand Gate [12]"
     },
     {
         "name": "Sinner's Road & Marrow Flea [2]"
@@ -382,6 +403,9 @@
     },
     {
         "name": "Greymoor Spool Fragment"
+    },
+    {
+        "name": "Buy Frey's Spool Fragment"
     },
     {
         "name": "Grand Gate Spool Fragment"
@@ -444,6 +468,9 @@
         "name": "Talk to Shakra in Bilewater"
     },
     {
+        "name": "Talk to Shakra in Sands of Karak"
+    },
+    {
         "name": "Talk to Huntress"
     },
     {
@@ -454,6 +481,18 @@
     },
     {
         "name": "Skullwing Journal Entry"
+    },
+    {
+        "name": "Cragglite Journal Entry"
+    },
+    {
+        "name": "Gromling & Grom Journal Entries"
+    },
+    {
+        "name": "Mite Mother Journal Entry"
+    },
+    {
+        "name": "Vaultborn Journal Entry"
     },
     {
         "name": "Slap Nuu"
@@ -478,6 +517,9 @@
     },
     {
         "name": "2 Cogheart Pieces"
+    },
+    {
+        "name": "Activate Second Sentinel"
     },
     {
         "name": "Architect's Melody"
