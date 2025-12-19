@@ -918,7 +918,7 @@
       ]
     },
     {
-      "name": "Win Against Lumble The Lucky",
+      "name": "Win Lumble's Dice",
       "types": [
         "npc"
       ],
@@ -1687,18 +1687,6 @@
     },
     {
       "unique": [
-        "Shellwood Mask Shard",
-        "Defeat a Covetous Pilgrim"
-      ]
-    },
-    {
-      "unique": [
-        "Sharpdart",
-        "Plasmium Phial"
-      ]
-    },
-    {
-      "unique": [
         "Flintslate",
         "Use a Simple Key in Deep Docks"
       ]
@@ -1718,33 +1706,22 @@
     },
     {
       "unique": [
-        "Win Against Lumble The Lucky",
+        "Win Lumble's Dice",
         "Magnetite Dice & Magnetite Brooch"
       ]
     },
     {
       "unique": [
         "Save Jubilana",
-        "Sting Shard & Asendant's Grip"
+        "Weighted Belt & Ascendant's Grip"
       ]
     },
     {
-      "unique": [
-        "Underworks Ventrica",
-        "Pay To Confess"
-      ]
-    },
-    {
+      "limit": 2,
       "unique": [
         "Pay To Confess",
         "Delver's Drill",
         "Talk to Loam"
-      ]
-    },
-    {
-      "unique": [
-        "Cogwork Core Mask Shard",
-        "Defeat a Cogwork Clapper"
       ]
     },
     {
@@ -1763,40 +1740,20 @@
       ]
     },
     {
-      "unique": [
-        "Both Free Simple Keys",
-        "Sands of Karak Flea [1]"
-      ]
-    },
-    {
+      "limit": 2,
       "unique" : [
         "Mt. Fay Flea [1]",
-        "Memory Crystal"
+        "Memory Crystal",
+        "Faydown Cloak",
+        "Talk to Mask Maker"
       ]
     },
     {
-      "unique": [
-        "Deep Docks Fleas [3]",
-        "Forebrothers Signis & Gron"
-      ]
-    },
-    {
-      "unique" : [
-        "Talk to Vog",
-        "Talk to Huntress"
-      ]
-    },
-    {
+      "limit": 2,
       "unique": [
         "Talk to Shakra in Bilewater",
-        "Bilewater Mask Shard"
-      ]
-    },
-    {
-      "unique": [
-        "Father Of The Flame",
-        "Underworks Fleas [2]",
-        "Wisp Thicket Mask Shard"
+        "Bilewater Mask Shard",
+        "Quick Sling"
       ]
     },
     {"unique": [
@@ -1847,7 +1804,7 @@
     {
       "unique" : [
         "Crawbug Clearing",
-        "Obtain {{X}} Crafting Kit"
+        "Obtain 1 Crafting Kit"
       ]
     },
     {

@@ -192,7 +192,7 @@
 
 **Buy From Grindle** | Progression level(s): ['faydown'] | Other tags: ['npc']
 
-**Win Against Lumble The Lucky** | Progression level(s): ['walljump'] | Other tags: ['npc']
+**Win Lumble's Dice** | Progression level(s): ['walljump'] | Other tags: ['npc']
 
 **Pay To Confess** | Progression level(s): ['act2'] | Other tags: ['location']
 
