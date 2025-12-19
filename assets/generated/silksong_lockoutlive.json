@@ -1026,7 +1026,6 @@
                 "walljump"
             ],
             "line_categories": [
-                "blocking",
                 "fight"
             ],
             "tooltip": "",
@@ -1040,8 +1039,7 @@
                 "walljump"
             ],
             "line_categories": [
-                "fight",
-                "blocking"
+                "fight"
             ],
             "tooltip": "",
             "icons": []

@@ -154,9 +154,9 @@
 
 **Cogwork Dancers** | Progression level(s): ['act2'] | Other tags: ['fight', 'blocking']
 
-**Last Judge** | Progression level(s): ['widow', 'blocking'] | Other tags: ['fight']
+**Last Judge** | Progression level(s): ['widow'] | Other tags: ['fight']
 
-**Phantom** | Progression level(s): ['widow'] | Other tags: ['fight', 'blocking']
+**Phantom** | Progression level(s): ['widow'] | Other tags: ['fight']
 
 **Fail the Phantom Cutscene** | Progression level(s): ['widow'] | Other tags: ['fight', 'silly']
 
