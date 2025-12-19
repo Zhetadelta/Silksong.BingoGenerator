@@ -33,7 +33,7 @@ A goal must be a dictionary as follows:
 
 #### Possible types:
 
-"craft", "flea", "key", "tool", "melody", "quest", "locket", "upgrade", "fight", "npc", "location", "collection", "relic", "hardsave", "silly"
+"craft", "flea", "key", "tool", "melody", "quest", "locket", "upgrade", "fight", "npc", "location", "collection", "relic", "hardsave", "blocking", "silly"
 
 #### Opt-in types
 
@@ -67,3 +67,5 @@ An exclusion must be a dictionary as follows:
 - `"unique" : []` A list of the goals in this exclusion group.
 
 - `"limit" : 1` **(Optional)** A maximum number of goals in this group to appear on any given board. If not given, assumed to be 1 (only one of these goals can appear).
+
+- `"pattern" : true` **(Optional)** Add this field to an exclusion to make it only apply to pattern-preset boards.
