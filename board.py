@@ -79,7 +79,7 @@ def getAllGoals(noTags=[], **kwargs):
             catList["goals"].remove(g)
     return catList["goals"], [u for u in catList["exclusions"]]
 
-def findExclusions(goalName, exclusionDic):
+def findExclusions(goalName, exclusionDic, pattern=False):
     """
     Given a goal name and the main exclusion list, returns the exclusions relevant to this goal or an empty list if none.
 
@@ -87,11 +87,13 @@ def findExclusions(goalName, exclusionDic):
     exclus = []
     for exclusionSet in exclusionDic:
         if goalName in exclusionSet["unique"]:
+            if not pattern:
+                if "pattern" in exclusionSet.keys() and exclusionSet["pattern"]: #pattern-only exclusion
+                    continue #skip this one
             if "limit" not in exclusionSet.keys() or exclusionSet["limit"] == 1: #no limit or limit reached
                 exclus = exclus + exclusionSet["unique"]
             else:
                 exclusionSet["limit"] = exclusionSet["limit"] - 1
-                return False
     return exclus if exclus != [] else False
     
 
@@ -110,6 +112,7 @@ def board(allGoals:dict, exclusionDic, size=25, **kwargs):
     goals = []
     lockout = kwargs["lockout"] if "lockout" in kwargs.keys() else False
     tagLimits = kwargs["tagLimits"].copy() if "tagLimits" in kwargs.keys() and kwargs["tagLimits"] is not None else None
+    pattern = kwargs["pattern"] if "pattern" in kwargs.keys() else False
 
     if "priorGoals" in kwargs.keys(): #linked boards, apply exclusions now
         for goal in kwargs["priorGoals"]:
@@ -143,8 +146,8 @@ def board(allGoals:dict, exclusionDic, size=25, **kwargs):
         ### GOAL IS LOCKED IN AT THIS POINT. DO NOT REDRAW
 
         #process set exclusions
-        exclusions = findExclusions(newGoal["name"], exclusionDic)
-        if exclusions: #exclusions is false if limit > 1 or no exclusions found
+        exclusions = findExclusions(newGoal["name"], exclusionDic, pattern=pattern)
+        if exclusions: #exclusions is false if no exclusions found
             for excludedGoal in exclusions:
                 allGoals = removeGoalByName(allGoals, excludedGoal)
 
@@ -187,12 +190,15 @@ def bingosyncBoard(noTags=[], **kwargs):
         noTags.append("silly")
 
     if "noBlocking" in kwargs.keys() and kwargs["noBlocking"]:
+        pattern = True
         noTags.append("blocking")
+    else:
+        pattern = False
 
     if "size" in kwargs.keys():
-        boardList = board(*getAllGoals(noTags=noTags), size=int(kwargs["size"]), lockout=(not "lockout" in noTags), tagLimits=limits)
+        boardList = board(*getAllGoals(noTags=noTags), size=int(kwargs["size"]), lockout=(not "lockout" in noTags), tagLimits=limits, pattern=pattern)
     else:
-        boardList = board(*getAllGoals(noTags=noTags), lockout=(not "lockout" in noTags), tagLimits=limits)
+        boardList = board(*getAllGoals(noTags=noTags), lockout=(not "lockout" in noTags), tagLimits=limits, pattern=pattern)
     out = []
     for name in boardList:
         out.append({"name": name})

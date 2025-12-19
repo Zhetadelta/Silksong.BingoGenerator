@@ -740,15 +740,13 @@
         "fight"
       ],
       "progression": [
-        "widow",
-        "blocking"
+        "widow"
       ]
     },
     {
       "name": "Phantom",
       "types": [
-        "fight",
-        "blocking"
+        "fight"
       ],
       "progression": [
         "widow"
@@ -1851,6 +1849,13 @@
         "Crawbug Clearing",
         "Obtain {{X}} Crafting Kit"
       ]
+    },
+    {
+      "unique" : [
+        "Last Judge",
+        "Phantom"
+      ],
+      "pattern" : true 
     }
   ]
 }
