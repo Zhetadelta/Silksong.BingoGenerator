@@ -51,7 +51,7 @@ ROOM_NAMES = [
     "Early Second Skarrguard",
     "Git Gud",
     "Proper Substance Use",
-    "Ms Streamer",
+    "Mrs Streamer",
     "I Suggest Forcefem",
     "Toxic Yuri Wins Again"
 ]
