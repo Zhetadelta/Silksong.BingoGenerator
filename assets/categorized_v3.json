@@ -1813,6 +1813,13 @@
         "Phantom"
       ],
       "pattern" : true 
+    },
+    {
+      "pattern":true,
+      "unique" : [
+        "Weavelight & Injector Band",
+        "Moss Mother Duo"
+      ]
     }
   ]
 }
