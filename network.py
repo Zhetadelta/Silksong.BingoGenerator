@@ -53,7 +53,8 @@ ROOM_NAMES = [
     "Proper Substance Use",
     "Mrs Streamer",
     "I Suggest Forcefem",
-    "Toxic Yuri Wins Again"
+    "Toxic Yuri Wins Again",
+    "Zango Becomes Blueful"
 ]
 
 STANDARD_PAYLOAD = {
