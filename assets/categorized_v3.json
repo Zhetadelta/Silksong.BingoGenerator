@@ -1820,6 +1820,13 @@
         "Weavelight & Injector Band",
         "Moss Mother Duo"
       ]
+    },
+    {
+      "pattern":true,
+      "unique" : [
+        "Cragglite Journal Entry",
+        "Craggler"
+      ]
     }
   ]
 }
