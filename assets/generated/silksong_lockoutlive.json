@@ -924,7 +924,7 @@
             "icons": []
         },
         {
-            "goal": "Raging Conchflies",
+            "goal": "Raging Conchfly",
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2072,7 +2072,7 @@
             "icons": []
         },
         {
-            "goal": "Gromling & Grom Journal Entries",
+            "goal": "Gromling Journal Entry",
             "range": [],
             "individual_limit": 1,
             "board_categories": [

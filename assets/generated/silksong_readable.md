@@ -140,7 +140,7 @@
 
 **Great Conchflies** | Progression level(s): ['walljump'] | Other tags: ['fight', 'blocking']
 
-**Raging Conchflies** | Progression level(s): ['clawline'] | Other tags: ['fight']
+**Raging Conchfly** | Progression level(s): ['clawline'] | Other tags: ['fight']
 
 **Moss Mother Duo** | Progression level(s): ['dash'] | Other tags: ['fight']
 
@@ -322,7 +322,7 @@
 
 **Cragglite Journal Entry** | Progression level(s): ['act2'] | Other tags: ['collection']
 
-**Gromling & Grom Journal Entries** | Progression level(s): ['dash'] | Other tags: ['collection', 'key']
+**Gromling Journal Entry** | Progression level(s): ['dash'] | Other tags: ['collection', 'key']
 
 **Mite Mother Journal Entry** | Progression level(s): ['dash'] | Other tags: ['collection']
 
