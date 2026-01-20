@@ -1950,7 +1950,7 @@
         {
             "goal": "Talk to Shakra in {{X}} different areas",
             "range": [
-                8
+                5
             ],
             "individual_limit": 1,
             "board_categories": [

@@ -1429,11 +1429,10 @@
         "cloak"
       ],
       "range": [
-        8
+        5
       ],
       "lockout-range": [
-        5,
-        8
+        5
       ]
     },
     {

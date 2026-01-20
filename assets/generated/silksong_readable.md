@@ -304,7 +304,7 @@
 
 **Obtain 4 Different Types of Relic** | Progression level(s): ['walljump'] | Other tags: ['collection', 'relic']
 
-**Talk to Shakra in 8 different areas** | Progression level(s): ['cloak'] | Other tags: ['npc']
+**Talk to Shakra in 5 different areas** | Progression level(s): ['cloak'] | Other tags: ['npc']
 
 **Obtain 5 maps** | Progression level(s): ['dash'] | Other tags: ['npc']
 
