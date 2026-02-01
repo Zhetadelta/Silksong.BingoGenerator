@@ -1764,6 +1764,19 @@
             "icons": []
         },
         {
+            "goal": "High Halls Spool Fragment",
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "clawline"
+            ],
+            "line_categories": [
+                "upgrade"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
             "goal": "1 Spool Upgrade",
             "range": [],
             "individual_limit": 1,
@@ -1858,6 +1871,32 @@
             "individual_limit": 1,
             "board_categories": [
                 "walljump",
+                "act2"
+            ],
+            "line_categories": [
+                "collection"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Obtain 3 Silkeaters",
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "walljump"
+            ],
+            "line_categories": [
+                "collection"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Obtain 5 Silkeaters",
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
                 "act2"
             ],
             "line_categories": [

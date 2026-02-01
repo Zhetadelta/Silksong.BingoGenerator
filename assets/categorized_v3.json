@@ -1272,6 +1272,15 @@
       ]
     },
     {
+      "name": "High Halls Spool Fragment",
+      "types": [
+        "upgrade"
+      ],
+      "progression": [
+        "clawline"
+      ]
+    },
+    {
       "name": "1 Spool Upgrade",
       "types": [
         "upgrade"
@@ -1347,6 +1356,24 @@
       "range": [
         4,
         6
+      ]
+    },
+    {
+      "name": "Obtain 3 Silkeaters",
+      "types": [
+        "collection"
+      ],
+      "progression": [
+        "walljump"
+      ]
+    },
+    {
+      "name": "Obtain 5 Silkeaters",
+      "types": [
+        "collection"
+      ],
+      "progression": [
+        "act2"
       ]
     },
     {
@@ -1753,7 +1780,8 @@
         "Rosary Cannon",
         "Cogfly",
         "Disable the Clawmaidens",
-        "High Halls Ventrica"
+        "High Halls Ventrica",
+        "High Halls Spool Fragment"
       ]
     },
     {
@@ -1823,6 +1851,12 @@
       "unique" : [
         "Crawbug Clearing",
         "Obtain 1 Crafting Kit"
+      ]
+    },
+    {
+      "unique": [
+        "Obtain 3 Silkeaters",
+        "Obtain 5 Silkeaters"
       ]
     },
     {

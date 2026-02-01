@@ -414,6 +414,9 @@
         "name": "Grand Gate Spool Fragment"
     },
     {
+        "name": "High Halls Spool Fragment"
+    },
+    {
         "name": "1 Spool Upgrade"
     },
     {
@@ -439,6 +442,12 @@
     },
     {
         "name": "Have 6 Shard Bundles (no purchasing)"
+    },
+    {
+        "name": "Obtain 3 Silkeaters"
+    },
+    {
+        "name": "Obtain 5 Silkeaters"
     },
     {
         "name": "Obtain 1 Tool Pouch Upgrade"

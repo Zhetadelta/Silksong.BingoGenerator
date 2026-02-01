@@ -274,6 +274,8 @@
 
 **Grand Gate Spool Fragment** | Progression level(s): ['act2'] | Other tags: ['upgrade']
 
+**High Halls Spool Fragment** | Progression level(s): ['clawline'] | Other tags: ['upgrade']
+
 **1 Spool Upgrade** | Progression level(s): ['early'] | Other tags: ['upgrade']
 
 **2 Spool Upgrades** | Progression level(s): ['walljump'] | Other tags: ['upgrade']
@@ -291,6 +293,10 @@
 **Have 4 Shard Bundles (no purchasing)** | Progression level(s): ['walljump', 'act2'] | Other tags: ['collection']
 
 **Have 6 Shard Bundles (no purchasing)** | Progression level(s): ['walljump', 'act2'] | Other tags: ['collection']
+
+**Obtain 3 Silkeaters** | Progression level(s): ['walljump'] | Other tags: ['collection']
+
+**Obtain 5 Silkeaters** | Progression level(s): ['act2'] | Other tags: ['collection']
 
 **Obtain 1 Tool Pouch Upgrade** | Progression level(s): ['cloak'] | Other tags: ['collection']
 
