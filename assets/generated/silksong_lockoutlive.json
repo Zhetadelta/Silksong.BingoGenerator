@@ -659,7 +659,7 @@
             "icons": []
         },
         {
-            "goal": "Needle Art",
+            "goal": "Needle Strike",
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1069,6 +1069,19 @@
             "line_categories": [
                 "fight",
                 "blocking"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Red Quill",
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "act2"
+            ],
+            "line_categories": [
+                "location"
             ],
             "tooltip": "",
             "icons": []
@@ -1668,7 +1681,7 @@
             "icons": []
         },
         {
-            "goal": "Meet Caravan in Greymoor",
+            "goal": "Meet Caravan in Greymoor [5]",
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2091,6 +2104,19 @@
             "individual_limit": 1,
             "board_categories": [
                 "dash"
+            ],
+            "line_categories": [
+                "collection"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Massive Mossgrub Journal Entry",
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "faydown"
             ],
             "line_categories": [
                 "collection"

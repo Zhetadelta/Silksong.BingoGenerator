@@ -480,7 +480,7 @@
       ]
     },
     {
-      "name": "Needle Art",
+      "name": "Needle Strike",
       "types": [
         "upgrade",
         "fight"
@@ -769,6 +769,15 @@
         "fight",
         "tool",
         "blocking"
+      ],
+      "progression": [
+        "act2"
+      ]
+    },
+    {
+      "name": "Red Quill",
+      "types": [
+        "location"
       ],
       "progression": [
         "act2"
@@ -1204,7 +1213,7 @@
       ]
     },
     {
-      "name": "Meet Caravan in Greymoor",
+      "name": "Meet Caravan in Greymoor [5]",
       "types": [
         "quest",
         "tool",
@@ -1533,6 +1542,15 @@
       ]
     },
     {
+      "name": "Massive Mossgrub Journal Entry",
+      "types": [
+        "collection"
+      ],
+      "progression": [
+        "faydown"
+      ]
+    },
+    {
       "name": "Vaultborn Journal Entry",
       "types": [
         "collection",
@@ -1693,7 +1711,7 @@
     {
       "unique": [
         "Great Conchflies",
-        "Needle Art"
+        "Needle Strike"
       ]
     },
     {
@@ -1785,7 +1803,7 @@
     {
       "unique" : [
         "Free {{X}} Fleas",
-        "Meet Caravan in Greymoor",
+        "Meet Caravan in Greymoor [5]",
         "Meet Caravan at the Grand Gate [12]"
       ]
     },

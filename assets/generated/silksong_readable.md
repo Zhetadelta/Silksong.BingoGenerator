@@ -102,7 +102,7 @@
 
 **Clawline** | Progression level(s): ['act2', 'clawline'] | Other tags: ['upgrade', 'hardsave', 'lockout', 'blocking']
 
-**Needle Art** | Progression level(s): ['walljump'] | Other tags: ['upgrade', 'fight']
+**Needle Strike** | Progression level(s): ['walljump'] | Other tags: ['upgrade', 'fight']
 
 **Needle 2** | Progression level(s): ['act2'] | Other tags: ['upgrade', 'quest']
 
@@ -161,6 +161,8 @@
 **Fail the Phantom Cutscene** | Progression level(s): ['widow'] | Other tags: ['fight', 'silly']
 
 **Trobbio** | Progression level(s): ['act2'] | Other tags: ['fight', 'tool', 'blocking']
+
+**Red Quill** | Progression level(s): ['act2'] | Other tags: ['location']
 
 **Disgraced Chef Lugoli** | Progression level(s): ['faydown'] | Other tags: ['fight', 'hard']
 
@@ -260,7 +262,7 @@
 
 **Talk to Vog** | Progression level(s): ['faydown'] | Other tags: ['flea', 'npc']
 
-**Meet Caravan in Greymoor** | Progression level(s): ['dash'] | Other tags: ['quest', 'tool', 'flea']
+**Meet Caravan in Greymoor [5]** | Progression level(s): ['dash'] | Other tags: ['quest', 'tool', 'flea']
 
 **Hit a Hoker with the Flea Bottle** | Progression level(s): ['dash'] | Other tags: ['flea', 'tool', 'quest', 'silly']
 
@@ -325,6 +327,8 @@
 **Gromling Journal Entry** | Progression level(s): ['dash'] | Other tags: ['collection', 'key']
 
 **Mite Mother Journal Entry** | Progression level(s): ['dash'] | Other tags: ['collection']
+
+**Massive Mossgrub Journal Entry** | Progression level(s): ['faydown'] | Other tags: ['collection']
 
 **Vaultborn Journal Entry** | Progression level(s): ['act2'] | Other tags: ['collection', 'silly']
 

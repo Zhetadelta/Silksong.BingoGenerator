@@ -156,7 +156,7 @@
         "name": "Clawline"
     },
     {
-        "name": "Needle Art"
+        "name": "Needle Strike"
     },
     {
         "name": "Needle 2"
@@ -244,6 +244,9 @@
     },
     {
         "name": "Trobbio"
+    },
+    {
+        "name": "Red Quill"
     },
     {
         "name": "Disgraced Chef Lugoli"
@@ -393,7 +396,7 @@
         "name": "Talk to Vog"
     },
     {
-        "name": "Meet Caravan in Greymoor"
+        "name": "Meet Caravan in Greymoor [5]"
     },
     {
         "name": "Hit a Hoker with the Flea Bottle"
@@ -490,6 +493,9 @@
     },
     {
         "name": "Mite Mother Journal Entry"
+    },
+    {
+        "name": "Massive Mossgrub Journal Entry"
     },
     {
         "name": "Vaultborn Journal Entry"

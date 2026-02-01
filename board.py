@@ -55,19 +55,22 @@ def getAllGoals(noTags=[], **kwargs):
     if 'noProg' not in kwargs or not kwargs['noProg']: #progression scaling
         presentTags = [tag for tag in orderedProg if tag not in noTags] #ordered tags that arent excluded
         linspace = [1 + x*(maxWeightScale-1)/(len(presentTags)-1) for x in range(len(presentTags))]
-        def weightScale(progString):
+        def weightScale(progString, types):
             try:
-                return linspace[presentTags.index(progString)]
+                if "collection" in types:
+                    return linspace[-1] #max weight for collection goals
+                else:
+                    return linspace[presentTags.index(progString)]
             except ValueError: #progression is being excluded anyway
                 return 1
     else: 
-        def weightScale(progString):
+        def weightScale(progString, types):
             return 1
     for g in catList["goals"]: #add weight=1 to all non-weighted goals for later
         if "weight" not in g.keys():
-            g["weight"] = 1 * weightScale(g["progression"][0])
+            g["weight"] = 1 * weightScale(g["progression"][0], g["types"])
         else:
-            g["weight"] = g["weight"] * weightScale(g["progression"][0])
+            g["weight"] = g["weight"] * weightScale(g["progression"][0], g["types"])
         #check if we should exclude the goal based on options passed
         goalTags = g["types"] + g["progression"]
         for tag in goalTags:
