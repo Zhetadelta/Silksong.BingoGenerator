@@ -70,8 +70,6 @@
 
 **Memory Crystal** | Progression level(s): ['clawline'] | Other tags: ['tool']
 
-**Injector Band** | Progression level(s): ['act2'] | Other tags: ['tool', 'lockout']
-
 **Silkspeed Anklets** | Progression level(s): ['widow'] | Other tags: ['tool']
 
 **Pimpillo** | Progression level(s): ['walljump'] | Other tags: ['tool', 'craft']
@@ -99,8 +97,6 @@
 **Reaper's Crest** | Progression level(s): ['cloak'] | Other tags: ['upgrade', 'hardsave']
 
 **Beast's Crest** | Progression level(s): ['cloak'] | Other tags: ['upgrade', 'hardsave', 'hard']
-
-**Clawline** | Progression level(s): ['act2', 'clawline'] | Other tags: ['upgrade', 'hardsave', 'lockout', 'blocking']
 
 **Needle Strike** | Progression level(s): ['walljump'] | Other tags: ['upgrade', 'fight']
 
@@ -143,8 +139,6 @@
 **Raging Conchfly** | Progression level(s): ['clawline'] | Other tags: ['fight']
 
 **Moss Mother Duo** | Progression level(s): ['dash'] | Other tags: ['fight']
-
-**Widow** | Progression level(s): ['walljump'] | Other tags: ['fight', 'lockout', 'blocking']
 
 **Defeat a Rhinogrund** | Progression level(s): ['walljump'] | Other tags: ['fight', 'hard']
 
@@ -248,7 +242,7 @@
 
 **Meet Caravan at the Grand Gate [12]** | Progression level(s): ['act2'] | Other tags: ['flea']
 
-**Sinner's Road & Marrow Flea [2]** | Progression level(s): ['walljump'] | Other tags: ['flea']
+**Sinner's Road & Vaults Fleas [2]** | Progression level(s): ['clawline'] | Other tags: ['flea']
 
 **Sands of Karak Flea [1]** | Progression level(s): ['clawline'] | Other tags: ['flea']
 
@@ -261,8 +255,6 @@
 **Fight Big Flea** | Progression level(s): ['faydown'] | Other tags: ['fight']
 
 **Talk to Vog** | Progression level(s): ['faydown'] | Other tags: ['flea', 'npc']
-
-**Meet Caravan in Greymoor [5]** | Progression level(s): ['dash'] | Other tags: ['quest', 'tool', 'flea']
 
 **Hit a Hoker with the Flea Bottle** | Progression level(s): ['dash'] | Other tags: ['flea', 'tool', 'quest', 'silly']
 
@@ -312,7 +304,11 @@
 
 **Obtain 4 Different Types of Relic** | Progression level(s): ['walljump'] | Other tags: ['collection', 'relic']
 
+**Obtain 2 Rune Harps** | Progression level(s): ['widow'] | Other tags: ['collection', 'relic']
+
 **Talk to Shakra in 5 different areas** | Progression level(s): ['cloak'] | Other tags: ['npc']
+
+**Fix the Sinner's Road Bench** | Progression level(s): ['walljump'] | Other tags: ['location']
 
 **Obtain 5 maps** | Progression level(s): ['dash'] | Other tags: ['npc']
 

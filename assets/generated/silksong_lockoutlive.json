@@ -441,20 +441,6 @@
             "icons": []
         },
         {
-            "goal": "Injector Band",
-            "range": [],
-            "individual_limit": 1,
-            "board_categories": [
-                "act2",
-                "tool"
-            ],
-            "line_categories": [
-                "lockout"
-            ],
-            "tooltip": "",
-            "icons": []
-        },
-        {
             "goal": "Silkspeed Anklets",
             "range": [],
             "individual_limit": 1,
@@ -637,23 +623,6 @@
             "line_categories": [
                 "upgrade",
                 "hard"
-            ],
-            "tooltip": "",
-            "icons": []
-        },
-        {
-            "goal": "Clawline",
-            "range": [],
-            "individual_limit": 1,
-            "board_categories": [
-                "act2",
-                "clawline",
-                "hardsave"
-            ],
-            "line_categories": [
-                "upgrade",
-                "lockout",
-                "blocking"
             ],
             "tooltip": "",
             "icons": []
@@ -945,21 +914,6 @@
             ],
             "line_categories": [
                 "fight"
-            ],
-            "tooltip": "",
-            "icons": []
-        },
-        {
-            "goal": "Widow",
-            "range": [],
-            "individual_limit": 1,
-            "board_categories": [
-                "walljump"
-            ],
-            "line_categories": [
-                "fight",
-                "lockout",
-                "blocking"
             ],
             "tooltip": "",
             "icons": []
@@ -1594,11 +1548,11 @@
             "icons": []
         },
         {
-            "goal": "Sinner's Road & Marrow Flea [2]",
+            "goal": "Sinner's Road & Vaults Fleas [2]",
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "walljump",
+                "clawline",
                 "flea"
             ],
             "line_categories": [],
@@ -1676,21 +1630,6 @@
             ],
             "line_categories": [
                 "npc"
-            ],
-            "tooltip": "",
-            "icons": []
-        },
-        {
-            "goal": "Meet Caravan in Greymoor [5]",
-            "range": [],
-            "individual_limit": 1,
-            "board_categories": [
-                "dash",
-                "tool",
-                "flea"
-            ],
-            "line_categories": [
-                "quest"
             ],
             "tooltip": "",
             "icons": []
@@ -2000,6 +1939,20 @@
             "icons": []
         },
         {
+            "goal": "Obtain 2 Rune Harps",
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "walljump"
+            ],
+            "line_categories": [
+                "collection",
+                "relic"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
             "goal": "Talk to Shakra in {{X}} different areas",
             "range": [
                 5
@@ -2010,6 +1963,19 @@
             ],
             "line_categories": [
                 "npc"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Fix the Sinner's Road Bench",
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "walljump"
+            ],
+            "line_categories": [
+                "location"
             ],
             "tooltip": "",
             "icons": []

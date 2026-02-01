@@ -319,16 +319,6 @@
       ]
     },
     {
-      "name": "Injector Band",
-      "types": [
-        "tool",
-        "lockout"
-      ],
-      "progression": [
-        "act2"
-      ]
-    },
-    {
       "name": "Silkspeed Anklets",
       "types": [
         "tool"
@@ -464,19 +454,6 @@
       ],
       "progression": [
         "cloak"
-      ]
-    },
-    {
-      "name": "Clawline",
-      "types": [
-        "upgrade",
-        "hardsave",
-        "lockout",
-        "blocking"
-      ],
-      "progression": [
-        "act2",
-        "clawline"
       ]
     },
     {
@@ -685,17 +662,6 @@
       ],
       "progression": [
         "dash"
-      ]
-    },
-    {
-      "name": "Widow",
-      "types": [
-        "fight",
-        "lockout",
-        "blocking"
-      ],
-      "progression": [
-        "walljump"
       ]
     },
     {
@@ -1149,12 +1115,12 @@
       ]
     },
     {
-      "name": "Sinner's Road & Marrow Flea [2]",
+      "name": "Sinner's Road & Vaults Fleas [2]",
       "types": [
         "flea"
       ],
       "progression": [
-        "walljump"
+        "clawline"
       ]
     },
     {
@@ -1210,17 +1176,6 @@
       ],
       "progression": [
         "faydown"
-      ]
-    },
-    {
-      "name": "Meet Caravan in Greymoor [5]",
-      "types": [
-        "quest",
-        "tool",
-        "flea"
-      ],
-      "progression": [
-        "dash"
       ]
     },
     {
@@ -1457,6 +1412,16 @@
       ]
     },
     {
+      "name": "Obtain 2 Rune Harps",
+      "types":[
+        "collection",
+        "relic"
+      ],
+      "progression":[
+        "widow"
+      ]
+    },
+    {
       "name": "Talk to Shakra in {{X}} different areas",
       "types": [
         "npc"
@@ -1469,6 +1434,15 @@
       ],
       "lockout-range": [
         5
+      ]
+    },
+    {
+      "name": "Fix the Sinner's Road Bench",
+      "types": [
+        "location"
+      ],
+      "progression": [
+        "walljump"
       ]
     },
     {

@@ -108,9 +108,6 @@
         "name": "Memory Crystal"
     },
     {
-        "name": "Injector Band"
-    },
-    {
         "name": "Silkspeed Anklets"
     },
     {
@@ -151,9 +148,6 @@
     },
     {
         "name": "Beast's Crest"
-    },
-    {
-        "name": "Clawline"
     },
     {
         "name": "Needle Strike"
@@ -217,9 +211,6 @@
     },
     {
         "name": "Moss Mother Duo"
-    },
-    {
-        "name": "Widow"
     },
     {
         "name": "Defeat a Rhinogrund"
@@ -375,7 +366,7 @@
         "name": "Meet Caravan at the Grand Gate [12]"
     },
     {
-        "name": "Sinner's Road & Marrow Flea [2]"
+        "name": "Sinner's Road & Vaults Fleas [2]"
     },
     {
         "name": "Sands of Karak Flea [1]"
@@ -394,9 +385,6 @@
     },
     {
         "name": "Talk to Vog"
-    },
-    {
-        "name": "Meet Caravan in Greymoor [5]"
     },
     {
         "name": "Hit a Hoker with the Flea Bottle"
@@ -471,7 +459,13 @@
         "name": "Obtain 4 Different Types of Relic"
     },
     {
+        "name": "Obtain 2 Rune Harps"
+    },
+    {
         "name": "Talk to Shakra in 5 different areas"
+    },
+    {
+        "name": "Fix the Sinner's Road Bench"
     },
     {
         "name": "Obtain 5 maps"
