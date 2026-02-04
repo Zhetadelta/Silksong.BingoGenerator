@@ -56,6 +56,8 @@
 
 **Scuttlebrace & Silkspeed** | Progression level(s): ['clawline'] | Other tags: ['tool', 'craft']
 
+**Pimpillo & Voltvessels** | Progression level(s): ['faydown'] | Other tags: ['tool', 'craft']
+
 **Delver's Drill** | Progression level(s): ['act2'] | Other tags: ['tool']
 
 **Pollip Pouch** | Progression level(s): ['walljump'] | Other tags: ['tool', 'quest']
@@ -71,8 +73,6 @@
 **Memory Crystal** | Progression level(s): ['clawline'] | Other tags: ['tool']
 
 **Silkspeed Anklets** | Progression level(s): ['widow'] | Other tags: ['tool']
-
-**Pimpillo** | Progression level(s): ['walljump'] | Other tags: ['tool', 'craft']
 
 **Flintslate** | Progression level(s): ['walljump'] | Other tags: ['tool', 'key']
 

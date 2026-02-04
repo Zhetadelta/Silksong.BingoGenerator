@@ -348,6 +348,19 @@
             "icons": []
         },
         {
+            "goal": "Pimpillo & Voltvessels",
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "faydown",
+                "tool",
+                "craft"
+            ],
+            "line_categories": [],
+            "tooltip": "",
+            "icons": []
+        },
+        {
             "goal": "Delver's Drill",
             "range": [],
             "individual_limit": 1,
@@ -447,19 +460,6 @@
             "board_categories": [
                 "walljump",
                 "tool"
-            ],
-            "line_categories": [],
-            "tooltip": "",
-            "icons": []
-        },
-        {
-            "goal": "Pimpillo",
-            "range": [],
-            "individual_limit": 1,
-            "board_categories": [
-                "walljump",
-                "tool",
-                "craft"
             ],
             "line_categories": [],
             "tooltip": "",

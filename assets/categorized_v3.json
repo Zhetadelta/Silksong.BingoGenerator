@@ -251,6 +251,16 @@
       ]
     },
     {
+      "name": "Pimpillo & Voltvessels",
+      "types": [
+        "tool",
+        "craft"
+      ],
+      "progression": [
+        "faydown"
+      ]
+    },
+    {
       "name": "Delver's Drill",
       "types": [
         "tool"
@@ -325,16 +335,6 @@
       ],
       "progression": [
         "widow"
-      ]
-    },
-    {
-      "name": "Pimpillo",
-      "types": [
-        "tool",
-        "craft"
-      ],
-      "progression": [
-        "walljump"
       ]
     },
     {
