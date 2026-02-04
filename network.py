@@ -54,7 +54,20 @@ ROOM_NAMES = [
     "Mrs Streamer",
     "I Suggest Forcefem",
     "Toxic Yuri Wins Again",
-    "Zango Becomes Blueful"
+    "Zango Becomes Blueful",
+    "Forcefemmed",
+    "Sometimes Its Not Our Turn to Talk",
+    "Fourth Chorus Skip Skip Skip",
+    "Nyaaaaaa",
+    "Pimpogos",
+    "Save Me From Act 1",
+    "Moss Grotto Reset",
+    "I Need Shards For My Compass",
+    "Debug Hotkey Check",
+    "Hornt",
+    "1999",
+    "Krattball",
+    "Webbed Bouce"
 ]
 
 STANDARD_PAYLOAD = {
