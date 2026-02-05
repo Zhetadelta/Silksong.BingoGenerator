@@ -102,8 +102,9 @@ async def newboard(interaction: discord.Interaction, lockout: bool = False, pres
 @client.tree.command()
 @app_commands.describe(preset="Tags to exclude based on preset categories.")
 @app_commands.choices(preset=prog_options())
-@app_commands.choices(size=size_options())
-async def newascend(interaction: discord.Interaction, lockout: bool = False, preset: Optional[app_commands.Choice[str]] = None, size: Optional[app_commands.Choice[str]]=None):
+@app_commands.choices(size=[app_commands.Choice(name=str(i), value=str(i)) for i in [4,5,6,7,8,9]])
+@app_commands.describe(size="The side length of the board. Default: 7")
+async def newascend(interaction: discord.Interaction, preset: Optional[app_commands.Choice[str]] = None, size: Optional[app_commands.Choice[str]]=None):
     """Generates a new board for lockout.live's Ascend mode. EXPERIMENTAL."""
     noTags = progStringToTags(preset)
     if not lockout:
