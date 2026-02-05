@@ -107,8 +107,7 @@ async def newboard(interaction: discord.Interaction, lockout: bool = False, pres
 async def newascend(interaction: discord.Interaction, preset: Optional[app_commands.Choice[str]] = None, size: Optional[app_commands.Choice[str]]=None):
     """Generates a new board for lockout.live's Ascend mode. EXPERIMENTAL."""
     noTags = progStringToTags(preset)
-    if not lockout:
-        noTags.append("lockout")
+    noTags.append("lockout")
     if size is None:
         size = app_commands.Choice(name="7", value="7")
     thisBoard = board.lockoutBoard(noTags=noTags, size=int(size.value)**2, **BOARD_KWARGS)
