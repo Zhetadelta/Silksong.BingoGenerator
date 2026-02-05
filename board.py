@@ -253,7 +253,7 @@ def lockoutBoard(noTags=[], size=49, **kwargs):
         for i, goalDic in enumerate(goalSlice):
             newDic = {
                 "goal" : goalDic["name"],
-                "individual_limit": 1,
+                #"individual_limit": 1,
                 #"board_categories": [],
                 #"line_categories": [],
                 #"tooltip": "",
