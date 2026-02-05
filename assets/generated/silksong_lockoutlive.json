@@ -1035,7 +1035,8 @@
                 "act2"
             ],
             "line_categories": [
-                "location"
+                "location",
+                "missable"
             ],
             "tooltip": "",
             "icons": []
@@ -1251,7 +1252,8 @@
                 "walljump"
             ],
             "line_categories": [
-                "npc"
+                "npc",
+                "missable"
             ],
             "tooltip": "",
             "icons": []
@@ -1408,7 +1410,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "act2"
+                "faydown"
             ],
             "line_categories": [
                 "upgrade"
@@ -1755,24 +1757,7 @@
             "icons": []
         },
         {
-            "goal": "Have {{X}} Rosary Strings (no purchasing)",
-            "range": [
-                4,
-                8
-            ],
-            "individual_limit": 1,
-            "board_categories": [
-                "dash",
-                "act2"
-            ],
-            "line_categories": [
-                "collection"
-            ],
-            "tooltip": "",
-            "icons": []
-        },
-        {
-            "goal": "Have {{X}} Rosary Necklaces (no purchasing)",
+            "goal": "Break {{X}} Rosary Necklaces (no purchasing)",
             "range": [
                 3
             ],
@@ -1802,7 +1787,7 @@
             "icons": []
         },
         {
-            "goal": "Have {{X}} Shard Bundles (no purchasing)",
+            "goal": "Break {{X}} Shard Bundles (no purchasing)",
             "range": [
                 4,
                 6
@@ -1962,7 +1947,8 @@
                 "cloak"
             ],
             "line_categories": [
-                "npc"
+                "npc",
+                "missable"
             ],
             "tooltip": "",
             "icons": []

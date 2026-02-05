@@ -235,6 +235,8 @@ def lockoutBoard(noTags=[], size=49, **kwargs):
     else:
         pattern = False
 
+    noTags.append("missable")
+
     boardList = board(*getAllGoals(noTags=noTags), size=int(size), 
                             lockout=(not "lockout" in noTags), tagLimits=limits, 
                             pattern=pattern, keepProgression=True) #list of {"name","progression"} dictionary

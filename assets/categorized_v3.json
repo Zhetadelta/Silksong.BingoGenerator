@@ -743,7 +743,8 @@
     {
       "name": "Red Quill",
       "types": [
-        "location"
+        "location",
+        "missable"
       ],
       "progression": [
         "act2"
@@ -895,7 +896,8 @@
     {
       "name": "Win Lumble's Dice",
       "types": [
-        "npc"
+        "npc",
+        "missable"
       ],
       "progression": [
         "walljump"
@@ -1011,7 +1013,7 @@
         "upgrade"
       ],
       "progression": [
-        "act2"
+        "faydown"
       ]
     },
     {
@@ -1263,20 +1265,7 @@
       ]
     },
     {
-      "name": "Have {{X}} Rosary Strings (no purchasing)",
-      "types": [
-        "collection"
-      ],
-      "progression": [
-        "dash",
-        "act2"
-      ],
-      "range": [
-        4, 8
-      ]
-    },
-    {
-      "name": "Have {{X}} Rosary Necklaces (no purchasing)",
+      "name": "Break {{X}} Rosary Necklaces (no purchasing)",
       "types": [
         "collection"
       ],
@@ -1300,7 +1289,7 @@
       ]
     },
     {
-      "name": "Have {{X}} Shard Bundles (no purchasing)",
+      "name": "Break {{X}} Shard Bundles (no purchasing)",
       "types": [
         "collection"
       ],
@@ -1424,7 +1413,8 @@
     {
       "name": "Talk to Shakra in {{X}} different areas",
       "types": [
-        "npc"
+        "npc",
+        "missable"
       ],
       "progression": [
         "cloak"
@@ -1661,12 +1651,6 @@
     }
   ],
   "exclusions": [
-    {
-      "unique": [
-        "Have {{X}} Rosary Strings (no purchasing)",
-        "Break {{X}} Rosary Strings (no purchasing)"
-      ]
-    },
     {
       "unique": [
         "{{X}} Memory Lockets",

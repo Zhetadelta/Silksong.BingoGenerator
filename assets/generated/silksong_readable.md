@@ -156,7 +156,7 @@
 
 **Trobbio** | Progression level(s): ['act2'] | Other tags: ['fight', 'tool', 'blocking']
 
-**Red Quill** | Progression level(s): ['act2'] | Other tags: ['location']
+**Red Quill** | Progression level(s): ['act2'] | Other tags: ['location', 'missable']
 
 **Disgraced Chef Lugoli** | Progression level(s): ['faydown'] | Other tags: ['fight', 'hard']
 
@@ -188,7 +188,7 @@
 
 **Buy From Grindle** | Progression level(s): ['faydown'] | Other tags: ['npc']
 
-**Win Lumble's Dice** | Progression level(s): ['walljump'] | Other tags: ['npc']
+**Win Lumble's Dice** | Progression level(s): ['walljump'] | Other tags: ['npc', 'missable']
 
 **Pay To Confess** | Progression level(s): ['act2'] | Other tags: ['location']
 
@@ -214,7 +214,7 @@
 
 **1 Extra Mask** | Progression level(s): ['widow'] | Other tags: ['upgrade']
 
-**2 Extra Masks** | Progression level(s): ['act2'] | Other tags: ['upgrade']
+**2 Extra Masks** | Progression level(s): ['faydown'] | Other tags: ['upgrade']
 
 **Pay for a Flea Spa** | Progression level(s): ['walljump'] | Other tags: ['npc', 'flea']
 
@@ -274,17 +274,13 @@
 
 **3 Spool Upgrades** | Progression level(s): ['clawline'] | Other tags: ['upgrade']
 
-**Have 4 Rosary Strings (no purchasing)** | Progression level(s): ['dash', 'act2'] | Other tags: ['collection']
-
-**Have 8 Rosary Strings (no purchasing)** | Progression level(s): ['dash', 'act2'] | Other tags: ['collection']
-
-**Have 3 Rosary Necklaces (no purchasing)** | Progression level(s): ['act2'] | Other tags: ['collection']
+**Break 3 Rosary Necklaces (no purchasing)** | Progression level(s): ['act2'] | Other tags: ['collection']
 
 **Break 6 Rosary Strings (no purchasing)** | Progression level(s): ['widow'] | Other tags: ['collection']
 
-**Have 4 Shard Bundles (no purchasing)** | Progression level(s): ['walljump', 'act2'] | Other tags: ['collection']
+**Break 4 Shard Bundles (no purchasing)** | Progression level(s): ['walljump', 'act2'] | Other tags: ['collection']
 
-**Have 6 Shard Bundles (no purchasing)** | Progression level(s): ['walljump', 'act2'] | Other tags: ['collection']
+**Break 6 Shard Bundles (no purchasing)** | Progression level(s): ['walljump', 'act2'] | Other tags: ['collection']
 
 **Obtain 3 Silkeaters** | Progression level(s): ['walljump'] | Other tags: ['collection']
 
@@ -306,7 +302,7 @@
 
 **Obtain 2 Rune Harps** | Progression level(s): ['widow'] | Other tags: ['collection', 'relic']
 
-**Talk to Shakra in 5 different areas** | Progression level(s): ['cloak'] | Other tags: ['npc']
+**Talk to Shakra in 5 different areas** | Progression level(s): ['cloak'] | Other tags: ['npc', 'missable']
 
 **Fix the Sinner's Road Bench** | Progression level(s): ['walljump'] | Other tags: ['location']
 
