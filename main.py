@@ -102,6 +102,20 @@ async def newboard(interaction: discord.Interaction, lockout: bool = False, pres
 @client.tree.command()
 @app_commands.describe(preset="Tags to exclude based on preset categories.")
 @app_commands.choices(preset=prog_options())
+@app_commands.choices(size=size_options())
+async def newascend(interaction: discord.Interaction, lockout: bool = False, preset: Optional[app_commands.Choice[str]] = None, size: Optional[app_commands.Choice[str]]=None):
+    """Generates a new board for lockout.live's Ascend mode. EXPERIMENTAL."""
+    noTags = progStringToTags(preset)
+    if not lockout:
+        noTags.append("lockout")
+    if size is None:
+        size = app_commands.Choice(name="7", value="7")
+    thisBoard = board.lockoutBoard(noTags=noTags, **BOARD_KWARGS, noBlocking = pattern, size=int(size.value)**2)
+    await interaction.response.send_message(json.dumps(thisBoard), ephemeral=True)
+
+@client.tree.command()
+@app_commands.describe(preset="Tags to exclude based on preset categories.")
+@app_commands.choices(preset=prog_options())
 async def newroom(interaction: discord.Interaction, lockout: bool = False, pattern: bool = False, preset: Optional[app_commands.Choice[str]] = None):
     """Generates a new board and creates a bingosync room."""
     await interaction.response.defer(thinking=True)

@@ -1,4 +1,5 @@
 import os, json, random
+from network import ROOM_NAMES
 
 #file paths and names
 ASSETS_PATH = "assets"
@@ -116,6 +117,7 @@ def board(allGoals:dict, exclusionDic, size=25, **kwargs):
     lockout = kwargs["lockout"] if "lockout" in kwargs.keys() else False
     tagLimits = kwargs["tagLimits"].copy() if "tagLimits" in kwargs.keys() and kwargs["tagLimits"] is not None else None
     pattern = kwargs["pattern"] if "pattern" in kwargs.keys() else False
+    progs = kwargs["keepProgression"] if "keepProgression" in kwargs.keys() else False
 
     if "priorGoals" in kwargs.keys(): #linked boards, apply exclusions now
         for goal in kwargs["priorGoals"]:
@@ -161,13 +163,18 @@ def board(allGoals:dict, exclusionDic, size=25, **kwargs):
                     tagLimits[tag] = tagLimits[tag] - 1 #decrement tag limit
 
         #format ranges and append to list
+        #
         if "range" in newGoal.keys(): #goal has a range
             if not lockout or "lockout-range" not in newGoal.keys(): #use base range
-                goals.append(newGoal["name"].replace("{{X}}", str(random.choice(newGoal["range"]))))
+                goalName = newGoal["name"].replace("{{X}}", str(random.choice(newGoal["range"])))
             else: #use lockout range
-                goals.append(newGoal["name"].replace("{{X}}", str(random.choice(newGoal["lockout-range"]))))
+                goalName = newGoal["name"].replace("{{X}}", str(random.choice(newGoal["lockout-range"])))
         else: #no range, ez
-            goals.append(newGoal["name"])
+            goalName = newGoal["name"]
+        if progs: #keep progression tag for sorting
+            goals.append({"name": goalName, "progression": newGoal["progression"]})
+        else:
+            goals.append(goalName)
 
         #remove goal from list to not get chosen twice
         try:
@@ -206,6 +213,56 @@ def bingosyncBoard(noTags=[], **kwargs):
     for name in boardList:
         out.append({"name": name})
     return out
+
+def lockoutBoard(noTags=[], size=49, **kwargs):
+    """
+    Generates a fixed board for lockout.live ascend mode. EXPERIMENTAL.
+    """
+    if "tagLimits" in kwargs.keys():
+        limits = kwargs["tagLimits"]
+    else:
+        limits = None
+
+    if "silly" in kwargs.keys() and kwargs["silly"]:
+        pass
+    else: #exclude silly by default
+        noTags.append("silly")
+
+    if "noBlocking" in kwargs.keys() and kwargs["noBlocking"]:
+        pattern = True
+        noTags.append("blocking")
+    else:
+        pattern = False
+
+    boardList = board(*getAllGoals(noTags=noTags), size=int(kwargs["size"]), 
+                            lockout=(not "lockout" in noTags), tagLimits=limits, 
+                            pattern=pattern, keepProgression=True) #list of {"name","progression"} dictionary
+
+    boardList.sort(key=lambda goal: orderedProg.index(goal["progression"])) #sort by progression order
+
+    #Now we need to setup the stupid lockout.live dictionary grr
+    out = {
+        "game" : random.choice(ROOM_NAMES),
+    }
+    goalsList = []
+    sliceSize = int(sqrt(size))
+    for sliceStart in range(0,size,sliceSize):
+        goalSlice = boardList[sliceStart:sliceStart+sliceSize].copy()
+        random.shuffle(goalSlice)
+        for i, goalDic in enumerate(goalSlice):
+            newDic = {
+                "goal" : goalDic["name"],
+                "individual_limit": 1,
+                #"board_categories": [],
+                #"line_categories": [],
+                #"tooltip": "",
+                #"icons" : [],
+                "preferred_grid_position": size-(sliceStart-i) #this is 1 for top-left
+            }
+            goalsList.append(newDic)
+    out["objectives"] = goalsList
+    return out
+
 
 def linkedBoards(noTags, size=5, **kwargs):
     b1Tags, b2Tags = noTags
