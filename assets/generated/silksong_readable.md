@@ -266,7 +266,7 @@
 
 **Grand Gate Spool Fragment** | Progression level(s): ['act2'] | Other tags: ['upgrade']
 
-**High Halls Spool Fragment** | Progression level(s): ['clawline'] | Other tags: ['upgrade']
+**High Halls Spool Fragment** | Progression level(s): ['faydown'] | Other tags: ['upgrade']
 
 **1 Spool Upgrade** | Progression level(s): ['early'] | Other tags: ['upgrade']
 
