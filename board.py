@@ -244,6 +244,7 @@ def lockoutBoard(noTags=[], size=49, **kwargs):
     #Now we need to setup the stupid lockout.live dictionary grr
     out = {
         "game" : random.choice(ROOM_NAMES),
+        "version" : 0.1,
         "limits": LL_LIMITS
     }
     goalsList = []
@@ -263,6 +264,17 @@ def lockoutBoard(noTags=[], size=49, **kwargs):
                 "preferred_grid_position": size-(sliceStart+i) #this is 1 for top-left
             }
             goalsList.append(newDic)
+    for i in range(sliceSize): #lockout needs more goals than required for some reason
+        newDic = {
+            "goal" : f"this goal is fake{i}",
+            "individual_limit": 1,
+            "range" : [],
+            "board_categories": [],
+            "line_categories": [],
+            "tooltip": "",
+            "icons" : []
+        }
+        goalsList.append(newDic)
     out["objectives"] = goalsList
     return out
 
