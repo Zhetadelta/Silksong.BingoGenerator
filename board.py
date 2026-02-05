@@ -244,6 +244,7 @@ def lockoutBoard(noTags=[], size=49, **kwargs):
     #Now we need to setup the stupid lockout.live dictionary grr
     out = {
         "game" : random.choice(ROOM_NAMES),
+        "limits": LL_LIMITS
     }
     goalsList = []
     sliceSize = int(sqrt(size))
