@@ -254,10 +254,11 @@ def lockoutBoard(noTags=[], size=49, **kwargs):
             newDic = {
                 "goal" : goalDic["name"],
                 "individual_limit": 1,
-                #"board_categories": [],
-                #"line_categories": [],
-                #"tooltip": "",
-                #"icons" : [],
+                "range" : [],
+                "board_categories": [],
+                "line_categories": [],
+                "tooltip": "",
+                "icons" : [],
                 "preferred_grid_position": size-(sliceStart+i) #this is 1 for top-left
             }
             goalsList.append(newDic)
