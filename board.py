@@ -238,7 +238,7 @@ def lockoutBoard(noTags=[], size=49, **kwargs):
                             lockout=(not "lockout" in noTags), tagLimits=limits, 
                             pattern=pattern, keepProgression=True) #list of {"name","progression"} dictionary
 
-    boardList.sort(key=lambda goal: orderedProg.index(goal["progression"])) #sort by progression order
+    boardList.sort(key=lambda goal: orderedProg.index(goal["progression"][0])) #sort by progression order
 
     #Now we need to setup the stupid lockout.live dictionary grr
     out = {
