@@ -110,7 +110,7 @@ async def newascend(interaction: discord.Interaction, lockout: bool = False, pre
         noTags.append("lockout")
     if size is None:
         size = app_commands.Choice(name="7", value="7")
-    thisBoard = board.lockoutBoard(noTags=noTags, **BOARD_KWARGS, size=int(size.value)**2)
+    thisBoard = board.lockoutBoard(noTags=noTags, size=int(size.value)**2, **BOARD_KWARGS, )
     await interaction.response.send_message(json.dumps(thisBoard), ephemeral=True)
 
 @client.tree.command()
