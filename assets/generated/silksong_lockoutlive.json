@@ -1787,15 +1787,24 @@
             "icons": []
         },
         {
-            "goal": "Break {{X}} Shard Bundles (no purchasing)",
-            "range": [
-                4,
-                6
-            ],
+            "goal": "Break 4 Shard Bundles (no purchasing)",
+            "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "walljump",
-                "act2"
+                "walljump"
+            ],
+            "line_categories": [
+                "collection"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Break 6 Shard Bundles (no purchasing)",
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "clawline"
             ],
             "line_categories": [
                 "collection"

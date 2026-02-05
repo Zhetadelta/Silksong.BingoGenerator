@@ -278,9 +278,9 @@
 
 **Break 6 Rosary Strings (no purchasing)** | Progression level(s): ['widow'] | Other tags: ['collection']
 
-**Break 4 Shard Bundles (no purchasing)** | Progression level(s): ['walljump', 'act2'] | Other tags: ['collection']
+**Break 4 Shard Bundles (no purchasing)** | Progression level(s): ['walljump'] | Other tags: ['collection']
 
-**Break 6 Shard Bundles (no purchasing)** | Progression level(s): ['walljump', 'act2'] | Other tags: ['collection']
+**Break 6 Shard Bundles (no purchasing)** | Progression level(s): ['clawline'] | Other tags: ['collection']
 
 **Obtain 3 Silkeaters** | Progression level(s): ['walljump'] | Other tags: ['collection']
 

@@ -1289,17 +1289,21 @@
       ]
     },
     {
-      "name": "Break {{X}} Shard Bundles (no purchasing)",
+      "name": "Break 4 Shard Bundles (no purchasing)",
       "types": [
         "collection"
       ],
       "progression": [
-        "walljump",
-        "act2"
+        "walljump"
+      ]
+    },
+    {
+      "name": "Break 6 Shard Bundles (no purchasing)",
+      "types": [
+        "collection"
       ],
-      "range": [
-        4,
-        6
+      "progression": [
+        "clawline"
       ]
     },
     {
@@ -1655,6 +1659,12 @@
       "unique": [
         "{{X}} Memory Lockets",
         "Fully Unlock a Non-Hunter's Crest"
+      ]
+    },
+    {
+      "unique": [
+        "Break 6 Shard Bundles (no purchasing)",
+        "Break 4 Shard Bundles (no purchasing)"
       ]
     },
     {
