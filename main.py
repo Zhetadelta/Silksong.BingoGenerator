@@ -1,5 +1,5 @@
 import discord, board, os, json, network, random
-from discord import app_commands
+from discord import app_commands, File
 from typing import Optional
 
 CONFIG_PATH = os.path.join("config","settings.dat")
@@ -110,8 +110,12 @@ async def newascend(interaction: discord.Interaction, lockout: bool = False, pre
         noTags.append("lockout")
     if size is None:
         size = app_commands.Choice(name="7", value="7")
-    thisBoard = board.lockoutBoard(noTags=noTags, size=int(size.value)**2, **BOARD_KWARGS, )
-    await interaction.response.send_message(json.dumps(thisBoard), ephemeral=True)
+    thisBoard = board.lockoutBoard(noTags=noTags, size=int(size.value)**2, **BOARD_KWARGS)
+    fname = str(random.randint(0, 100000))+".json"
+    with open(fname,"w") as tempFile:
+        json.dump(thisBoard, tempFile)
+    await interaction.response.send_message(file=File(fname), ephemeral=True)
+    os.remove(fname)
 
 @client.tree.command()
 @app_commands.describe(preset="Tags to exclude based on preset categories.")
