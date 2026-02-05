@@ -1,5 +1,6 @@
 import os, json, random
 from network import ROOM_NAMES
+from math import sqrt
 
 #file paths and names
 ASSETS_PATH = "assets"
