@@ -186,7 +186,7 @@
 
 **Talk to Mask Maker** | Progression level(s): ['faydown'] | Other tags: ['npc']
 
-**Buy From Grindle** | Progression level(s): ['faydown'] | Other tags: ['npc']
+**Buy From Grindle (No String)** | Progression level(s): ['faydown'] | Other tags: ['npc']
 
 **Win Lumble's Dice** | Progression level(s): ['walljump'] | Other tags: ['npc', 'missable']
 

@@ -1232,7 +1232,7 @@
             "icons": []
         },
         {
-            "goal": "Buy From Grindle",
+            "goal": "Buy From Grindle (No String)",
             "range": [],
             "individual_limit": 1,
             "board_categories": [

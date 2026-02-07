@@ -885,7 +885,7 @@
       ]
     },
     {
-      "name": "Buy From Grindle",
+      "name": "Buy From Grindle (No String)",
       "types": [
         "npc"
       ],
