@@ -281,7 +281,7 @@ def lockoutBoard(noTags=[], size=49, **kwargs):
     return out
 
 
-def linkedBoards(noTags, size=5, **kwargs):
+def linkedBoards(noTags, size=25, **kwargs):
     b1Tags, b2Tags = noTags
     #set up tag limits and such
     if "tagLimits" in kwargs.keys():

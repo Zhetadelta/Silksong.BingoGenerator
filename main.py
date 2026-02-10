@@ -165,7 +165,7 @@ async def newdoublingy(interaction: discord.Interaction, size: Optional[app_comm
         baseName = "https://caravan.kobold60.com"
     act1Tags = ["act2", "clawline", "faydown", "lockout"]
     act2Tags = ["early", "dash", "cloak", "walljump", "widow", "lockout"]
-    act1Board, act2Board = board.linkedBoards(noTags=(act1Tags, act2Tags), size=size)
+    act1Board, act2Board = board.linkedBoards(noTags=(act1Tags, act2Tags), size=(size**2))
     n1, rId1 = session.newRoom(json.dumps(act1Board), lockout=False)
     n2, rId2 = session.newRoom(json.dumps(act2Board), lockout=False)
     session.close()
