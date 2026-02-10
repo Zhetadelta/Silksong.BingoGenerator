@@ -144,7 +144,6 @@ async def newcaravan(interaction: discord.Interaction, lockout: bool = False, pa
     if not lockout:
         noTags.append("lockout") #exclude lockout-only goals
     thisBoard = board.bingosyncBoard(noTags=noTags, **BOARD_KWARGS, noBlocking = pattern, size=36)
-    print(thisBoard)
     bsSession = network.caravanClient()
     n, rId = bsSession.newRoom(json.dumps(thisBoard), lockout=lockout)
     bsSession.close()
@@ -167,8 +166,6 @@ async def newdoublingy(interaction: discord.Interaction, size: Optional[app_comm
     act1Tags = ["act2", "clawline", "faydown", "lockout"]
     act2Tags = ["early", "dash", "cloak", "walljump", "widow", "lockout"]
     act1Board, act2Board = board.linkedBoards(noTags=(act1Tags, act2Tags), size=size)
-    print(act1Board)
-    print(act2Board)
     n1, rId1 = session.newRoom(json.dumps(act1Board), lockout=False)
     n2, rId2 = session.newRoom(json.dumps(act2Board), lockout=False)
     session.close()
