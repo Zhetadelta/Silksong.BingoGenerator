@@ -12,9 +12,11 @@ Add the bot to your user account or server via [this link!](https://discord.com/
 
 Very simple command that spits out a Bingosync-formatted list. Set the game to Custom (Advanced) and the variant to "Fixed Board" to use. Supports lockout-exclusive goals as well as progression-limiting for shorter games.
 
-- newroom
+- newroom or newcaravan
 
 Bingyflea will generate a board AND handle the room creation for you. Has the same options as newboard!
+
+The password for these rooms is always "fast".
 
 - advancedboard
 

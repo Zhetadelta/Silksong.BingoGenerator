@@ -121,7 +121,7 @@ async def newascend(interaction: discord.Interaction, preset: Optional[app_comma
 @app_commands.describe(preset="Tags to exclude based on preset categories.")
 @app_commands.choices(preset=prog_options())
 async def newroom(interaction: discord.Interaction, lockout: bool = False, pattern: bool = False, preset: Optional[app_commands.Choice[str]] = None):
-    """Generates a new board and creates a bingosync room."""
+    """Generates a new board and creates a bingosync room with "fast" as the password."""
     await interaction.response.defer(thinking=True)
 
     noTags = progStringToTags(preset)
@@ -137,7 +137,7 @@ async def newroom(interaction: discord.Interaction, lockout: bool = False, patte
 @app_commands.describe(preset="Tags to exclude based on preset categories.")
 @app_commands.choices(preset=prog_options())
 async def newcaravan(interaction: discord.Interaction, lockout: bool = False, pattern: bool = False, preset: Optional[app_commands.Choice[str]] = None):
-    """Generates a new 6x6 board and creates a caravan room."""
+    """Generates a new 6x6 board and creates a caravan room with "fast" as the password."""
     await interaction.response.defer(thinking=True)
 
     noTags = progStringToTags(preset)
