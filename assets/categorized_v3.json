@@ -1,73 +1,101 @@
 {
   "goals": [
     {
-      "name": "{{X}} Donations Quests",
+      "name": "2 Donation Quests",
       "types": [
         "quest"
       ],
       "progression": [
         "cloak"
-      ],
-      "range": [
-        2,
-        3
       ]
     },
     {
-      "name": "{{X}} Hunt Quests",
+      "name": "3 Donation Quests",
+      "types": [
+        "quest"
+      ],
+      "progression": [
+        "cloak"
+      ]
+    },
+    {
+      "name": "2 Hunt Quests",
       "types": [
         "quest",
         "blocking"
       ],
       "progression": [
         "cloak"
-      ],
-      "range": [
-        2,
-        4
       ]
     },
     {
-      "name": "{{X}} Wayfarer Quests",
+      "name": "4 Hunt Quests",
+      "types": [
+        "quest",
+        "blocking"
+      ],
+      "progression": [
+        "cloak"
+      ]
+    },
+    {
+      "name": "2 Wayfarer Quests",
       "types": [
         "quest",
         "flea",
         "blocking"
       ],
       "progression": [
-        "widow",
-        "act2"
-      ],
-      "range": [
-        2,
-        4
+        "widow"
       ]
     },
     {
-      "name": "{{X}} Gather Quests",
+      "name": "4 Wayfarer Quests",
+      "types": [
+        "quest",
+        "flea",
+        "blocking"
+      ],
+      "progression": [
+        "act2"
+      ]
+    },
+    {
+      "name": "2 Gather Quests",
       "types": [
         "quest",
         "blocking"
       ],
       "progression": [
         "walljump"
-      ],
-      "range": [
-        2,
-        3
       ]
     },
     {
-      "name": "Complete {{X}} Quests",
+      "name": "3 Gather Quests",
+      "types": [
+        "quest",
+        "blocking"
+      ],
+      "progression": [
+        "widow"
+      ]
+    },
+    {
+      "name": "Complete 5 Quests",
       "types": [
         "quest"
       ],
       "progression": [
         "cloak"
+      ]
+    },
+    {
+      "name": "Complete 7 Quests",
+      "types": [
+        "quest"
       ],
-      "range": [
-        5,
-        7
+      "progression": [
+        "widow"
       ]
     },
     {
@@ -99,52 +127,59 @@
       ]
     },
     {
-      "name": "{{X}} Red Tools",
+      "name": "3 Red Tools",
       "types": [
         "tool",
         "craft",
         "blocking"
       ],
       "progression": [
-        "dash",
-        "cloak"
-      ],
-      "range": [
-        3,
-        5
+        "dash"
       ]
     },
     {
-      "name": "{{X}} Blue Tools",
+      "name": "5 Red Tools",
+      "types": [
+        "tool",
+        "craft",
+        "blocking"
+      ],
+      "progression": [
+        "cloak"
+      ]
+    },
+    {
+      "name": "3 Blue Tools",
       "types": [
         "tool",
         "blocking"
       ],
       "progression": [
         "dash"
-      ],
-      "range": [
-        3
       ]
     },
     {
-      "name": "{{X}} Yellow Tools",
+      "name": "3 Yellow Tools",
       "types": [
         "tool",
         "blocking"
       ],
       "progression": [
-        "early",
-        "dash",
-        "cloak"
-      ],
-      "range": [
-        3,
-        5
+        "early"
       ]
     },
     {
-      "name": "{{X}} of each tool type",
+      "name": "5 Yellow Tools",
+      "types": [
+        "tool",
+        "blocking"
+      ],
+      "progression": [
+        "cloak"
+      ]
+    },
+    {
+      "name": "2 of each tool type",
       "types": [
         "tool",
         "blocking"
@@ -152,9 +187,6 @@
       "progression": [
         "early",
         "dash"
-      ],
-      "range": [
-        2
       ]
     },
     {
@@ -270,9 +302,10 @@
       ]
     },
     {
-      "name": "Pollip Pouch",
+      "name": "Pollip Pouch & Sting Shard",
       "types": [
         "tool",
+        "craft",
         "quest"
       ],
       "progression": [
@@ -325,7 +358,7 @@
         "tool"
       ],
       "progression": [
-        "clawline"
+        "faydown"
       ]
     },
     {
@@ -355,6 +388,16 @@
       ],
       "progression": [
         "widow"
+      ]
+    },
+    {
+      "name": "Multibinder",
+      "types": [
+        "tool",
+        "quest"
+      ],
+      "progression": [
+        "act2"
       ]
     },
     {
@@ -467,7 +510,7 @@
       ]
     },
     {
-      "name": "Needle 2",
+      "name": "Upgrade Needle Twice",
       "types": [
         "upgrade",
         "quest"
@@ -519,28 +562,23 @@
       ]
     },
     {
-      "name": "Faydown Cloak",
-      "types": [
-        "upgrade",
-        "hardsave",
-        "blocking"
-      ],
-      "progression": [
-        "clawline",
-        "faydown"
-      ]
-    },
-    {
-      "name": "{{X}} Silk Skills",
+      "name": "3 Silk Skills",
       "types": [
         "upgrade",
         "hardsave"
       ],
       "progression": [
-        "walljump"
+        "widow"
+      ]
+    },
+    {
+      "name": "4 Silk Skills",
+      "types": [
+        "upgrade",
+        "hardsave"
       ],
-      "range": [
-        3
+      "progression": [
+        "act2"
       ]
     },
     {
@@ -609,6 +647,15 @@
       ]
     },
     {
+      "name": "Mt. Fay Mask Shard",
+      "types": [
+        "upgrade"
+      ],
+      "progression": [
+        "faydown"
+      ]
+    },
+    {
       "name": "Craggler",
       "types": [
         "fight"
@@ -661,7 +708,7 @@
         "fight"
       ],
       "progression": [
-        "dash"
+        "widow"
       ]
     },
     {
@@ -676,7 +723,9 @@
     },
     {
       "name": "Disable the Clawmaidens",
-      "types": ["fight"],
+      "types": [
+        "fight"
+      ],
       "progression":[
         "faydown"
       ]
@@ -829,7 +878,7 @@
       ]
     },
     {
-      "name": "Save Green Prince",
+      "name": "Free Green Prince",
       "types": [
         "npc",
         "key"
@@ -839,7 +888,7 @@
       ]
     },
     {
-      "name": "Complete a Loddie Minigame",
+      "name": "Win a Loddie Minigame",
       "types": [
         "npc"
       ],
@@ -860,10 +909,20 @@
     {
       "name": "Talk to Gilly & Styx",
       "types": [
-        "npc"
+        "npc",
+        "hardsave"
       ],
       "progression": [
         "walljump"
+      ]
+    },
+    {
+      "name": "Break Both of Styx's Walls",
+      "types": [
+        "location"
+      ],
+      "progression": [
+        "widow"
       ]
     },
     {
@@ -949,17 +1008,23 @@
       ]
     },
     {
-      "name": "Obtain {{X}} Craftmetal",
+      "name": "Obtain 3 Craftmetal",
       "types": [
         "collection",
         "craft"
       ],
       "progression": [
         "act2"
+      ]
+    },
+    {
+      "name": "Obtain 5 Craftmetal",
+      "types": [
+        "collection",
+        "craft"
       ],
-      "range": [
-        3,
-        5
+      "progression": [
+        "clawline"
       ]
     },
     {
@@ -996,6 +1061,15 @@
       ],
       "progression": [
         "clawline"
+      ]
+    },
+    {
+      "name": "Both Vendor Simple Keys",
+      "types": [
+        "collection"
+      ],
+      "progression": [
+        "act2"
       ]
     },
     {
@@ -1093,18 +1167,39 @@
       ]
     },
     {
-      "name": "Free {{X}} fleas",
+      "name": "Free 8 fleas",
       "types": [
         "flea"
       ],
       "progression": [
         "cloak"
+      ]
+    },
+    {
+      "name": "Free 10 fleas",
+      "types": [
+        "flea"
       ],
-      "range": [
-        8,
-        10,
-        12,
-        14
+      "progression": [
+        "widow"
+      ]
+    },
+    {
+      "name": "Free 12 fleas",
+      "types": [
+        "flea"
+      ],
+      "progression": [
+        "act2"
+      ]
+    },
+    {
+      "name": "Free 14 fleas",
+      "types": [
+        "flea"
+      ],
+      "progression": [
+        "clawline"
       ]
     },
     {
@@ -1162,7 +1257,7 @@
       ]
     },
     {
-      "name": "Fight Big Flea",
+      "name": "Beat Big Flea",
       "types": [
         "fight"
       ],
@@ -1211,7 +1306,7 @@
       ]
     },
     {
-      "name": "Buy Frey's Spool Fragment",
+      "name": "Frey's Spool Fragment",
       "types": [
         "upgrade"
       ],
@@ -1265,27 +1360,30 @@
       ]
     },
     {
-      "name": "Break {{X}} Rosary Necklaces (no purchasing)",
+      "name": "Break 3 Rosary Necklaces (no purchasing)",
       "types": [
         "collection"
       ],
       "progression": [
         "act2"
-      ],
-      "range": [
-        3
       ]
     },
     {
-      "name": "Break {{X}} Rosary Strings (no purchasing)",
+      "name": "Break 6 Rosary Strings (no purchasing)",
       "types": [
         "collection"
       ],
       "progression": [
         "widow"
+      ]
+    },
+    {
+      "name": "Break 8 Rosary Strings (no purchasing)",
+      "types": [
+        "collection"
       ],
-      "range": [
-        6
+      "progression": [
+        "act2"
       ]
     },
     {
@@ -1325,43 +1423,34 @@
       ]
     },
     {
-      "name": "Obtain {{X}} Tool Pouch Upgrade",
+      "name": "Obtain a Tool Pouch Upgrade",
       "types": [
         "collection"
       ],
       "progression": [
         "cloak"
-      ],
-      "range": [
-        1
       ]
     },
     {
-      "name": "Obtain {{X}} Crafting Kit",
+      "name": "Obtain a Crafting Kit",
       "types": [
         "collection"
       ],
       "progression": [
         "dash"
-      ],
-      "range": [
-        1
       ]
     },
     {
-      "name": "Obtain {{X}} Tool Pouch Upgrade/Crafting Kits",
+      "name": "Obtain 3 Tool Pouch Upgrades/Crafting Kits",
       "types": [
         "collection"
       ],
       "progression": [
         "widow"
-      ],
-      "range": [
-        3
       ]
     },
     {
-      "name": "{{X}} Memory Lockets",
+      "name": "Obtain 5 Memory Lockets",
       "types": [
         "collection",
         "locket"
@@ -1369,14 +1458,6 @@
       "progression": [
         "cloak",
         "walljump"
-      ],
-      "range": [
-        5
-      ],
-      "lockout-range": [
-        1,
-        2,
-        5
       ]
     },
     {
@@ -1391,17 +1472,23 @@
       ]
     },
     {
-      "name": "Obtain {{X}} Different Types of Relic",
+      "name": "Obtain 3 Different Types of Relic",
       "types": [
         "collection",
         "relic"
       ],
       "progression": [
         "walljump"
+      ]
+    },
+    {
+      "name": "Obtain 4 Different Types of Relic",
+      "types": [
+        "collection",
+        "relic"
       ],
-      "range": [
-        3,
-        4
+      "progression": [
+        "walljump"
       ]
     },
     {
@@ -1415,19 +1502,13 @@
       ]
     },
     {
-      "name": "Talk to Shakra in {{X}} different areas",
+      "name": "Talk to Shakra at 5 Locations",
       "types": [
         "npc",
         "missable"
       ],
       "progression": [
-        "cloak"
-      ],
-      "range": [
-        5
-      ],
-      "lockout-range": [
-        5
+        "widow"
       ]
     },
     {
@@ -1440,15 +1521,21 @@
       ]
     },
     {
-      "name": "Obtain {{X}} maps",
+      "name": "Obtain 5 Maps",
       "types": [
         "npc"
       ],
       "progression": [
         "dash"
+      ]
+    },
+    {
+      "name": "Obtain 8 Maps",
+      "types": [
+        "npc"
       ],
-      "range": [
-        5
+      "progression": [
+        "act2"
       ]
     },
     {
@@ -1567,17 +1654,39 @@
       ]
     },
     {
-      "name": "Obtain {{X}} Beast Shards",
+      "name": "Obtain 2 Beast Shards",
       "types": [
         "fight"
       ],
       "progression": [
-        "walljump"
+        "dash"
+      ]
+    },
+    {
+      "name": "Obtain 3 Beast Shards",
+      "types": [
+        "fight"
       ],
-      "range": [
-        2,
-        3,
-        4
+      "progression": [
+        "widow"
+      ]
+    },
+    {
+      "name": "Obtain 4 Beast Shards",
+      "types": [
+        "fight"
+      ],
+      "progression": [
+        "act2"
+      ]
+    },
+    {
+      "name": "Obtain 5 Beast Shards",
+      "types": [
+        "fight"
+      ],
+      "progression": [
+        "faydown"
       ]
     },
     {
@@ -1600,16 +1709,21 @@
       ]
     },
     {
-      "name": "{{X}} Cogheart Pieces",
+      "name": "1 Cogheart Piece",
       "types": [
         "collection"
       ],
       "progression": [
         "act2"
+      ]
+    },
+    {
+      "name": "2 Cogheart Pieces",
+      "types": [
+        "collection"
       ],
-      "range": [
-        1,
-        2
+      "progression": [
+        "act2"
       ]
     },
     {
@@ -1657,8 +1771,56 @@
   "exclusions": [
     {
       "unique": [
-        "{{X}} Memory Lockets",
+        "2 Donation Quests",
+        "3 Donation Quests"
+      ]
+    },
+    {
+      "unique": [
+        "2 Hunt Quests",
+        "4 Hunt Quests"
+      ]
+    },
+    {
+      "unique": [
+        "2 Wayfarer Quests",
+        "4 Wayfarer Quests"
+      ]
+    },
+    {
+      "unique": [
+        "2 Gather Quests",
+        "3 Gather Quests"
+      ]
+    },
+    {
+      "unique": [
+        "Complete 5 Quests",
+        "Complete 7 Quests"
+      ]
+    },
+    {
+      "unique": [
+        "3 Red Tools",
+        "5 Red Tools"
+      ]
+    },
+    {
+      "unique": [
+        "3 Red Tools",
+        "Straight, Threefold, and Long Pin"
+      ]
+    },
+    {
+      "unique": [
+        "Obtain 5 Memory Lockets",
         "Fully Unlock a Non-Hunter's Crest"
+      ]
+    },
+    {
+      "unique": [
+        "3 Yellow Tools",
+        "5 Yellow Tools"
       ]
     },
     {
@@ -1669,8 +1831,22 @@
     },
     {
       "unique": [
-        "Obtain {{X}} Tool Pouch Upgrade/Crafting Kits",
-        "Obtain {{X}} Tool Pouch Upgrade"
+        "Break 6 Rosary Strings (no purchasing)",
+        "Break 8 Rosary Strings (no purchasing)"
+      ]
+    },
+    {
+      "unique": [
+        "Obtain 5 Maps",
+        "Obtain 8 Maps"
+      ]
+    },
+    {
+      "unique": [
+        "Obtain 2 Beast Shards",
+        "Obtain 3 Beast Shards",
+        "Obtain 4 Beast Shards",
+        "Obtain 5 Beast Shards"
       ]
     },
     {
@@ -1681,20 +1857,26 @@
     },
     {
       "unique": [
-        "{{X}} Red Tools",
-        "Straight, Threefold, and Long Pin"
-      ]
-    },
-    {
-      "unique": [
         "Savage Beastfly",
         "Beast's Crest"
       ]
     },
     {
       "unique": [
+        "3 Silk Skills",
+        "4 Silk Skills"
+      ]
+    },
+    {
+      "unique": [
         "Pay for a Flea Spa",
         "Greymoor Fleas [2] + Kratt"
+      ]
+    },
+    {
+      "unique": [
+        "Obtain 3 Different Types of Relic",
+        "Obtain 4 Different Types of Relic"
       ]
     },
     {
@@ -1713,7 +1895,7 @@
       "unique": [
         "Complete a Loddie Minigame",
         "Fail a Loddie Minigame",
-        "Obtain {{X}} Tool Pouch Upgrade"
+        "Obtain a Tool Pouch Upgrade"
       ]
     },
     {
@@ -1757,7 +1939,7 @@
       "unique" : [
         "Mt. Fay Flea [1]",
         "Memory Crystal",
-        "Faydown Cloak",
+        "Mt. Fay Mask Shard",
         "Talk to Mask Maker"
       ]
     },
@@ -1787,7 +1969,8 @@
     {
       "limit": 4,
       "unique": [
-        "{{X}} Extra Masks",
+        "1 Extra Mask",
+        "2 Extra Masks",
         "Farfields Escape Mask Shard",
         "Slab Mask Shard",
         "Bilewater Mask Shard",
@@ -1798,14 +1981,18 @@
     },
     {
       "unique" : [
-        "Free {{X}} Fleas",
+        "Free 8 Fleas",
+        "Free 10 Fleas",
+        "Free 12 Fleas",
+        "Free 14 Fleas",
         "Meet Caravan in Greymoor [5]",
         "Meet Caravan at the Grand Gate [12]"
       ]
     },
     {
       "unique" : [
-        "{{X}} Cogheart Pieces",
+        "1 Cogheart Piece",
+        "2 Cogheart Pieces",
         "Activate Second Sentinel"
       ]
     },

@@ -35,7 +35,7 @@ A goal must be a dictionary as follows:
 
 #### Possible types:
 
-"craft", "flea", "key", "tool", "melody", "quest", "locket", "upgrade", "fight", "npc", "location", "collection", "relic", "hardsave", "blocking", "silly"
+"craft", "flea", "key", "tool", "melody", "quest", "locket", "upgrade", "fight", "npc", "location", "collection", "relic", "hardsave", "blocking", "hard", "expensive", "silly"
 
 #### Opt-in types
 
@@ -48,20 +48,6 @@ The following types are excluded by default and must be opted into manually: Sil
 "early", "dash", "cloak", "walljump", "act2", "clawline", "faydown"
 
 - `"weight" : 1` **(Optional)** If not given, a weight is assumed to be 1. A weight of 2 means a goal is twice as likely to be picked. This can be a decimal if you really want that kind of granularity. 
-
-- `"range" : [int]` **(Optional)** A goal with `"{{X}}"` in the name will have that string replaced with a number in the given range.
-
-- `"lockout-range" : [int]` **(Optional)** For lockout goals, a seperate range can be defined for the lockout version of that goal. Use "lockout-range" **in addition to the normal range.**
-
-Example:
-
-"{{X}} Memory Lockets" with a `"range" : [1,2,5]` can be any of the following goals:
-
-- 1 Memory Lockets
-- 2 Memory Lockets
-- 5 Memory Lockets
-
-These are automatically exclusive, and the group can be added to an exclusive pool using the string with {{X}} in it.
 
 #### Exclusions
 An exclusion must be a dictionary as follows:
