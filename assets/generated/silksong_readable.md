@@ -1,22 +1,22 @@
-**2 Donations Quests** | Progression level(s): ['cloak'] | Other tags: ['quest']
+**2 Donation Quests** | Progression level(s): ['cloak'] | Other tags: ['quest']
 
-**3 Donations Quests** | Progression level(s): ['cloak'] | Other tags: ['quest']
+**3 Donation Quests** | Progression level(s): ['cloak'] | Other tags: ['quest', 'expensive']
 
 **2 Hunt Quests** | Progression level(s): ['cloak'] | Other tags: ['quest', 'blocking']
 
 **4 Hunt Quests** | Progression level(s): ['cloak'] | Other tags: ['quest', 'blocking']
 
-**2 Wayfarer Quests** | Progression level(s): ['widow', 'act2'] | Other tags: ['quest', 'flea', 'blocking']
+**2 Wayfarer Quests** | Progression level(s): ['widow'] | Other tags: ['quest', 'flea', 'blocking']
 
-**4 Wayfarer Quests** | Progression level(s): ['widow', 'act2'] | Other tags: ['quest', 'flea', 'blocking']
+**4 Wayfarer Quests** | Progression level(s): ['act2'] | Other tags: ['quest', 'flea', 'blocking']
 
 **2 Gather Quests** | Progression level(s): ['walljump'] | Other tags: ['quest', 'blocking']
 
-**3 Gather Quests** | Progression level(s): ['walljump'] | Other tags: ['quest', 'blocking']
+**3 Gather Quests** | Progression level(s): ['widow'] | Other tags: ['quest', 'blocking']
 
 **Complete 5 Quests** | Progression level(s): ['cloak'] | Other tags: ['quest']
 
-**Complete 7 Quests** | Progression level(s): ['cloak'] | Other tags: ['quest']
+**Complete 7 Quests** | Progression level(s): ['widow'] | Other tags: ['quest']
 
 **Break a Courier Item** | Progression level(s): ['act2'] | Other tags: ['quest']
 
@@ -24,21 +24,21 @@
 
 **Volatile Flintbeetles** | Progression level(s): ['cloak'] | Other tags: ['quest', 'locket']
 
-**3 Red Tools** | Progression level(s): ['dash', 'cloak'] | Other tags: ['tool', 'craft', 'blocking']
+**3 Red Tools** | Progression level(s): ['dash'] | Other tags: ['tool', 'craft', 'blocking']
 
-**5 Red Tools** | Progression level(s): ['dash', 'cloak'] | Other tags: ['tool', 'craft', 'blocking']
+**5 Red Tools** | Progression level(s): ['cloak'] | Other tags: ['tool', 'craft', 'blocking']
 
 **3 Blue Tools** | Progression level(s): ['dash'] | Other tags: ['tool', 'blocking']
 
-**3 Yellow Tools** | Progression level(s): ['early', 'dash', 'cloak'] | Other tags: ['tool', 'blocking']
+**3 Yellow Tools** | Progression level(s): ['early'] | Other tags: ['tool', 'blocking']
 
-**5 Yellow Tools** | Progression level(s): ['early', 'dash', 'cloak'] | Other tags: ['tool', 'blocking']
+**5 Yellow Tools** | Progression level(s): ['cloak'] | Other tags: ['tool', 'blocking']
 
 **2 of each tool type** | Progression level(s): ['early', 'dash'] | Other tags: ['tool', 'blocking']
 
 **Straight, Threefold, and Long Pin** | Progression level(s): ['cloak'] | Other tags: ['tool']
 
-**Dead Bug's Purse + Silkeater** | Progression level(s): ['walljump'] | Other tags: ['tool']
+**Dead Bug's Purse & a Silkeater** | Progression level(s): ['walljump'] | Other tags: ['tool']
 
 **Barbed Bracelet & Fractured Mask** | Progression level(s): ['walljump'] | Other tags: ['tool']
 
@@ -52,7 +52,7 @@
 
 **Magma Bell & Curveclaw** | Progression level(s): ['early'] | Other tags: ['tool', 'craft']
 
-**Weighted Belt & Ascendant's Grip** | Progression level(s): ['act2'] | Other tags: ['tool']
+**Weighted Belt & Ascendant's Grip** | Progression level(s): ['act2'] | Other tags: ['tool', 'expensive']
 
 **Scuttlebrace & Silkspeed** | Progression level(s): ['clawline'] | Other tags: ['tool', 'craft']
 
@@ -60,7 +60,7 @@
 
 **Delver's Drill** | Progression level(s): ['act2'] | Other tags: ['tool']
 
-**Pollip Pouch** | Progression level(s): ['walljump'] | Other tags: ['tool', 'quest']
+**Pollip Pouch & Sting Shard** | Progression level(s): ['walljump'] | Other tags: ['tool', 'craft', 'quest']
 
 **Tacks** | Progression level(s): ['walljump'] | Other tags: ['tool', 'quest']
 
@@ -70,13 +70,15 @@
 
 **Plasmium Phial** | Progression level(s): ['walljump'] | Other tags: ['tool', 'quest', 'key']
 
-**Memory Crystal** | Progression level(s): ['clawline'] | Other tags: ['tool']
+**Memory Crystal** | Progression level(s): ['faydown'] | Other tags: ['tool']
 
 **Silkspeed Anklets** | Progression level(s): ['widow'] | Other tags: ['tool']
 
 **Flintslate** | Progression level(s): ['walljump'] | Other tags: ['tool', 'key']
 
 **Repair Silkshot** | Progression level(s): ['widow'] | Other tags: ['tool', 'craft']
+
+**Multibinder** | Progression level(s): ['act2'] | Other tags: ['tool', 'quest', 'expensive']
 
 **Rosary Canon** | Progression level(s): ['clawline'] | Other tags: ['tool', 'key']
 
@@ -100,7 +102,7 @@
 
 **Needle Strike** | Progression level(s): ['walljump'] | Other tags: ['upgrade', 'fight']
 
-**Needle 2** | Progression level(s): ['act2'] | Other tags: ['upgrade', 'quest']
+**Upgrade Needle Twice** | Progression level(s): ['act2'] | Other tags: ['upgrade', 'quest']
 
 **Thread Storm** | Progression level(s): ['cloak'] | Other tags: ['upgrade', 'hardsave']
 
@@ -110,9 +112,9 @@
 
 **Use a Simple Key in Deep Docks** | Progression level(s): ['early'] | Other tags: ['key', 'location', 'fight']
 
-**Faydown Cloak** | Progression level(s): ['clawline', 'faydown'] | Other tags: ['upgrade', 'hardsave', 'blocking']
+**3 Silk Skills** | Progression level(s): ['widow'] | Other tags: ['upgrade', 'hardsave']
 
-**3 Silk Skills** | Progression level(s): ['walljump'] | Other tags: ['upgrade', 'hardsave']
+**4 Silk Skills** | Progression level(s): ['act2'] | Other tags: ['upgrade', 'hardsave']
 
 **Farfields Escape Mask Shard** | Progression level(s): ['clawline'] | Other tags: ['upgrade', 'hard']
 
@@ -128,17 +130,19 @@
 
 **Wisp Thicket Mask Shard** | Progression level(s): ['faydown'] | Other tags: ['upgrade']
 
+**Mt. Fay Mask Shard** | Progression level(s): ['faydown'] | Other tags: ['upgrade']
+
 **Craggler** | Progression level(s): ['early'] | Other tags: ['fight']
 
-**Moorwing** | Progression level(s): ['cloak'] | Other tags: ['fight']
+**Moorwing** | Progression level(s): ['act2'] | Other tags: ['fight']
 
-**Savage Beastfly** | Progression level(s): ['dash'] | Other tags: ['fight', 'hard']
+**Savage Beastfly** | Progression level(s): ['cloak'] | Other tags: ['fight', 'hard']
 
 **Great Conchflies** | Progression level(s): ['walljump'] | Other tags: ['fight', 'blocking']
 
 **Raging Conchfly** | Progression level(s): ['clawline'] | Other tags: ['fight']
 
-**Moss Mother Duo** | Progression level(s): ['dash'] | Other tags: ['fight']
+**Moss Mother Duo** | Progression level(s): ['widow'] | Other tags: ['fight']
 
 **Defeat a Rhinogrund** | Progression level(s): ['walljump'] | Other tags: ['fight', 'hard']
 
@@ -174,13 +178,15 @@
 
 **Skull Tyrant** | Progression level(s): ['walljump'] | Other tags: ['fight', 'quest']
 
-**Save Green Prince** | Progression level(s): ['walljump'] | Other tags: ['npc', 'key']
+**Free Green Prince** | Progression level(s): ['walljump'] | Other tags: ['npc', 'key']
 
-**Complete a Loddie Minigame** | Progression level(s): ['widow'] | Other tags: ['npc']
+**Win a Loddie Minigame** | Progression level(s): ['widow'] | Other tags: ['npc']
 
 **Fail a Loddie Minigame** | Progression level(s): ['widow'] | Other tags: ['npc', 'silly']
 
-**Talk to Gilly & Styx** | Progression level(s): ['walljump'] | Other tags: ['npc']
+**Talk to Gilly & Styx** | Progression level(s): ['walljump'] | Other tags: ['npc', 'hardsave']
+
+**Break Both of Styx's Walls** | Progression level(s): ['widow'] | Other tags: ['location']
 
 **Talk to Loam** | Progression level(s): ['act2'] | Other tags: ['npc']
 
@@ -202,7 +208,7 @@
 
 **Obtain 3 Craftmetal** | Progression level(s): ['act2'] | Other tags: ['collection', 'craft']
 
-**Obtain 5 Craftmetal** | Progression level(s): ['act2'] | Other tags: ['collection', 'craft']
+**Obtain 5 Craftmetal** | Progression level(s): ['clawline'] | Other tags: ['collection', 'craft']
 
 **Obtain Crustnut** | Progression level(s): ['clawline'] | Other tags: ['collection']
 
@@ -211,6 +217,8 @@
 **Twisted Bud** | Progression level(s): ['clawline'] | Other tags: ['collection']
 
 **Both Free Simple Keys** | Progression level(s): ['clawline'] | Other tags: ['collection']
+
+**Both Vendor Simple Keys** | Progression level(s): ['act2'] | Other tags: ['collection', 'expensive']
 
 **1 Extra Mask** | Progression level(s): ['widow'] | Other tags: ['upgrade']
 
@@ -234,11 +242,11 @@
 
 **Free 8 fleas** | Progression level(s): ['cloak'] | Other tags: ['flea']
 
-**Free 10 fleas** | Progression level(s): ['cloak'] | Other tags: ['flea']
+**Free 10 fleas** | Progression level(s): ['widow'] | Other tags: ['flea']
 
-**Free 12 fleas** | Progression level(s): ['cloak'] | Other tags: ['flea']
+**Free 12 fleas** | Progression level(s): ['act2'] | Other tags: ['flea']
 
-**Free 14 fleas** | Progression level(s): ['cloak'] | Other tags: ['flea']
+**Free 14 fleas** | Progression level(s): ['clawline'] | Other tags: ['flea']
 
 **Meet Caravan at the Grand Gate [12]** | Progression level(s): ['act2'] | Other tags: ['flea']
 
@@ -252,7 +260,7 @@
 
 **Mt. Fay Flea [1]** | Progression level(s): ['clawline'] | Other tags: ['flea']
 
-**Fight Big Flea** | Progression level(s): ['faydown'] | Other tags: ['fight']
+**Beat Big Flea** | Progression level(s): ['faydown'] | Other tags: ['fight']
 
 **Talk to Vog** | Progression level(s): ['faydown'] | Other tags: ['flea', 'npc']
 
@@ -262,7 +270,7 @@
 
 **Greymoor Spool Fragment** | Progression level(s): ['walljump'] | Other tags: ['upgrade']
 
-**Buy Frey's Spool Fragment** | Progression level(s): ['widow'] | Other tags: ['upgrade']
+**Frey's Spool Fragment** | Progression level(s): ['widow'] | Other tags: ['upgrade']
 
 **Grand Gate Spool Fragment** | Progression level(s): ['act2'] | Other tags: ['upgrade']
 
@@ -278,6 +286,8 @@
 
 **Break 6 Rosary Strings (no purchasing)** | Progression level(s): ['widow'] | Other tags: ['collection']
 
+**Break 8 Rosary Strings (no purchasing)** | Progression level(s): ['act2'] | Other tags: ['collection']
+
 **Break 4 Shard Bundles (no purchasing)** | Progression level(s): ['walljump'] | Other tags: ['collection']
 
 **Break 6 Shard Bundles (no purchasing)** | Progression level(s): ['clawline'] | Other tags: ['collection']
@@ -286,13 +296,13 @@
 
 **Obtain 5 Silkeaters** | Progression level(s): ['act2'] | Other tags: ['collection']
 
-**Obtain 1 Tool Pouch Upgrade** | Progression level(s): ['cloak'] | Other tags: ['collection']
+**Obtain a Tool Pouch Upgrade** | Progression level(s): ['cloak'] | Other tags: ['collection']
 
-**Obtain 1 Crafting Kit** | Progression level(s): ['dash'] | Other tags: ['collection']
+**Obtain a Crafting Kit** | Progression level(s): ['dash'] | Other tags: ['collection']
 
-**Obtain 3 Tool Pouch Upgrade/Crafting Kits** | Progression level(s): ['widow'] | Other tags: ['collection']
+**Obtain 3 Tool Pouch Upgrades/Crafting Kits** | Progression level(s): ['widow'] | Other tags: ['collection']
 
-**5 Memory Lockets** | Progression level(s): ['cloak', 'walljump'] | Other tags: ['collection', 'locket']
+**Obtain 5 Memory Lockets** | Progression level(s): ['cloak', 'walljump'] | Other tags: ['collection', 'locket']
 
 **Fully Unlock a Non-Hunter's Crest** | Progression level(s): ['cloak', 'walljump'] | Other tags: ['collection', 'locket']
 
@@ -302,11 +312,13 @@
 
 **Obtain 2 Rune Harps** | Progression level(s): ['widow'] | Other tags: ['collection', 'relic']
 
-**Talk to Shakra in 5 different areas** | Progression level(s): ['cloak'] | Other tags: ['npc', 'missable']
+**Talk to Shakra at 5 Locations** | Progression level(s): ['widow'] | Other tags: ['npc', 'missable']
 
 **Fix the Sinner's Road Bench** | Progression level(s): ['walljump'] | Other tags: ['location']
 
-**Obtain 5 maps** | Progression level(s): ['dash'] | Other tags: ['npc']
+**Obtain 5 Maps** | Progression level(s): ['dash'] | Other tags: ['npc']
+
+**Obtain 8 Maps** | Progression level(s): ['act2'] | Other tags: ['npc', 'expensive']
 
 **Talk to Shakra in Bilewater** | Progression level(s): ['faydown'] | Other tags: ['npc', 'location']
 
@@ -332,17 +344,19 @@
 
 **Slap Nuu** | Progression level(s): ['act2'] | Other tags: ['quest', 'collection', 'silly']
 
-**Obtain 2 Beast Shards** | Progression level(s): ['walljump'] | Other tags: ['fight']
+**Obtain 2 Beast Shards** | Progression level(s): ['dash'] | Other tags: ['fight']
 
-**Obtain 3 Beast Shards** | Progression level(s): ['walljump'] | Other tags: ['fight']
+**Obtain 3 Beast Shards** | Progression level(s): ['widow'] | Other tags: ['fight']
 
-**Obtain 4 Beast Shards** | Progression level(s): ['walljump'] | Other tags: ['fight']
+**Obtain 4 Beast Shards** | Progression level(s): ['act2'] | Other tags: ['fight']
+
+**Obtain 5 Beast Shards** | Progression level(s): ['faydown'] | Other tags: ['fight']
 
 **Bilewater Bellway** | Progression level(s): ['walljump'] | Other tags: ['location']
 
 **Talk to Forge Daughter and Twelfth Architect** | Progression level(s): ['clawline'] | Other tags: ['npc', 'blocking']
 
-**1 Cogheart Pieces** | Progression level(s): ['act2'] | Other tags: ['collection']
+**1 Cogheart Piece** | Progression level(s): ['act2'] | Other tags: ['collection']
 
 **2 Cogheart Pieces** | Progression level(s): ['act2'] | Other tags: ['collection']
 
@@ -352,5 +366,5 @@
 
 **Conductor's Melody** | Progression level(s): ['clawline'] | Other tags: ['fight', 'melody', 'hard']
 
-**Vaultkeeper's Melody** | Progression level(s): ['act2'] | Other tags: ['fight', 'melody']
+**Vaultkeeper's Melody** | Progression level(s): ['clawline'] | Other tags: ['fight', 'melody']
 

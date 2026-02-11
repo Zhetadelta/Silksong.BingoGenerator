@@ -12,7 +12,8 @@
     {
       "name": "3 Donation Quests",
       "types": [
-        "quest"
+        "quest",
+        "expensive"
       ],
       "progression": [
         "cloak"
@@ -199,7 +200,7 @@
       ]
     },
     {
-      "name": "Dead Bug's Purse + Silkeater",
+      "name": "Dead Bug's Purse & a Silkeater",
       "types": [
         "tool"
       ],
@@ -266,7 +267,8 @@
     {
       "name": "Weighted Belt & Ascendant's Grip",
       "types": [
-        "tool"
+        "tool",
+        "expensive"
       ],
       "progression": [
         "act2"
@@ -394,7 +396,8 @@
       "name": "Multibinder",
       "types": [
         "tool",
-        "quest"
+        "quest",
+        "expensive"
       ],
       "progression": [
         "act2"
@@ -670,7 +673,7 @@
         "fight"
       ],
       "progression": [
-        "cloak"
+        "act2"
       ]
     },
     {
@@ -680,7 +683,7 @@
         "hard"
       ],
       "progression": [
-        "dash"
+        "cloak"
       ]
     },
     {
@@ -1066,7 +1069,8 @@
     {
       "name": "Both Vendor Simple Keys",
       "types": [
-        "collection"
+        "collection",
+        "expensive"
       ],
       "progression": [
         "act2"
@@ -1532,7 +1536,8 @@
     {
       "name": "Obtain 8 Maps",
       "types": [
-        "npc"
+        "npc",
+        "expensive"
       ],
       "progression": [
         "act2"
@@ -1764,7 +1769,7 @@
         "melody"
       ],
       "progression": [
-        "act2"
+        "clawline"
       ]
     }
   ],

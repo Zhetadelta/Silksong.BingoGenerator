@@ -1,9 +1,9 @@
 [
     {
-        "name": "2 Donations Quests"
+        "name": "2 Donation Quests"
     },
     {
-        "name": "3 Donations Quests"
+        "name": "3 Donation Quests"
     },
     {
         "name": "2 Hunt Quests"
@@ -60,7 +60,7 @@
         "name": "Straight, Threefold, and Long Pin"
     },
     {
-        "name": "Dead Bug's Purse + Silkeater"
+        "name": "Dead Bug's Purse & a Silkeater"
     },
     {
         "name": "Barbed Bracelet & Fractured Mask"
@@ -93,7 +93,7 @@
         "name": "Delver's Drill"
     },
     {
-        "name": "Pollip Pouch"
+        "name": "Pollip Pouch & Sting Shard"
     },
     {
         "name": "Tacks"
@@ -118,6 +118,9 @@
     },
     {
         "name": "Repair Silkshot"
+    },
+    {
+        "name": "Multibinder"
     },
     {
         "name": "Rosary Canon"
@@ -153,7 +156,7 @@
         "name": "Needle Strike"
     },
     {
-        "name": "Needle 2"
+        "name": "Upgrade Needle Twice"
     },
     {
         "name": "Thread Storm"
@@ -168,10 +171,10 @@
         "name": "Use a Simple Key in Deep Docks"
     },
     {
-        "name": "Faydown Cloak"
+        "name": "3 Silk Skills"
     },
     {
-        "name": "3 Silk Skills"
+        "name": "4 Silk Skills"
     },
     {
         "name": "Farfields Escape Mask Shard"
@@ -193,6 +196,9 @@
     },
     {
         "name": "Wisp Thicket Mask Shard"
+    },
+    {
+        "name": "Mt. Fay Mask Shard"
     },
     {
         "name": "Craggler"
@@ -264,16 +270,19 @@
         "name": "Skull Tyrant"
     },
     {
-        "name": "Save Green Prince"
+        "name": "Free Green Prince"
     },
     {
-        "name": "Complete a Loddie Minigame"
+        "name": "Win a Loddie Minigame"
     },
     {
         "name": "Fail a Loddie Minigame"
     },
     {
         "name": "Talk to Gilly & Styx"
+    },
+    {
+        "name": "Break Both of Styx's Walls"
     },
     {
         "name": "Talk to Loam"
@@ -319,6 +328,9 @@
     },
     {
         "name": "Both Free Simple Keys"
+    },
+    {
+        "name": "Both Vendor Simple Keys"
     },
     {
         "name": "1 Extra Mask"
@@ -381,7 +393,7 @@
         "name": "Mt. Fay Flea [1]"
     },
     {
-        "name": "Fight Big Flea"
+        "name": "Beat Big Flea"
     },
     {
         "name": "Talk to Vog"
@@ -396,7 +408,7 @@
         "name": "Greymoor Spool Fragment"
     },
     {
-        "name": "Buy Frey's Spool Fragment"
+        "name": "Frey's Spool Fragment"
     },
     {
         "name": "Grand Gate Spool Fragment"
@@ -420,6 +432,9 @@
         "name": "Break 6 Rosary Strings (no purchasing)"
     },
     {
+        "name": "Break 8 Rosary Strings (no purchasing)"
+    },
+    {
         "name": "Break 4 Shard Bundles (no purchasing)"
     },
     {
@@ -432,16 +447,16 @@
         "name": "Obtain 5 Silkeaters"
     },
     {
-        "name": "Obtain 1 Tool Pouch Upgrade"
+        "name": "Obtain a Tool Pouch Upgrade"
     },
     {
-        "name": "Obtain 1 Crafting Kit"
+        "name": "Obtain a Crafting Kit"
     },
     {
-        "name": "Obtain 3 Tool Pouch Upgrade/Crafting Kits"
+        "name": "Obtain 3 Tool Pouch Upgrades/Crafting Kits"
     },
     {
-        "name": "5 Memory Lockets"
+        "name": "Obtain 5 Memory Lockets"
     },
     {
         "name": "Fully Unlock a Non-Hunter's Crest"
@@ -456,13 +471,16 @@
         "name": "Obtain 2 Rune Harps"
     },
     {
-        "name": "Talk to Shakra in 5 different areas"
+        "name": "Talk to Shakra at 5 Locations"
     },
     {
         "name": "Fix the Sinner's Road Bench"
     },
     {
-        "name": "Obtain 5 maps"
+        "name": "Obtain 5 Maps"
+    },
+    {
+        "name": "Obtain 8 Maps"
     },
     {
         "name": "Talk to Shakra in Bilewater"
@@ -510,13 +528,16 @@
         "name": "Obtain 4 Beast Shards"
     },
     {
+        "name": "Obtain 5 Beast Shards"
+    },
+    {
         "name": "Bilewater Bellway"
     },
     {
         "name": "Talk to Forge Daughter and Twelfth Architect"
     },
     {
-        "name": "1 Cogheart Pieces"
+        "name": "1 Cogheart Piece"
     },
     {
         "name": "2 Cogheart Pieces"
