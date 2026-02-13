@@ -445,6 +445,20 @@
             "icons": []
         },
         {
+            "goal": "Pollip Pouch",
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "walljump",
+                "tool"
+            ],
+            "line_categories": [
+                "quest"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
             "goal": "Pollip Pouch & Sting Shard",
             "range": [],
             "individual_limit": 1,
@@ -778,6 +792,20 @@
             "individual_limit": 1,
             "board_categories": [
                 "walljump",
+                "hardsave"
+            ],
+            "line_categories": [
+                "upgrade"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Faydown Cloak",
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "faydown",
                 "hardsave"
             ],
             "line_categories": [

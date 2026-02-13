@@ -304,6 +304,16 @@
       ]
     },
     {
+      "name": "Pollip Pouch",
+      "types": [
+        "tool",
+        "quest"
+      ],
+      "progression": [
+        "walljump"
+      ]
+    },
+    {
       "name": "Pollip Pouch & Sting Shard",
       "types": [
         "tool",
@@ -551,6 +561,16 @@
       ],
       "progression": [
         "widow"
+      ]
+    },
+    {
+      "name": "Faydown Cloak",
+      "types": [
+        "upgrade",
+        "hardsave"
+      ],
+      "progression": [
+        "faydown"
       ]
     },
     {
@@ -1864,6 +1884,12 @@
       "unique": [
         "Curveclaw & Sawtooth Circlet",
         "Magma Bell & Curveclaw"
+      ]
+    },
+    {
+      "unique": [
+        "Pollip Pouch",
+        "Pollip Pouch & Sting Shard"
       ]
     },
     {

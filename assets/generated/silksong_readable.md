@@ -60,6 +60,8 @@
 
 **Delver's Drill** | Progression level(s): ['act2'] | Other tags: ['tool']
 
+**Pollip Pouch** | Progression level(s): ['walljump'] | Other tags: ['tool', 'quest']
+
 **Pollip Pouch & Sting Shard** | Progression level(s): ['walljump'] | Other tags: ['tool', 'craft', 'quest']
 
 **Tacks** | Progression level(s): ['walljump'] | Other tags: ['tool', 'quest']
@@ -109,6 +111,8 @@
 **Sharpdart** | Progression level(s): ['cloak'] | Other tags: ['upgrade', 'key', 'hardsave']
 
 **Evolved Hunter's Crest** | Progression level(s): ['widow'] | Other tags: ['upgrade', 'hardsave']
+
+**Faydown Cloak** | Progression level(s): ['faydown'] | Other tags: ['upgrade', 'hardsave']
 
 **Use a Simple Key in Deep Docks** | Progression level(s): ['early'] | Other tags: ['key', 'location', 'fight']
 
