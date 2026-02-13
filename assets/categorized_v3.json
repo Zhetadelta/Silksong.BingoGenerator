@@ -96,7 +96,7 @@
         "quest"
       ],
       "progression": [
-        "widow"
+        "walljump"
       ]
     },
     {
@@ -186,7 +186,6 @@
         "blocking"
       ],
       "progression": [
-        "early",
         "dash"
       ]
     },
@@ -206,7 +205,10 @@
       ],
       "progression": [
         "walljump"
-      ]
+      ],
+      "skip" : {
+        "enemypogo" : "cloak"
+      }
     },
     {
       "name": "Barbed Bracelet & Fractured Mask",
@@ -215,7 +217,10 @@
       ],
       "progression": [
         "walljump"
-      ]
+      ],
+      "skip" : {
+        "enemypogo" : "cloak"
+      }
     },
     {
       "name": "Magnetite Dice & Magnetite Brooch",
@@ -252,7 +257,10 @@
       ],
       "progression": [
         "clawline"
-      ]
+      ],
+      "skip": {
+        "beastboost" : "act2"
+      }
     },
     {
       "name": "Magma Bell & Curveclaw",
@@ -282,7 +290,10 @@
       ],
       "progression": [
         "clawline"
-      ]
+      ],
+      "skip": {
+        "beastboost" : "act2"
+      }
     },
     {
       "name": "Pimpillo & Voltvessels",
@@ -292,7 +303,11 @@
       ],
       "progression": [
         "faydown"
-      ]
+      ],
+      "skip" : {
+        "beastboost" : "act2",
+        "airstall" : "act2"
+      }
     },
     {
       "name": "Delver's Drill",
@@ -470,7 +485,11 @@
       ],
       "progression": [
         "faydown"
-      ]
+      ],
+      "skip" : {
+        "beastboost" : "act2",
+        "airstall" : "act2"
+      }
     },
     {
       "name": "Sell a Mossberry",
@@ -612,7 +631,10 @@
       ],
       "progression": [
         "clawline"
-      ]
+      ],
+      "skip": {
+        "airstall" : "walljump"
+      }
     },
     {
       "name": "Slab Mask Shard",
@@ -693,7 +715,7 @@
         "fight"
       ],
       "progression": [
-        "act2"
+        "cloak"
       ]
     },
     {
@@ -751,7 +773,11 @@
       ],
       "progression":[
         "faydown"
-      ]
+      ],
+      "skip" : {
+        "toolpogo" : "clawline",
+        "beastboost" : "clawline"
+      }
     },
     {
       "name": "Fourth Chorus",
@@ -830,7 +856,11 @@
       ],
       "progression": [
         "faydown"
-      ]
+      ],
+      "skip": {
+        "beastboost" : "walljump",
+        "toolpogo": "walljump"
+      }
     },
     {
       "name": "Father Of The Flame",
@@ -937,10 +967,13 @@
       ],
       "progression": [
         "walljump"
-      ]
+      ],
+      "skip": {
+        "enemypogo": "cloak"
+      }
     },
     {
-      "name": "Break Both of Styx's Walls",
+      "name": "Break Both of Styx's One-ways",
       "types": [
         "location"
       ],
@@ -973,7 +1006,11 @@
       ],
       "progression": [
         "faydown"
-      ]
+      ],
+      "skip" : {
+        "beastboost" : "walljump",
+        "toolpogo" : "walljump"
+      }
     },
     {
       "name": "Win Lumble's Dice",
@@ -1018,7 +1055,7 @@
         "location"
       ],
       "progression": [
-        "faydown"
+        "clawline"
       ]
     },
     {
@@ -1028,7 +1065,11 @@
       ],
       "progression": [
         "faydown"
-      ]
+      ],
+      "skip" : {
+        "beastboost" : "act2",
+        "airstall" : "act2"
+      }
     },
     {
       "name": "Obtain 3 Craftmetal",
@@ -1122,8 +1163,7 @@
       ],
       "progression": [
         "walljump"
-      ],
-      "weight" : 2
+      ]
     },
     {
       "name": "Greymoor Fleas [2] + Kratt",
@@ -1308,7 +1348,7 @@
         "silly"
       ],
       "progression": [
-        "dash"
+        "cloak"
       ]
     },
     {
@@ -1354,7 +1394,10 @@
       ],
       "progression": [
         "faydown"
-      ]
+      ],
+      "skip" : {
+        "toolpogo":"clawline"
+      }
     },
     {
       "name": "1 Spool Upgrade",
@@ -1480,7 +1523,6 @@
         "locket"
       ],
       "progression": [
-        "cloak",
         "walljump"
       ]
     },
@@ -1491,7 +1533,6 @@
         "locket"
       ],
       "progression": [
-        "cloak",
         "walljump"
       ]
     },
@@ -1502,7 +1543,7 @@
         "relic"
       ],
       "progression": [
-        "walljump"
+        "cloak"
       ]
     },
     {
@@ -1512,7 +1553,7 @@
         "relic"
       ],
       "progression": [
-        "walljump"
+        "widow"
       ]
     },
     {
@@ -1636,7 +1677,7 @@
         "key"
       ],
       "progression": [
-        "dash"
+        "cloak"
       ]
     },
     {
@@ -1645,7 +1686,7 @@
         "collection"
       ],
       "progression": [
-        "dash"
+        "cloak"
       ]
     },
     {
@@ -1731,7 +1772,10 @@
       ],
       "progression": [
         "clawline"
-      ]
+      ],
+      "skip":{
+        "beastboost" : "act2"
+      }
     },
     {
       "name": "1 Cogheart Piece",
@@ -1789,7 +1833,7 @@
         "melody"
       ],
       "progression": [
-        "clawline"
+        "act2"
       ]
     }
   ],

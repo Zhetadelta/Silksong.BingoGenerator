@@ -47,6 +47,12 @@ The following types are excluded by default and must be opted into manually: Sil
 
 "early", "dash", "cloak", "walljump", "act2", "clawline", "faydown"
 
+- `"skip" : [dictionary]` **(Optional)** If certain skips enable goals earlier than intended, this dictionary will contain skip names as keys and new progression strings as values.
+
+#### Skip types:
+
+"toolpogo", "airstall", "binddashrefresh", "beastboost", "cocoonskip", "preciseplatforming", "enemypogo"
+
 - `"weight" : 1` **(Optional)** If not given, a weight is assumed to be 1. A weight of 2 means a goal is twice as likely to be picked. This can be a decimal if you really want that kind of granularity. 
 
 #### Exclusions
