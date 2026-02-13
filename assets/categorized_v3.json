@@ -1696,7 +1696,10 @@
       ],
       "progression": [
         "faydown"
-      ]
+      ],
+      "skip" : {
+        "toolpogo" : "clawline"
+      }
     },
     {
       "name": "Vaultborn Journal Entry",
