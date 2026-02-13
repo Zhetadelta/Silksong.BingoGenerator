@@ -1856,6 +1856,12 @@
     },
     {
       "unique": [
+        "Obtain 3 Craftmetal",
+        "Obtain 5 Craftmetal"
+      ]
+    },
+    {
+      "unique": [
         "Curveclaw & Sawtooth Circlet",
         "Magma Bell & Curveclaw"
       ]
@@ -1937,15 +1943,6 @@
         "Disable the Clawmaidens",
         "High Halls Ventrica",
         "High Halls Spool Fragment"
-      ]
-    },
-    {
-      "limit": 2,
-      "unique" : [
-        "Mt. Fay Flea [1]",
-        "Memory Crystal",
-        "Mt. Fay Mask Shard",
-        "Talk to Mask Maker"
       ]
     },
     {
