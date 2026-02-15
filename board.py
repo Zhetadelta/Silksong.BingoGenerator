@@ -54,15 +54,12 @@ def getAllGoals(noTags=[], **kwargs):
         catList = json.load(f)
     #can't modify list during iteration so keep track of removables here
     remGoals = []
+    presentTags = [tag for tag in orderedProg if tag not in noTags] #ordered tags that arent excluded
     if 'noProg' not in kwargs or not kwargs['noProg']: #progression scaling
-        presentTags = [tag for tag in orderedProg if tag not in noTags] #ordered tags that arent excluded
         linspace = [1 + x*(maxWeightScale-1)/(len(presentTags)-1) for x in range(len(presentTags))]
         def weightScale(progString, types):
             try:
-                if "collection" in types:
-                    return linspace[-1] #max weight for collection goals
-                else:
-                    return linspace[presentTags.index(progString)]
+                return linspace[presentTags.index(progString)]
             except ValueError: #progression is being excluded anyway
                 return 1
     else: 
@@ -73,6 +70,10 @@ def getAllGoals(noTags=[], **kwargs):
             g["weight"] = 1 * weightScale(g["progression"][0], g["types"])
         else:
             g["weight"] = g["weight"] * weightScale(g["progression"][0], g["types"])
+        #collection goals should be max progression
+        if "collection" in g["types"]:
+            if orderedProg.index(g["progression"]) < orderedProg.index(presentTags[-1]):
+                g["progression"] = presentTags[-1]
         #check if we should exclude the goal based on options passed
         goalTags = g["types"] + g["progression"]
         for tag in goalTags:
