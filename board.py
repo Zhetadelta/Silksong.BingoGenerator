@@ -72,8 +72,8 @@ def getAllGoals(noTags=[], **kwargs):
             g["weight"] = g["weight"] * weightScale(g["progression"][0], g["types"])
         #collection goals should be max progression
         if "collection" in g["types"]:
-            if orderedProg.index(g["progression"]) < orderedProg.index(presentTags[-1]):
-                g["progression"] = presentTags[-1]
+            if orderedProg.index(g["progression"][0]) < orderedProg.index(presentTags[-1]):
+                g["progression"][0] = presentTags[-1]
         #check if we should exclude the goal based on options passed
         goalTags = g["types"] + g["progression"]
         for tag in goalTags:
