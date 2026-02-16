@@ -678,7 +678,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "faydown"
+                "early"
             ],
             "line_categories": [
                 "collection"
@@ -899,7 +899,7 @@
             "icons": []
         },
         {
-            "goal": "Shellwood Mask Shard",
+            "goal": "Shellwood + Vaults Mask Shards",
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1497,7 +1497,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "faydown"
+                "clawline"
             ],
             "line_categories": [
                 "collection"
@@ -1510,7 +1510,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "faydown"
+                "act2"
             ],
             "line_categories": [
                 "collection"
@@ -1523,7 +1523,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "faydown"
+                "clawline"
             ],
             "line_categories": [
                 "collection"
@@ -2160,7 +2160,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "faydown"
+                "walljump"
             ],
             "line_categories": [
                 "collection",
@@ -2283,7 +2283,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "faydown"
+                "walljump"
             ],
             "line_categories": [
                 "collection"
@@ -2296,7 +2296,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "faydown"
+                "walljump"
             ],
             "line_categories": [
                 "collection"
@@ -2309,7 +2309,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "faydown"
+                "act2"
             ],
             "line_categories": [
                 "collection"
@@ -2322,7 +2322,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "faydown",
+                "cloak",
                 "key"
             ],
             "line_categories": [
@@ -2336,7 +2336,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "faydown"
+                "cloak"
             ],
             "line_categories": [
                 "collection"
@@ -2362,7 +2362,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "faydown"
+                "act2"
             ],
             "line_categories": [
                 "collection",
@@ -2376,7 +2376,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "faydown"
+                "act2"
             ],
             "line_categories": [
                 "quest",
@@ -2470,7 +2470,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "faydown"
+                "act2"
             ],
             "line_categories": [
                 "collection"
@@ -2483,7 +2483,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "faydown"
+                "act2"
             ],
             "line_categories": [
                 "collection"
