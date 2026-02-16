@@ -11,10 +11,10 @@ CAT_FILENAME = "categorized_v3.json"
 #Lockout.live formatting
 BOARD_TYPES = [
     'cloak', 'walljump', 'act2', 'dash', 'early', 'clawline', 
-    'faydown', 'craft', 'hardsave', 'melody', 'flea', "key", 'tool', ]
+    'faydown', 'craft', 'hardsave', 'melody', 'flea', "key", 'tool', 'act3', 'silksoar']
 
 #Ordered progression
-orderedProg = ['early','dash','cloak','walljump', 'widow', 'act2', 'clawline','faydown']
+orderedProg = ['early','dash','cloak','walljump', 'widow', 'act2', 'clawline','faydown', 'act3', 'silksoar']
 maxWeightScale = 2.25
     
 LL_LIMITS = {

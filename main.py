@@ -65,7 +65,7 @@ async def on_app_command_error(interaction, error):
         await interaction.followup.send(f"The following error was encountered: {str(error.__cause__)}. Let Abyss know!", ephemeral=True)
 
 def prog_options():
-    opt = ["Act 1 Only", "No Clawline", "No Faydown", "Easier Mode", "Act 2 Only"]
+    opt = ["Act 1 Only", "No Clawline", "No Faydown", "Act 3 No Silk Soar", "Full Act 3", "Easier Mode", "Act 2 Only"]
     return [app_commands.Choice(name=i, value=i) for i in opt]
 
 def size_options():
@@ -73,17 +73,21 @@ def size_options():
 
 def progStringToTags(progression):
     if progression is None:
-        noTags = []
+        noTags = ['act3', 'silksoar']
     elif progression.value == "Act 1 Only":
-        noTags = ["act2", "clawline", "faydown"]
+        noTags = ["act2", "clawline", "faydown", 'act3', 'silksoar']
     elif progression.value == "No Clawline":
-        noTags = ["clawline", "faydown"]
+        noTags = ["clawline", "faydown", 'act3', 'silksoar']
     elif progression.value == "No Faydown":
-        noTags = ["faydown"]
+        noTags = ["faydown", 'act3', 'silksoar']
+    elif progression.value == "Act 3 No Silk Soar":
+        noTags = ['silksoar']
+    elif progression.value == "Full Act 3":
+        noTags = []
     elif progression.value == "Easier Mode":
         noTags = ["hard", "faydown"]
     elif progression.value == "Act 2 Only":
-        noTags = ["early", "dash", "cloak", "walljump", "widow"]
+        noTags = ["early", "dash", "cloak", "walljump", "widow", 'act3', 'silksoar']
     return noTags
 
 @client.tree.command()
