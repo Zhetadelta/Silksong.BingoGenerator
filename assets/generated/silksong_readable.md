@@ -126,7 +126,7 @@
 
 **Bilewater Mask Shard** | Progression level(s): ['faydown'] | Other tags: ['upgrade', 'hard']
 
-**Shellwood + Vaults Mask Shards** | Progression level(s): ['cloak'] | Other tags: ['upgrade']
+**Shellwood + Vaults Mask Shards** | Progression level(s): ['act2'] | Other tags: ['upgrade']
 
 **Blasted Steps Mask Shard** | Progression level(s): ['faydown'] | Other tags: ['upgrade']
 
