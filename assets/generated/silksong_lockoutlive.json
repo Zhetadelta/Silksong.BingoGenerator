@@ -899,6 +899,19 @@
             "icons": []
         },
         {
+            "goal": "Deep Docks Mask Shard",
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "walljump"
+            ],
+            "line_categories": [
+                "upgrade"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
             "goal": "Shellwood + Vaults Mask Shards",
             "range": [],
             "individual_limit": 1,
