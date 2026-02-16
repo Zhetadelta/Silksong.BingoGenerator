@@ -35,7 +35,7 @@ A goal must be a dictionary as follows:
 
 #### Possible types:
 
-"craft", "flea", "key", "tool", "melody", "quest", "locket", "upgrade", "fight", "npc", "location", "collection", "scattered", "relic", "hardsave", "blocking", "hard", "expensive", "silly"
+"craft", "flea", "key", "tool", "melody", "quest", "locket", "upgrade", "fight", "npc", "location", "collection", "scattered", "relic", "heart", "hardsave", "blocking", "hard", "expensive", "silly"
 
 #### Opt-in types
 
