@@ -1871,6 +1871,15 @@
       ]
     },
     {
+      "name": "Cradle Map",
+      "types": [
+        "collection"
+      ],
+      "progression": [
+        "act3"
+      ]
+    },
+    {
       "name": "Enter Act 3",
       "types": [
         "hardsave"
@@ -2027,6 +2036,15 @@
       "types": [
         "fight",
         "hard"
+      ],
+      "progression": [
+        "silksoar"
+      ]
+    },
+    {
+      "name": "Talk to Mr. Mushroom",
+      "types": [
+        "npc"
       ],
       "progression": [
         "silksoar"
