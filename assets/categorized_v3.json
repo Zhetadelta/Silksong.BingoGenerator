@@ -1869,6 +1869,225 @@
       "progression": [
         "act2"
       ]
+    },
+    {
+      "name": "Enter Act 3",
+      "types": [
+        "hardsave"
+      ],
+      "progression": [
+        "act3"
+      ]
+    },
+    {
+      "name": "Beastling Call",
+      "types": [
+        "fight"
+      ],
+      "progression": [
+        "act3"
+      ]
+    },
+    {
+      "name": "3 Void Masses",
+      "types": [
+        "collection",
+        "scattered"
+      ],
+      "progression": [
+        "act3"
+      ]
+    },
+    {
+      "name": "6 Void Masses",
+      "types": [
+        "collection",
+        "scattered"
+      ],
+      "progression": [
+        "act3"
+      ]
+    },
+    {
+      "name": "Save Pinmaster Plinney",
+      "types": [
+        "fight",
+        "npc",
+        "location"
+      ],
+      "progression": [
+        "act3"
+      ]
+    },
+    {
+      "name": "Talk to Flick at Survivor's Camp",
+      "types": [
+        "npc"
+      ],
+      "progression": [
+        "act3"
+      ]
+    },
+    {
+      "name": "Abyss Map",
+      "types": [
+        "location"
+      ],
+      "progression": [
+        "act3"
+      ]
+    },
+    {
+      "name": "1 Arcane Egg",
+      "types": [
+        "relic",
+        "collection"
+      ],
+      "progression": [
+        "act3"
+      ]
+    },
+    {
+      "name": "Shadow Charger Journal Entry",
+      "types": [
+        "collection"
+      ],
+      "progression": [
+        "act3"
+      ]
+    },
+    {
+      "name": "Fight Seth",
+      "types": [
+        "fight"
+      ],
+      "progression": [
+        "silksoar"
+      ]
+    },
+    {
+      "name": "Pollen Heart",
+      "types": [
+        "fight",
+        "heart"
+      ],
+      "progression": [
+        "silksoar"
+      ]
+    },
+    {
+      "name": "Hunter's Heart",
+      "types": [
+        "fight",
+        "heart"
+      ],
+      "progression": [
+        "silksoar"
+      ]
+    },
+    {
+      "name": "Pale Stag",
+      "types": [
+        "fight"
+      ],
+      "progression": [
+        "silksoar"
+      ]
+    },
+    {
+      "name": "Verdania Fountain Orbs",
+      "types": [
+        "fight"
+      ],
+      "progression": [
+        "silksoar"
+      ]
+    },
+    {
+      "name": "Conjoined Heart",
+      "types": [
+        "fight",
+        "heart"
+      ],
+      "progression": [
+        "silksoar"
+      ]
+    },
+    {
+      "name": "Pale Nails",
+      "types": [
+        "upgrade"
+      ],
+      "progression": [
+        "silksoar"
+      ]
+    },
+    {
+      "name": "Clear First Coral Tower Arena",
+      "types": [
+        "fight",
+        "hard"
+      ],
+      "progression": [
+        "silksoar"
+      ]
+    },
+    {
+      "name": "Surface Memento",
+      "types": [
+        "hard",
+        "collection",
+        "location"
+      ],
+      "progression": [
+        "silksoar"
+      ]
+    },
+    {
+      "name": "Imoba Journal Entry",
+      "types": [
+        "collection"
+      ],
+      "progression": [
+        "silksoar"
+      ]
+    },
+    {
+      "name": "Grey Memento",
+      "types": [
+        "fight"
+      ],
+      "progression": [
+        "silksoar"
+      ]
+    },
+    {
+      "name": "Brightvein Mask Shard",
+      "types": [
+        "upgrade"
+      ],
+      "progression": [
+        "silksoar"
+      ]
+    },
+    {
+      "name": "Win A Race",
+      "types": [
+        "location",
+        "npc"
+      ],
+      "progression": [
+        "silksoar"
+      ]
+    },
+    {
+      "name": "Shaman Crest",
+      "types": [
+        "upgrade"
+      ],
+      "progression": [
+        "silksoar"
+      ]
     }
   ],
   "exclusions": [
@@ -2082,7 +2301,8 @@
         "Bilewater Mask Shard",
         "Shellwood + Vaults Mask Shards",
         "Blasted Steps Mask Shard",
-        "Cogwork Core Mask Shard"
+        "Cogwork Core Mask Shard",
+        "Brightvein Mask Shard"
       ]
     },
     {
@@ -2118,6 +2338,24 @@
       "unique": [
         "Obtain 3 Silkeaters",
         "Obtain 5 Silkeaters"
+      ]
+    },
+    {
+      "unique": [
+        "3 Void Masses",
+        "6 Void Masses"
+      ]
+    },
+    {
+      "limit": 4,
+      "unique": [
+        "Pollen Heart",
+        "Fight Seth",
+        "Clear First Coral Tower Arena",
+        "Hunter's Heart",
+        "Pale Stag",
+        "Verdania Fountain Orbs",
+        "Conjoined Heart"
       ]
     },
     {

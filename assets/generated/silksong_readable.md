@@ -374,3 +374,49 @@
 
 **Vaultkeeper's Melody** | Progression level(s): ['act2'] | Other tags: ['fight', 'melody']
 
+**Enter Act 3** | Progression level(s): ['act3'] | Other tags: ['hardsave']
+
+**Beastling Call** | Progression level(s): ['act3'] | Other tags: ['fight']
+
+**3 Void Masses** | Progression level(s): ['act3'] | Other tags: ['collection', 'scattered']
+
+**6 Void Masses** | Progression level(s): ['act3'] | Other tags: ['collection', 'scattered']
+
+**Save Pinmaster Plinney** | Progression level(s): ['act3'] | Other tags: ['fight', 'npc', 'location']
+
+**Talk to Flick at Survivor's Camp** | Progression level(s): ['act3'] | Other tags: ['npc']
+
+**Abyss Map** | Progression level(s): ['act3'] | Other tags: ['location']
+
+**1 Arcane Egg** | Progression level(s): ['act3'] | Other tags: ['relic', 'collection']
+
+**Shadow Charger Journal Entry** | Progression level(s): ['act3'] | Other tags: ['collection']
+
+**Fight Seth** | Progression level(s): ['silksoar'] | Other tags: ['fight']
+
+**Pollen Heart** | Progression level(s): ['silksoar'] | Other tags: ['fight', 'heart']
+
+**Hunter's Heart** | Progression level(s): ['silksoar'] | Other tags: ['fight', 'heart']
+
+**Pale Stag** | Progression level(s): ['silksoar'] | Other tags: ['fight']
+
+**Verdania Fountain Orbs** | Progression level(s): ['silksoar'] | Other tags: ['fight']
+
+**Conjoined Heart** | Progression level(s): ['silksoar'] | Other tags: ['fight', 'heart']
+
+**Pale Nails** | Progression level(s): ['silksoar'] | Other tags: ['upgrade']
+
+**Clear First Coral Tower Arena** | Progression level(s): ['silksoar'] | Other tags: ['fight', 'hard']
+
+**Surface Memento** | Progression level(s): ['silksoar'] | Other tags: ['hard', 'collection', 'location']
+
+**Imoba Journal Entry** | Progression level(s): ['silksoar'] | Other tags: ['collection']
+
+**Grey Memento** | Progression level(s): ['silksoar'] | Other tags: ['fight']
+
+**Brightvein Mask Shard** | Progression level(s): ['silksoar'] | Other tags: ['upgrade']
+
+**Win A Race** | Progression level(s): ['silksoar'] | Other tags: ['location', 'npc']
+
+**Shaman Crest** | Progression level(s): ['silksoar'] | Other tags: ['upgrade']
+
