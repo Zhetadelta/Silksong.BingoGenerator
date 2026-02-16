@@ -284,7 +284,6 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "early",
                 "dash",
                 "tool"
             ],
@@ -668,7 +667,8 @@
                 "tool"
             ],
             "line_categories": [
-                "collection"
+                "collection",
+                "scattered"
             ],
             "tooltip": "",
             "icons": []
@@ -678,7 +678,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "early"
+                "faydown"
             ],
             "line_categories": [
                 "collection"
@@ -981,7 +981,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "act2"
+                "cloak"
             ],
             "line_categories": [
                 "fight"
@@ -1332,7 +1332,7 @@
             "icons": []
         },
         {
-            "goal": "Break Both of Styx's Walls",
+            "goal": "Break Both of Styx's One-ways",
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1441,7 +1441,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "faydown"
+                "clawline"
             ],
             "line_categories": [
                 "location"
@@ -1467,11 +1467,12 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "act2",
+                "faydown",
                 "craft"
             ],
             "line_categories": [
-                "collection"
+                "collection",
+                "scattered"
             ],
             "tooltip": "",
             "icons": []
@@ -1481,11 +1482,12 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "clawline",
+                "faydown",
                 "craft"
             ],
             "line_categories": [
-                "collection"
+                "collection",
+                "scattered"
             ],
             "tooltip": "",
             "icons": []
@@ -1495,7 +1497,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "clawline"
+                "faydown"
             ],
             "line_categories": [
                 "collection"
@@ -1508,7 +1510,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "act2"
+                "faydown"
             ],
             "line_categories": [
                 "collection"
@@ -1521,7 +1523,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "clawline"
+                "faydown"
             ],
             "line_categories": [
                 "collection"
@@ -1534,10 +1536,11 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "clawline"
+                "faydown"
             ],
             "line_categories": [
-                "collection"
+                "collection",
+                "scattered"
             ],
             "tooltip": "",
             "icons": []
@@ -1547,10 +1550,11 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "act2"
+                "faydown"
             ],
             "line_categories": [
                 "collection",
+                "scattered",
                 "expensive"
             ],
             "tooltip": "",
@@ -1836,7 +1840,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "dash",
+                "cloak",
                 "flea",
                 "tool"
             ],
@@ -1956,10 +1960,11 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "act2"
+                "faydown"
             ],
             "line_categories": [
-                "collection"
+                "collection",
+                "scattered"
             ],
             "tooltip": "",
             "icons": []
@@ -1969,10 +1974,11 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "walljump"
+                "faydown"
             ],
             "line_categories": [
-                "collection"
+                "collection",
+                "scattered"
             ],
             "tooltip": "",
             "icons": []
@@ -1982,10 +1988,11 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "act2"
+                "faydown"
             ],
             "line_categories": [
-                "collection"
+                "collection",
+                "scattered"
             ],
             "tooltip": "",
             "icons": []
@@ -1995,10 +2002,11 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "walljump"
+                "faydown"
             ],
             "line_categories": [
-                "collection"
+                "collection",
+                "scattered"
             ],
             "tooltip": "",
             "icons": []
@@ -2008,10 +2016,11 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "clawline"
+                "faydown"
             ],
             "line_categories": [
-                "collection"
+                "collection",
+                "scattered"
             ],
             "tooltip": "",
             "icons": []
@@ -2021,10 +2030,11 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "walljump"
+                "faydown"
             ],
             "line_categories": [
-                "collection"
+                "collection",
+                "scattered"
             ],
             "tooltip": "",
             "icons": []
@@ -2034,10 +2044,11 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "act2"
+                "faydown"
             ],
             "line_categories": [
-                "collection"
+                "collection",
+                "scattered"
             ],
             "tooltip": "",
             "icons": []
@@ -2047,10 +2058,11 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "cloak"
+                "faydown"
             ],
             "line_categories": [
-                "collection"
+                "collection",
+                "scattered"
             ],
             "tooltip": "",
             "icons": []
@@ -2060,10 +2072,11 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "dash"
+                "faydown"
             ],
             "line_categories": [
-                "collection"
+                "collection",
+                "scattered"
             ],
             "tooltip": "",
             "icons": []
@@ -2073,10 +2086,11 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "walljump"
+                "faydown"
             ],
             "line_categories": [
-                "collection"
+                "collection",
+                "scattered"
             ],
             "tooltip": "",
             "icons": []
@@ -2086,11 +2100,11 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "cloak",
-                "walljump"
+                "faydown"
             ],
             "line_categories": [
                 "collection",
+                "scattered",
                 "locket"
             ],
             "tooltip": "",
@@ -2101,11 +2115,11 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "cloak",
-                "walljump"
+                "faydown"
             ],
             "line_categories": [
                 "collection",
+                "scattered",
                 "locket"
             ],
             "tooltip": "",
@@ -2116,10 +2130,11 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "walljump"
+                "faydown"
             ],
             "line_categories": [
                 "collection",
+                "scattered",
                 "relic"
             ],
             "tooltip": "",
@@ -2130,10 +2145,11 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "walljump"
+                "faydown"
             ],
             "line_categories": [
                 "collection",
+                "scattered",
                 "relic"
             ],
             "tooltip": "",
@@ -2144,7 +2160,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "walljump"
+                "faydown"
             ],
             "line_categories": [
                 "collection",
@@ -2267,7 +2283,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "walljump"
+                "faydown"
             ],
             "line_categories": [
                 "collection"
@@ -2280,7 +2296,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "walljump"
+                "faydown"
             ],
             "line_categories": [
                 "collection"
@@ -2293,7 +2309,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "act2"
+                "faydown"
             ],
             "line_categories": [
                 "collection"
@@ -2306,7 +2322,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "dash",
+                "faydown",
                 "key"
             ],
             "line_categories": [
@@ -2320,7 +2336,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "dash"
+                "faydown"
             ],
             "line_categories": [
                 "collection"
@@ -2346,7 +2362,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "act2"
+                "faydown"
             ],
             "line_categories": [
                 "collection",
@@ -2360,7 +2376,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "act2"
+                "faydown"
             ],
             "line_categories": [
                 "quest",
@@ -2454,7 +2470,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "act2"
+                "faydown"
             ],
             "line_categories": [
                 "collection"
@@ -2467,7 +2483,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "act2"
+                "faydown"
             ],
             "line_categories": [
                 "collection"
@@ -2523,7 +2539,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "clawline",
+                "act2",
                 "melody"
             ],
             "line_categories": [

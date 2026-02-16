@@ -70,8 +70,8 @@ def getAllGoals(noTags=[], **kwargs):
             g["weight"] = 1 * weightScale(g["progression"][0], g["types"])
         else:
             g["weight"] = g["weight"] * weightScale(g["progression"][0], g["types"])
-        #collection goals should be max progression
-        if "collection" in g["types"]:
+        #scattered goals should be max progression
+        if "scattered" in g["types"]:
             if orderedProg.index(g["progression"][0]) < orderedProg.index(presentTags[-1]):
                 g["progression"][0] = presentTags[-1]
         #check if we should exclude the goal based on options passed

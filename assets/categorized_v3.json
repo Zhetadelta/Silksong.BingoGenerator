@@ -481,6 +481,7 @@
       "name": "Upgrade Druid's Eye",
       "types": [
         "collection",
+        "scattered",
         "tool"
       ],
       "progression": [
@@ -1075,6 +1076,7 @@
       "name": "Obtain 3 Craftmetal",
       "types": [
         "collection",
+        "scattered",
         "craft"
       ],
       "progression": [
@@ -1085,6 +1087,7 @@
       "name": "Obtain 5 Craftmetal",
       "types": [
         "collection",
+        "scattered",
         "craft"
       ],
       "progression": [
@@ -1121,7 +1124,8 @@
     {
       "name": "Both Free Simple Keys",
       "types": [
-        "collection"
+        "collection",
+        "scattered"
       ],
       "progression": [
         "clawline"
@@ -1131,6 +1135,7 @@
       "name": "Both Vendor Simple Keys",
       "types": [
         "collection",
+        "scattered",
         "expensive"
       ],
       "progression": [
@@ -1429,7 +1434,8 @@
     {
       "name": "Break 3 Rosary Necklaces (no purchasing)",
       "types": [
-        "collection"
+        "collection",
+        "scattered"
       ],
       "progression": [
         "act2"
@@ -1438,7 +1444,8 @@
     {
       "name": "Break 6 Rosary Strings (no purchasing)",
       "types": [
-        "collection"
+        "collection",
+        "scattered"
       ],
       "progression": [
         "widow"
@@ -1447,7 +1454,8 @@
     {
       "name": "Break 8 Rosary Strings (no purchasing)",
       "types": [
-        "collection"
+        "collection",
+        "scattered"
       ],
       "progression": [
         "act2"
@@ -1456,7 +1464,8 @@
     {
       "name": "Break 4 Shard Bundles (no purchasing)",
       "types": [
-        "collection"
+        "collection",
+        "scattered"
       ],
       "progression": [
         "walljump"
@@ -1465,7 +1474,8 @@
     {
       "name": "Break 6 Shard Bundles (no purchasing)",
       "types": [
-        "collection"
+        "collection",
+        "scattered"
       ],
       "progression": [
         "clawline"
@@ -1474,7 +1484,8 @@
     {
       "name": "Obtain 3 Silkeaters",
       "types": [
-        "collection"
+        "collection",
+        "scattered"
       ],
       "progression": [
         "walljump"
@@ -1483,7 +1494,8 @@
     {
       "name": "Obtain 5 Silkeaters",
       "types": [
-        "collection"
+        "collection",
+        "scattered"
       ],
       "progression": [
         "act2"
@@ -1492,7 +1504,8 @@
     {
       "name": "Obtain a Tool Pouch Upgrade",
       "types": [
-        "collection"
+        "collection",
+        "scattered"
       ],
       "progression": [
         "cloak"
@@ -1501,7 +1514,8 @@
     {
       "name": "Obtain a Crafting Kit",
       "types": [
-        "collection"
+        "collection",
+        "scattered"
       ],
       "progression": [
         "dash"
@@ -1510,7 +1524,8 @@
     {
       "name": "Obtain 3 Tool Pouch Upgrades/Crafting Kits",
       "types": [
-        "collection"
+        "collection",
+        "scattered"
       ],
       "progression": [
         "widow"
@@ -1520,6 +1535,7 @@
       "name": "Obtain 5 Memory Lockets",
       "types": [
         "collection",
+        "scattered",
         "locket"
       ],
       "progression": [
@@ -1530,6 +1546,7 @@
       "name": "Fully Unlock a Non-Hunter's Crest",
       "types": [
         "collection",
+        "scattered",
         "locket"
       ],
       "progression": [
@@ -1540,6 +1557,7 @@
       "name": "Obtain 3 Different Types of Relic",
       "types": [
         "collection",
+        "scattered",
         "relic"
       ],
       "progression": [
@@ -1550,6 +1568,7 @@
       "name": "Obtain 4 Different Types of Relic",
       "types": [
         "collection",
+        "scattered",
         "relic"
       ],
       "progression": [

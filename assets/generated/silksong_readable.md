@@ -16,7 +16,7 @@
 
 **Complete 5 Quests** | Progression level(s): ['cloak'] | Other tags: ['quest']
 
-**Complete 7 Quests** | Progression level(s): ['widow'] | Other tags: ['quest']
+**Complete 7 Quests** | Progression level(s): ['walljump'] | Other tags: ['quest']
 
 **Break a Courier Item** | Progression level(s): ['act2'] | Other tags: ['quest']
 
@@ -34,7 +34,7 @@
 
 **5 Yellow Tools** | Progression level(s): ['cloak'] | Other tags: ['tool', 'blocking']
 
-**2 of each tool type** | Progression level(s): ['early', 'dash'] | Other tags: ['tool', 'blocking']
+**2 of each tool type** | Progression level(s): ['dash'] | Other tags: ['tool', 'blocking']
 
 **Straight, Threefold, and Long Pin** | Progression level(s): ['cloak'] | Other tags: ['tool']
 
@@ -92,7 +92,7 @@
 
 **Pale Lake Craftmetal** | Progression level(s): ['faydown'] | Other tags: ['location', 'collection']
 
-**Upgrade Druid's Eye** | Progression level(s): ['faydown'] | Other tags: ['collection', 'tool']
+**Upgrade Druid's Eye** | Progression level(s): ['faydown'] | Other tags: ['collection', 'scattered', 'tool']
 
 **Sell a Mossberry** | Progression level(s): ['early'] | Other tags: ['collection']
 
@@ -138,7 +138,7 @@
 
 **Craggler** | Progression level(s): ['early'] | Other tags: ['fight']
 
-**Moorwing** | Progression level(s): ['act2'] | Other tags: ['fight']
+**Moorwing** | Progression level(s): ['cloak'] | Other tags: ['fight']
 
 **Savage Beastfly** | Progression level(s): ['cloak'] | Other tags: ['fight', 'hard']
 
@@ -190,7 +190,7 @@
 
 **Talk to Gilly & Styx** | Progression level(s): ['walljump'] | Other tags: ['npc', 'hardsave']
 
-**Break Both of Styx's Walls** | Progression level(s): ['widow'] | Other tags: ['location']
+**Break Both of Styx's One-ways** | Progression level(s): ['widow'] | Other tags: ['location']
 
 **Talk to Loam** | Progression level(s): ['act2'] | Other tags: ['npc']
 
@@ -206,13 +206,13 @@
 
 **Choral Chambers Ventrica** | Progression level(s): ['act2'] | Other tags: ['location']
 
-**High Halls Ventrica** | Progression level(s): ['faydown'] | Other tags: ['location']
+**High Halls Ventrica** | Progression level(s): ['clawline'] | Other tags: ['location']
 
 **Memorium Ventrica** | Progression level(s): ['faydown'] | Other tags: ['location']
 
-**Obtain 3 Craftmetal** | Progression level(s): ['act2'] | Other tags: ['collection', 'craft']
+**Obtain 3 Craftmetal** | Progression level(s): ['act2'] | Other tags: ['collection', 'scattered', 'craft']
 
-**Obtain 5 Craftmetal** | Progression level(s): ['clawline'] | Other tags: ['collection', 'craft']
+**Obtain 5 Craftmetal** | Progression level(s): ['clawline'] | Other tags: ['collection', 'scattered', 'craft']
 
 **Obtain Crustnut** | Progression level(s): ['clawline'] | Other tags: ['collection']
 
@@ -220,9 +220,9 @@
 
 **Twisted Bud** | Progression level(s): ['clawline'] | Other tags: ['collection']
 
-**Both Free Simple Keys** | Progression level(s): ['clawline'] | Other tags: ['collection']
+**Both Free Simple Keys** | Progression level(s): ['clawline'] | Other tags: ['collection', 'scattered']
 
-**Both Vendor Simple Keys** | Progression level(s): ['act2'] | Other tags: ['collection', 'expensive']
+**Both Vendor Simple Keys** | Progression level(s): ['act2'] | Other tags: ['collection', 'scattered', 'expensive']
 
 **1 Extra Mask** | Progression level(s): ['widow'] | Other tags: ['upgrade']
 
@@ -268,7 +268,7 @@
 
 **Talk to Vog** | Progression level(s): ['faydown'] | Other tags: ['flea', 'npc']
 
-**Hit a Hoker with the Flea Bottle** | Progression level(s): ['dash'] | Other tags: ['flea', 'tool', 'quest', 'silly']
+**Hit a Hoker with the Flea Bottle** | Progression level(s): ['cloak'] | Other tags: ['flea', 'tool', 'quest', 'silly']
 
 **Deep Docks Spool Fragments (2)** | Progression level(s): ['clawline'] | Other tags: ['upgrade']
 
@@ -286,33 +286,33 @@
 
 **3 Spool Upgrades** | Progression level(s): ['clawline'] | Other tags: ['upgrade']
 
-**Break 3 Rosary Necklaces (no purchasing)** | Progression level(s): ['act2'] | Other tags: ['collection']
+**Break 3 Rosary Necklaces (no purchasing)** | Progression level(s): ['act2'] | Other tags: ['collection', 'scattered']
 
-**Break 6 Rosary Strings (no purchasing)** | Progression level(s): ['widow'] | Other tags: ['collection']
+**Break 6 Rosary Strings (no purchasing)** | Progression level(s): ['widow'] | Other tags: ['collection', 'scattered']
 
-**Break 8 Rosary Strings (no purchasing)** | Progression level(s): ['act2'] | Other tags: ['collection']
+**Break 8 Rosary Strings (no purchasing)** | Progression level(s): ['act2'] | Other tags: ['collection', 'scattered']
 
-**Break 4 Shard Bundles (no purchasing)** | Progression level(s): ['walljump'] | Other tags: ['collection']
+**Break 4 Shard Bundles (no purchasing)** | Progression level(s): ['walljump'] | Other tags: ['collection', 'scattered']
 
-**Break 6 Shard Bundles (no purchasing)** | Progression level(s): ['clawline'] | Other tags: ['collection']
+**Break 6 Shard Bundles (no purchasing)** | Progression level(s): ['clawline'] | Other tags: ['collection', 'scattered']
 
-**Obtain 3 Silkeaters** | Progression level(s): ['walljump'] | Other tags: ['collection']
+**Obtain 3 Silkeaters** | Progression level(s): ['walljump'] | Other tags: ['collection', 'scattered']
 
-**Obtain 5 Silkeaters** | Progression level(s): ['act2'] | Other tags: ['collection']
+**Obtain 5 Silkeaters** | Progression level(s): ['act2'] | Other tags: ['collection', 'scattered']
 
-**Obtain a Tool Pouch Upgrade** | Progression level(s): ['cloak'] | Other tags: ['collection']
+**Obtain a Tool Pouch Upgrade** | Progression level(s): ['cloak'] | Other tags: ['collection', 'scattered']
 
-**Obtain a Crafting Kit** | Progression level(s): ['dash'] | Other tags: ['collection']
+**Obtain a Crafting Kit** | Progression level(s): ['dash'] | Other tags: ['collection', 'scattered']
 
-**Obtain 3 Tool Pouch Upgrades/Crafting Kits** | Progression level(s): ['widow'] | Other tags: ['collection']
+**Obtain 3 Tool Pouch Upgrades/Crafting Kits** | Progression level(s): ['widow'] | Other tags: ['collection', 'scattered']
 
-**Obtain 5 Memory Lockets** | Progression level(s): ['cloak', 'walljump'] | Other tags: ['collection', 'locket']
+**Obtain 5 Memory Lockets** | Progression level(s): ['walljump'] | Other tags: ['collection', 'scattered', 'locket']
 
-**Fully Unlock a Non-Hunter's Crest** | Progression level(s): ['cloak', 'walljump'] | Other tags: ['collection', 'locket']
+**Fully Unlock a Non-Hunter's Crest** | Progression level(s): ['walljump'] | Other tags: ['collection', 'scattered', 'locket']
 
-**Obtain 3 Different Types of Relic** | Progression level(s): ['walljump'] | Other tags: ['collection', 'relic']
+**Obtain 3 Different Types of Relic** | Progression level(s): ['cloak'] | Other tags: ['collection', 'scattered', 'relic']
 
-**Obtain 4 Different Types of Relic** | Progression level(s): ['walljump'] | Other tags: ['collection', 'relic']
+**Obtain 4 Different Types of Relic** | Progression level(s): ['widow'] | Other tags: ['collection', 'scattered', 'relic']
 
 **Obtain 2 Rune Harps** | Progression level(s): ['widow'] | Other tags: ['collection', 'relic']
 
@@ -338,9 +338,9 @@
 
 **Cragglite Journal Entry** | Progression level(s): ['act2'] | Other tags: ['collection']
 
-**Gromling Journal Entry** | Progression level(s): ['dash'] | Other tags: ['collection', 'key']
+**Gromling Journal Entry** | Progression level(s): ['cloak'] | Other tags: ['collection', 'key']
 
-**Mite Mother Journal Entry** | Progression level(s): ['dash'] | Other tags: ['collection']
+**Mite Mother Journal Entry** | Progression level(s): ['cloak'] | Other tags: ['collection']
 
 **Massive Mossgrub Journal Entry** | Progression level(s): ['faydown'] | Other tags: ['collection']
 
@@ -370,5 +370,5 @@
 
 **Conductor's Melody** | Progression level(s): ['clawline'] | Other tags: ['fight', 'melody', 'hard']
 
-**Vaultkeeper's Melody** | Progression level(s): ['clawline'] | Other tags: ['fight', 'melody']
+**Vaultkeeper's Melody** | Progression level(s): ['act2'] | Other tags: ['fight', 'melody']
 
