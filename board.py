@@ -15,7 +15,7 @@ BOARD_TYPES = [
 
 #Ordered progression
 orderedProg = ['early','dash','cloak','walljump', 'widow', 'act2', 'clawline','faydown', 'act3', 'silksoar']
-maxWeightScale = 2.4
+maxWeightScale = 2.25
     
 LL_LIMITS = {
             "board" : {
@@ -83,7 +83,10 @@ def getAllGoals(noTags=[], **kwargs):
         linspace = [1 + x*(maxWeightScale-1)/(len(presentTags)-1) for x in range(len(presentTags))]
         def weightScale(progString, types):
             try:
-                return linspace[presentTags.index(progString)]
+                if "scattered" not in types:
+                    return linspace[presentTags.index(progString)]
+                else:
+                    return linspace[-1] #scattered goals should be max weight
             except ValueError: #progression is being excluded anyway
                 return 1
     else: 
@@ -94,10 +97,6 @@ def getAllGoals(noTags=[], **kwargs):
             g["weight"] = 1 * weightScale(g["progression"][0], g["types"])
         else:
             g["weight"] = g["weight"] * weightScale(g["progression"][0], g["types"])
-        #scattered goals should be max progression
-        if "scattered" in g["types"]:
-            if orderedProg.index(g["progression"][0]) < orderedProg.index(presentTags[-1]):
-                g["progression"][0] = presentTags[-1]
         #check if we should exclude the goal based on options passed
         goalTags = g["types"] + g["progression"]
         for tag in goalTags:
