@@ -585,7 +585,16 @@
         "name": "Talk to Flick at Survivor's Camp"
     },
     {
+        "name": "3 Non-Hunter Crests"
+    },
+    {
+        "name": "Defeat a Black-threaded Boss"
+    },
+    {
         "name": "Abyss Map"
+    },
+    {
+        "name": "Verdania Map"
     },
     {
         "name": "1 Arcane Egg"
@@ -616,6 +625,12 @@
     },
     {
         "name": "Clear First Coral Tower Arena"
+    },
+    {
+        "name": "Tormented Trobbio"
+    },
+    {
+        "name": "Visit Styx's Nest"
     },
     {
         "name": "Talk to Mr. Mushroom"

@@ -388,7 +388,13 @@
 
 **Talk to Flick at Survivor's Camp** | Progression level(s): ['act3'] | Other tags: ['npc']
 
+**3 Non-Hunter Crests** | Progression level(s): ['act3'] | Other tags: ['upgrade', 'hardsave']
+
+**Defeat a Black-threaded Boss** | Progression level(s): ['act3'] | Other tags: ['fight']
+
 **Abyss Map** | Progression level(s): ['act3'] | Other tags: ['location']
+
+**Verdania Map** | Progression level(s): ['act3'] | Other tags: ['location']
 
 **1 Arcane Egg** | Progression level(s): ['act3'] | Other tags: ['relic', 'collection']
 
@@ -409,6 +415,10 @@
 **Pale Nails** | Progression level(s): ['silksoar'] | Other tags: ['upgrade']
 
 **Clear First Coral Tower Arena** | Progression level(s): ['silksoar'] | Other tags: ['fight', 'hard']
+
+**Tormented Trobbio** | Progression level(s): ['silksoar'] | Other tags: ['fight']
+
+**Visit Styx's Nest** | Progression level(s): ['silksoar'] | Other tags: ['location', 'npc']
 
 **Talk to Mr. Mushroom** | Progression level(s): ['silksoar'] | Other tags: ['npc']
 

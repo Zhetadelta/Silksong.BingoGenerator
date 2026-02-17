@@ -2656,7 +2656,47 @@
             "icons": []
         },
         {
+            "goal": "3 Non-Hunter Crests",
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "act3",
+                "hardsave"
+            ],
+            "line_categories": [
+                "upgrade"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Defeat a Black-threaded Boss",
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "act3"
+            ],
+            "line_categories": [
+                "fight"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
             "goal": "Abyss Map",
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "act3"
+            ],
+            "line_categories": [
+                "location"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Verdania Map",
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2799,6 +2839,33 @@
             "line_categories": [
                 "fight",
                 "hard"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Tormented Trobbio",
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "silksoar"
+            ],
+            "line_categories": [
+                "fight"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Visit Styx's Nest",
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "silksoar"
+            ],
+            "line_categories": [
+                "location",
+                "npc"
             ],
             "tooltip": "",
             "icons": []

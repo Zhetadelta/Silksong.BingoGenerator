@@ -1938,7 +1938,35 @@
       ]
     },
     {
+      "name": "3 Non-Hunter Crests",
+      "types": [
+        "upgrade",
+        "hardsave"
+      ],
+      "progression": [
+        "act3"
+      ]
+    },
+    {
+      "name": "Defeat a Black-threaded Boss",
+      "types": [
+        "fight"
+      ],
+      "progression": [
+        "act3"
+      ]
+    },
+    {
       "name": "Abyss Map",
+      "types": [
+        "location"
+      ],
+      "progression": [
+        "act3"
+      ]
+    },
+    {
+      "name": "Verdania Map",
       "types": [
         "location"
       ],
@@ -2036,6 +2064,25 @@
       "types": [
         "fight",
         "hard"
+      ],
+      "progression": [
+        "silksoar"
+      ]
+    },
+    {
+      "name": "Tormented Trobbio",
+      "types": [
+        "fight"
+      ],
+      "progression": [
+        "silksoar"
+      ]
+    },
+    {
+      "name": "Visit Styx's Nest",
+      "types": [
+        "location",
+        "npc"
       ],
       "progression": [
         "silksoar"

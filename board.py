@@ -249,10 +249,16 @@ def bingosyncBoard(noTags=[], **kwargs):
     else:
         pattern = False
 
+    if "forceProgression" in kwargs.keys() and kwargs["forceProgression"]:
+        forcer = True
+    else: 
+        forcer = False
+
     if "size" in kwargs.keys():
-        boardList = board(*getAllGoals(noTags=noTags), size=int(kwargs["size"]), lockout=(not "lockout" in noTags), tagLimits=limits, pattern=pattern)
+        boardList = board(*getAllGoals(noTags=noTags), size=int(kwargs["size"]), lockout=(not "lockout" in noTags), 
+            forceProgression=forcer, tagLimits=limits, pattern=pattern)
     else:
-        boardList = board(*getAllGoals(noTags=noTags), lockout=(not "lockout" in noTags), tagLimits=limits, pattern=pattern)
+        boardList = board(*getAllGoals(noTags=noTags), lockout=(not "lockout" in noTags), tagLimits=limits, pattern=pattern, forceProgression=forcer)
     out = []
     for name in boardList:
         out.append({"name": name})
