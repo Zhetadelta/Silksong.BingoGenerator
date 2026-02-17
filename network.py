@@ -69,7 +69,8 @@ ROOM_NAMES = [
     "Krattball",
     "Webbed Bouce",
     "Skimaaaanama",
-    "Heavy Brosary Necklace"
+    "Heavy Brosary Necklace",
+    "Lunaberry"
 ]
 
 STANDARD_PAYLOAD = {
