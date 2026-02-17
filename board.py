@@ -226,6 +226,7 @@ def board(allGoals:dict, exclusionDic, size=25, **kwargs):
 
     if forcer:
         print(indices)
+        print(forcedGoals)
         for i, index in enumerate(indices):
             goals.insert(index, forcedGoals[i])
     return goals
