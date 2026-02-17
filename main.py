@@ -115,7 +115,10 @@ async def newascend(interaction: discord.Interaction, preset: Optional[app_comma
     noTags.append("lockout")
     if size is None:
         size = app_commands.Choice(name="7", value="7")
-    thisBoard = board.lockoutBoard(noTags=noTags, size=int(size.value)**2, **BOARD_KWARGS)
+    if preset is not None and preset.value in ["Act 3 No Silk Soar", "Full Act 3"]:
+        thisBoard = board.lockoutBoard(noTags=noTags, size=int(size.value)**2, forceProgression=True, **BOARD_KWARGS)
+    else:
+        thisBoard = board.lockoutBoard(noTags=noTags, size=int(size.value)**2, **BOARD_KWARGS)
     fname = str(random.randint(0, 100000))+".json"
     with open(fname,"w") as tempFile:
         json.dump(thisBoard, tempFile)
@@ -132,7 +135,10 @@ async def newroom(interaction: discord.Interaction, lockout: bool = False, patte
     noTags = progStringToTags(preset)
     if not lockout:
         noTags.append("lockout") #exclude lockout-only goals
-    thisBoard = board.bingosyncBoard(noTags=noTags, **BOARD_KWARGS, noBlocking = pattern)
+    if preset is not None and preset.value in ["Act 3 No Silk Soar", "Full Act 3"]:
+        thisBoard = board.bingosyncBoard(noTags=noTags, **BOARD_KWARGS, noBlocking = pattern, forceProgression=True)
+    else:
+        thisBoard = board.bingosyncBoard(noTags=noTags, **BOARD_KWARGS, noBlocking = pattern)
     bsSession = network.bingosyncClient()
     n, rId = bsSession.newRoom(json.dumps(thisBoard), lockout=lockout)
     bsSession.close()
@@ -148,7 +154,10 @@ async def newcaravan(interaction: discord.Interaction, lockout: bool = False, pa
     noTags = progStringToTags(preset)
     if not lockout:
         noTags.append("lockout") #exclude lockout-only goals
-    thisBoard = board.bingosyncBoard(noTags=noTags, **BOARD_KWARGS, noBlocking = pattern, size=36)
+    if preset is not None and preset.value in ["Act 3 No Silk Soar", "Full Act 3"]:
+        thisBoard = board.bingosyncBoard(noTags=noTags, **BOARD_KWARGS, noBlocking = pattern, size=36, forceProgression=True)
+    else:
+        thisBoard = board.bingosyncBoard(noTags=noTags, **BOARD_KWARGS, noBlocking = pattern, size=36)
     bsSession = network.caravanClient()
     n, rId = bsSession.newRoom(json.dumps(thisBoard), lockout=lockout)
     bsSession.close()

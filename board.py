@@ -45,6 +45,30 @@ LL_LIMITS = {
             }
         }
 
+def progForcer(size=6):
+    """
+    Pick locations for goals which force max progression.
+    Returns a list of indices.
+    """
+    mSize = size-1
+    #first pick two (zero indexed) squares on the diagonals. row, col
+    i = random.randrange(size)
+    j = random.randrange(size)
+    while j == i or abs(j-mSize) == i:
+        j = random.randrange(size)
+    bltr = (j, abs(j-mSize))
+    rows = [k for k in range(size) if k not in [i, j]]
+    rows.append(i)
+    rows.append(j)
+    cols = [l for l in range(size) if l not in [i, abs(j-mSize)]]
+    random.shuffle(cols)
+    cols.append(i)
+    cols.append(abs(j-mSize))
+    locations = zip(rows, cols)
+    return [c+(r*size) for r,c in locations]
+    
+
+
 def getAllGoals(noTags=[], **kwargs):
     """
     Loads the file given in variables at the top of the script and returns the parts.
@@ -120,6 +144,7 @@ def board(allGoals:dict, exclusionDic, size=25, **kwargs):
     tagLimits = kwargs["tagLimits"].copy() if "tagLimits" in kwargs.keys() and kwargs["tagLimits"] is not None else None
     pattern = kwargs["pattern"] if "pattern" in kwargs.keys() else False
     progs = kwargs["keepProgression"] if "keepProgression" in kwargs.keys() else False
+    forcer = kwargs["forceProgression"] if "forceProgression" in kwargs.keys else False
 
     if "priorGoals" in kwargs.keys(): #linked boards, apply exclusions now
         for goal in kwargs["priorGoals"]:
@@ -128,12 +153,27 @@ def board(allGoals:dict, exclusionDic, size=25, **kwargs):
                 for excludedGoal in exclusions:
                     allGoals = removeGoalByName(allGoals, excludedGoal)
 
+    if forcer: #force all lines to have max progression
+        indices = progForcer(size=int(sqrt(size)))
+        indices.sort()
+        forceCount = len(indices)
+        forcedGoals = []
+        maxProg = "early"
+        for goal in allGoals:
+            if orderedProg.index(goal["progression"][0]) < orderedProg.index(maxProg):
+                maxProg = goal["progression"][0]
+        size -= forceCount
 
     while len(goals) < size:
         if len(allGoals) == 0: #critical failure
             raise EOFError("Out of goals! Try again.")
 
-        newGoal = random.choices(allGoals, weights=[g["weight"] for g in allGoals])[0] #list comprehension to extract weights
+        if forcer and forceCount > 0:
+            newGoal = random.choices(allGoals, weights=[g["weight"] for g in allGoals])[0] #list comprehension to extract weights
+            while newGoal["progression"][0] != maxProg:
+                newGoal = random.choices(allGoals, weights=[g["weight"] for g in allGoals])[0]
+        else:
+            newGoal = random.choices(allGoals, weights=[g["weight"] for g in allGoals])[0]
 
         #process board limits
         skip = False
@@ -164,19 +204,17 @@ def board(allGoals:dict, exclusionDic, size=25, **kwargs):
                 if tag in tagLimits.keys(): #tag has a limit
                     tagLimits[tag] = tagLimits[tag] - 1 #decrement tag limit
 
-        #format ranges and append to list
-        #
-        if "range" in newGoal.keys(): #goal has a range
-            if not lockout or "lockout-range" not in newGoal.keys(): #use base range
-                goalName = newGoal["name"].replace("{{X}}", str(random.choice(newGoal["range"])))
-            else: #use lockout range
-                goalName = newGoal["name"].replace("{{X}}", str(random.choice(newGoal["lockout-range"])))
-        else: #no range, ez
-            goalName = newGoal["name"]
-        if progs: #keep progression tag for sorting
-            goals.append({"name": goalName, "progression": newGoal["progression"]})
+        #handle forcer
+        if forcer and forceCount >= 0:
+            forcedGoals.append(newGoal["name"])
+            forceCount -= 1
         else:
-            goals.append(goalName)
+        #format ranges and append to list
+            goalName = newGoal["name"]
+            if progs: #keep progression tag for sorting
+                goals.append({"name": goalName, "progression": newGoal["progression"]})
+            else:
+                goals.append(goalName)
 
         #remove goal from list to not get chosen twice
         try:
@@ -185,6 +223,10 @@ def board(allGoals:dict, exclusionDic, size=25, **kwargs):
             pass
 
     random.shuffle(goals) #mix em all up when we're done
+
+    if forcer:
+        for i, index in enumerate(indices):
+            goals.insert(index, forcedGoals[i])
     return goals
 
 def bingosyncBoard(noTags=[], **kwargs):
