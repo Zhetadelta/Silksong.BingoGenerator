@@ -144,7 +144,7 @@ def board(allGoals:dict, exclusionDic, size=25, **kwargs):
     tagLimits = kwargs["tagLimits"].copy() if "tagLimits" in kwargs.keys() and kwargs["tagLimits"] is not None else None
     pattern = kwargs["pattern"] if "pattern" in kwargs.keys() else False
     progs = kwargs["keepProgression"] if "keepProgression" in kwargs.keys() else False
-    forcer = kwargs["forceProgression"] if "forceProgression" in kwargs.keys else False
+    forcer = kwargs["forceProgression"] if "forceProgression" in kwargs.keys() else False
 
     if "priorGoals" in kwargs.keys(): #linked boards, apply exclusions now
         for goal in kwargs["priorGoals"]:
@@ -463,5 +463,5 @@ if __name__ == "__main__":
     #print(json.dumps(lockoutFormat()))
 
     ####Test board generation
-    thisBoard = bingosyncBoard(noTags=["lockout"])
+    thisBoard = bingosyncBoard(forceProgression=True)
     print(json.dumps(thisBoard))

@@ -2562,6 +2562,19 @@
             "icons": []
         },
         {
+            "goal": "Cradle Map",
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "act3"
+            ],
+            "line_categories": [
+                "collection"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
             "goal": "Enter Act 3",
             "range": [],
             "individual_limit": 1,
@@ -2786,6 +2799,19 @@
             "line_categories": [
                 "fight",
                 "hard"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Talk to Mr. Mushroom",
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "silksoar"
+            ],
+            "line_categories": [
+                "npc"
             ],
             "tooltip": "",
             "icons": []

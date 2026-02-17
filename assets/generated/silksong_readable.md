@@ -374,6 +374,8 @@
 
 **Vaultkeeper's Melody** | Progression level(s): ['act2'] | Other tags: ['fight', 'melody']
 
+**Cradle Map** | Progression level(s): ['act3'] | Other tags: ['collection']
+
 **Enter Act 3** | Progression level(s): ['act3'] | Other tags: ['hardsave']
 
 **Beastling Call** | Progression level(s): ['act3'] | Other tags: ['fight']
@@ -407,6 +409,8 @@
 **Pale Nails** | Progression level(s): ['silksoar'] | Other tags: ['upgrade']
 
 **Clear First Coral Tower Arena** | Progression level(s): ['silksoar'] | Other tags: ['fight', 'hard']
+
+**Talk to Mr. Mushroom** | Progression level(s): ['silksoar'] | Other tags: ['npc']
 
 **Surface Memento** | Progression level(s): ['silksoar'] | Other tags: ['hard', 'collection', 'location']
 
