@@ -160,7 +160,7 @@ def board(allGoals:dict, exclusionDic, size=25, **kwargs):
         forcedGoals = []
         maxProg = "early"
         for goal in allGoals:
-            if orderedProg.index(goal["progression"][0]) < orderedProg.index(maxProg):
+            if orderedProg.index(goal["progression"][0]) > orderedProg.index(maxProg):
                 maxProg = goal["progression"][0]
         size -= forceCount
 
