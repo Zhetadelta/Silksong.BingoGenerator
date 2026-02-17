@@ -20,6 +20,17 @@
       ]
     },
     {
+      "name": "Bellhome Key",
+      "types": [
+        "expensive",
+        "quest",
+        "npc"
+      ],
+      "progression": [
+        "clawline"
+      ]
+    },
+    {
       "name": "2 Hunt Quests",
       "types": [
         "quest",
@@ -588,6 +599,15 @@
       "types": [
         "upgrade",
         "hardsave"
+      ],
+      "progression": [
+        "faydown"
+      ]
+    },
+    {
+      "name": "Apostate Key",
+      "types": [
+        "collection"
       ],
       "progression": [
         "faydown"
@@ -1957,6 +1977,15 @@
       ]
     },
     {
+      "name": "Pin Badge",
+      "types": [
+        "fight"
+      ],
+      "progression": [
+        "act3"
+      ]
+    },
+    {
       "name": "Abyss Map",
       "types": [
         "location"
@@ -2026,6 +2055,16 @@
       "name": "Pale Stag",
       "types": [
         "fight"
+      ],
+      "progression": [
+        "silksoar"
+      ]
+    },
+    {
+      "name": "Look at Magnetite in Brightvein",
+      "types": [
+        "collection",
+        "location"
       ],
       "progression": [
         "silksoar"
@@ -2121,6 +2160,15 @@
       "name": "Grey Memento",
       "types": [
         "fight"
+      ],
+      "progression": [
+        "silksoar"
+      ]
+    },
+    {
+      "name": "2 Mementos",
+      "types": [
+        "collection"
       ],
       "progression": [
         "silksoar"

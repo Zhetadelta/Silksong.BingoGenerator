@@ -6,6 +6,9 @@
         "name": "3 Donation Quests"
     },
     {
+        "name": "Bellhome Key"
+    },
+    {
         "name": "2 Hunt Quests"
     },
     {
@@ -172,6 +175,9 @@
     },
     {
         "name": "Faydown Cloak"
+    },
+    {
+        "name": "Apostate Key"
     },
     {
         "name": "Use a Simple Key in Deep Docks"
@@ -591,6 +597,9 @@
         "name": "Defeat a Black-threaded Boss"
     },
     {
+        "name": "Pin Badge"
+    },
+    {
         "name": "Abyss Map"
     },
     {
@@ -613,6 +622,9 @@
     },
     {
         "name": "Pale Stag"
+    },
+    {
+        "name": "Look at Magnetite in Brightvein"
     },
     {
         "name": "Verdania Fountain Orbs"
@@ -643,6 +655,9 @@
     },
     {
         "name": "Grey Memento"
+    },
+    {
+        "name": "2 Mementos"
     },
     {
         "name": "Brightvein Mask Shard"

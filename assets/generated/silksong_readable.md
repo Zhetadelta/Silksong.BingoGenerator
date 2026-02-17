@@ -2,6 +2,8 @@
 
 **3 Donation Quests** | Progression level(s): ['cloak'] | Other tags: ['quest', 'expensive']
 
+**Bellhome Key** | Progression level(s): ['clawline'] | Other tags: ['expensive', 'quest', 'npc']
+
 **2 Hunt Quests** | Progression level(s): ['cloak'] | Other tags: ['quest', 'blocking']
 
 **4 Hunt Quests** | Progression level(s): ['cloak'] | Other tags: ['quest', 'blocking']
@@ -113,6 +115,8 @@
 **Evolved Hunter's Crest** | Progression level(s): ['widow'] | Other tags: ['upgrade', 'hardsave']
 
 **Faydown Cloak** | Progression level(s): ['faydown'] | Other tags: ['upgrade', 'hardsave']
+
+**Apostate Key** | Progression level(s): ['faydown'] | Other tags: ['collection']
 
 **Use a Simple Key in Deep Docks** | Progression level(s): ['early'] | Other tags: ['key', 'location', 'fight']
 
@@ -392,6 +396,8 @@
 
 **Defeat a Black-threaded Boss** | Progression level(s): ['act3'] | Other tags: ['fight']
 
+**Pin Badge** | Progression level(s): ['act3'] | Other tags: ['fight']
+
 **Abyss Map** | Progression level(s): ['act3'] | Other tags: ['location']
 
 **Verdania Map** | Progression level(s): ['act3'] | Other tags: ['location']
@@ -407,6 +413,8 @@
 **Hunter's Heart** | Progression level(s): ['silksoar'] | Other tags: ['fight', 'heart']
 
 **Pale Stag** | Progression level(s): ['silksoar'] | Other tags: ['fight']
+
+**Look at Magnetite in Brightvein** | Progression level(s): ['silksoar'] | Other tags: ['collection', 'location']
 
 **Verdania Fountain Orbs** | Progression level(s): ['silksoar'] | Other tags: ['fight']
 
@@ -427,6 +435,8 @@
 **Imoba Journal Entry** | Progression level(s): ['silksoar'] | Other tags: ['collection']
 
 **Grey Memento** | Progression level(s): ['silksoar'] | Other tags: ['fight']
+
+**2 Mementos** | Progression level(s): ['silksoar'] | Other tags: ['collection']
 
 **Brightvein Mask Shard** | Progression level(s): ['silksoar'] | Other tags: ['upgrade']
 

@@ -56,6 +56,21 @@
             "icons": []
         },
         {
+            "goal": "Bellhome Key",
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "clawline"
+            ],
+            "line_categories": [
+                "expensive",
+                "quest",
+                "npc"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
             "goal": "2 Hunt Quests",
             "range": [],
             "individual_limit": 1,
@@ -663,7 +678,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "silksoar",
+                "faydown",
                 "tool"
             ],
             "line_categories": [
@@ -810,6 +825,19 @@
             ],
             "line_categories": [
                 "upgrade"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Apostate Key",
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "faydown"
+            ],
+            "line_categories": [
+                "collection"
             ],
             "tooltip": "",
             "icons": []
@@ -1480,7 +1508,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "silksoar",
+                "act2",
                 "craft"
             ],
             "line_categories": [
@@ -1495,7 +1523,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "silksoar",
+                "clawline",
                 "craft"
             ],
             "line_categories": [
@@ -1549,7 +1577,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "silksoar"
+                "clawline"
             ],
             "line_categories": [
                 "collection",
@@ -1563,7 +1591,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "silksoar"
+                "act2"
             ],
             "line_categories": [
                 "collection",
@@ -1973,7 +2001,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "silksoar"
+                "act2"
             ],
             "line_categories": [
                 "collection",
@@ -1987,7 +2015,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "silksoar"
+                "walljump"
             ],
             "line_categories": [
                 "collection",
@@ -2001,7 +2029,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "silksoar"
+                "act2"
             ],
             "line_categories": [
                 "collection",
@@ -2015,7 +2043,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "silksoar"
+                "walljump"
             ],
             "line_categories": [
                 "collection",
@@ -2029,7 +2057,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "silksoar"
+                "clawline"
             ],
             "line_categories": [
                 "collection",
@@ -2043,7 +2071,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "silksoar"
+                "walljump"
             ],
             "line_categories": [
                 "collection",
@@ -2057,7 +2085,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "silksoar"
+                "act2"
             ],
             "line_categories": [
                 "collection",
@@ -2071,7 +2099,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "silksoar"
+                "cloak"
             ],
             "line_categories": [
                 "collection",
@@ -2085,7 +2113,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "silksoar"
+                "dash"
             ],
             "line_categories": [
                 "collection",
@@ -2099,7 +2127,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "silksoar"
+                "walljump"
             ],
             "line_categories": [
                 "collection",
@@ -2113,7 +2141,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "silksoar"
+                "walljump"
             ],
             "line_categories": [
                 "collection",
@@ -2128,7 +2156,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "silksoar"
+                "walljump"
             ],
             "line_categories": [
                 "collection",
@@ -2143,7 +2171,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "silksoar"
+                "cloak"
             ],
             "line_categories": [
                 "collection",
@@ -2158,7 +2186,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "silksoar"
+                "walljump"
             ],
             "line_categories": [
                 "collection",
@@ -2604,7 +2632,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "silksoar"
+                "act3"
             ],
             "line_categories": [
                 "collection",
@@ -2618,7 +2646,7 @@
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "silksoar"
+                "act3"
             ],
             "line_categories": [
                 "collection",
@@ -2671,6 +2699,19 @@
         },
         {
             "goal": "Defeat a Black-threaded Boss",
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "act3"
+            ],
+            "line_categories": [
+                "fight"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Pin Badge",
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2785,6 +2826,20 @@
             ],
             "line_categories": [
                 "fight"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Look at Magnetite in Brightvein",
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "silksoar"
+            ],
+            "line_categories": [
+                "collection",
+                "location"
             ],
             "tooltip": "",
             "icons": []
@@ -2920,6 +2975,19 @@
             ],
             "line_categories": [
                 "fight"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "2 Mementos",
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "silksoar"
+            ],
+            "line_categories": [
+                "collection"
             ],
             "tooltip": "",
             "icons": []
