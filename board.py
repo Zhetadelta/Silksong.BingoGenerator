@@ -204,7 +204,7 @@ def board(allGoals:dict, exclusionDic, size=25, **kwargs):
                     tagLimits[tag] = tagLimits[tag] - 1 #decrement tag limit
 
         #handle forcer
-        if forcer and forceCount >= 0:
+        if forcer and forceCount > 0:
             forcedGoals.append(newGoal["name"])
             forceCount -= 1
         else:
