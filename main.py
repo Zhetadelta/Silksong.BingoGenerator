@@ -155,6 +155,7 @@ async def newcaravan(interaction: discord.Interaction, lockout: bool = False, pa
     if not lockout:
         noTags.append("lockout") #exclude lockout-only goals
     if preset is not None and preset.value in ["Act 3 No Silk Soar", "Full Act 3"]:
+        print("forcing prog")
         thisBoard = board.bingosyncBoard(noTags=noTags, **BOARD_KWARGS, noBlocking = pattern, size=36, forceProgression=True)
     else:
         thisBoard = board.bingosyncBoard(noTags=noTags, **BOARD_KWARGS, noBlocking = pattern, size=36)
