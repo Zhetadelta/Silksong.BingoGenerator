@@ -225,6 +225,7 @@ def board(allGoals:dict, exclusionDic, size=25, **kwargs):
     random.shuffle(goals) #mix em all up when we're done
 
     if forcer:
+        print(indices)
         for i, index in enumerate(indices):
             goals.insert(index, forcedGoals[i])
     return goals
