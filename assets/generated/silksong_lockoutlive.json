@@ -555,18 +555,6 @@
             "icons": []
         },
         {
-            "goal": "Silkspeed Anklets",
-            "range": [],
-            "individual_limit": 1,
-            "board_categories": [
-                "walljump",
-                "tool"
-            ],
-            "line_categories": [],
-            "tooltip": "",
-            "icons": []
-        },
-        {
             "goal": "Flintslate",
             "range": [],
             "individual_limit": 1,
@@ -1359,16 +1347,28 @@
             "icons": []
         },
         {
-            "goal": "Talk to Gilly & Styx",
+            "goal": "Talk to Styx & Huntress",
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "walljump",
+                "faydown",
                 "hardsave"
             ],
             "line_categories": [
                 "npc"
             ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Wreath of Purity",
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "faydown",
+                "tool"
+            ],
+            "line_categories": [],
             "tooltip": "",
             "icons": []
         },
@@ -2586,6 +2586,32 @@
             "line_categories": [
                 "fight"
             ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Get Cursed",
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "clawline",
+                "hardsave"
+            ],
+            "line_categories": [
+                "npc"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Witch Crest",
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "clawline",
+                "hardsave"
+            ],
+            "line_categories": [],
             "tooltip": "",
             "icons": []
         },

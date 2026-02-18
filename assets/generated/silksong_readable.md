@@ -76,8 +76,6 @@
 
 **Memory Crystal** | Progression level(s): ['faydown'] | Other tags: ['tool']
 
-**Silkspeed Anklets** | Progression level(s): ['widow'] | Other tags: ['tool']
-
 **Flintslate** | Progression level(s): ['walljump'] | Other tags: ['tool', 'key']
 
 **Repair Silkshot** | Progression level(s): ['widow'] | Other tags: ['tool', 'craft']
@@ -194,7 +192,9 @@
 
 **Fail a Loddie Minigame** | Progression level(s): ['widow'] | Other tags: ['npc', 'silly']
 
-**Talk to Gilly & Styx** | Progression level(s): ['walljump'] | Other tags: ['npc', 'hardsave']
+**Talk to Styx & Huntress** | Progression level(s): ['faydown'] | Other tags: ['npc', 'hardsave']
+
+**Wreath of Purity** | Progression level(s): ['faydown'] | Other tags: ['tool']
 
 **Break Both of Styx's One-ways** | Progression level(s): ['widow'] | Other tags: ['location']
 
@@ -377,6 +377,10 @@
 **Conductor's Melody** | Progression level(s): ['clawline'] | Other tags: ['fight', 'melody', 'hard']
 
 **Vaultkeeper's Melody** | Progression level(s): ['act2'] | Other tags: ['fight', 'melody']
+
+**Get Cursed** | Progression level(s): ['clawline'] | Other tags: ['hardsave', 'npc']
+
+**Witch Crest** | Progression level(s): ['clawline'] | Other tags: ['hardsave']
 
 **Cradle Map** | Progression level(s): ['act3'] | Other tags: ['collection']
 

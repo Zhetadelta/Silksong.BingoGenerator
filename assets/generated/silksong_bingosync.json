@@ -117,9 +117,6 @@
         "name": "Memory Crystal"
     },
     {
-        "name": "Silkspeed Anklets"
-    },
-    {
         "name": "Flintslate"
     },
     {
@@ -294,7 +291,10 @@
         "name": "Fail a Loddie Minigame"
     },
     {
-        "name": "Talk to Gilly & Styx"
+        "name": "Talk to Styx & Huntress"
+    },
+    {
+        "name": "Wreath of Purity"
     },
     {
         "name": "Break Both of Styx's One-ways"
@@ -568,6 +568,12 @@
     },
     {
         "name": "Vaultkeeper's Melody"
+    },
+    {
+        "name": "Get Cursed"
+    },
+    {
+        "name": "Witch Crest"
     },
     {
         "name": "Cradle Map"

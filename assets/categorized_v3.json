@@ -38,7 +38,8 @@
       ],
       "progression": [
         "cloak"
-      ]
+      ],
+      "weight" : 0.5
     },
     {
       "name": "4 Hunt Quests",
@@ -59,7 +60,8 @@
       ],
       "progression": [
         "widow"
-      ]
+      ],
+      "weight" : 0.5
     },
     {
       "name": "4 Wayfarer Quests",
@@ -147,7 +149,8 @@
       ],
       "progression": [
         "dash"
-      ]
+      ],
+      "weight" : 0.5
     },
     {
       "name": "5 Red Tools",
@@ -178,7 +181,8 @@
       ],
       "progression": [
         "early"
-      ]
+      ],
+      "weight" : 0.5
     },
     {
       "name": "5 Yellow Tools",
@@ -219,7 +223,8 @@
       ],
       "skip" : {
         "enemypogo" : "cloak"
-      }
+      },
+      "weight" : 0.5
     },
     {
       "name": "Barbed Bracelet & Fractured Mask",
@@ -240,7 +245,8 @@
       ],
       "progression": [
         "walljump"
-      ]
+      ],
+      "weight" : 0.5
     },
     {
       "name": "Compass, Pendant, Brooch",
@@ -249,7 +255,8 @@
       ],
       "progression": [
         "early"
-      ]
+      ],
+      "weight" : 0.5
     },
     {
       "name": "Warding Bell & Claw Mirror",
@@ -258,7 +265,8 @@
       ],
       "progression": [
         "act2"
-      ]
+      ],
+      "weight" : 0.5
     },
     {
       "name": "Warding Bell & Sawtooth Circlet",
@@ -337,7 +345,8 @@
       ],
       "progression": [
         "walljump"
-      ]
+      ],
+      "weight" : 0.5
     },
     {
       "name": "Pollip Pouch & Sting Shard",
@@ -400,15 +409,6 @@
       ]
     },
     {
-      "name": "Silkspeed Anklets",
-      "types": [
-        "tool"
-      ],
-      "progression": [
-        "widow"
-      ]
-    },
-    {
       "name": "Flintslate",
       "types": [
         "tool",
@@ -466,7 +466,8 @@
       ],
       "progression": [
         "faydown"
-      ]
+      ],
+      "weight" : 0.5
     },
     {
       "name": "Conchcutter",
@@ -510,7 +511,8 @@
       ],
       "progression": [
         "early"
-      ]
+      ],
+      "weight" : 0.5
     },
     {
       "name": "Wanderer's Crest",
@@ -530,7 +532,8 @@
       ],
       "progression": [
         "cloak"
-      ]
+      ],
+      "weight" : 0.5
     },
     {
       "name": "Beast's Crest",
@@ -582,7 +585,8 @@
       ],
       "progression": [
         "cloak"
-      ]
+      ],
+      "weight" : 1.1
     },
     {
       "name": "Evolved Hunter's Crest",
@@ -602,7 +606,8 @@
       ],
       "progression": [
         "faydown"
-      ]
+      ],
+      "weight" : 0.5
     },
     {
       "name": "Apostate Key",
@@ -769,7 +774,8 @@
       ],
       "progression": [
         "walljump"
-      ]
+      ],
+      "weight" : 0.5
     },
     {
       "name": "Raging Conchfly",
@@ -819,7 +825,8 @@
       ],
       "progression": [
         "cloak"
-      ]
+      ],
+      "weight" : 0.5
     },
     {
       "name": "Cogwork Dancers",
@@ -847,8 +854,7 @@
       ],
       "progression": [
         "widow"
-      ],
-      "weight" : 2
+      ]
     },
     {
       "name": "Fail the Phantom Cutscene",
@@ -879,7 +885,8 @@
       ],
       "progression": [
         "act2"
-      ]
+      ],
+      "weight" : 0.5
     },
     {
       "name": "Disgraced Chef Lugoli",
@@ -923,7 +930,8 @@
       ],
       "progression": [
         "cloak"
-      ]
+      ],
+      "weight" : 0.5
     },
     {
       "name": "Defeat a Cogwork Clapper",
@@ -941,7 +949,8 @@
       ],
       "progression": [
         "cloak"
-      ]
+      ],
+      "weight" : 0.5
     },
     {
       "name": "Voltvyrm",
@@ -993,17 +1002,23 @@
       ]
     },
     {
-      "name": "Talk to Gilly & Styx",
+      "name": "Talk to Styx & Huntress",
       "types": [
         "npc",
         "hardsave"
       ],
       "progression": [
-        "walljump"
+        "faydown"
+      ]
+    },
+    {
+      "name": "Wreath of Purity",
+      "types": [
+        "tool"
       ],
-      "skip": {
-        "enemypogo": "cloak"
-      }
+      "progression": [
+        "faydown"
+      ]
     },
     {
       "name": "Break Both of Styx's One-ways",
@@ -1030,7 +1045,8 @@
       ],
       "progression": [
         "faydown"
-      ]
+      ],
+      "weight" : 0.5
     },
     {
       "name": "Buy From Grindle (No String)",
@@ -1062,7 +1078,8 @@
       ],
       "progression": [
         "act2"
-      ]
+      ],
+      "weight" : 0.5
     },
     {
       "name": "Underworks Ventrica",
@@ -1071,7 +1088,8 @@
       ],
       "progression": [
         "act2"
-      ]
+      ],
+      "weight" : 0.5
     },
     {
       "name": "Choral Chambers Ventrica",
@@ -1113,7 +1131,8 @@
       ],
       "progression": [
         "act2"
-      ]
+      ],
+      "weight" : 0.5
     },
     {
       "name": "Obtain 5 Craftmetal",
@@ -1142,7 +1161,8 @@
       ],
       "progression": [
         "act2"
-      ]
+      ],
+      "weight" : 0.5
     },
     {
       "name": "Twisted Bud",
@@ -1200,7 +1220,8 @@
       ],
       "progression": [
         "walljump"
-      ]
+      ],
+      "weight" : 0.5
     },
     {
       "name": "Greymoor Fleas [2] + Kratt",
@@ -1228,7 +1249,8 @@
       ],
       "progression": [
         "walljump"
-      ]
+      ],
+      "weight" : 0.5
     },
     {
       "name": "Deep Docks Fleas [3]",
@@ -1337,7 +1359,8 @@
       ],
       "progression": [
         "widow"
-      ]
+      ],
+      "weight" : 0.5
     },
     {
       "name": "Three Citadel Fleas",
@@ -1404,7 +1427,8 @@
       ],
       "progression": [
         "walljump"
-      ]
+      ],
+      "weight" : 0.5
     },
     {
       "name": "Frey's Spool Fragment",
@@ -1422,7 +1446,8 @@
       ],
       "progression": [
         "act2"
-      ]
+      ],
+      "weight" : 0.5
     },
     {
       "name": "High Halls Spool Fragment",
@@ -1443,7 +1468,8 @@
       ],
       "progression": [
         "early"
-      ]
+      ],
+      "weight" : 0.5
     },
     {
       "name": "2 Spool Upgrades",
@@ -1501,7 +1527,8 @@
       ],
       "progression": [
         "walljump"
-      ]
+      ],
+      "weight" : 0.5
     },
     {
       "name": "Break 6 Shard Bundles (no purchasing)",
@@ -1541,7 +1568,8 @@
       ],
       "progression": [
         "cloak"
-      ]
+      ],
+      "weight" : 0.5
     },
     {
       "name": "Obtain a Crafting Kit",
@@ -1551,7 +1579,8 @@
       ],
       "progression": [
         "dash"
-      ]
+      ],
+      "weight" : 0.5
     },
     {
       "name": "Obtain 3 Tool Pouch Upgrades/Crafting Kits",
@@ -1594,7 +1623,8 @@
       ],
       "progression": [
         "cloak"
-      ]
+      ],
+      "weight" : 0.5
     },
     {
       "name": "Obtain 4 Different Types of Relic",
@@ -1643,7 +1673,8 @@
       ],
       "progression": [
         "dash"
-      ]
+      ],
+      "weight" : 0.5
     },
     {
       "name": "Obtain 8 Maps",
@@ -1738,7 +1769,8 @@
       ],
       "progression": [
         "cloak"
-      ]
+      ],
+      "weight" : 0.5
     },
     {
       "name": "Massive Mossgrub Journal Entry",
@@ -1780,7 +1812,8 @@
       ],
       "progression": [
         "dash"
-      ]
+      ],
+      "weight" : 0.5
     },
     {
       "name": "Obtain 3 Beast Shards",
@@ -1829,7 +1862,8 @@
       ],
       "skip":{
         "beastboost" : "act2"
-      }
+      },
+      "weight" : 0.5
     },
     {
       "name": "1 Cogheart Piece",
@@ -1888,6 +1922,26 @@
       ],
       "progression": [
         "act2"
+      ],
+      "weight" : 0.5
+    },
+    {
+      "name": "Get Cursed",
+      "types": [
+        "hardsave",
+        "npc"
+      ],
+      "progression": [
+        "clawline"
+      ]
+    },
+    {
+      "name": "Witch Crest",
+      "types": [
+        "hardsave"
+      ],
+      "progression": [
+        "clawline"
       ]
     },
     {
@@ -1897,7 +1951,8 @@
       ],
       "progression": [
         "act3"
-      ]
+      ],
+      "weight" : 0.5
     },
     {
       "name": "Enter Act 3",
@@ -1906,7 +1961,8 @@
       ],
       "progression": [
         "act3"
-      ]
+      ],
+      "weight" : 0.5
     },
     {
       "name": "Beastling Call",
@@ -1915,7 +1971,8 @@
       ],
       "progression": [
         "act3"
-      ]
+      ],
+      "weight" : 0.5
     },
     {
       "name": "3 Void Masses",
@@ -2457,6 +2514,12 @@
       "unique": [
         "3 Void Masses",
         "6 Void Masses"
+      ]
+    },
+    {
+      "unique": [
+        "Talk to Huntress",
+        "Talk to Styx & Huntress"
       ]
     },
     {
