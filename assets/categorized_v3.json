@@ -2367,7 +2367,7 @@
     },
     {
       "unique": [
-        "Break 6 Rosary Strings (no purchasing)",
+        "Have 6 Rosary Strings (no purchasing)",
         "Break 8 Rosary Strings (no purchasing)"
       ]
     },
@@ -2389,6 +2389,12 @@
       "unique": [
         "Obtain 3 Craftmetal",
         "Obtain 5 Craftmetal"
+      ]
+    },
+    {
+      "unique": [
+        "Warding Bell & Claw Mirror",
+        "Warding Bell & Sawtooth Circlet"
       ]
     },
     {
@@ -2423,7 +2429,7 @@
     },
     {
       "unique": [
-        "Obtain 3 Different Types of Relic",
+        "Have 3 Different Types of Relic",
         "Obtain 4 Different Types of Relic"
       ]
     },
@@ -2525,7 +2531,6 @@
         "Free 10 Fleas",
         "Free 12 Fleas",
         "Free 14 Fleas",
-        "Meet Caravan in Greymoor [5]",
         "Meet Caravan at the Grand Gate [12]"
       ]
     },
