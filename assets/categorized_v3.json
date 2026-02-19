@@ -1894,6 +1894,28 @@
       ]
     },
     {
+      "name": "2 Silk Hearts",
+      "types": [
+        "upgrade",
+        "fight",
+        "hardsave",
+        "hard"
+      ],
+      "progression": [
+        "faydown"
+      ]
+    },
+    {
+      "name": "Unravelled Journal Entry",
+      "types": [
+        "fight",
+        "hard"
+      ],
+      "progression": [
+        "faydown"
+      ]
+    },
+    {
       "name": "Architect's Melody",
       "types": [
         "location",

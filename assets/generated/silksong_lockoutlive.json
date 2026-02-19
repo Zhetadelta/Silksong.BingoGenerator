@@ -2547,6 +2547,36 @@
             "icons": []
         },
         {
+            "goal": "2 Silk Hearts",
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "faydown",
+                "hardsave"
+            ],
+            "line_categories": [
+                "upgrade",
+                "fight",
+                "hard"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Unravelled Journal Entry",
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "faydown"
+            ],
+            "line_categories": [
+                "fight",
+                "hard"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
             "goal": "Architect's Melody",
             "range": [],
             "individual_limit": 1,
