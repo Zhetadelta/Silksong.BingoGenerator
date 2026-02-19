@@ -178,13 +178,37 @@ async def newdoublingy(interaction: discord.Interaction, size: Optional[app_comm
     elif size == 6:
         session = network.caravanClient()
         baseName = "https://caravan.kobold60.com"
-    act1Tags = ["act2", "clawline", "faydown", "lockout"]
-    act2Tags = ["early", "dash", "cloak", "walljump", "widow", "lockout"]
+    act1Tags = ["act2", "clawline", "faydown", 'act3', 'silksoar', "lockout"]
+    act2Tags = ["early", "dash", "cloak", "walljump", "widow", 'act3', 'silksoar', "lockout"]
     act1Board, act2Board = board.linkedBoards(noTags=(act1Tags, act2Tags), size=(size**2))
     n1, rId1 = session.newRoom(json.dumps(act1Board), lockout=False)
     n2, rId2 = session.newRoom(json.dumps(act2Board), lockout=False)
     session.close()
     await interaction.followup.send(f"Act 1 room: {n1} at {baseName}/room/{rId1}\nAct 2 room: {n2} at {baseName}/room/{rId2}")
+    
+@client.tree.command()
+@app_commands.choices(size=size_options())
+async def newtriplingy(interaction: discord.Interaction, size: Optional[app_commands.Choice[str]]=None):
+    """Generates a set of triplingy rooms."""
+    await interaction.response.defer(thinking=True)
+    if size is None:
+        size = app_commands.Choice(name="5", value="5")
+    size = int(size.value)
+    if size == 5:
+        session = network.bingosyncClient()
+        baseName = "https://bingosync.com"
+    elif size == 6:
+        session = network.caravanClient()
+        baseName = "https://caravan.kobold60.com"
+    act1Tags = ["act2", "clawline", "faydown", 'act3', 'silksoar', "lockout"]
+    act2Tags = ["early", "dash", "cloak", "walljump", "widow", 'act3', 'silksoar', "lockout"]
+    act3Tags = ["early", "dash", "cloak", "walljump", "widow", "lockout", "act2", "clawline", "faydown"]
+    act1Board, act2Board, act3Board = board.linkedBoards(noTags=(act1Tags, act2Tags, act3Tags), size=(size**2))
+    n1, rId1 = session.newRoom(json.dumps(act1Board), lockout=False)
+    n2, rId2 = session.newRoom(json.dumps(act2Board), lockout=False)
+    n3, rId3 = session.newRoom(json.dumps(act3Board), lockout=False)
+    session.close()
+    await interaction.followup.send(f"Act 1 room: {n1} at {baseName}/room/{rId1}\nAct 2 room: {n2} at {baseName}/room/{rId2}\nAct 3 room: {n3} at {baseName}/room/{rId3}")
 
 @client.tree.command()
 @app_commands.describe(tags="Comma-seperated tags to exclude from board generation")

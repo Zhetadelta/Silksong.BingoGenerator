@@ -332,7 +332,6 @@ def lockoutBoard(noTags=[], size=49, **kwargs):
 
 
 def linkedBoards(noTags, size=25, **kwargs):
-    b1Tags, b2Tags = noTags
     #set up tag limits and such
     if "tagLimits" in kwargs.keys():
         limits = kwargs["tagLimits"]
@@ -342,20 +341,16 @@ def linkedBoards(noTags, size=25, **kwargs):
     if "silly" in kwargs.keys() and kwargs["silly"]:
         pass
     else: #exclude silly by default
-        b1Tags.append("silly")
-        b2Tags.append("silly")
+        for tagList in noTags:
+            tagList.append("silly")
 
-    #generating a first board
-    board1List = board(*getAllGoals(noTags=b1Tags), lockout=(not "lockout" in noTags), tagLimits=limits, size=size)
-    #generate a second board after applying exclusions based on already chosen boards
-    board2List = board(*getAllGoals(noTags=b2Tags), lockout=(not "lockout" in noTags), tagLimits=limits, size=size, priorGoals=board1List)
-    b1 = []
-    b2 = []
-    for name in board1List:
-        b1.append({"name": name})
-    for name in board2List:
-        b2.append({"name": name})
-    return b1, b2
+    goals = []
+    boards  = []
+    for tagList in noTags:
+        boardList = board(*getAllGoals(noTags=tagList), lockout=(not "lockout" in noTags), tagLimits=limits, size=size, priorGoals=goals)
+        goals = goals + boardList
+        boards.append({"name" : g for g in boardList})
+    return boards
 
 
 def printTypes():
