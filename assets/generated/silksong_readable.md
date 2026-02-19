@@ -292,9 +292,9 @@
 
 **3 Spool Upgrades** | Progression level: ['clawline'] | Other tags: ['upgrade']
 
-**Break 3 Rosary Necklaces (no purchasing)** | Progression level: ['act2'] | Other tags: ['collection', 'scattered']
+**Have 3 Rosary Necklaces (no purchasing)** | Progression level: ['act2'] | Other tags: ['collection', 'scattered']
 
-**Break 6 Rosary Strings (no purchasing)** | Progression level: ['widow'] | Other tags: ['collection', 'scattered']
+**Have 6 Rosary Strings (no purchasing)** | Progression level: ['widow'] | Other tags: ['collection', 'scattered']
 
 **Break 8 Rosary Strings (no purchasing)** | Progression level: ['act2'] | Other tags: ['collection', 'scattered']
 
@@ -316,11 +316,15 @@
 
 **Fully Unlock a Non-Hunter's Crest** | Progression level: ['walljump'] | Other tags: ['collection', 'scattered', 'locket']
 
-**Obtain 3 Different Types of Relic** | Progression level: ['cloak'] | Other tags: ['collection', 'scattered', 'relic']
+**Have 3 Different Types of Relic** | Progression level: ['cloak'] | Other tags: ['collection', 'scattered', 'relic']
 
 **Obtain 4 Different Types of Relic** | Progression level: ['widow'] | Other tags: ['collection', 'scattered', 'relic']
 
 **Obtain 2 Rune Harps** | Progression level: ['widow'] | Other tags: ['collection', 'relic']
+
+**Obtain 3 Bone Scrolls** | Progression level: ['clawline'] | Other tags: ['collection', 'relic', 'scattered']
+
+**Obtain 4 Bone Scrolls** | Progression level: ['faydown'] | Other tags: ['collection', 'relic', 'scattered']
 
 **Talk to Shakra at 5 Locations** | Progression level: ['widow'] | Other tags: ['npc', 'missable']
 

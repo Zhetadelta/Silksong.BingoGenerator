@@ -441,10 +441,10 @@
         "name": "3 Spool Upgrades"
     },
     {
-        "name": "Break 3 Rosary Necklaces (no purchasing)"
+        "name": "Have 3 Rosary Necklaces (no purchasing)"
     },
     {
-        "name": "Break 6 Rosary Strings (no purchasing)"
+        "name": "Have 6 Rosary Strings (no purchasing)"
     },
     {
         "name": "Break 8 Rosary Strings (no purchasing)"
@@ -477,13 +477,19 @@
         "name": "Fully Unlock a Non-Hunter's Crest"
     },
     {
-        "name": "Obtain 3 Different Types of Relic"
+        "name": "Have 3 Different Types of Relic"
     },
     {
         "name": "Obtain 4 Different Types of Relic"
     },
     {
         "name": "Obtain 2 Rune Harps"
+    },
+    {
+        "name": "Obtain 3 Bone Scrolls"
+    },
+    {
+        "name": "Obtain 4 Bone Scrolls"
     },
     {
         "name": "Talk to Shakra at 5 Locations"

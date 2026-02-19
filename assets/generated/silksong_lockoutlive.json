@@ -1997,7 +1997,7 @@
             "icons": []
         },
         {
-            "goal": "Break 3 Rosary Necklaces (no purchasing)",
+            "goal": "Have 3 Rosary Necklaces (no purchasing)",
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2011,7 +2011,7 @@
             "icons": []
         },
         {
-            "goal": "Break 6 Rosary Strings (no purchasing)",
+            "goal": "Have 6 Rosary Strings (no purchasing)",
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2167,7 +2167,7 @@
             "icons": []
         },
         {
-            "goal": "Obtain 3 Different Types of Relic",
+            "goal": "Have 3 Different Types of Relic",
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2206,6 +2206,36 @@
             "line_categories": [
                 "collection",
                 "relic"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Obtain 3 Bone Scrolls",
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "clawline"
+            ],
+            "line_categories": [
+                "collection",
+                "relic",
+                "scattered"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Obtain 4 Bone Scrolls",
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "faydown"
+            ],
+            "line_categories": [
+                "collection",
+                "relic",
+                "scattered"
             ],
             "tooltip": "",
             "icons": []

@@ -1490,7 +1490,7 @@
       ]
     },
     {
-      "name": "Break 3 Rosary Necklaces (no purchasing)",
+      "name": "Have 3 Rosary Necklaces (no purchasing)",
       "types": [
         "collection",
         "scattered"
@@ -1500,7 +1500,7 @@
       ]
     },
     {
-      "name": "Break 6 Rosary Strings (no purchasing)",
+      "name": "Have 6 Rosary Strings (no purchasing)",
       "types": [
         "collection",
         "scattered"
@@ -1615,7 +1615,7 @@
       ]
     },
     {
-      "name": "Obtain 3 Different Types of Relic",
+      "name": "Have 3 Different Types of Relic",
       "types": [
         "collection",
         "scattered",
@@ -1645,6 +1645,28 @@
       ],
       "progression":[
         "widow"
+      ]
+    },
+    {
+      "name": "Obtain 3 Bone Scrolls",
+      "types": [
+        "collection",
+        "relic",
+        "scattered"
+      ],
+      "progression": [
+        "clawline"
+      ]
+    },
+    {
+      "name": "Obtain 4 Bone Scrolls",
+      "types": [
+        "collection",
+        "relic",
+        "scattered"
+      ],
+      "progression": [
+        "faydown"
       ]
     },
     {
@@ -2530,6 +2552,12 @@
       "unique": [
         "Obtain 3 Silkeaters",
         "Obtain 5 Silkeaters"
+      ]
+    },
+    {
+      "unique": [
+        "Obtain 3 Bone Scrolls",
+        "Obtain 4 Bone Scrolls"
       ]
     },
     {
