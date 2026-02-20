@@ -128,6 +128,31 @@ async def newascend(interaction: discord.Interaction, preset: Optional[app_comma
 @client.tree.command()
 @app_commands.describe(preset="Tags to exclude based on preset categories.")
 @app_commands.choices(preset=prog_options())
+@app_commands.choices(size=[app_commands.Choice(name=str(i), value=str(i)) for i in [5,6]])
+@app_commands.describe(size="The side length of the board. Default: 5")
+async def newrosingy(interaction: discord.Interaction, preset: Optional[app_commands.Choice[str]] = None, size: Optional[app_commands.Choice[str]]=None):
+    """Generates a new rosingy board. EXPERIMENTAL."""
+    noTags = progStringToTags(preset)
+    noTags.append("lockout")
+    if size is None:
+        size = app_commands.Choice(name="5", value="5")
+    size = int(size.value)
+    if size == 5:
+        session = network.bingosyncClient()
+        baseName = "https://bingosync.com"
+    elif size == 6:
+        session = network.caravanClient()
+        baseName = "https://caravan.kobold60.com"
+    if preset is not None and preset.value in ["Act 3 No Silk Soar", "Full Act 3"]:
+        thisBoard = board.lockoutBoard(noTags=noTags, size=int(size.value)**2, forceProgression=True, goalset="rosingy.json", **BOARD_KWARGS)
+    else:
+        thisBoard = board.lockoutBoard(noTags=noTags, size=int(size.value)**2, goalset="rosingy.json", **BOARD_KWARGS)
+    name, rId = session.newRoom(json.dumps(thisBoard), lockout=False)
+    await interaction.response.send_message(file=File(fname), ephemeral=True)
+
+@client.tree.command()
+@app_commands.describe(preset="Tags to exclude based on preset categories.")
+@app_commands.choices(preset=prog_options())
 async def newroom(interaction: discord.Interaction, lockout: bool = False, pattern: bool = False, preset: Optional[app_commands.Choice[str]] = None):
     """Generates a new board and creates a bingosync room with "fast" as the password."""
     await interaction.response.defer(thinking=True)

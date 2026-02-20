@@ -69,12 +69,12 @@ def progForcer(size=6):
     
 
 
-def getAllGoals(noTags=[], **kwargs):
+def getAllGoals(noTags=[], goalsetPath = CAT_FILENAME, **kwargs):
     """
     Loads the file given in variables at the top of the script and returns the parts.
     Returns list of Goal dictionaries and list of Exclusive lists.
     """
-    with open(os.path.join(ASSETS_PATH, CAT_FILENAME)) as f:
+    with open(os.path.join(ASSETS_PATH, goalsetPath)) as f:
         catList = json.load(f)
     #can't modify list during iteration so keep track of removables here
     remGoals = []
@@ -250,16 +250,21 @@ def bingosyncBoard(noTags=[], **kwargs):
     else:
         pattern = False
 
+    if "goalset" in kwargs.keys():
+        goalset = kwargs["goalset"]
+    else:
+        goalset = CAT_FILENAME
+
     if "forceProgression" in kwargs.keys() and kwargs["forceProgression"]:
         forcer = True
     else: 
         forcer = False
 
     if "size" in kwargs.keys():
-        boardList = board(*getAllGoals(noTags=noTags), size=int(kwargs["size"]), lockout=(not "lockout" in noTags), 
+        boardList = board(*getAllGoals(noTags=noTags, goalsetPath=goalset), size=int(kwargs["size"]), lockout=(not "lockout" in noTags), 
             forceProgression=forcer, tagLimits=limits, pattern=pattern)
     else:
-        boardList = board(*getAllGoals(noTags=noTags), lockout=(not "lockout" in noTags), tagLimits=limits, pattern=pattern, forceProgression=forcer)
+        boardList = board(*getAllGoals(noTags=noTags, goalsetPath=goalset), lockout=(not "lockout" in noTags), tagLimits=limits, pattern=pattern, forceProgression=forcer)
     out = []
     for name in boardList:
         out.append({"name": name})
