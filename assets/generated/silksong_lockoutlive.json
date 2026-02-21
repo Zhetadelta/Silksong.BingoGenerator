@@ -2577,6 +2577,19 @@
             "icons": []
         },
         {
+            "goal": "Meet Sherma in the Spa",
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "act2"
+            ],
+            "line_categories": [
+                "npc"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
             "goal": "2 Silk Hearts",
             "range": [],
             "individual_limit": 1,

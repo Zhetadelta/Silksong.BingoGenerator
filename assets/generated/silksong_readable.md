@@ -376,6 +376,8 @@
 
 **Activate Second Sentinel** | Progression level: ['faydown'] | Other tags: ['collection', 'npc']
 
+**Meet Sherma in the Spa** | Progression level: ['act2'] | Other tags: ['npc']
+
 **2 Silk Hearts** | Progression level: ['faydown'] | Other tags: ['upgrade', 'fight', 'hardsave', 'hard']
 
 **Unravelled Journal Entry** | Progression level: ['faydown'] | Other tags: ['fight', 'hard']

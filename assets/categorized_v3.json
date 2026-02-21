@@ -1916,6 +1916,15 @@
       ]
     },
     {
+      "name": "Meet Sherma in the Spa",
+      "types": [
+        "npc"
+      ],
+      "progression": [
+        "act2"
+      ]
+    },
+    {
       "name": "2 Silk Hearts",
       "types": [
         "upgrade",
