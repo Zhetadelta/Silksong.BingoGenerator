@@ -3,7 +3,7 @@
     {
       "name": "Craggler Rock (28)",
       "progression": [
-        "act1"
+        "early"
       ],
       "types": [
         "rosingy"
@@ -12,7 +12,7 @@
     {
       "name": "Moss Grotto & Mosshome Strings (2)",
       "progression": [
-        "act1"
+        "early"
       ],
       "types": [
         "rosingy"
@@ -21,7 +21,7 @@
     {
       "name": "Mosshome Choral Commandment",
       "progression": [
-        "act1"
+        "early"
       ],
       "types": [
         "rosingy"
@@ -30,7 +30,7 @@
     {
       "name": "Bone Bottom Weaver Effigy & Tray",
       "progression": [
-        "act1"
+        "dash"
       ],
       "types": [
         "rosingy"
@@ -39,7 +39,7 @@
     {
       "name": "Moss Grotto Chest",
       "progression": [
-        "act1"
+        "early"
       ],
       "types": [
         "rosingy"
@@ -48,7 +48,7 @@
     {
       "name": "Upper Bone Bottom Hanging Rosaries (30)",
       "progression": [
-        "act1"
+        "early"
       ],
       "types": [
         "rosingy"
@@ -57,7 +57,7 @@
     {
       "name": "Lower Mosshome Rosaries (30)",
       "progression": [
-        "act1"
+        "early"
       ],
       "types": [
         "rosingy"
@@ -66,7 +66,7 @@
     {
       "name": "Silkspear Hanging Rosaries (12)",
       "progression": [
-        "act1"
+        "early"
       ],
       "types": [
         "rosingy"
@@ -75,7 +75,7 @@
     {
       "name": "Sell a Moss Berry",
       "progression": [
-        "act1"
+        "early"
       ],
       "types": [
         "rosingy"
@@ -84,7 +84,7 @@
     {
       "name": "Both sets from Bonegrave (24)",
       "progression": [
-        "act1"
+        "walljump"
       ],
       "types": [
         "rosingy"
@@ -93,7 +93,7 @@
     {
       "name": "All from Wanderer's Chapel (33)",
       "progression": [
-        "act1"
+        "walljump"
       ],
       "types": [
         "rosingy"
@@ -102,7 +102,7 @@
     {
       "name": "Beastfly Rocks (60)",
       "progression": [
-        "act1"
+        "early"
       ],
       "types": [
         "rosingy"
@@ -111,7 +111,7 @@
     {
       "name": "Marrow Shakra Rock (40)",
       "progression": [
-        "act1"
+        "early"
       ],
       "types": [
         "rosingy"
@@ -120,7 +120,7 @@
     {
       "name": "Loddie Rocks (45)",
       "progression": [
-        "act1"
+        "early"
       ],
       "types": [
         "rosingy"
@@ -129,7 +129,7 @@
     {
       "name": "Skull Charger Rock (23)",
       "progression": [
-        "act1"
+        "early"
       ],
       "types": [
         "rosingy"
@@ -138,7 +138,7 @@
     {
       "name": "Both Marrow Lava Tram Room Rocks (70)",
       "progression": [
-        "act1"
+        "walljump"
       ],
       "types": [
         "rosingy"
@@ -147,7 +147,7 @@
     {
       "name": "Marrow Caravan Tray, String, and Floor",
       "progression": [
-        "act1"
+        "early"
       ],
       "types": [
         "rosingy"
@@ -156,7 +156,7 @@
     {
       "name": "Win 2 Loddie Minigames",
       "progression": [
-        "act1"
+        "widow"
       ],
       "types": [
         "rosingy"
@@ -165,7 +165,7 @@
     {
       "name": "Sherma Door Hanging + Floor",
       "progression": [
-        "act1"
+        "early"
       ],
       "types": [
         "rosingy"
@@ -174,7 +174,7 @@
     {
       "name": "Marrow Shakra Floor Rosaries",
       "progression": [
-        "act1"
+        "early"
       ],
       "types": [
         "rosingy"
@@ -183,7 +183,7 @@
     {
       "name": "Marrow Mask Pogo Room Grave",
       "progression": [
-        "act1"
+        "early"
       ],
       "types": [
         "rosingy"
@@ -192,7 +192,7 @@
     {
       "name": "Marrow Chest + Hanging",
       "progression": [
-        "act1"
+        "early"
       ],
       "types": [
         "rosingy"
@@ -201,7 +201,7 @@
     {
       "name": "Marrow Bellvein Basement Bell",
       "progression": [
-        "act1"
+        "early"
       ],
       "types": [
         "rosingy"
@@ -210,7 +210,7 @@
     {
       "name": "Deep Docks String",
       "progression": [
-        "act1"
+        "early"
       ],
       "types": [
         "rosingy"
@@ -219,7 +219,7 @@
     {
       "name": "Deep Docks Deer Room Grave",
       "progression": [
-        "act1"
+        "early"
       ],
       "types": [
         "rosingy"
@@ -228,7 +228,7 @@
     {
       "name": "Fourth Chorus Rock (25)",
       "progression": [
-        "act1"
+        "cloak"
       ],
       "types": [
         "rosingy"
@@ -237,7 +237,7 @@
     {
       "name": "Far Fields Toll Bench Rocks (45)",
       "progression": [
-        "act1"
+        "walljump"
       ],
       "types": [
         "rosingy"
@@ -246,7 +246,7 @@
     {
       "name": "Hokers String + Scroll",
       "progression": [
-        "act1"
+        "cloak"
       ],
       "types": [
         "rosingy"
@@ -255,7 +255,7 @@
     {
       "name": "Weavenest Cindril Rune Harp",
       "progression": [
-        "act1"
+        "widow"
       ],
       "types": [
         "rosingy"
@@ -264,7 +264,7 @@
     {
       "name": "Far Fields Chest",
       "progression": [
-        "act1"
+        "walljump"
       ],
       "types": [
         "rosingy"
@@ -273,7 +273,7 @@
     {
       "name": "Hunter's March Necklace + Hanging (136)",
       "progression": [
-        "act1"
+        "dash"
       ],
       "types": [
         "rosingy"
@@ -282,7 +282,7 @@
     {
       "name": "Second Skarrgard Rosaries (395)",
       "progression": [
-        "act1"
+        "walljump"
       ],
       "types": [
         "rosingy"
@@ -291,7 +291,7 @@
     {
       "name": "Craw Skip Rock + String + Floor",
       "progression": [
-        "act1"
+        "cloak"
       ],
       "types": [
         "rosingy"
@@ -300,7 +300,7 @@
     {
       "name": "Greymoor Tower Sacks (3)",
       "progression": [
-        "act1"
+        "walljump"
       ],
       "types": [
         "rosingy"
@@ -309,7 +309,7 @@
     {
       "name": "Bellhart Bell Caches (4)",
       "progression": [
-        "act1"
+        "walljump"
       ],
       "types": [
         "rosingy"
@@ -318,7 +318,7 @@
     {
       "name": "Defeat a Covetous Pilgrim",
       "progression": [
-        "act1"
+        "walljump"
       ],
       "types": [
         "rosingy"
@@ -327,7 +327,7 @@
     {
       "name": "Defeat 2 Covetous Pilgrims",
       "progression": [
-        "act2"
+        "faydown"
       ],
       "types": [
         "rosingy"
@@ -345,7 +345,7 @@
     {
       "name": "Blasted Steps String",
       "progression": [
-        "act1"
+        "walljump"
       ],
       "types": [
         "rosingy"
@@ -363,7 +363,7 @@
     {
       "name": "Gamble With Lumble",
       "progression": [
-        "act1"
+        "walljump"
       ],
       "types": [
         "rosingy"
@@ -372,7 +372,7 @@
     {
       "name": "Fully Clear Sinner's Road (7)",
       "progression": [
-        "act1"
+        "walljump"
       ],
       "types": [
         "rosingy"
@@ -381,7 +381,7 @@
     {
       "name": "Bilewater Bud Rocks (45)",
       "progression": [
-        "act1"
+        "walljump"
       ],
       "types": [
         "rosingy"
@@ -525,7 +525,7 @@
     {
       "name": "Weavenest Atla Rune Harp",
       "progression": [
-        "act1"
+        "widow"
       ],
       "types": [
         "rosingy"
@@ -543,7 +543,7 @@
     {
       "name": "Garb of the Pilgrims",
       "progression": [
-        "act1"
+        "early"
       ],
       "types": [
         "rosingy",
@@ -553,7 +553,7 @@
     {
       "name": "Silver Bells",
       "progression": [
-        "act1"
+        "early"
       ],
       "types": [
         "rosingy",
@@ -563,7 +563,7 @@
     {
       "name": "The Terrible Tyrant",
       "progression": [
-        "act1"
+        "walljump"
       ],
       "types": [
         "rosingy",
@@ -573,7 +573,7 @@
     {
       "name": "Fine Pins",
       "progression": [
-        "act2"
+        "walljump"
       ],
       "types": [
         "rosingy",
@@ -583,7 +583,7 @@
     {
       "name": "Cloaks of the Choir",
       "progression": [
-        "act2"
+        "walljump"
       ],
       "types": [
         "rosingy",
@@ -603,7 +603,7 @@
     {
       "name": "Complete a Courier Delivery",
       "progression": [
-        "act2"
+        "walljump"
       ],
       "types": [
         "rosingy",
@@ -613,7 +613,7 @@
     {
       "name": "2 Choral Commandments",
       "progression": [
-        "act1"
+        "act2"
       ],
       "types": [
         "rosingy"
@@ -631,7 +631,7 @@
     {
       "name": "3 Chests",
       "progression": [
-        "act1"
+        "early"
       ],
       "types": [
         "rosingy"
@@ -640,14 +640,14 @@
     {
       "name": "5 Chests",
       "progression": [
-        "act2"
+        "early"
       ],
       "types": [
         "rosingy"
       ]
     },
     {
-      "name": "Break 3 Rosary Necklaces (no purchasing)",
+      "name": "Have 3 Rosary Necklaces (no purchasing)",
       "progression": [
         "act2"
       ],
@@ -669,9 +669,9 @@
       ]
     },
     {
-      "name": "Break 6 Rosary Strings (no purchasing)",
+      "name": "Have 6 Rosary Strings (no purchasing)",
       "progression": [
-        "act1"
+        "early"
       ],
       "types": [
         "collection",
@@ -691,7 +691,7 @@
       ]
     },
     {
-      "name": "Break 20 Rosary Strings",
+      "name": "Obtain 20 Rosary Strings",
       "progression": [
         "act2"
       ],
@@ -702,18 +702,18 @@
       ]
     },
     {
-      "name": "2 Heavy Necklaces",
+      "name": "Have 2 Heavy Necklaces",
       "progression": [
-        "act1"
+        "early"
       ],
       "types": [
         "rosingy"
       ]
     },
     {
-      "name": "4 Heavy Necklaces",
+      "name": "Obtian 4 Heavy Necklaces",
       "progression": [
-        "act2"
+        "early"
       ],
       "types": [
         "rosingy"
@@ -758,7 +758,7 @@
     {
       "name": "Break 6 Rosary Rocks",
       "progression": [
-        "act1"
+        "dash"
       ],
       "types": [
         "rosingy"
@@ -776,16 +776,16 @@
     {
       "name": "Magnetite Brooch",
       "progression": [
-        "act1"
+        "early"
       ],
       "types": [
         "rosingy"
       ]
     },
     {
-      "name": " Have at least 2000 Rosaries",
+      "name": "Have at least 2000 Rosaries",
       "progression": [
-        "act1"
+        "widow"
       ],
       "types": [
         "rosingy"
@@ -794,7 +794,7 @@
     {
       "name": "Have exactly 420 Rosaries",
       "progression": [
-        "act1"
+        "walljump"
       ],
       "types": [
         "rosingy"
@@ -803,7 +803,16 @@
     {
       "name": "Strings from 4 Different Vendors",
       "progression": [
-        "act1"
+        "faydown"
+      ],
+      "types": [
+        "rosingy"
+      ]
+    },
+    {
+      "name": "Buy a String from 4 Different Places",
+      "progression": [
+        "cloak"
       ],
       "types": [
         "rosingy"
@@ -812,7 +821,16 @@
     {
       "name": "Collect a Necklace, Relic, & Chest",
       "progression": [
-        "act1"
+        "early"
+      ],
+      "types": [
+        "rosingy"
+      ]
+    },
+    {
+      "name": "Collect 2 Necklaces, Relics, & Chests",
+      "progression": [
+        "act2"
       ],
       "types": [
         "rosingy"
@@ -821,7 +839,7 @@
     {
       "name": "2 Donation Quests",
       "progression": [
-        "act1"
+        "walljump"
       ],
       "types": [
         "quest",
@@ -831,7 +849,7 @@
     {
       "name": "3 Donation Quests",
       "progression": [
-        "act1"
+        "cloak"
       ],
       "types": [
         "quest",
@@ -841,17 +859,7 @@
     {
       "name": "4 Donation Quests",
       "progression": [
-        "act1"
-      ],
-      "types": [
-        "quest",
-        "rosingy"
-      ]
-    },
-    {
-      "name": "Trails End",
-      "progression": [
-        "Faydown"
+        "cloak"
       ],
       "types": [
         "quest",
@@ -904,22 +912,97 @@
       ]
     },
     {
-      "name": "Kill Peb",
+      "name": "Kill Pebb",
       "progression": [
-        "act1"
+        "widow"
       ],
       "types": [
         "rosingy"
       ]
+    },
+    {
+      "name": "Sell to Skynx",
+      "progression": [
+        "widow"
+      ],
+      "types": [
+        "rosingy",
+        "silly"
+      ]
     }
   ],
   "exclusions": [
-        {
-        "unique": [
-            "2 Donation Quests",
-            "3 Donation Quests",
-            "4 Donation Quests"
-            ]
-        }
-    ]
+    {
+      "unique": [
+        "2 Donation Quests",
+        "3 Donation Quests",
+        "4 Donation Quests"
+      ]
+    },
+    {
+      "unique": [
+        "2 Choral Commandments",
+        "3 Choral Commandments"
+      ]
+    },
+    {
+      "unique": [
+        "3 Chests",
+        "5 Chests"
+      ]
+    },
+    {
+      "unique": [
+        "Defeat a Covetous Pilgrim",
+        "Defeat 2 Covetous Pilgrims"
+      ]
+    },
+    {
+      "unique": [
+        "Break 6 Rosary Rocks",
+        "Break 10 Rosary Rocks"
+      ]
+    },
+    {
+      "unique": [
+        "2 Psalm Cylinders",
+        "4 Psalm Cylinders"
+      ]
+    },
+    {
+      "unique": [
+        "Have 2 Heavy Necklaces",
+        "Obtian 4 Heavy Necklaces"
+      ]
+    },
+    {
+      "pattern": true,
+      "unique": [
+        "Have 2 Heavy Necklaces",
+        "Obtian 4 Heavy Necklaces",
+        "The Terrible Tyrant",
+        "Fine Pins",
+        "Cloaks of the Choir",
+        "The Wailing Mother"
+      ]
+    },
+    {
+      "unique": [
+        "Collect a Necklace, Relic, & Chest",
+        "Collect 2 Necklaces, Relics, & Chests"
+      ]
+    },
+    {
+      "limit": 2,
+      "pattern": true,
+      "unique": [
+        "Defeat 2 Covetous Pilgrims",
+        "The Wailing Mother",
+        "Underworks Psalm Cylinder",
+        "Trails End",
+        "Complete a Courier Delivery",
+        "Witch Chapel Weaver Effigy + String"
+      ]
+    }
+  ]
 }
