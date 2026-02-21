@@ -220,9 +220,11 @@
 
 **Obtain 5 Craftmetal** | Progression level: ['clawline'] | Other tags: ['collection', 'scattered', 'craft']
 
-**Obtain Crustnut** | Progression level: ['clawline'] | Other tags: ['collection']
+**Crustnut** | Progression level: ['clawline'] | Other tags: ['collection']
 
-**Obtain Mossberry Soup** | Progression level: ['act2'] | Other tags: ['collection']
+**Mossberry Soup** | Progression level: ['act2'] | Other tags: ['collection']
+
+**Vintage Nectar** | Progression level: ['act2'] | Other tags: ['npc', 'collection', 'expensive']
 
 **Twisted Bud** | Progression level: ['clawline'] | Other tags: ['collection']
 
@@ -306,11 +308,11 @@
 
 **Obtain 5 Silkeaters** | Progression level: ['act2'] | Other tags: ['collection', 'scattered']
 
-**Obtain a Tool Pouch Upgrade** | Progression level: ['cloak'] | Other tags: ['collection', 'scattered']
+**1 Tool Pouch Upgrade** | Progression level: ['cloak'] | Other tags: ['collection', 'scattered']
 
-**Obtain a Crafting Kit** | Progression level: ['dash'] | Other tags: ['collection', 'scattered']
+**1 Crafting Kit** | Progression level: ['dash'] | Other tags: ['collection', 'scattered']
 
-**Obtain 3 Tool Pouch Upgrades/Crafting Kits** | Progression level: ['widow'] | Other tags: ['collection', 'scattered']
+**3 Tool Pouch Upgrades/Crafting Kits** | Progression level: ['widow'] | Other tags: ['collection', 'scattered']
 
 **Obtain 5 Memory Lockets** | Progression level: ['walljump'] | Other tags: ['collection', 'scattered', 'locket']
 

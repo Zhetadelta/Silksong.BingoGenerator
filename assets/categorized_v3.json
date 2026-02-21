@@ -1146,7 +1146,7 @@
       ]
     },
     {
-      "name": "Obtain Crustnut",
+      "name": "Crustnut",
       "types": [
         "collection"
       ],
@@ -1155,7 +1155,7 @@
       ]
     },
     {
-      "name": "Obtain Mossberry Soup",
+      "name": "Mossberry Soup",
       "types": [
         "collection"
       ],
@@ -1163,6 +1163,17 @@
         "act2"
       ],
       "weight" : 0.5
+    },
+    {
+      "name": "Vintage Nectar",
+      "types": [
+        "npc",
+        "collection",
+        "expensive"
+      ],
+      "progression": [
+        "act2"
+      ]
     },
     {
       "name": "Twisted Bud",
@@ -1561,7 +1572,7 @@
       ]
     },
     {
-      "name": "Obtain a Tool Pouch Upgrade",
+      "name": "1 Tool Pouch Upgrade",
       "types": [
         "collection",
         "scattered"
@@ -1572,7 +1583,7 @@
       "weight" : 0.5
     },
     {
-      "name": "Obtain a Crafting Kit",
+      "name": "1 Crafting Kit",
       "types": [
         "collection",
         "scattered"
@@ -1583,7 +1594,7 @@
       "weight" : 0.5
     },
     {
-      "name": "Obtain 3 Tool Pouch Upgrades/Crafting Kits",
+      "name": "3 Tool Pouch Upgrades/Crafting Kits",
       "types": [
         "collection",
         "scattered"
@@ -2458,7 +2469,7 @@
       "unique": [
         "Complete a Loddie Minigame",
         "Fail a Loddie Minigame",
-        "Obtain a Tool Pouch Upgrade"
+        "1 Tool Pouch Upgrade"
       ]
     },
     {
@@ -2559,7 +2570,7 @@
     {
       "unique" : [
         "Crawbug Clearing",
-        "Obtain 1 Crafting Kit"
+        "1 Crafting Kit"
       ]
     },
     {
