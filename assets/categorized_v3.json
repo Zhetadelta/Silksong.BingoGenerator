@@ -602,7 +602,8 @@
       "name": "Faydown Cloak",
       "types": [
         "upgrade",
-        "hardsave"
+        "hardsave",
+        "blocking"
       ],
       "progression": [
         "faydown"
@@ -917,7 +918,8 @@
       "name": "Forebrothers Signis & Gron",
       "types": [
         "fight",
-        "hard"
+        "hard",
+        "blocking"
       ],
       "progression": [
         "clawline"
@@ -2021,7 +2023,8 @@
     {
       "name": "Enter Act 3",
       "types": [
-        "hardsave"
+        "hardsave",
+        "blocking"
       ],
       "progression": [
         "act3"
@@ -2031,7 +2034,8 @@
     {
       "name": "Beastling Call",
       "types": [
-        "fight"
+        "fight",
+        "blocking"
       ],
       "progression": [
         "act3"
@@ -2182,7 +2186,7 @@
       ]
     },
     {
-      "name": "Look at Magnetite in Brightvein",
+      "name": "Inpect Magnetite in Brightvein",
       "types": [
         "collection",
         "location"
@@ -2628,6 +2632,13 @@
       "unique" : [
         "Cragglite Journal Entry",
         "Craggler"
+      ]
+    },
+    {
+      "pattern":true,
+      "unique": [
+        "Fight Seth",
+        "Pollen Heart"
       ]
     }
   ]

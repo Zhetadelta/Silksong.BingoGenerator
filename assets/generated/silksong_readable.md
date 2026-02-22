@@ -112,7 +112,7 @@
 
 **Evolved Hunter's Crest** | Progression level: ['widow'] | Other tags: ['upgrade', 'hardsave']
 
-**Faydown Cloak** | Progression level: ['faydown'] | Other tags: ['upgrade', 'hardsave']
+**Faydown Cloak** | Progression level: ['faydown'] | Other tags: ['upgrade', 'hardsave', 'blocking']
 
 **Apostate Key** | Progression level: ['faydown'] | Other tags: ['collection']
 
@@ -174,7 +174,7 @@
 
 **Father Of The Flame** | Progression level: ['faydown'] | Other tags: ['fight', 'tool', 'hard']
 
-**Forebrothers Signis & Gron** | Progression level: ['clawline'] | Other tags: ['fight', 'hard']
+**Forebrothers Signis & Gron** | Progression level: ['clawline'] | Other tags: ['fight', 'hard', 'blocking']
 
 **Defeat a Covetous Pilgrim** | Progression level: ['cloak'] | Other tags: ['fight']
 
@@ -396,9 +396,9 @@
 
 **Cradle Map** | Progression level: ['act3'] | Other tags: ['collection']
 
-**Enter Act 3** | Progression level: ['act3'] | Other tags: ['hardsave']
+**Enter Act 3** | Progression level: ['act3'] | Other tags: ['hardsave', 'blocking']
 
-**Beastling Call** | Progression level: ['act3'] | Other tags: ['fight']
+**Beastling Call** | Progression level: ['act3'] | Other tags: ['fight', 'blocking']
 
 **3 Void Masses** | Progression level: ['act3'] | Other tags: ['collection', 'scattered']
 
@@ -430,7 +430,7 @@
 
 **Pale Stag** | Progression level: ['silksoar'] | Other tags: ['fight']
 
-**Look at Magnetite in Brightvein** | Progression level: ['silksoar'] | Other tags: ['collection', 'location']
+**Inpect Magnetite in Brightvein** | Progression level: ['silksoar'] | Other tags: ['collection', 'location']
 
 **Verdania Fountain Orbs** | Progression level: ['silksoar'] | Other tags: ['fight']
 

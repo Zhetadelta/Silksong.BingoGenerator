@@ -812,7 +812,8 @@
                 "hardsave"
             ],
             "line_categories": [
-                "upgrade"
+                "upgrade",
+                "blocking"
             ],
             "tooltip": "",
             "icons": []
@@ -1233,7 +1234,8 @@
             ],
             "line_categories": [
                 "fight",
-                "hard"
+                "hard",
+                "blocking"
             ],
             "tooltip": "",
             "icons": []
@@ -2724,7 +2726,9 @@
                 "act3",
                 "hardsave"
             ],
-            "line_categories": [],
+            "line_categories": [
+                "blocking"
+            ],
             "tooltip": "",
             "icons": []
         },
@@ -2736,7 +2740,8 @@
                 "act3"
             ],
             "line_categories": [
-                "fight"
+                "fight",
+                "blocking"
             ],
             "tooltip": "",
             "icons": []
@@ -2945,7 +2950,7 @@
             "icons": []
         },
         {
-            "goal": "Look at Magnetite in Brightvein",
+            "goal": "Inpect Magnetite in Brightvein",
             "range": [],
             "individual_limit": 1,
             "board_categories": [
