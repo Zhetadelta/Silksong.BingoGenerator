@@ -354,7 +354,7 @@ def linkedBoards(noTags, size=25, **kwargs):
     for tagList in noTags:
         boardList = board(*getAllGoals(noTags=tagList), lockout=(not "lockout" in noTags), tagLimits=limits, size=size, priorGoals=goals)
         goals = goals + boardList
-        boards.append({"name" : g for g in boardList})
+        boards.append([{"name" : g } for g in boardList])
     return boards
 
 
@@ -470,5 +470,5 @@ if __name__ == "__main__":
     #print(json.dumps(lockoutFormat()))
 
     ####Test board generation
-    thisBoard = bingosyncBoard(forceProgression=True)
+    thisBoard = linkedBoards(noTags=[[],[]], forceProgression=True)
     print(json.dumps(thisBoard))

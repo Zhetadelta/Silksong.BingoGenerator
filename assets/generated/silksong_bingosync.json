@@ -333,10 +333,13 @@
         "name": "Obtain 5 Craftmetal"
     },
     {
-        "name": "Obtain Crustnut"
+        "name": "Crustnut"
     },
     {
-        "name": "Obtain Mossberry Soup"
+        "name": "Mossberry Soup"
+    },
+    {
+        "name": "Vintage Nectar"
     },
     {
         "name": "Twisted Bud"
@@ -462,13 +465,13 @@
         "name": "Obtain 5 Silkeaters"
     },
     {
-        "name": "Obtain a Tool Pouch Upgrade"
+        "name": "1 Tool Pouch Upgrade"
     },
     {
-        "name": "Obtain a Crafting Kit"
+        "name": "1 Crafting Kit"
     },
     {
-        "name": "Obtain 3 Tool Pouch Upgrades/Crafting Kits"
+        "name": "3 Tool Pouch Upgrades/Crafting Kits"
     },
     {
         "name": "Obtain 5 Memory Lockets"
@@ -567,6 +570,9 @@
         "name": "Activate Second Sentinel"
     },
     {
+        "name": "Meet Sherma in the Spa"
+    },
+    {
         "name": "2 Silk Hearts"
     },
     {
@@ -642,7 +648,7 @@
         "name": "Pale Stag"
     },
     {
-        "name": "Look at Magnetite in Brightvein"
+        "name": "Inpect Magnetite in Brightvein"
     },
     {
         "name": "Verdania Fountain Orbs"

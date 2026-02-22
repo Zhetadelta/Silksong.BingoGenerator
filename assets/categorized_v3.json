@@ -602,7 +602,8 @@
       "name": "Faydown Cloak",
       "types": [
         "upgrade",
-        "hardsave"
+        "hardsave",
+        "blocking"
       ],
       "progression": [
         "faydown"
@@ -917,7 +918,8 @@
       "name": "Forebrothers Signis & Gron",
       "types": [
         "fight",
-        "hard"
+        "hard",
+        "blocking"
       ],
       "progression": [
         "clawline"
@@ -1146,7 +1148,7 @@
       ]
     },
     {
-      "name": "Obtain Crustnut",
+      "name": "Crustnut",
       "types": [
         "collection"
       ],
@@ -1155,7 +1157,7 @@
       ]
     },
     {
-      "name": "Obtain Mossberry Soup",
+      "name": "Mossberry Soup",
       "types": [
         "collection"
       ],
@@ -1163,6 +1165,17 @@
         "act2"
       ],
       "weight" : 0.5
+    },
+    {
+      "name": "Vintage Nectar",
+      "types": [
+        "npc",
+        "collection",
+        "expensive"
+      ],
+      "progression": [
+        "act2"
+      ]
     },
     {
       "name": "Twisted Bud",
@@ -1561,7 +1574,7 @@
       ]
     },
     {
-      "name": "Obtain a Tool Pouch Upgrade",
+      "name": "1 Tool Pouch Upgrade",
       "types": [
         "collection",
         "scattered"
@@ -1572,7 +1585,7 @@
       "weight" : 0.5
     },
     {
-      "name": "Obtain a Crafting Kit",
+      "name": "1 Crafting Kit",
       "types": [
         "collection",
         "scattered"
@@ -1583,7 +1596,7 @@
       "weight" : 0.5
     },
     {
-      "name": "Obtain 3 Tool Pouch Upgrades/Crafting Kits",
+      "name": "3 Tool Pouch Upgrades/Crafting Kits",
       "types": [
         "collection",
         "scattered"
@@ -1916,6 +1929,15 @@
       ]
     },
     {
+      "name": "Meet Sherma in the Spa",
+      "types": [
+        "npc"
+      ],
+      "progression": [
+        "act2"
+      ]
+    },
+    {
       "name": "2 Silk Hearts",
       "types": [
         "upgrade",
@@ -2001,7 +2023,8 @@
     {
       "name": "Enter Act 3",
       "types": [
-        "hardsave"
+        "hardsave",
+        "blocking"
       ],
       "progression": [
         "act3"
@@ -2011,7 +2034,8 @@
     {
       "name": "Beastling Call",
       "types": [
-        "fight"
+        "fight",
+        "blocking"
       ],
       "progression": [
         "act3"
@@ -2162,7 +2186,7 @@
       ]
     },
     {
-      "name": "Look at Magnetite in Brightvein",
+      "name": "Inpect Magnetite in Brightvein",
       "types": [
         "collection",
         "location"
@@ -2449,7 +2473,7 @@
       "unique": [
         "Complete a Loddie Minigame",
         "Fail a Loddie Minigame",
-        "Obtain a Tool Pouch Upgrade"
+        "1 Tool Pouch Upgrade"
       ]
     },
     {
@@ -2550,7 +2574,7 @@
     {
       "unique" : [
         "Crawbug Clearing",
-        "Obtain 1 Crafting Kit"
+        "1 Crafting Kit"
       ]
     },
     {
@@ -2608,6 +2632,13 @@
       "unique" : [
         "Cragglite Journal Entry",
         "Craggler"
+      ]
+    },
+    {
+      "pattern":true,
+      "unique": [
+        "Fight Seth",
+        "Pollen Heart"
       ]
     }
   ]

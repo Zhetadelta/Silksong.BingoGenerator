@@ -112,7 +112,7 @@
 
 **Evolved Hunter's Crest** | Progression level: ['widow'] | Other tags: ['upgrade', 'hardsave']
 
-**Faydown Cloak** | Progression level: ['faydown'] | Other tags: ['upgrade', 'hardsave']
+**Faydown Cloak** | Progression level: ['faydown'] | Other tags: ['upgrade', 'hardsave', 'blocking']
 
 **Apostate Key** | Progression level: ['faydown'] | Other tags: ['collection']
 
@@ -174,7 +174,7 @@
 
 **Father Of The Flame** | Progression level: ['faydown'] | Other tags: ['fight', 'tool', 'hard']
 
-**Forebrothers Signis & Gron** | Progression level: ['clawline'] | Other tags: ['fight', 'hard']
+**Forebrothers Signis & Gron** | Progression level: ['clawline'] | Other tags: ['fight', 'hard', 'blocking']
 
 **Defeat a Covetous Pilgrim** | Progression level: ['cloak'] | Other tags: ['fight']
 
@@ -220,9 +220,11 @@
 
 **Obtain 5 Craftmetal** | Progression level: ['clawline'] | Other tags: ['collection', 'scattered', 'craft']
 
-**Obtain Crustnut** | Progression level: ['clawline'] | Other tags: ['collection']
+**Crustnut** | Progression level: ['clawline'] | Other tags: ['collection']
 
-**Obtain Mossberry Soup** | Progression level: ['act2'] | Other tags: ['collection']
+**Mossberry Soup** | Progression level: ['act2'] | Other tags: ['collection']
+
+**Vintage Nectar** | Progression level: ['act2'] | Other tags: ['npc', 'collection', 'expensive']
 
 **Twisted Bud** | Progression level: ['clawline'] | Other tags: ['collection']
 
@@ -306,11 +308,11 @@
 
 **Obtain 5 Silkeaters** | Progression level: ['act2'] | Other tags: ['collection', 'scattered']
 
-**Obtain a Tool Pouch Upgrade** | Progression level: ['cloak'] | Other tags: ['collection', 'scattered']
+**1 Tool Pouch Upgrade** | Progression level: ['cloak'] | Other tags: ['collection', 'scattered']
 
-**Obtain a Crafting Kit** | Progression level: ['dash'] | Other tags: ['collection', 'scattered']
+**1 Crafting Kit** | Progression level: ['dash'] | Other tags: ['collection', 'scattered']
 
-**Obtain 3 Tool Pouch Upgrades/Crafting Kits** | Progression level: ['widow'] | Other tags: ['collection', 'scattered']
+**3 Tool Pouch Upgrades/Crafting Kits** | Progression level: ['widow'] | Other tags: ['collection', 'scattered']
 
 **Obtain 5 Memory Lockets** | Progression level: ['walljump'] | Other tags: ['collection', 'scattered', 'locket']
 
@@ -376,6 +378,8 @@
 
 **Activate Second Sentinel** | Progression level: ['faydown'] | Other tags: ['collection', 'npc']
 
+**Meet Sherma in the Spa** | Progression level: ['act2'] | Other tags: ['npc']
+
 **2 Silk Hearts** | Progression level: ['faydown'] | Other tags: ['upgrade', 'fight', 'hardsave', 'hard']
 
 **Unravelled Journal Entry** | Progression level: ['faydown'] | Other tags: ['fight', 'hard']
@@ -392,9 +396,9 @@
 
 **Cradle Map** | Progression level: ['act3'] | Other tags: ['collection']
 
-**Enter Act 3** | Progression level: ['act3'] | Other tags: ['hardsave']
+**Enter Act 3** | Progression level: ['act3'] | Other tags: ['hardsave', 'blocking']
 
-**Beastling Call** | Progression level: ['act3'] | Other tags: ['fight']
+**Beastling Call** | Progression level: ['act3'] | Other tags: ['fight', 'blocking']
 
 **3 Void Masses** | Progression level: ['act3'] | Other tags: ['collection', 'scattered']
 
@@ -426,7 +430,7 @@
 
 **Pale Stag** | Progression level: ['silksoar'] | Other tags: ['fight']
 
-**Look at Magnetite in Brightvein** | Progression level: ['silksoar'] | Other tags: ['collection', 'location']
+**Inpect Magnetite in Brightvein** | Progression level: ['silksoar'] | Other tags: ['collection', 'location']
 
 **Verdania Fountain Orbs** | Progression level: ['silksoar'] | Other tags: ['fight']
 

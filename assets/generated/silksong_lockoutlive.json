@@ -812,7 +812,8 @@
                 "hardsave"
             ],
             "line_categories": [
-                "upgrade"
+                "upgrade",
+                "blocking"
             ],
             "tooltip": "",
             "icons": []
@@ -1233,7 +1234,8 @@
             ],
             "line_categories": [
                 "fight",
-                "hard"
+                "hard",
+                "blocking"
             ],
             "tooltip": "",
             "icons": []
@@ -1534,7 +1536,7 @@
             "icons": []
         },
         {
-            "goal": "Obtain Crustnut",
+            "goal": "Crustnut",
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1547,7 +1549,7 @@
             "icons": []
         },
         {
-            "goal": "Obtain Mossberry Soup",
+            "goal": "Mossberry Soup",
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1555,6 +1557,21 @@
             ],
             "line_categories": [
                 "collection"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Vintage Nectar",
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "act2"
+            ],
+            "line_categories": [
+                "npc",
+                "collection",
+                "expensive"
             ],
             "tooltip": "",
             "icons": []
@@ -2095,7 +2112,7 @@
             "icons": []
         },
         {
-            "goal": "Obtain a Tool Pouch Upgrade",
+            "goal": "1 Tool Pouch Upgrade",
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2109,7 +2126,7 @@
             "icons": []
         },
         {
-            "goal": "Obtain a Crafting Kit",
+            "goal": "1 Crafting Kit",
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2123,7 +2140,7 @@
             "icons": []
         },
         {
-            "goal": "Obtain 3 Tool Pouch Upgrades/Crafting Kits",
+            "goal": "3 Tool Pouch Upgrades/Crafting Kits",
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2577,6 +2594,19 @@
             "icons": []
         },
         {
+            "goal": "Meet Sherma in the Spa",
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "act2"
+            ],
+            "line_categories": [
+                "npc"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
             "goal": "2 Silk Hearts",
             "range": [],
             "individual_limit": 1,
@@ -2696,7 +2726,9 @@
                 "act3",
                 "hardsave"
             ],
-            "line_categories": [],
+            "line_categories": [
+                "blocking"
+            ],
             "tooltip": "",
             "icons": []
         },
@@ -2708,7 +2740,8 @@
                 "act3"
             ],
             "line_categories": [
-                "fight"
+                "fight",
+                "blocking"
             ],
             "tooltip": "",
             "icons": []
@@ -2917,7 +2950,7 @@
             "icons": []
         },
         {
-            "goal": "Look at Magnetite in Brightvein",
+            "goal": "Inpect Magnetite in Brightvein",
             "range": [],
             "individual_limit": 1,
             "board_categories": [
