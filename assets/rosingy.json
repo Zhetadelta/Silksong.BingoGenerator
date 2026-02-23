@@ -516,7 +516,7 @@
     {
       "name": "Mt. Fay Toll Bench Hanging & Tray",
       "progression": [
-        "clawline"
+        "faydown"
       ],
       "types": [
         "rosingy"
@@ -532,7 +532,7 @@
       ]
     },
     {
-      "name": "Putrified Ducts String & 2 Rocks",
+      "name": "Putrified Ducts String & Rocks",
       "progression": [
         "faydown"
       ],
@@ -738,9 +738,27 @@
       ]
     },
     {
+      "name": "2 Rune Harps",
+      "progression": [
+        "widow"
+      ],
+      "types": [
+        "rosingy"
+      ]
+    },
+    {
       "name": "3 Bone Scrolls",
       "progression": [
         "act2"
+      ],
+      "types": [
+        "rosingy"
+      ]
+    },
+    {
+      "name": "4 Bone Scrolls",
+      "progression": [
+        "faydown"
       ],
       "types": [
         "rosingy"
@@ -876,7 +894,7 @@
       ]
     },
     {
-      "name": "Get paid with Loam",
+      "name": "Earn a Rosary from the Treadmill",
       "progression": [
         "act2"
       ],
@@ -929,6 +947,51 @@
         "rosingy",
         "silly"
       ]
+    },
+    {
+      "name": "High Halls Rune Harp",
+      "progression": [
+        "act3"
+      ],
+      "types": [
+        "rosingy"
+      ]
+    },
+    {
+      "name": "3 Rune Harps",
+      "progression": [
+        "act3"
+      ],
+      "types": [
+        "rosingy"
+      ]
+    },
+    {
+      "name": "Arcane Egg",
+      "progression": [
+        "act3"
+      ],
+      "types": [
+        "rosingy"
+      ]
+    },
+    {
+      "name": "Bonegrave Covetous Pilgrim",
+      "progression": [
+        "act3"
+      ],
+      "types": [
+        "rosingy"
+      ]
+    },
+    {
+      "name": "Further Fields Pale Necklace",
+      "progression": [
+        "act3"
+      ],
+      "types": [
+        "rosingy"
+      ]
     }
   ],
   "exclusions": [
@@ -941,14 +1004,37 @@
     },
     {
       "unique": [
+        "Both Whiteward Relics",
         "2 Choral Commandments",
         "3 Choral Commandments"
       ]
     },
     {
       "unique": [
+        "3 Bone Scrolls",
+        "4 Bone Scrolls"
+      ]
+    },
+    {
+      "unique": [
         "3 Chests",
         "5 Chests"
+      ]
+    },
+    {
+      "unique": [
+        "2 Rune Harps",
+        "3 Rune Harps"
+      ]
+    },
+    {
+      "limit": 2,
+      "unique": [
+        "2 Rune Harps",
+        "3 Rune Harps",
+        "Weavenest Cindril Rune Harp",
+        "Weavenest Atla Rune Harp",
+        "High Halls Rune Harp"
       ]
     },
     {
@@ -994,7 +1080,6 @@
     },
     {
       "limit": 2,
-      "pattern": true,
       "unique": [
         "Defeat 2 Covetous Pilgrims",
         "The Wailing Mother",
