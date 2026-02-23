@@ -45,7 +45,7 @@ The following types are excluded by default and must be opted into manually: Sil
 
 #### Progression strings:
 
-"early", "dash", "cloak", "walljump", "act2", "clawline", "faydown", "act3", "silksoar"
+"early", "dash", "cloak", "walljump", "widow", "act2", "clawline", "faydown", "act3", "silksoar"
 
 - `"skip" : [dictionary]` **(Optional)** If certain skips enable goals earlier than intended, this dictionary will contain skip names as keys and new progression strings as values.
 
