@@ -252,13 +252,13 @@
 
 **Lower Bilewater & Hunter's March Fleas [2]** | Progression level: ['walljump'] | Other tags: ['flea']
 
-**Free 8 fleas** | Progression level: ['cloak'] | Other tags: ['flea']
+**Free 8 Fleas** | Progression level: ['cloak'] | Other tags: ['flea']
 
-**Free 10 fleas** | Progression level: ['widow'] | Other tags: ['flea']
+**Free 10 Fleas** | Progression level: ['widow'] | Other tags: ['flea']
 
-**Free 12 fleas** | Progression level: ['act2'] | Other tags: ['flea']
+**Free 12 Fleas** | Progression level: ['act2'] | Other tags: ['flea']
 
-**Free 14 fleas** | Progression level: ['clawline'] | Other tags: ['flea']
+**Free 14 Fleas** | Progression level: ['clawline'] | Other tags: ['flea']
 
 **Meet Caravan at the Grand Gate [12]** | Progression level: ['act2'] | Other tags: ['flea']
 
