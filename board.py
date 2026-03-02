@@ -311,6 +311,7 @@ def lockoutBoard(noTags=[], size=49, **kwargs):
         for i, goalDic in enumerate(goalSlice):
             newDic = {
                 "goal" : goalDic["name"],
+                "progression": "e",
                 "individual_limit": 1,
                 "range" : [],
                 "board_categories": [],
@@ -323,6 +324,7 @@ def lockoutBoard(noTags=[], size=49, **kwargs):
     for i in range(sliceSize): #lockout needs more goals than required for some reason
         newDic = {
             "goal" : f"this goal is fake{i}",
+            "progression": "e",
             "individual_limit": 1,
             "range" : [],
             "board_categories": [],
