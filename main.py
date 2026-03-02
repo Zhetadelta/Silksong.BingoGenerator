@@ -101,11 +101,12 @@ async def newboard(interaction: discord.Interaction, lockout: bool = False, pres
         noTags.append("lockout")
     if size is None:
         size = app_commands.Choice(name="5", value="5")
-        if preset is not None and preset.value in ["Act 3 No Silk Soar", "Full Act 3"]:
-            print("forcing prog")
-            thisBoard = board.bingosyncBoard(noTags=noTags, **BOARD_KWARGS, noBlocking = pattern, size=int(size.value)**2, forceProgression=True)
-        else:
-            thisBoard = board.bingosyncBoard(noTags=noTags, **BOARD_KWARGS, noBlocking = pattern, size=int(size.value)**2)
+        
+    if preset is not None and preset.value in ["Act 3 No Silk Soar", "Full Act 3"]:
+        print("forcing prog")
+        thisBoard = board.bingosyncBoard(noTags=noTags, **BOARD_KWARGS, noBlocking = pattern, size=int(size.value)**2, forceProgression=True)
+    else:
+        thisBoard = board.bingosyncBoard(noTags=noTags, **BOARD_KWARGS, noBlocking = pattern, size=int(size.value)**2)
     await interaction.response.send_message(json.dumps(thisBoard), ephemeral=True)
 
 @client.tree.command()
