@@ -300,8 +300,7 @@ def lockoutBoard(noTags=[], size=49, **kwargs):
 
     #Now we need to setup the stupid lockout.live dictionary grr
     out = {
-        "game" : random.choice(ROOM_NAMES),
-        "version" : "0.1",
+        "game_name" : random.choice(ROOM_NAMES),
         "limits": LL_LIMITS
     }
     goalsList = []
@@ -318,7 +317,7 @@ def lockoutBoard(noTags=[], size=49, **kwargs):
                 "line_categories": [],
                 "tooltip": "",
                 "icons" : [],
-                "preferred_grid_position": size-(sliceStart+i) #this is 1 for top-left
+                "grid_position": size-(sliceStart+i) #this is 1 for top-left
             }
             goalsList.append(newDic)
     for i in range(sliceSize): #lockout needs more goals than required for some reason
@@ -381,7 +380,7 @@ def lockoutFormat():
     """
     mainList, _ = getAllGoals() #lockout.live doesn't acknowledge exclusions
     out = {
-        "game" : "Hollow Knight: Silksong",
+        "game_name" : "Hollow Knight: Silksong",
         "limits" : LL_LIMITS
     }
     goalsList = []
