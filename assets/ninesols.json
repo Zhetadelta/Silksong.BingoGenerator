@@ -1,0 +1,42 @@
+{
+    "goals": [
+        {
+            "name" : "Access the Grotto Secret Stash",
+            "types" : [
+                "location"
+            ],
+            "progression" : [
+                "fudie"
+            ]
+        },
+        {
+            "name" : "Complete a Lear Parry Challenge",
+            "types" : [
+                "arena"
+            ],
+            "progression" : [
+                "fudie"
+            ]
+        },
+        {
+            "name" : "Acquire 3 Jades (No purchasing)",
+            "types" : [
+                "collection",
+                "scattered"
+            ],
+            "progression" : [
+                "jiequan"
+            ]
+        },
+        {
+            "name" : "Free the Villagers in Galactic Dock",
+            "types" : [
+                "npc",
+                "norando"
+            ],
+            "progression" : [
+                "jiequan"
+            ]
+        }
+    ]
+}
