@@ -14,8 +14,11 @@ BOARD_TYPES = [
     'faydown', 'craft', 'hardsave', 'melody', 'flea', "key", 'tool', 'act3', 'silksoar']
 
 #Ordered progression
-orderedProg = ['early','dash','cloak','walljump', 'widow', 'act2', 'clawline','faydown', 'act3', 'silksoar']
+silkOrderedProg = ['early','dash','cloak','walljump', 'widow', 'act2', 'clawline','faydown', 'act3', 'silksoar']
 maxWeightScale = 2.25
+
+#Nine Sols Ordered progression
+NSOrderedProg = ['early', 'kuafu', 'goumang', 'yanlao', 'jiequan', 'fudie', 'smb']
     
 LL_LIMITS = {
             "board" : {
@@ -78,6 +81,10 @@ def getAllGoals(noTags=[], goalsetPath = CAT_FILENAME, **kwargs):
         catList = json.load(f)
     #can't modify list during iteration so keep track of removables here
     remGoals = []
+
+    if "game" not in kwargs.keys():
+        orderedProg = silkOrderedProg
+
     presentTags = [tag for tag in orderedProg if tag not in noTags] #ordered tags that arent excluded
     if 'noProg' not in kwargs or not kwargs['noProg']: #progression scaling
         linspace = [1 + x*(maxWeightScale-1)/(len(presentTags)-1) for x in range(len(presentTags))]
@@ -151,6 +158,9 @@ def board(allGoals:dict, exclusionDic, size=25, **kwargs):
             if exclusions: #exclusions is false if limit > 1 or no exclusions found
                 for excludedGoal in exclusions:
                     allGoals = removeGoalByName(allGoals, excludedGoal)
+
+    if "game" not in kwargs.keys():
+        orderedProg = silkOrderedProg
 
     if forcer: #force all lines to have max progression
         indices = progForcer(size=int(sqrt(size)))
@@ -289,6 +299,9 @@ def lockoutBoard(noTags=[], size=49, **kwargs):
         noTags.append("blocking")
     else:
         pattern = False
+
+    if "game" not in kwargs.keys():
+        orderedProg = silkOrderedProg
 
     noTags.append("missable")
 
