@@ -70,7 +70,8 @@ ROOM_NAMES = [
     "Webbed Bouce",
     "Skimaaaanama",
     "Heavy Brosary Necklace",
-    "Lunaberry"
+    "Lunaberry",
+    "Cogwork Canyon"
 ]
 
 STANDARD_PAYLOAD = {
