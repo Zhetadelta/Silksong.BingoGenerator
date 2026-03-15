@@ -6,7 +6,6 @@ ROOM_NAMES = [
     "Not a Human Hand",
     "Almost a Tundra",
     "Sentient Blobs",
-    "Not Haxball",
     "Bing of the Hill with Multiverse Time Travel",
     "Skongin It",
     "Fa Ri Du La Ci Ma Ne",
