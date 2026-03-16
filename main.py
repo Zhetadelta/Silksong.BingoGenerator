@@ -65,7 +65,7 @@ async def on_app_command_error(interaction, error):
         await interaction.followup.send(f"The following error was encountered: {str(error.__cause__)}. Let Abyss know!", ephemeral=True)
 
 def prog_options():
-    opt = ["Act 1 Only", "No Clawline", "No Faydown", "Act 3 No Silk Soar", "Full Act 3", "Easier Mode", "Act 2 Only"]
+    opt = ["Act 1 Only", "No Clawline", "Full Act 2", "Act 3 No Silk Soar", "Full Act 3", "Easier Mode", "Act 2 Only"]
     return [app_commands.Choice(name=i, value=i) for i in opt]
 
 def size_options():
