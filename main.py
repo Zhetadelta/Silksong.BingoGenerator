@@ -73,13 +73,13 @@ def size_options():
 
 def progStringToTags(progression):
     if progression is None:
-        noTags = ['act3', 'silksoar']
+        noTags = ['faydown','act3', 'silksoar']
     elif progression.value == "Act 1 Only":
         noTags = ["act2", "clawline", "faydown", 'act3', 'silksoar']
     elif progression.value == "No Clawline":
         noTags = ["clawline", "faydown", 'act3', 'silksoar']
-    elif progression.value == "No Faydown":
-        noTags = ["faydown", 'act3', 'silksoar']
+    elif progression.value == "Full Act 2":
+        noTags = ['act3', 'silksoar']
     elif progression.value == "Act 3 No Silk Soar":
         noTags = ['silksoar']
     elif progression.value == "Full Act 3":
