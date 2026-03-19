@@ -70,7 +70,11 @@ ROOM_NAMES = [
     "Skimaaaanama",
     "Heavy Brosary Necklace",
     "Lunaberry",
-    "Cogwork Canyon"
+    "Cogwork Canyon",
+    "15 Minutes and a Coffee",
+    "Hornts in Boards",
+    "BS2 is BS",
+    "Canonically Plural Hornet"
 ]
 
 STANDARD_PAYLOAD = {
