@@ -85,7 +85,7 @@ def progStringToTags(progression):
     elif progression.value == "Full Act 3":
         noTags = []
     elif progression.value == "Easier Mode":
-        noTags = ["hard", "faydown"]
+        noTags = ["hard", "faydown", 'act3', 'silksoar']
     elif progression.value == "Act 2 Only":
         noTags = ["early", "dash", "cloak", "walljump", "widow", 'act3', 'silksoar']
     return noTags
