@@ -236,9 +236,12 @@ async def newtriplingy(interaction: discord.Interaction, size: Optional[app_comm
     act1Board, act2Board, act3Board = board.linkedBoards(noTags=(act1Tags, act2Tags, act3Tags), size=(size**2))
     n1, rId1 = session.newRoom(json.dumps(act1Board), lockout=False)
     n2, rId2 = session.newRoom(json.dumps(act2Board), lockout=False)
+    if size == 6: #swap back to bingosync
+        session.close()
+        session = network.bingosyncClient()
     n3, rId3 = session.newRoom(json.dumps(act3Board), lockout=False)
     session.close()
-    await interaction.followup.send(f"Act 1 room: {n1} at {baseName}/room/{rId1}\nAct 2 room: {n2} at {baseName}/room/{rId2}\nAct 3 room: {n3} at {baseName}/room/{rId3}")
+    await interaction.followup.send(f"Act 1 room: {n1} at {baseName}/room/{rId1}\nAct 2 room: {n2} at {baseName}/room/{rId2}\nAct 3 room: {n3} at https://bingosync.com/room/{rId3}")
 
 @client.tree.command()
 @app_commands.describe(tags="Comma-seperated tags to exclude from board generation")
