@@ -366,7 +366,10 @@ def linkedBoards(noTags, size=25, **kwargs):
     goals = []
     boards  = []
     for tagList in noTags:
-        boardList = board(*getAllGoals(noTags=tagList), lockout=(not "lockout" in noTags), tagLimits=limits, size=size, priorGoals=goals)
+        if "act3" not in tagList: #act3 boards cant be size 6
+            boardList = board(*getAllGoals(noTags=tagList), lockout=(not "lockout" in noTags), tagLimits=limits, size=25, priorGoals=goals)
+        else:
+            boardList = board(*getAllGoals(noTags=tagList), lockout=(not "lockout" in noTags), tagLimits=limits, size=size, priorGoals=goals)
         goals = goals + boardList
         boards.append([{"name" : g } for g in boardList])
     return boards
