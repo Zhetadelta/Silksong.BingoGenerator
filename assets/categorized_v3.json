@@ -440,7 +440,7 @@
       ]
     },
     {
-      "name": "Rosary Canon",
+      "name": "Rosary Cannon",
       "types": [
         "tool",
         "key"
@@ -2186,7 +2186,7 @@
       ]
     },
     {
-      "name": "Inpect Magnetite in Brightvein",
+      "name": "Inspect Magnetite in Brightvein",
       "types": [
         "collection",
         "location"

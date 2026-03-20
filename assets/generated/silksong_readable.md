@@ -82,7 +82,7 @@
 
 **Multibinder** | Progression level: ['act2'] | Other tags: ['tool', 'quest', 'expensive']
 
-**Rosary Canon** | Progression level: ['clawline'] | Other tags: ['tool', 'key']
+**Rosary Cannon** | Progression level: ['clawline'] | Other tags: ['tool', 'key']
 
 **Cogfly** | Progression level: ['clawline'] | Other tags: ['tool', 'craft']
 
@@ -430,7 +430,7 @@
 
 **Pale Stag** | Progression level: ['silksoar'] | Other tags: ['fight']
 
-**Inpect Magnetite in Brightvein** | Progression level: ['silksoar'] | Other tags: ['collection', 'location']
+**Inspect Magnetite in Brightvein** | Progression level: ['silksoar'] | Other tags: ['collection', 'location']
 
 **Verdania Fountain Orbs** | Progression level: ['silksoar'] | Other tags: ['fight']
 

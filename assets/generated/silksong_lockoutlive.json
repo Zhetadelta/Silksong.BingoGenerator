@@ -1,5 +1,5 @@
 {
-    "game": "Hollow Knight: Silksong",
+    "game_name": "Hollow Knight: Silksong",
     "limits": {
         "board": {
             "early": 20,
@@ -596,7 +596,7 @@
             "icons": []
         },
         {
-            "goal": "Rosary Canon",
+            "goal": "Rosary Cannon",
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2950,7 +2950,7 @@
             "icons": []
         },
         {
-            "goal": "Inpect Magnetite in Brightvein",
+            "goal": "Inspect Magnetite in Brightvein",
             "range": [],
             "individual_limit": 1,
             "board_categories": [
