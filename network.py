@@ -74,7 +74,8 @@ ROOM_NAMES = [
     "15 Minutes and a Coffee",
     "Hornts in Boards",
     "BS2 is BS",
-    "Canonically Plural Hornet"
+    "Canonically Plural Hornet",
+    "V bbbbbbbbbbbbb      vv v    b bb"
 ]
 
 STANDARD_PAYLOAD = {
