@@ -126,7 +126,7 @@ async def newotherside(interaction: discord.Interaction, preset: Optional[app_co
     session = network.byngosinkClient()
     n, url = session.newFixedRoom(thisBoard, "GTTOS10", gameName="Silksong")
 
-    await interaction.followup.send_message(f"Room: {n} created at {url}")
+    await interaction.followup.send(f"Room: {n} created at {url}")
 
 @client.tree.command()
 @app_commands.describe(preset="Tags to exclude based on preset categories.")
