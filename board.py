@@ -142,7 +142,7 @@ def removeGoalByName(goalList:list, toRemove):
 
 def board(allGoals:dict, exclusionDic, size=25, **kwargs):
     """
-    Generates a list of 25 goals from the dict of goals pass as a dictionary. Goals will have a name and optionally exclusions.
+    Generates a list of [size] goals from the dict of goals pass as a dictionary. Goals will have a name and optionally exclusions.
     Returns a list of goal names.
     """
     goals = []
@@ -215,7 +215,10 @@ def board(allGoals:dict, exclusionDic, size=25, **kwargs):
 
         #handle forcer
         if forcer and forceCount > 0:
-            forcedGoals.append(newGoal["name"])
+            if progs:
+                forcedGoals.append({"name" : newGoal["name"], "progression": newGoal["progression"]})
+            else:
+                forcedGoals.append(newGoal["name"])
             forceCount -= 1
         else:
         #format ranges and append to list
@@ -240,7 +243,7 @@ def board(allGoals:dict, exclusionDic, size=25, **kwargs):
             goals.insert(index, forcedGoals[i])
     return goals
 
-def bingosyncBoard(noTags=[], **kwargs):
+def bingosyncBoard(noTags=[], size = 36, **kwargs):
     """
     Generates a board and returns a bingosync formatted list.
     """
@@ -270,11 +273,8 @@ def bingosyncBoard(noTags=[], **kwargs):
     else: 
         forcer = False
 
-    if "size" in kwargs.keys():
-        boardList = board(*getAllGoals(noTags=noTags, goalsetPath=goalset), size=int(kwargs["size"]), lockout=(not "lockout" in noTags), 
-            forceProgression=forcer, tagLimits=limits, pattern=pattern)
-    else:
-        boardList = board(*getAllGoals(noTags=noTags, goalsetPath=goalset), lockout=(not "lockout" in noTags), tagLimits=limits, pattern=pattern, forceProgression=forcer)
+    boardList = board(*getAllGoals(noTags=noTags, goalsetPath=goalset), size=int(size), lockout=(not "lockout" in noTags), 
+        forceProgression=forcer, tagLimits=limits, pattern=pattern)
     out = []
     for name in boardList:
         out.append({"name": name})
@@ -348,6 +348,63 @@ def lockoutBoard(noTags=[], size=49, **kwargs):
         goalsList.append(newDic)
     out["objectives"] = goalsList
     return out
+
+def byngosinkBoard(noTags = [], size=100, gameType="GTTOS10", **kwargs):
+    """
+    Byngosink board format is the simplest: just a list of goals.
+    """
+    if "tagLimits" in kwargs.keys():
+        limits = kwargs["tagLimits"]
+    else:
+        limits = None
+
+    if "silly" in kwargs.keys() and kwargs["silly"]:
+        pass
+    else: #exclude silly by default
+        noTags.append("silly")
+
+    if "noBlocking" in kwargs.keys() and kwargs["noBlocking"]:
+        pattern = True
+        noTags.append("blocking")
+    else:
+        pattern = False
+
+    if "goalset" in kwargs.keys():
+        goalset = kwargs["goalset"]
+    else:
+        goalset = CAT_FILENAME
+
+    if ("forceProgression" in kwargs.keys() and kwargs["forceProgression"]):
+        forcer = True
+    else: 
+        forcer = False
+
+    if gameType in ["GTTOS10"]:
+        forcer = True #override the earlier false
+        progTag = True
+    else:
+        progTag = False
+
+    boardList = board(*getAllGoals(noTags=noTags, goalsetPath=goalset), size=int(size), lockout=(not "lockout" in noTags), 
+        forceProgression=forcer, tagLimits=limits, pattern=pattern, keepProgression=progTag)
+    
+    if gameType == "GTTOS10":
+        boardList.sort(key=lambda goal: silkOrderedProg.index(goal["progression"][0])) #sort by progression order
+
+        sideLength = int(sqrt(size))
+        arrangedBoard = ["placeholder"] * size #r1c1 is 0, r3c7 is 26, r10c10 is 99
+        for setIndex in range(sideLength):
+            currentSet = boardList[setIndex : setIndex+sideLength]
+            order = random.sample(range(sideLength), k=sideLength) 
+            for i, goal in enumerate(currentSet):
+                arrangedBoard[setIndex+order[i]] = goal
+        assert "placeholder" not in arrangedBoard
+        boardList = arrangedBoard
+
+    if progTag:
+        return [g["name"] for g in boardList]
+    else:
+        return boardList
 
 
 def linkedBoards(noTags, size=25, **kwargs):
@@ -487,5 +544,7 @@ if __name__ == "__main__":
     #print(json.dumps(lockoutFormat()))
 
     ####Test board generation
-    thisBoard = linkedBoards(noTags=[[],[]], forceProgression=True)
+    #thisBoard = linkedBoards(noTags=[[],[]], forceProgression=True)
+    thisBoard = byngosinkBoard(noTags=["silksoar","act3"],size=100)
+    print(len(thisBoard))
     print(json.dumps(thisBoard))

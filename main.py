@@ -112,23 +112,21 @@ async def newboard(interaction: discord.Interaction, lockout: bool = False, pres
 @client.tree.command()
 @app_commands.describe(preset="Tags to exclude based on preset categories.")
 @app_commands.choices(preset=prog_options())
-@app_commands.choices(size=[app_commands.Choice(name=str(i), value=str(i)) for i in [4,5,6,7,8,9]])
-@app_commands.describe(size="The side length of the board. Default: 7")
-async def newascend(interaction: discord.Interaction, preset: Optional[app_commands.Choice[str]] = None, size: Optional[app_commands.Choice[str]]=None):
-    """Generates a new board for lockout.live's Ascend mode. EXPERIMENTAL."""
+async def newotherside(interaction: discord.Interaction, preset: Optional[app_commands.Choice[str]] = None):
+    """Generates a new board for byngosink's Get to the Other Side mode. Needs 100 goals!"""
+    await interaction.response.defer(thinking=True)
+
     noTags = progStringToTags(preset)
     noTags.append("lockout")
-    if size is None:
-        size = app_commands.Choice(name="7", value="7")
+    size = 10
     if preset is not None and preset.value in ["Act 3 No Silk Soar", "Full Act 3"]:
-        thisBoard = board.lockoutBoard(noTags=noTags, size=int(size.value)**2, forceProgression=True, **BOARD_KWARGS)
+        thisBoard = board.byngosinkBoard(noTags=noTags, size=int(size.value)**2, forceProgression=True, **BOARD_KWARGS)
     else:
-        thisBoard = board.lockoutBoard(noTags=noTags, size=int(size.value)**2, **BOARD_KWARGS)
-    fname = str(random.randint(0, 100000))+".json"
-    with open(fname,"w") as tempFile:
-        json.dump(thisBoard, tempFile)
-    await interaction.response.send_message(file=File(fname), ephemeral=True)
-    os.remove(fname)
+        thisBoard = board.byngosinkBoard(noTags=noTags, size=int(size.value)**2, gameType="GTTOS10", **BOARD_KWARGS)
+    session = network.byngosinkClient()
+    n, url = session.newFixedRoom(thisBoard, "GTTOS10", gameName="Silksong")
+
+    await interaction.followup.send_message(f"Room: {n} created at {url}")
 
 @client.tree.command()
 @app_commands.describe(preset="Tags to exclude based on preset categories.")

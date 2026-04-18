@@ -1,4 +1,5 @@
-import requests, json, random
+import requests, random, json
+from websockets.sync.client import connect
 
 ROOM_NAMES = [
     "Abyssopelagic Zone",
@@ -96,6 +97,7 @@ NEW_CARD_PAYLOAD.update({
     "passphrase" : "fast"
 })
 
+
 class bingosyncClient():
     """
     Opens a bingosync session with the correct csrf cookies!! Very exciting.
@@ -191,6 +193,34 @@ class caravanClient(bingosyncClient):
         r = self.session.get("https://caravan.kobold60.com/")
 
         self.csrfToken = self.session.cookies["csrftoken"]
+
+class byngosinkClient(): #completely different format.
+    def __init__(self) -> None:
+        self.socketAddress = "wss://byngosink-ws.manicjamie.com:555/"
+        self.baseURL = "https://byngosink.manicjamie.com/board.html?id="
+
+    def newFixedRoom(self, boardList: list[str], gameType: str, roomName: (str | None) = None, gameName: str = "Silksong"):
+        """
+        Opens a new room with fixed board and sets the instance roomId.
+        """ 
+        if roomName is None:
+            roomName = random.choice(ROOM_NAMES)
+
+        payload = {
+            "verb":"OPEN_FIXED",
+            "roomName": roomName,
+            "game": gameName,
+            "generator": "Fixed",
+            "board": gameType,
+            "goals": boardList
+        }
+
+        with connect(self.socketAddress) as socket:
+            socket.send(json.dumps(payload))
+            response = json.loads(socket.recv(10))
+            roomURL = self.baseURL+response["roomId"]
+
+        return (roomName, roomURL)
 
 
 if __name__ == "__main__":
