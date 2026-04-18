@@ -199,7 +199,7 @@ class byngosinkClient(): #completely different format.
         self.socketAddress = "wss://byngosink-ws.manicjamie.com:555/"
         self.baseURL = "https://byngosink.manicjamie.com/board.html?id="
 
-    def newFixedRoom(self, boardList: list, gameType: str, roomName: (str | None) = None, gameName: str = "Silksong"):
+    def newFixedRoom(self, boardList: list, gameType: str, roomName = None, gameName: str = "Silksong"):
         """
         Opens a new room with fixed board and sets the instance roomId.
         """ 
