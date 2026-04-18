@@ -120,9 +120,9 @@ async def newotherside(interaction: discord.Interaction, preset: Optional[app_co
     noTags.append("lockout")
     size = 10
     if preset is not None and preset.value in ["Act 3 No Silk Soar", "Full Act 3"]:
-        thisBoard = board.byngosinkBoard(noTags=noTags, size=int(size.value)**2, forceProgression=True, **BOARD_KWARGS)
+        thisBoard = board.byngosinkBoard(noTags=noTags, size=int(size)**2, forceProgression=True, **BOARD_KWARGS)
     else:
-        thisBoard = board.byngosinkBoard(noTags=noTags, size=int(size.value)**2, gameType="GTTOS10", **BOARD_KWARGS)
+        thisBoard = board.byngosinkBoard(noTags=noTags, size=int(size)**2, gameType="GTTOS10", **BOARD_KWARGS)
     session = network.byngosinkClient()
     n, url = session.newFixedRoom(thisBoard, "GTTOS10", gameName="Silksong")
 
