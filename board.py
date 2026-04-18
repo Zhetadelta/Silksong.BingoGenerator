@@ -237,8 +237,6 @@ def board(allGoals:dict, exclusionDic, size=25, **kwargs):
     random.shuffle(goals) #mix em all up when we're done
 
     if forcer:
-        print(indices)
-        print(forcedGoals)
         for i, index in enumerate(indices):
             goals.insert(index, forcedGoals[i])
     return goals
@@ -397,7 +395,7 @@ def byngosinkBoard(noTags = [], size=100, gameType="GTTOS10", **kwargs):
             currentSet = boardList[setIndex : setIndex+sideLength]
             order = random.sample(range(sideLength), k=sideLength) 
             for i, goal in enumerate(currentSet):
-                arrangedBoard[setIndex+order[i]] = goal
+                arrangedBoard[(setIndex*10)+order[i]] = goal
         assert "placeholder" not in arrangedBoard
         boardList = arrangedBoard
 
