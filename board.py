@@ -323,10 +323,10 @@ def byngosinkBoard(noTags = [], size=100, gameType="GTTOS10", **kwargs):
         sideLength = int(sqrt(size))
         arrangedBoard = ["placeholder"] * size #r1c1 is 0, r3c7 is 26, r10c10 is 99
         for setIndex in range(sideLength):
-            currentSet = boardList[setIndex : setIndex+sideLength]
+            currentSet = boardList[(setIndex*sideLength) : (setIndex*sideLength)+sideLength]
             order = random.sample(range(sideLength), k=sideLength) 
             for i, goal in enumerate(currentSet):
-                arrangedBoard[(setIndex*10)+order[i]] = goal
+                arrangedBoard[(setIndex*sideLength)+order[i]] = goal
         assert "placeholder" not in arrangedBoard
         boardList = arrangedBoard
 
