@@ -178,7 +178,8 @@ async def newroom(interaction: discord.Interaction, pattern: bool = False, prese
                                             **BOARD_KWARGS, noBlocking = pattern)
     
     session = network.byngosinkClient()
-    n, rId = session.newFixedRoom(json.dumps(thisBoard), "Non-Lockout", players=players)
+    type = "Non-Lockout" if size.value == "5" else "Bingo6"
+    n, rId = session.newFixedRoom(thisBoard, type, gameName="Silksong", players=players)
     await interaction.followup.send(f"Room: {n} created at {rId}")
 
 @client.tree.command()
