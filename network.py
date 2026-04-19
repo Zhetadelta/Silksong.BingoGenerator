@@ -1,4 +1,5 @@
 import requests, random, json
+from time import sleep
 from websockets.sync.client import connect
 
 ROOM_NAMES = [
@@ -77,6 +78,57 @@ ROOM_NAMES = [
     "BS2 is BS",
     "Canonically Plural Hornet",
     "V bbbbbbbbbbbbb      vv v    b bb"
+]
+
+TEAM_NAMES = [
+    "Red Tools",
+    "Blue Tools",
+    "Yellow Tools",
+    "Atla",
+    "Cindril",
+    "Karn",
+    "Murglin",
+    "Absolom",
+    "Karmelita",
+    "Clover",
+    "Nyleth",
+    "Pebb",
+    "Forge Daughter",
+    "Jubilana",
+    "Twelfth Architect",
+    "Silkspear",
+    "Threadstorm",
+    "Sharpdart",
+    "Crosstitch",
+    "Rune Rage",
+    "Pale Nails",
+    "Beastlings",
+    "plasmium", #caravan teams
+    "sherma",
+    "gilly",
+    "vespa",
+    "magnetite",
+    "huntress",
+    "scrounge",
+    "beastling",
+    "Hornt", #silly starts
+    "Soul",
+    "Silk",
+    "Darkness",
+    "Yuri",
+    "Yaoi"
+]
+
+TEAM_COLORS = [
+    "#237e3d",
+    "#c32a45",
+    "#0d48b5",
+    "#ddc700",
+    "#cd560b",
+    "#f5c06c",
+    "#80c786",
+    "#75b4d8",
+    "#481572"
 ]
 
 STANDARD_PAYLOAD = {
@@ -199,7 +251,7 @@ class byngosinkClient(): #completely different format.
         self.socketAddress = "wss://byngosink-ws.manicjamie.com:555/"
         self.baseURL = "https://byngosink.manicjamie.com/board.html?id="
 
-    def newFixedRoom(self, boardList: list, gameType: str, roomName = None, gameName: str = "Silksong"):
+    def newFixedRoom(self, boardList: list, gameType: str, roomName = None, gameName: str = "Silksong", players=0):
         """
         Opens a new room with fixed board and sets the instance roomId.
         """ 
@@ -218,7 +270,30 @@ class byngosinkClient(): #completely different format.
         with connect(self.socketAddress) as socket:
             socket.send(json.dumps(payload))
             response = json.loads(socket.recv(10))
-            roomURL = self.baseURL+response["roomId"]
+            roomId = response["roomId"]
+            roomURL = self.baseURL+roomId
+
+            if players > 0:
+                #join bingyflea to make teams and then leave
+                socket.send(json.dumps({"verb": "JOIN", "roomId": roomId, "username": "Bingyflea"}))
+                r2 = json.loads(socket.recv(10))
+                userId = r2["userId"]
+
+                names, colors = (random.sample(TEAM_NAMES, k=players), random.sample(TEAM_COLORS, k=players))
+                for i in range(players):
+                    socket.send(json.dumps({"verb": "CREATE_TEAM",
+                                            "roomId": roomId,
+                                            "name": names[i],
+                                            "colour": colors[i]}))
+                    _ = socket.recv(10)
+
+                socket.send(json.dumps({"verb": "LEAVE_TEAM",
+                                        "roomId": roomId}))
+                _ = socket.recv(10) 
+                socket.send(json.dumps({"verb": "EXIT",
+                                        "userId": userId,
+                                        "roomId": roomId}))
+                _ = socket.recv(10)
 
         return (roomName, roomURL)
 
