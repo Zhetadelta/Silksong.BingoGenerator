@@ -159,7 +159,7 @@ async def newrosingy(interaction: discord.Interaction, preset: Optional[app_comm
 @app_commands.choices(size=size_options())
 @app_commands.describe(players="Number of teams to create. Don't fill out to create your own teams.")
 async def newroom(interaction: discord.Interaction, pattern: bool = False, preset: Optional[app_commands.Choice[str]] = None, 
-                  players: Optional[str] = "0",  size: Optional[app_commands.Choice[str]] = None):
+                  players: Optional[str] = "0",  size: Optional[app_commands.Choice[str]] = "5"):
     """Generates a new board and creates a byngosink room."""
     await interaction.response.defer(thinking=True)
 
@@ -171,10 +171,10 @@ async def newroom(interaction: discord.Interaction, pattern: bool = False, prese
         players = 0
     
     if preset is not None and preset.value in ["Act 3 No Silk Soar", "Full Act 3"]:
-        thisBoard = board.byngosinkBoard(noTags=noTags, size=size.value, gameType = "Non-Lockout", 
+        thisBoard = board.byngosinkBoard(noTags=noTags, size=size.value**2, gameType = "Non-Lockout",
                                             **BOARD_KWARGS, noBlocking = pattern, forceProgression=True)
     else:
-        thisBoard = board.byngosinkBoard(noTags=noTags, size=size.value, gameType = "Non-Lockout", 
+        thisBoard = board.byngosinkBoard(noTags=noTags, size=size.value**2, gameType = "Non-Lockout", 
                                             **BOARD_KWARGS, noBlocking = pattern)
     
     session = network.byngosinkClient()
