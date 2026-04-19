@@ -249,6 +249,7 @@ class caravanClient(bingosyncClient):
 class byngosinkClient(): #completely different format.
     def __init__(self) -> None:
         self.socketAddress = "wss://byngosink-ws.manicjamie.com:555/"
+        #self.socketAddress = "ws://localhost:555/"
         self.baseURL = "https://byngosink.manicjamie.com/board.html?id="
 
     def newFixedRoom(self, boardList: list, gameType: str, roomName = None, gameName: str = "Silksong", players=0):
@@ -286,19 +287,23 @@ class byngosinkClient(): #completely different format.
                                             "name": names[i],
                                             "colour": colors[i]}))
                     _ = socket.recv(10)
+                    sleep(0.2)
 
                 socket.send(json.dumps({"verb": "LEAVE_TEAM",
                                         "roomId": roomId}))
                 _ = socket.recv(10) 
+                sleep(0.2)
                 socket.send(json.dumps({"verb": "EXIT",
                                         "userId": userId,
                                         "roomId": roomId}))
                 _ = socket.recv(10)
+                sleep(0.2)
 
         return (roomName, roomURL)
 
 
 if __name__ == "__main__":
-    c = bingosyncClient()
-    rId = c.newRoom('[{"name": "2 Gather Quests"}, {"name": "Obtain a Crafting Kit"}, {"name": "Fully Unlock a Non-Hunter\'s Crest"}, {"name": "Cogwork Dancers"}, {"name": "Savage Beastfly"}, {"name": "3 Blue Tools"}, {"name": "Vaultkeeper\'s Melody"}, {"name": "Phantom"}, {"name": "Moss Mother Duo"}, {"name": "Delver\'s Drill"}, {"name": "Win Against Lumble The Lucky"}, {"name": "Twisted Bud"}, {"name": "Repair Silkshot"}, {"name": "Have 4 Rosary Strings"}, {"name": "Widow"}, {"name": "Sinner\'s Road & Marrows Flea [2]"}, {"name": "Complete 5 Quests"}, {"name": "Crawbug Clearing"}, {"name": "Pollip Pouch"}, {"name": "Sister Splinter"}, {"name": "Moorwing"}, {"name": "2 Wayfarer Quests"}, {"name": "Craggler"}, {"name": "Defeat a Cogwork Clapper"}, {"name": "Pay for a Flea Spa"}]')
-    c.close()
+    c = byngosinkClient()
+    board = ["Beast's Crest", "Vintage Nectar", "Cogwork Core Mask Shard", "Deep Docks Fleas [3]", "Blasted Steps Mask Shard", "Slab Mask Shard", "5 Red Tools", "3 Gather Quests", "Talk to Loam", "Crustnut", "Talk to Shakra in Bilewater", "High Halls Spool Fragment", "1 Crafting Kit", "Obtain 3 Beast Shards", "Meet Caravan at the Grand Gate [12]", "Obtain 5 Craftmetal", "Apostate Key", "Pimpillo & Voltvessels", "Skull Tyrant", "2 Wayfarer Quests", "Conductor's Melody", "Rosary Cannon", "Voltvyrm", "Buy From Grindle (No String)", "Moorwing", "Flintslate", "Witch Crest", "Sands of Karak Flea [1]", "2 Extra Masks", "Mt. Fay Mask Shard", "Defeat a Covetous Pilgrim", "Obtain 5 Memory Lockets", "Deep Docks Spool Fragments (2)", "Disgraced Chef Lugoli", "Pale Lake Craftmetal", "Talk to Styx & Huntress"]
+    _, rId = c.newFixedRoom(board, gameType="Bingo6", players=5)
+    print(rId)
