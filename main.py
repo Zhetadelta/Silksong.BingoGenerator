@@ -159,7 +159,7 @@ async def newrosingy(interaction: discord.Interaction, preset: Optional[app_comm
 @app_commands.choices(size=size_options())
 @app_commands.describe(players="Number of teams to create. Don't fill out to create your own teams.")
 async def newroom(interaction: discord.Interaction, pattern: bool = False, preset: Optional[app_commands.Choice[str]] = None, 
-                  players: Optional[str] = "0",  size: Optional[app_commands.Choice[str]] = "5"):
+                  players: Optional[str] = "0",  size: Optional[app_commands.Choice[str]] = app_commands.Choice(name="5", value="5")):
     """Generates a new board and creates a byngosink room."""
     await interaction.response.defer(thinking=True)
 
