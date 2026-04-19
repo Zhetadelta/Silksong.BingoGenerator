@@ -131,7 +131,7 @@ async def newotherside(interaction: discord.Interaction, preset: Optional[app_co
 @client.tree.command()
 @app_commands.describe(preset="Tags to exclude based on preset categories.")
 @app_commands.choices(preset=prog_options())
-@app_commands.choices(size=[app_commands.Choice(name=str(i), value=str(i)) for i in [5,6]])
+@app_commands.choices(size=size_options())
 @app_commands.describe(size="The side length of the board. Default: 5")
 async def newrosingy(interaction: discord.Interaction, preset: Optional[app_commands.Choice[str]] = None, size: Optional[app_commands.Choice[str]]=None):
     """Generates a new rosingy board. EXPERIMENTAL."""
@@ -156,21 +156,30 @@ async def newrosingy(interaction: discord.Interaction, preset: Optional[app_comm
 @client.tree.command()
 @app_commands.describe(preset="Tags to exclude based on preset categories.")
 @app_commands.choices(preset=prog_options())
-async def newroom(interaction: discord.Interaction, lockout: bool = False, pattern: bool = False, preset: Optional[app_commands.Choice[str]] = None):
-    """Generates a new board and creates a bingosync room with "fast" as the password."""
+@app_commands.choices(size=size_options())
+@app_commands.describe(players="Number of teams to create. Don't fill out to create your own teams.")
+async def newroom(interaction: discord.Interaction, pattern: bool = False, preset: Optional[app_commands.Choice[str]] = None, 
+                  players: Optional[str] = "0",  size: Optional[app_commands.Choice[str]] = None):
+    """Generates a new board and creates a byngosink room."""
     await interaction.response.defer(thinking=True)
 
     noTags = progStringToTags(preset)
-    if not lockout:
-        noTags.append("lockout") #exclude lockout-only goals
+    noTags.append("lockout") #exclude lockout-only goals
+    try:
+        players = int(players)
+    except ValueError:
+        players = 0
+    
     if preset is not None and preset.value in ["Act 3 No Silk Soar", "Full Act 3"]:
-        thisBoard = board.bingosyncBoard(noTags=noTags, **BOARD_KWARGS, noBlocking = pattern, forceProgression=True)
+        thisBoard = board.byngosinkBoard(noTags=noTags, size=size.value, gameType = "Non-Lockout", 
+                                            **BOARD_KWARGS, noBlocking = pattern, forceProgression=True)
     else:
-        thisBoard = board.bingosyncBoard(noTags=noTags, **BOARD_KWARGS, noBlocking = pattern)
-    bsSession = network.bingosyncClient()
-    n, rId = bsSession.newRoom(json.dumps(thisBoard), lockout=lockout)
-    bsSession.close()
-    await interaction.followup.send(f"Room: {n} created at https://bingosync.com/room/{rId}")
+        thisBoard = board.byngosinkBoard(noTags=noTags, size=size.value, gameType = "Non-Lockout", 
+                                            **BOARD_KWARGS, noBlocking = pattern)
+    
+    session = network.byngosinkClient()
+    n, rId = session.newFixedRoom(json.dumps(thisBoard), "Non-Lockout", players=players)
+    await interaction.followup.send(f"Room: {n} created at {rId}")
 
 @client.tree.command()
 @app_commands.describe(preset="Tags to exclude based on preset categories.")
