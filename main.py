@@ -171,10 +171,10 @@ async def newroom(interaction: discord.Interaction, pattern: bool = False, prese
         players = 0
     
     if preset is not None and preset.value in ["Act 3 No Silk Soar", "Full Act 3"]:
-        thisBoard = board.byngosinkBoard(noTags=noTags, size=size.value**2, gameType = "Non-Lockout",
+        thisBoard = board.byngosinkBoard(noTags=noTags, size=int(size.value)**2, gameType = "Non-Lockout",
                                             **BOARD_KWARGS, noBlocking = pattern, forceProgression=True)
     else:
-        thisBoard = board.byngosinkBoard(noTags=noTags, size=size.value**2, gameType = "Non-Lockout", 
+        thisBoard = board.byngosinkBoard(noTags=noTags, size=int(size.value)**2, gameType = "Non-Lockout", 
                                             **BOARD_KWARGS, noBlocking = pattern)
     
     session = network.byngosinkClient()
