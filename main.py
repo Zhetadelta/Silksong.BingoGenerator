@@ -112,7 +112,8 @@ async def newboard(interaction: discord.Interaction, lockout: bool = False, pres
 @client.tree.command()
 @app_commands.describe(preset="Tags to exclude based on preset categories.")
 @app_commands.choices(preset=prog_options())
-async def newotherside(interaction: discord.Interaction, preset: Optional[app_commands.Choice[str]] = None):
+async def newotherside(interaction: discord.Interaction, preset: Optional[app_commands.Choice[str]] = None,
+                       players: Optional[str] = "0"):
     """Generates a new board for byngosink's Get to the Other Side mode. Needs 100 goals!"""
     await interaction.response.defer(thinking=True)
 
@@ -124,7 +125,7 @@ async def newotherside(interaction: discord.Interaction, preset: Optional[app_co
     else:
         thisBoard = board.byngosinkBoard(noTags=noTags, size=int(size)**2, gameType="GTTOS10", **BOARD_KWARGS)
     session = network.byngosinkClient()
-    n, url = session.newFixedRoom(thisBoard, "GTTOS10", gameName="Silksong")
+    n, url = session.newFixedRoom(thisBoard, "GTTOS10", gameName="Silksong", players=int(players))
 
     await interaction.followup.send(f"Room: {n} created at {url}")
 
