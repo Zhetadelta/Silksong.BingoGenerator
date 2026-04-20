@@ -152,7 +152,7 @@ async def newrosingy(interaction: discord.Interaction, preset: Optional[app_comm
     else:
         thisBoard = board.lockoutBoard(noTags=noTags, size=int(size.value)**2, goalset="rosingy.json", **BOARD_KWARGS)
     name, rId = session.newRoom(json.dumps(thisBoard), lockout=False)
-    await interaction.response.send_message(file=File(fname), ephemeral=True)
+    await interaction.response.send_message(f"Room: {name} created at {baseName}/{rId}")
 
 @client.tree.command()
 @app_commands.describe(preset="Tags to exclude based on preset categories.")
