@@ -140,15 +140,13 @@ def removeGoalByName(goalList:list, toRemove):
             listCopy.remove(goal) #can't change mutable types during iteration
     return listCopy
 
-def board(allGoals:dict, exclusionDic, size=25, **kwargs):
+def board(allGoals:dict, exclusionDic, size=25, fogOfWar=False, 
+          tagLimits = None, pattern = False, **kwargs):
     """
     Generates a list of [size] goals from the dict of goals pass as a dictionary. Goals will have a name and optionally exclusions.
     Returns a list of goal names.
     """
     goals = []
-    lockout = kwargs["lockout"] if "lockout" in kwargs.keys() else False
-    tagLimits = kwargs["tagLimits"].copy() if "tagLimits" in kwargs.keys() and kwargs["tagLimits"] is not None else None
-    pattern = kwargs["pattern"] if "pattern" in kwargs.keys() else False
     progs = kwargs["keepProgression"] if "keepProgression" in kwargs.keys() else False
     forcer = kwargs["forceProgression"] if "forceProgression" in kwargs.keys() else False
 
@@ -213,16 +211,20 @@ def board(allGoals:dict, exclusionDic, size=25, **kwargs):
                 if tag in tagLimits.keys(): #tag has a limit
                     tagLimits[tag] = tagLimits[tag] - 1 #decrement tag limit
 
+        if fogOfWar and "fow" in newGoal.keys():
+            goalName = newGoal["fow"]
+        else:
+            goalName = newGoal["name"]
+
         #handle forcer
         if forcer and forceCount > 0:
             if progs:
-                forcedGoals.append({"name" : newGoal["name"], "progression": newGoal["progression"]})
+                forcedGoals.append({"name" : goalName, "progression": newGoal["progression"]})
             else:
-                forcedGoals.append(newGoal["name"])
+                forcedGoals.append(goalName)
             forceCount -= 1
         else:
         #format ranges and append to list
-            goalName = newGoal["name"]
             if progs: #keep progression tag for sorting
                 goals.append({"name": goalName, "progression": newGoal["progression"]})
             else:
@@ -310,12 +312,14 @@ def byngosinkBoard(noTags = [], size=100, gameType="GTTOS10", **kwargs):
 
     if gameType in ["GTTOS10"]:
         forcer = True #override the earlier false
+        fogOfWar = True
         progTag = True
     else:
+        fogOfWar = False
         progTag = False
 
     boardList = board(*getAllGoals(noTags=noTags, goalsetPath=goalset), size=int(size), lockout=(not "lockout" in noTags), 
-        forceProgression=forcer, tagLimits=limits, pattern=pattern, keepProgression=progTag)
+        forceProgression=forcer, tagLimits=limits, pattern=pattern, keepProgression=progTag, fogOfWar=fogOfWar)
     
     if gameType == "GTTOS10":
         boardList.sort(key=lambda goal: silkOrderedProg.index(goal["progression"][0])) #sort by progression order

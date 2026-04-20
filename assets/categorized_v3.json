@@ -755,7 +755,8 @@
       ],
       "progression": [
         "cloak"
-      ]
+      ],
+      "fow": "Moorwing or Flea Brew"
     },
     {
       "name": "Savage Beastfly",
@@ -768,7 +769,7 @@
       ]
     },
     {
-      "name": "Great Conchflies",
+      "name": "Great Conchflies (Blasted Steps)",
       "types": [
         "fight",
         "blocking"
@@ -779,7 +780,7 @@
       "weight" : 0.5
     },
     {
-      "name": "Raging Conchfly",
+      "name": "Raging Conchfly (Sands of Karak)",
       "types": [
         "fight"
       ],
@@ -881,13 +882,11 @@
     {
       "name": "Red Quill",
       "types": [
-        "location",
-        "missable"
+        "location"
       ],
       "progression": [
         "act2"
-      ],
-      "weight" : 0.5
+      ]
     },
     {
       "name": "Disgraced Chef Lugoli",
@@ -936,7 +935,7 @@
       "weight" : 0.5
     },
     {
-      "name": "Defeat a Cogwork Clapper",
+      "name": "Cogwork Clapper Journal Entry",
       "types": [
         "fight"
       ],
@@ -1071,7 +1070,8 @@
       ],
       "progression": [
         "walljump"
-      ]
+      ],
+      "fow": "Magnetite Dice & Blasted Steps Flea [1]"
     },
     {
       "name": "Pay To Confess",
@@ -1276,7 +1276,7 @@
       ]
     },
     {
-      "name": "Wormways & Blasted Steps Flea [2]",
+      "name": "Wormways & Blasted Steps Fleas [2]",
       "types": [
         "flea"
       ],
@@ -1510,7 +1510,8 @@
       ],
       "progression": [
         "act2"
-      ]
+      ],
+      "fow" : "Break 3 Rosary Necklaces (no purchasing)"
     },
     {
       "name": "Have 6 Rosary Strings (no purchasing)",
@@ -1520,7 +1521,8 @@
       ],
       "progression": [
         "widow"
-      ]
+      ],
+      "fow" : "Break 6 Rosary Strings (no purchasing)"
     },
     {
       "name": "Break 8 Rosary Strings (no purchasing)",
@@ -1637,7 +1639,8 @@
       "progression": [
         "cloak"
       ],
-      "weight" : 0.5
+      "weight" : 0.5,
+      "fow" : "Obtain 3 Different Types of Relic"
     },
     {
       "name": "Obtain 4 Different Types of Relic",
@@ -1690,7 +1693,8 @@
       ],
       "progression": [
         "widow"
-      ]
+      ],
+      "fow": "Buy a Map in Bellhart"
     },
     {
       "name": "Fix the Sinner's Road Bench",
@@ -1935,7 +1939,8 @@
       ],
       "progression": [
         "act2"
-      ]
+      ],
+      "fow": "Meet Sherma in Songclave"
     },
     {
       "name": "2 Silk Hearts",
@@ -2465,7 +2470,7 @@
     },
     {
       "unique": [
-        "Great Conchflies",
+        "Great Conchflies (Blasted Steps)",
         "Needle Strike"
       ]
     },
