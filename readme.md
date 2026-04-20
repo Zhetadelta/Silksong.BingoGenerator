@@ -63,3 +63,6 @@ An exclusion must be a dictionary as follows:
 - `"limit" : 1` **(Optional)** A maximum number of goals in this group to appear on any given board. If not given, assumed to be 1 (only one of these goals can appear).
 
 - `"pattern" : true` **(Optional)** Add this field to an exclusion to make it only apply to pattern-preset boards.
+
+#### Fog of War
+String to rename goals in fog of war formats (GTTO-, etc.) like `fow: "Obtain 3 Rosary Necklaces"`
