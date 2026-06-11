@@ -159,7 +159,7 @@ async def newrosingy(interaction: discord.Interaction, preset: Optional[app_comm
 @app_commands.choices(preset=prog_options())
 @app_commands.choices(size=size_options())
 @app_commands.describe(players="Number of teams to create. Don't fill out to create your own teams.")
-async def newroom(interaction: discord.Interaction, pattern: bool = False, preset: Optional[app_commands.Choice[str]] = None, 
+async def newbyngosink(interaction: discord.Interaction, pattern: bool = False, preset: Optional[app_commands.Choice[str]] = None, 
                   players: Optional[str] = "0",  size: Optional[app_commands.Choice[str]] = None):
     """Generates a new board and creates a byngosink room."""
     await interaction.response.defer(thinking=True)
@@ -185,6 +185,26 @@ async def newroom(interaction: discord.Interaction, pattern: bool = False, prese
     type = "Non-Lockout" if size.value == "5" else "Bingo6"
     n, rId = session.newFixedRoom(thisBoard, type, gameName="Silksong", players=players)
     await interaction.followup.send(f"Room: {n} created at {rId}")
+
+@client.tree.command()
+@app_commands.describe(preset="Tags to exclude based on preset categories.")
+@app_commands.choices(preset=prog_options())
+async def newbingosync(interaction: discord.Interaction, lockout: bool = False, pattern: bool = False, preset: Optional[app_commands.Choice[str]] = None):
+    """Generates a new 5x5 board and creates a bingosync room with "fast" as the password."""
+    await interaction.response.defer(thinking=True)
+
+    noTags = progStringToTags(preset)
+    if not lockout:
+        noTags.append("lockout") #exclude lockout-only goals
+    if preset is not None and preset.value in ["Act 3 No Silk Soar", "Full Act 3"]:
+        print("forcing prog")
+        thisBoard = board.bingosyncBoard(noTags=noTags, **BOARD_KWARGS, noBlocking = pattern, size=25, forceProgression=True)
+    else:
+        thisBoard = board.bingosyncBoard(noTags=noTags, **BOARD_KWARGS, noBlocking = pattern, size=25)
+    bsSession = network.bingosyncClient()
+    n, rId = bsSession.newRoom(json.dumps(thisBoard), lockout=lockout)
+    bsSession.close()
+    await interaction.followup.send(f"Room: {n} created at https://bingosync.com//room/{rId}")
 
 @client.tree.command()
 @app_commands.describe(preset="Tags to exclude based on preset categories.")
