@@ -17,8 +17,11 @@ BOARD_TYPES = [
 silkOrderedProg = ['early','dash','cloak','walljump', 'widow', 'act2', 'clawline','faydown', 'act3', 'silksoar']
 maxWeightScale = 2.25
 
-#Nine Sols Ordered progression
+#Nine Sols Ordered progression - UNUSED
 NSOrderedProg = ['early', 'kuafu', 'goumang', 'yanlao', 'jiequan', 'fudie', 'smb']
+
+#Default excluded tags
+DEF_NOTAGS = ["silly", "itemsync"]
     
 LL_LIMITS = {
             "board" : {
@@ -72,7 +75,7 @@ def progForcer(size=6):
     
 
 
-def getAllGoals(noTags=[], goalsetPath = CAT_FILENAME, **kwargs):
+def getAllGoals(noTags=DEF_NOTAGS, goalsetPath = CAT_FILENAME, **kwargs):
     """
     Loads the file given in variables at the top of the script and returns the parts.
     Returns list of Goal dictionaries and list of Exclusive lists.
@@ -243,7 +246,7 @@ def board(allGoals:dict, exclusionDic, size=25, fogOfWar=False,
             goals.insert(index, forcedGoals[i])
     return goals
 
-def bingosyncBoard(noTags=[], size = 36, **kwargs):
+def bingosyncBoard(noTags=DEF_NOTAGS, size = 36, **kwargs):
     """
     Generates a board and returns a bingosync formatted list.
     """
@@ -251,11 +254,6 @@ def bingosyncBoard(noTags=[], size = 36, **kwargs):
         limits = kwargs["tagLimits"]
     else:
         limits = None
-
-    if "silly" in kwargs.keys() and kwargs["silly"]:
-        pass
-    else: #exclude silly by default
-        noTags.append("silly")
 
     if "noBlocking" in kwargs.keys() and kwargs["noBlocking"]:
         pattern = True
@@ -280,7 +278,7 @@ def bingosyncBoard(noTags=[], size = 36, **kwargs):
         out.append({"name": name})
     return out
 
-def byngosinkBoard(noTags = [], size=100, gameType="GTTOS10", **kwargs):
+def byngosinkBoard(noTags = DEF_NOTAGS, size=100, gameType="GTTOS10", **kwargs):
     """
     Byngosink board format is the simplest: just a list of goals.
     """
@@ -288,11 +286,6 @@ def byngosinkBoard(noTags = [], size=100, gameType="GTTOS10", **kwargs):
         limits = kwargs["tagLimits"]
     else:
         limits = None
-
-    if "silly" in kwargs.keys() and kwargs["silly"]:
-        pass
-    else: #exclude silly by default
-        noTags.append("silly")
 
     if "noBlocking" in kwargs.keys() and kwargs["noBlocking"]:
         pattern = True
