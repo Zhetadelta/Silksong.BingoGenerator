@@ -1063,15 +1063,13 @@
       }
     },
     {
-      "name": "Win Lumble's Dice",
+      "name": "Blasted Steps Silkeater & Craftmetal",
       "types": [
-        "npc",
-        "missable"
+        "collection"
       ],
       "progression": [
         "walljump"
-      ],
-      "fow": "Magnetite Dice & Blasted Steps Flea [1]"
+      ]
     },
     {
       "name": "Pay To Confess",
@@ -1712,8 +1710,7 @@
       ],
       "progression": [
         "dash"
-      ],
-      "weight" : 0.5
+      ]
     },
     {
       "name": "Obtain 8 Maps",
@@ -2013,6 +2010,28 @@
       ],
       "progression": [
         "clawline"
+      ]
+    },
+    {
+      "name": "Barbed Bracelet & Magnetite Dice",
+      "types": [
+        "tool",
+        "npc",
+        "itemsync"
+      ],
+      "progression": [
+        "widow"
+      ]
+    },
+    {
+      "name": "Claw Mirror & Injector Band",
+      "types": [
+        "tool",
+        "fight",
+        "itemsync"
+      ],
+      "progression": [
+        "act2"
       ]
     },
     {
@@ -2440,6 +2459,12 @@
     },
     {
       "unique": [
+        "Claw Mirror & Injector Band",
+        "Warding Bell & Claw Mirror"
+      ]
+    },
+    {
+      "unique": [
         "Savage Beastfly",
         "Beast's Crest"
       ]
@@ -2479,12 +2504,6 @@
         "Win a Loddie Minigame",
         "Fail a Loddie Minigame",
         "1 Tool Pouch Upgrade"
-      ]
-    },
-    {
-      "unique": [
-        "Win Lumble's Dice",
-        "Magnetite Dice & Magnetite Brooch"
       ]
     },
     {

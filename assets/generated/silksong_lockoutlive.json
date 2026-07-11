@@ -1034,7 +1034,7 @@
             "icons": []
         },
         {
-            "goal": "Great Conchflies",
+            "goal": "Great Conchflies (Blasted Steps)",
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1048,7 +1048,7 @@
             "icons": []
         },
         {
-            "goal": "Raging Conchfly",
+            "goal": "Raging Conchfly (Sands of Karak)",
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1154,20 +1154,6 @@
             "icons": []
         },
         {
-            "goal": "Fail the Phantom Cutscene",
-            "range": [],
-            "individual_limit": 1,
-            "board_categories": [
-                "walljump"
-            ],
-            "line_categories": [
-                "fight",
-                "silly"
-            ],
-            "tooltip": "",
-            "icons": []
-        },
-        {
             "goal": "Trobbio",
             "range": [],
             "individual_limit": 1,
@@ -1190,8 +1176,7 @@
                 "act2"
             ],
             "line_categories": [
-                "location",
-                "missable"
+                "location"
             ],
             "tooltip": "",
             "icons": []
@@ -1254,7 +1239,7 @@
             "icons": []
         },
         {
-            "goal": "Defeat a Cogwork Clapper",
+            "goal": "Cogwork Clapper Journal Entry",
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1330,20 +1315,6 @@
             ],
             "line_categories": [
                 "npc"
-            ],
-            "tooltip": "",
-            "icons": []
-        },
-        {
-            "goal": "Fail a Loddie Minigame",
-            "range": [],
-            "individual_limit": 1,
-            "board_categories": [
-                "walljump"
-            ],
-            "line_categories": [
-                "npc",
-                "silly"
             ],
             "tooltip": "",
             "icons": []
@@ -1427,15 +1398,14 @@
             "icons": []
         },
         {
-            "goal": "Win Lumble's Dice",
+            "goal": "Blasted Steps Silkeater & Craftmetal",
             "range": [],
             "individual_limit": 1,
             "board_categories": [
                 "walljump"
             ],
             "line_categories": [
-                "npc",
-                "missable"
+                "collection"
             ],
             "tooltip": "",
             "icons": []
@@ -1711,7 +1681,7 @@
             "icons": []
         },
         {
-            "goal": "Wormways & Blasted Steps Flea [2]",
+            "goal": "Wormways & Blasted Steps Fleas [2]",
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1889,22 +1859,6 @@
             ],
             "line_categories": [
                 "npc"
-            ],
-            "tooltip": "",
-            "icons": []
-        },
-        {
-            "goal": "Hit a Hoker with the Flea Bottle",
-            "range": [],
-            "individual_limit": 1,
-            "board_categories": [
-                "cloak",
-                "flea",
-                "tool"
-            ],
-            "line_categories": [
-                "quest",
-                "silly"
             ],
             "tooltip": "",
             "icons": []
@@ -2441,35 +2395,6 @@
             ],
             "line_categories": [
                 "collection"
-            ],
-            "tooltip": "",
-            "icons": []
-        },
-        {
-            "goal": "Vaultborn Journal Entry",
-            "range": [],
-            "individual_limit": 1,
-            "board_categories": [
-                "act2"
-            ],
-            "line_categories": [
-                "collection",
-                "silly"
-            ],
-            "tooltip": "",
-            "icons": []
-        },
-        {
-            "goal": "Slap Nuu",
-            "range": [],
-            "individual_limit": 1,
-            "board_categories": [
-                "act2"
-            ],
-            "line_categories": [
-                "quest",
-                "collection",
-                "silly"
             ],
             "tooltip": "",
             "icons": []

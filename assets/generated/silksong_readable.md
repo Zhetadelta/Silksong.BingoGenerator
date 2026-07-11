@@ -146,9 +146,9 @@
 
 **Savage Beastfly** | Progression level: ['cloak'] | Other tags: ['fight', 'hard']
 
-**Great Conchflies** | Progression level: ['walljump'] | Other tags: ['fight', 'blocking']
+**Great Conchflies (Blasted Steps)** | Progression level: ['walljump'] | Other tags: ['fight', 'blocking']
 
-**Raging Conchfly** | Progression level: ['clawline'] | Other tags: ['fight']
+**Raging Conchfly (Sands of Karak)** | Progression level: ['clawline'] | Other tags: ['fight']
 
 **Moss Mother Duo** | Progression level: ['widow'] | Other tags: ['fight']
 
@@ -168,7 +168,7 @@
 
 **Trobbio** | Progression level: ['act2'] | Other tags: ['fight', 'tool', 'blocking']
 
-**Red Quill** | Progression level: ['act2'] | Other tags: ['location', 'missable']
+**Red Quill** | Progression level: ['act2'] | Other tags: ['location']
 
 **Disgraced Chef Lugoli** | Progression level: ['faydown'] | Other tags: ['fight', 'hard']
 
@@ -178,7 +178,7 @@
 
 **Defeat a Covetous Pilgrim** | Progression level: ['cloak'] | Other tags: ['fight']
 
-**Defeat a Cogwork Clapper** | Progression level: ['act2'] | Other tags: ['fight']
+**Cogwork Clapper Journal Entry** | Progression level: ['act2'] | Other tags: ['fight']
 
 **Sister Splinter** | Progression level: ['cloak'] | Other tags: ['fight']
 
@@ -204,7 +204,7 @@
 
 **Buy From Grindle (No String)** | Progression level: ['faydown'] | Other tags: ['npc']
 
-**Win Lumble's Dice** | Progression level: ['walljump'] | Other tags: ['npc', 'missable']
+**Blasted Steps Silkeater & Craftmetal** | Progression level: ['walljump'] | Other tags: ['collection']
 
 **Pay To Confess** | Progression level: ['act2'] | Other tags: ['location']
 
@@ -246,7 +246,7 @@
 
 **Deep Docks Fleas [3]** | Progression level: ['clawline'] | Other tags: ['flea', 'hard']
 
-**Wormways & Blasted Steps Flea [2]** | Progression level: ['walljump'] | Other tags: ['flea']
+**Wormways & Blasted Steps Fleas [2]** | Progression level: ['walljump'] | Other tags: ['flea']
 
 **Underworks Fleas [2]** | Progression level: ['faydown'] | Other tags: ['flea']
 
@@ -393,6 +393,10 @@
 **Get Cursed** | Progression level: ['clawline'] | Other tags: ['hardsave', 'npc']
 
 **Witch Crest** | Progression level: ['clawline'] | Other tags: ['hardsave']
+
+**Barbed Bracelet & Magnetite Dice** | Progression level: ['widow'] | Other tags: ['tool', 'npc', 'itemsync']
+
+**Claw Mirror & Injector Band** | Progression level: ['act2'] | Other tags: ['tool', 'fight', 'itemsync']
 
 **Cradle Map** | Progression level: ['act3'] | Other tags: ['collection']
 

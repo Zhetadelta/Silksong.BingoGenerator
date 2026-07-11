@@ -222,10 +222,10 @@
         "name": "Savage Beastfly"
     },
     {
-        "name": "Great Conchflies"
+        "name": "Great Conchflies (Blasted Steps)"
     },
     {
-        "name": "Raging Conchfly"
+        "name": "Raging Conchfly (Sands of Karak)"
     },
     {
         "name": "Moss Mother Duo"
@@ -270,7 +270,7 @@
         "name": "Defeat a Covetous Pilgrim"
     },
     {
-        "name": "Defeat a Cogwork Clapper"
+        "name": "Cogwork Clapper Journal Entry"
     },
     {
         "name": "Sister Splinter"
@@ -309,7 +309,7 @@
         "name": "Buy From Grindle (No String)"
     },
     {
-        "name": "Win Lumble's Dice"
+        "name": "Blasted Steps Silkeater & Craftmetal"
     },
     {
         "name": "Pay To Confess"
@@ -372,7 +372,7 @@
         "name": "Deep Docks Fleas [3]"
     },
     {
-        "name": "Wormways & Blasted Steps Flea [2]"
+        "name": "Wormways & Blasted Steps Fleas [2]"
     },
     {
         "name": "Underworks Fleas [2]"
@@ -592,6 +592,12 @@
     },
     {
         "name": "Witch Crest"
+    },
+    {
+        "name": "Barbed Bracelet & Magnetite Dice"
+    },
+    {
+        "name": "Claw Mirror & Injector Band"
     },
     {
         "name": "Cradle Map"
