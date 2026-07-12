@@ -75,7 +75,7 @@ def progForcer(size=6):
     
 
 
-def getAllGoals(noTags=DEF_NOTAGS, goalsetPath = CAT_FILENAME, **kwargs):
+def getAllGoals(noTags=[], goalsetPath = CAT_FILENAME, **kwargs):
     """
     Loads the file given in variables at the top of the script and returns the parts.
     Returns list of Goal dictionaries and list of Exclusive lists.
@@ -246,10 +246,12 @@ def board(allGoals:dict, exclusionDic, size=25, fogOfWar=False,
             goals.insert(index, forcedGoals[i])
     return goals
 
-def bingosyncBoard(noTags=DEF_NOTAGS, size = 36, **kwargs):
+def bingosyncBoard(noTags=[], size = 36, **kwargs):
     """
     Generates a board and returns a bingosync formatted list.
     """
+    noTags.append(DEF_NOTAGS)
+
     if "tagLimits" in kwargs.keys():
         limits = kwargs["tagLimits"]
     else:
@@ -278,10 +280,12 @@ def bingosyncBoard(noTags=DEF_NOTAGS, size = 36, **kwargs):
         out.append({"name": name})
     return out
 
-def byngosinkBoard(noTags = DEF_NOTAGS, size=100, gameType="GTTOS10", **kwargs):
+def byngosinkBoard(noTags = [], size=100, gameType="GTTOS10", **kwargs):
     """
     Byngosink board format is the simplest: just a list of goals.
     """
+    noTags.append(DEF_NOTAGS)
+
     if "tagLimits" in kwargs.keys():
         limits = kwargs["tagLimits"]
     else:
