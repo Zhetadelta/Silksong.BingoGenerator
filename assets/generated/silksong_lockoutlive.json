@@ -1,5 +1,9 @@
 {
     "game_name": "Hollow Knight: Silksong",
+    "schema_version": 3,
+    "schema_mode": "strict",
+    "set_name": "Default Silksong Set",
+    "tag_names": [],
     "limits": {
         "board": {
             "early": 20,
@@ -14,7 +18,8 @@
             "flea": 15,
             "key": 20,
             "tool": 30,
-            "melody": 20
+            "melody": 20,
+            "expensive": 10
         },
         "line": {
             "quest": 60,
@@ -24,12 +29,18 @@
             "npc": 40,
             "location": 60,
             "collection": 60,
-            "relic": 60
+            "relic": 60,
+            "blocking": 100,
+            "scattered": 100,
+            "hard": 100
         }
     },
     "objectives": [
         {
             "goal": "2 Donation Quests",
+            "progression": [
+                "e"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -43,27 +54,33 @@
         },
         {
             "goal": "3 Donation Quests",
+            "progression": [
+                "e"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "cloak"
+                "cloak",
+                "expensive"
             ],
             "line_categories": [
-                "quest",
-                "expensive"
+                "quest"
             ],
             "tooltip": "",
             "icons": []
         },
         {
             "goal": "Bellhome Key",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "clawline"
+                "clawline",
+                "expensive"
             ],
             "line_categories": [
-                "expensive",
                 "quest",
                 "npc"
             ],
@@ -72,6 +89,9 @@
         },
         {
             "goal": "2 Hunt Quests",
+            "progression": [
+                "e"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -86,6 +106,9 @@
         },
         {
             "goal": "4 Hunt Quests",
+            "progression": [
+                "e"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -100,6 +123,9 @@
         },
         {
             "goal": "2 Wayfarer Quests",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -115,6 +141,9 @@
         },
         {
             "goal": "4 Wayfarer Quests",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -130,6 +159,9 @@
         },
         {
             "goal": "2 Gather Quests",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -144,6 +176,9 @@
         },
         {
             "goal": "3 Gather Quests",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -158,6 +193,9 @@
         },
         {
             "goal": "Complete 5 Quests",
+            "progression": [
+                "e"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -171,6 +209,9 @@
         },
         {
             "goal": "Complete 7 Quests",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -184,6 +225,9 @@
         },
         {
             "goal": "Break a Courier Item",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -197,6 +241,9 @@
         },
         {
             "goal": "Crawbug Clearing",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -210,6 +257,9 @@
         },
         {
             "goal": "Volatile Flintbeetles",
+            "progression": [
+                "e"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -224,6 +274,9 @@
         },
         {
             "goal": "3 Red Tools",
+            "progression": [
+                "e"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -239,6 +292,9 @@
         },
         {
             "goal": "5 Red Tools",
+            "progression": [
+                "e"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -254,6 +310,9 @@
         },
         {
             "goal": "3 Blue Tools",
+            "progression": [
+                "e"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -268,6 +327,9 @@
         },
         {
             "goal": "3 Yellow Tools",
+            "progression": [
+                "e"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -282,6 +344,9 @@
         },
         {
             "goal": "5 Yellow Tools",
+            "progression": [
+                "e"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -296,6 +361,9 @@
         },
         {
             "goal": "2 of each tool type",
+            "progression": [
+                "e"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -310,6 +378,9 @@
         },
         {
             "goal": "Straight, Threefold, and Long Pin",
+            "progression": [
+                "e"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -322,6 +393,9 @@
         },
         {
             "goal": "Dead Bug's Purse & a Silkeater",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -334,6 +408,9 @@
         },
         {
             "goal": "Barbed Bracelet & Fractured Mask",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -346,6 +423,9 @@
         },
         {
             "goal": "Magnetite Dice & Magnetite Brooch",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -358,6 +438,9 @@
         },
         {
             "goal": "Compass, Pendant, Brooch",
+            "progression": [
+                "e"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -370,6 +453,9 @@
         },
         {
             "goal": "Warding Bell & Claw Mirror",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -382,6 +468,9 @@
         },
         {
             "goal": "Warding Bell & Sawtooth Circlet",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -395,6 +484,9 @@
         },
         {
             "goal": "Magma Bell & Curveclaw",
+            "progression": [
+                "e"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -408,20 +500,25 @@
         },
         {
             "goal": "Weighted Belt & Ascendant's Grip",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
                 "act2",
-                "tool"
-            ],
-            "line_categories": [
+                "tool",
                 "expensive"
             ],
+            "line_categories": [],
             "tooltip": "",
             "icons": []
         },
         {
             "goal": "Scuttlebrace & Silkspeed",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -435,6 +532,9 @@
         },
         {
             "goal": "Pimpillo & Voltvessels",
+            "progression": [
+                "n"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -448,6 +548,9 @@
         },
         {
             "goal": "Delver's Drill",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -460,6 +563,9 @@
         },
         {
             "goal": "Pollip Pouch",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -474,6 +580,9 @@
         },
         {
             "goal": "Pollip Pouch & Sting Shard",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -489,6 +598,9 @@
         },
         {
             "goal": "Tacks",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -503,6 +615,9 @@
         },
         {
             "goal": "Quick Sling",
+            "progression": [
+                "n"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -515,6 +630,9 @@
         },
         {
             "goal": "Weavelight & Injector Band",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -529,6 +647,9 @@
         },
         {
             "goal": "Plasmium Phial",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -544,6 +665,9 @@
         },
         {
             "goal": "Memory Crystal",
+            "progression": [
+                "n"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -556,6 +680,9 @@
         },
         {
             "goal": "Flintslate",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -569,6 +696,9 @@
         },
         {
             "goal": "Repair Silkshot",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -582,21 +712,27 @@
         },
         {
             "goal": "Multibinder",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
                 "act2",
-                "tool"
+                "tool",
+                "expensive"
             ],
             "line_categories": [
-                "quest",
-                "expensive"
+                "quest"
             ],
             "tooltip": "",
             "icons": []
         },
         {
             "goal": "Rosary Cannon",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -610,6 +746,9 @@
         },
         {
             "goal": "Cogfly",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -623,6 +762,9 @@
         },
         {
             "goal": "Snare Setter",
+            "progression": [
+                "n"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -635,6 +777,9 @@
         },
         {
             "goal": "Conchcutter",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -649,6 +794,9 @@
         },
         {
             "goal": "Pale Lake Craftmetal",
+            "progression": [
+                "n"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -663,6 +811,9 @@
         },
         {
             "goal": "Upgrade Druid's Eye",
+            "progression": [
+                "n"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -678,6 +829,9 @@
         },
         {
             "goal": "Sell a Mossberry",
+            "progression": [
+                "e"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -691,6 +845,9 @@
         },
         {
             "goal": "Wanderer's Crest",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -705,6 +862,9 @@
         },
         {
             "goal": "Reaper's Crest",
+            "progression": [
+                "e"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -719,6 +879,9 @@
         },
         {
             "goal": "Beast's Crest",
+            "progression": [
+                "e"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -734,6 +897,9 @@
         },
         {
             "goal": "Needle Strike",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -748,6 +914,9 @@
         },
         {
             "goal": "Upgrade Needle Twice",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -762,6 +931,9 @@
         },
         {
             "goal": "Thread Storm",
+            "progression": [
+                "e"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -776,6 +948,9 @@
         },
         {
             "goal": "Sharpdart",
+            "progression": [
+                "e"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -791,6 +966,9 @@
         },
         {
             "goal": "Evolved Hunter's Crest",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -805,6 +983,9 @@
         },
         {
             "goal": "Faydown Cloak",
+            "progression": [
+                "n"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -820,6 +1001,9 @@
         },
         {
             "goal": "Apostate Key",
+            "progression": [
+                "n"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -833,6 +1017,9 @@
         },
         {
             "goal": "Use a Simple Key in Deep Docks",
+            "progression": [
+                "e"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -848,6 +1035,9 @@
         },
         {
             "goal": "3 Silk Skills",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -862,6 +1052,9 @@
         },
         {
             "goal": "4 Silk Skills",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -876,6 +1069,9 @@
         },
         {
             "goal": "Farfields Escape Mask Shard",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -890,6 +1086,9 @@
         },
         {
             "goal": "Slab Mask Shard",
+            "progression": [
+                "n"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -903,6 +1102,9 @@
         },
         {
             "goal": "Bilewater Mask Shard",
+            "progression": [
+                "n"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -917,6 +1119,9 @@
         },
         {
             "goal": "Deep Docks Mask Shard",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -930,6 +1135,9 @@
         },
         {
             "goal": "Shellwood + Vaults Mask Shards",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -943,6 +1151,9 @@
         },
         {
             "goal": "Blasted Steps Mask Shard",
+            "progression": [
+                "n"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -956,6 +1167,9 @@
         },
         {
             "goal": "Cogwork Core Mask Shard",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -969,6 +1183,9 @@
         },
         {
             "goal": "Wisp Thicket Mask Shard",
+            "progression": [
+                "n"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -982,6 +1199,9 @@
         },
         {
             "goal": "Mt. Fay Mask Shard",
+            "progression": [
+                "n"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -995,6 +1215,9 @@
         },
         {
             "goal": "Craggler",
+            "progression": [
+                "e"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1008,6 +1231,9 @@
         },
         {
             "goal": "Moorwing",
+            "progression": [
+                "e"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1021,6 +1247,9 @@
         },
         {
             "goal": "Savage Beastfly",
+            "progression": [
+                "e"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1035,6 +1264,9 @@
         },
         {
             "goal": "Great Conchflies (Blasted Steps)",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1049,6 +1281,9 @@
         },
         {
             "goal": "Raging Conchfly (Sands of Karak)",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1062,6 +1297,9 @@
         },
         {
             "goal": "Moss Mother Duo",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1075,6 +1313,9 @@
         },
         {
             "goal": "Defeat a Rhinogrund",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1089,6 +1330,9 @@
         },
         {
             "goal": "Disable the Clawmaidens",
+            "progression": [
+                "n"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1102,6 +1346,9 @@
         },
         {
             "goal": "Fourth Chorus",
+            "progression": [
+                "e"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1115,6 +1362,9 @@
         },
         {
             "goal": "Cogwork Dancers",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1129,6 +1379,9 @@
         },
         {
             "goal": "Last Judge",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1142,6 +1395,9 @@
         },
         {
             "goal": "Phantom",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1155,6 +1411,9 @@
         },
         {
             "goal": "Trobbio",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1170,6 +1429,9 @@
         },
         {
             "goal": "Red Quill",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1183,6 +1445,9 @@
         },
         {
             "goal": "Disgraced Chef Lugoli",
+            "progression": [
+                "n"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1197,6 +1462,9 @@
         },
         {
             "goal": "Father Of The Flame",
+            "progression": [
+                "n"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1212,6 +1480,9 @@
         },
         {
             "goal": "Forebrothers Signis & Gron",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1227,6 +1498,9 @@
         },
         {
             "goal": "Defeat a Covetous Pilgrim",
+            "progression": [
+                "e"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1240,6 +1514,9 @@
         },
         {
             "goal": "Cogwork Clapper Journal Entry",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1253,6 +1530,9 @@
         },
         {
             "goal": "Sister Splinter",
+            "progression": [
+                "e"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1266,6 +1546,9 @@
         },
         {
             "goal": "Voltvyrm",
+            "progression": [
+                "n"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1280,6 +1563,9 @@
         },
         {
             "goal": "Skull Tyrant",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1294,6 +1580,9 @@
         },
         {
             "goal": "Free Green Prince",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1308,6 +1597,9 @@
         },
         {
             "goal": "Win a Loddie Minigame",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1321,6 +1613,9 @@
         },
         {
             "goal": "Talk to Styx & Huntress",
+            "progression": [
+                "n"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1335,6 +1630,9 @@
         },
         {
             "goal": "Wreath of Purity",
+            "progression": [
+                "n"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1347,6 +1645,9 @@
         },
         {
             "goal": "Break Both of Styx's One-ways",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1360,6 +1661,9 @@
         },
         {
             "goal": "Talk to Loam",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1373,6 +1677,9 @@
         },
         {
             "goal": "Talk to Mask Maker",
+            "progression": [
+                "n"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1386,6 +1693,9 @@
         },
         {
             "goal": "Buy From Grindle (No String)",
+            "progression": [
+                "n"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1399,6 +1709,9 @@
         },
         {
             "goal": "Blasted Steps Silkeater & Craftmetal",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1412,6 +1725,9 @@
         },
         {
             "goal": "Pay To Confess",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1425,6 +1741,9 @@
         },
         {
             "goal": "Underworks Ventrica",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1438,6 +1757,9 @@
         },
         {
             "goal": "Choral Chambers Ventrica",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1451,6 +1773,9 @@
         },
         {
             "goal": "High Halls Ventrica",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1464,6 +1789,9 @@
         },
         {
             "goal": "Memorium Ventrica",
+            "progression": [
+                "n"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1477,6 +1805,9 @@
         },
         {
             "goal": "Obtain 3 Craftmetal",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1492,6 +1823,9 @@
         },
         {
             "goal": "Obtain 5 Craftmetal",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1507,6 +1841,9 @@
         },
         {
             "goal": "Crustnut",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1520,6 +1857,9 @@
         },
         {
             "goal": "Mossberry Soup",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1533,21 +1873,27 @@
         },
         {
             "goal": "Vintage Nectar",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "act2"
+                "act2",
+                "expensive"
             ],
             "line_categories": [
                 "npc",
-                "collection",
-                "expensive"
+                "collection"
             ],
             "tooltip": "",
             "icons": []
         },
         {
             "goal": "Twisted Bud",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1561,6 +1907,9 @@
         },
         {
             "goal": "Both Free Simple Keys",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1575,21 +1924,27 @@
         },
         {
             "goal": "Both Vendor Simple Keys",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "act2"
+                "act2",
+                "expensive"
             ],
             "line_categories": [
                 "collection",
-                "scattered",
-                "expensive"
+                "scattered"
             ],
             "tooltip": "",
             "icons": []
         },
         {
             "goal": "1 Extra Mask",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1603,6 +1958,9 @@
         },
         {
             "goal": "2 Extra Masks",
+            "progression": [
+                "n"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1616,6 +1974,9 @@
         },
         {
             "goal": "Pay for a Flea Spa",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1630,6 +1991,9 @@
         },
         {
             "goal": "Greymoor Fleas [2] + Kratt",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1644,6 +2008,9 @@
         },
         {
             "goal": "Far Fields Fleas [2]",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1656,6 +2023,9 @@
         },
         {
             "goal": "Shellwood & Bellhart Fleas [2]",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1668,6 +2038,9 @@
         },
         {
             "goal": "Deep Docks Fleas [3]",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1682,6 +2055,9 @@
         },
         {
             "goal": "Wormways & Blasted Steps Fleas [2]",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1694,6 +2070,9 @@
         },
         {
             "goal": "Underworks Fleas [2]",
+            "progression": [
+                "n"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1706,6 +2085,9 @@
         },
         {
             "goal": "Lower Bilewater & Hunter's March Fleas [2]",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1718,6 +2100,9 @@
         },
         {
             "goal": "Free 8 Fleas",
+            "progression": [
+                "e"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1730,6 +2115,9 @@
         },
         {
             "goal": "Free 10 Fleas",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1742,6 +2130,9 @@
         },
         {
             "goal": "Free 12 Fleas",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1754,6 +2145,9 @@
         },
         {
             "goal": "Free 14 Fleas",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1766,6 +2160,9 @@
         },
         {
             "goal": "Meet Caravan at the Grand Gate [12]",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1778,6 +2175,9 @@
         },
         {
             "goal": "Sinner's Road & Vaults Fleas [2]",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1790,6 +2190,9 @@
         },
         {
             "goal": "Sands of Karak Flea [1]",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1802,6 +2205,9 @@
         },
         {
             "goal": "Exhaust Organ Flea [1]",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1814,6 +2220,9 @@
         },
         {
             "goal": "Three Citadel Fleas",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1826,6 +2235,9 @@
         },
         {
             "goal": "Mt. Fay Flea [1]",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1838,6 +2250,9 @@
         },
         {
             "goal": "Beat Big Flea",
+            "progression": [
+                "n"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1851,6 +2266,9 @@
         },
         {
             "goal": "Talk to Vog",
+            "progression": [
+                "n"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1865,6 +2283,9 @@
         },
         {
             "goal": "Deep Docks Spool Fragments (2)",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1878,6 +2299,9 @@
         },
         {
             "goal": "Greymoor Spool Fragment",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1891,6 +2315,9 @@
         },
         {
             "goal": "Frey's Spool Fragment",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1904,6 +2331,9 @@
         },
         {
             "goal": "Grand Gate Spool Fragment",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1917,6 +2347,9 @@
         },
         {
             "goal": "High Halls Spool Fragment",
+            "progression": [
+                "n"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1930,6 +2363,9 @@
         },
         {
             "goal": "1 Spool Upgrade",
+            "progression": [
+                "e"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1943,6 +2379,9 @@
         },
         {
             "goal": "2 Spool Upgrades",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1956,6 +2395,9 @@
         },
         {
             "goal": "3 Spool Upgrades",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1969,6 +2411,9 @@
         },
         {
             "goal": "Have 3 Rosary Necklaces (no purchasing)",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1983,6 +2428,9 @@
         },
         {
             "goal": "Have 6 Rosary Strings (no purchasing)",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -1997,6 +2445,9 @@
         },
         {
             "goal": "Break 8 Rosary Strings (no purchasing)",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2011,6 +2462,9 @@
         },
         {
             "goal": "Break 4 Shard Bundles (no purchasing)",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2025,6 +2479,9 @@
         },
         {
             "goal": "Break 6 Shard Bundles (no purchasing)",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2039,6 +2496,9 @@
         },
         {
             "goal": "Obtain 3 Silkeaters",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2053,6 +2513,9 @@
         },
         {
             "goal": "Obtain 5 Silkeaters",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2067,6 +2530,9 @@
         },
         {
             "goal": "1 Tool Pouch Upgrade",
+            "progression": [
+                "e"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2081,6 +2547,9 @@
         },
         {
             "goal": "1 Crafting Kit",
+            "progression": [
+                "e"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2095,6 +2564,9 @@
         },
         {
             "goal": "3 Tool Pouch Upgrades/Crafting Kits",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2109,6 +2581,9 @@
         },
         {
             "goal": "Obtain 5 Memory Lockets",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2124,6 +2599,9 @@
         },
         {
             "goal": "Fully Unlock a Non-Hunter's Crest",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2139,6 +2617,9 @@
         },
         {
             "goal": "Have 3 Different Types of Relic",
+            "progression": [
+                "e"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2154,6 +2635,9 @@
         },
         {
             "goal": "Obtain 4 Different Types of Relic",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2169,6 +2653,9 @@
         },
         {
             "goal": "Obtain 2 Rune Harps",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2183,6 +2670,9 @@
         },
         {
             "goal": "Obtain 3 Bone Scrolls",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2198,6 +2688,9 @@
         },
         {
             "goal": "Obtain 4 Bone Scrolls",
+            "progression": [
+                "n"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2212,21 +2705,10 @@
             "icons": []
         },
         {
-            "goal": "Talk to Shakra at 5 Locations",
-            "range": [],
-            "individual_limit": 1,
-            "board_categories": [
-                "walljump"
-            ],
-            "line_categories": [
-                "npc",
-                "missable"
-            ],
-            "tooltip": "",
-            "icons": []
-        },
-        {
             "goal": "Fix the Sinner's Road Bench",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2240,6 +2722,9 @@
         },
         {
             "goal": "Obtain 5 Maps",
+            "progression": [
+                "e"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2253,20 +2738,26 @@
         },
         {
             "goal": "Obtain 8 Maps",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "act2"
+                "act2",
+                "expensive"
             ],
             "line_categories": [
-                "npc",
-                "expensive"
+                "npc"
             ],
             "tooltip": "",
             "icons": []
         },
         {
             "goal": "Talk to Shakra in Bilewater",
+            "progression": [
+                "n"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2281,6 +2772,9 @@
         },
         {
             "goal": "Talk to Shakra in Sands of Karak",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2295,6 +2789,9 @@
         },
         {
             "goal": "Talk to Huntress",
+            "progression": [
+                "n"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2308,6 +2805,9 @@
         },
         {
             "goal": "Save Jubilana",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2322,6 +2822,9 @@
         },
         {
             "goal": "Squirrm Journal Entry",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2335,6 +2838,9 @@
         },
         {
             "goal": "Skullwing Journal Entry",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2348,6 +2854,9 @@
         },
         {
             "goal": "Cragglite Journal Entry",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2361,6 +2870,9 @@
         },
         {
             "goal": "Gromling Journal Entry",
+            "progression": [
+                "e"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2375,6 +2887,9 @@
         },
         {
             "goal": "Mite Mother Journal Entry",
+            "progression": [
+                "e"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2388,6 +2903,9 @@
         },
         {
             "goal": "Massive Mossgrub Journal Entry",
+            "progression": [
+                "n"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2401,6 +2919,9 @@
         },
         {
             "goal": "Obtain 2 Beast Shards",
+            "progression": [
+                "e"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2414,6 +2935,9 @@
         },
         {
             "goal": "Obtain 3 Beast Shards",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2427,6 +2951,9 @@
         },
         {
             "goal": "Obtain 4 Beast Shards",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2440,6 +2967,9 @@
         },
         {
             "goal": "Obtain 5 Beast Shards",
+            "progression": [
+                "n"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2453,6 +2983,9 @@
         },
         {
             "goal": "Bilewater Bellway",
+            "progression": [
+                "m"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2466,6 +2999,9 @@
         },
         {
             "goal": "Talk to Forge Daughter and Twelfth Architect",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2480,6 +3016,9 @@
         },
         {
             "goal": "1 Cogheart Piece",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2493,6 +3032,9 @@
         },
         {
             "goal": "2 Cogheart Pieces",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2506,6 +3048,9 @@
         },
         {
             "goal": "Activate Second Sentinel",
+            "progression": [
+                "n"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2520,6 +3065,9 @@
         },
         {
             "goal": "Meet Sherma in the Spa",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2533,6 +3081,9 @@
         },
         {
             "goal": "2 Silk Hearts",
+            "progression": [
+                "n"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2549,6 +3100,9 @@
         },
         {
             "goal": "Unravelled Journal Entry",
+            "progression": [
+                "n"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2563,6 +3117,9 @@
         },
         {
             "goal": "Architect's Melody",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2577,6 +3134,9 @@
         },
         {
             "goal": "Conductor's Melody",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2592,6 +3152,9 @@
         },
         {
             "goal": "Vaultkeeper's Melody",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2606,6 +3169,9 @@
         },
         {
             "goal": "Get Cursed",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2620,6 +3186,9 @@
         },
         {
             "goal": "Witch Crest",
+            "progression": [
+                "l"
+            ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
@@ -2627,452 +3196,6 @@
                 "hardsave"
             ],
             "line_categories": [],
-            "tooltip": "",
-            "icons": []
-        },
-        {
-            "goal": "Cradle Map",
-            "range": [],
-            "individual_limit": 1,
-            "board_categories": [
-                "act3"
-            ],
-            "line_categories": [
-                "collection"
-            ],
-            "tooltip": "",
-            "icons": []
-        },
-        {
-            "goal": "Enter Act 3",
-            "range": [],
-            "individual_limit": 1,
-            "board_categories": [
-                "act3",
-                "hardsave"
-            ],
-            "line_categories": [
-                "blocking"
-            ],
-            "tooltip": "",
-            "icons": []
-        },
-        {
-            "goal": "Beastling Call",
-            "range": [],
-            "individual_limit": 1,
-            "board_categories": [
-                "act3"
-            ],
-            "line_categories": [
-                "fight",
-                "blocking"
-            ],
-            "tooltip": "",
-            "icons": []
-        },
-        {
-            "goal": "3 Void Masses",
-            "range": [],
-            "individual_limit": 1,
-            "board_categories": [
-                "act3"
-            ],
-            "line_categories": [
-                "collection",
-                "scattered"
-            ],
-            "tooltip": "",
-            "icons": []
-        },
-        {
-            "goal": "6 Void Masses",
-            "range": [],
-            "individual_limit": 1,
-            "board_categories": [
-                "act3"
-            ],
-            "line_categories": [
-                "collection",
-                "scattered"
-            ],
-            "tooltip": "",
-            "icons": []
-        },
-        {
-            "goal": "Save Pinmaster Plinney",
-            "range": [],
-            "individual_limit": 1,
-            "board_categories": [
-                "act3"
-            ],
-            "line_categories": [
-                "fight",
-                "npc",
-                "location"
-            ],
-            "tooltip": "",
-            "icons": []
-        },
-        {
-            "goal": "Talk to Flick at Survivor's Camp",
-            "range": [],
-            "individual_limit": 1,
-            "board_categories": [
-                "act3"
-            ],
-            "line_categories": [
-                "npc"
-            ],
-            "tooltip": "",
-            "icons": []
-        },
-        {
-            "goal": "3 Non-Hunter Crests",
-            "range": [],
-            "individual_limit": 1,
-            "board_categories": [
-                "act3",
-                "hardsave"
-            ],
-            "line_categories": [
-                "upgrade"
-            ],
-            "tooltip": "",
-            "icons": []
-        },
-        {
-            "goal": "Defeat a Black-threaded Boss",
-            "range": [],
-            "individual_limit": 1,
-            "board_categories": [
-                "act3"
-            ],
-            "line_categories": [
-                "fight"
-            ],
-            "tooltip": "",
-            "icons": []
-        },
-        {
-            "goal": "Pin Badge",
-            "range": [],
-            "individual_limit": 1,
-            "board_categories": [
-                "act3"
-            ],
-            "line_categories": [
-                "fight"
-            ],
-            "tooltip": "",
-            "icons": []
-        },
-        {
-            "goal": "Abyss Map",
-            "range": [],
-            "individual_limit": 1,
-            "board_categories": [
-                "act3"
-            ],
-            "line_categories": [
-                "location"
-            ],
-            "tooltip": "",
-            "icons": []
-        },
-        {
-            "goal": "Verdania Map",
-            "range": [],
-            "individual_limit": 1,
-            "board_categories": [
-                "act3"
-            ],
-            "line_categories": [
-                "location"
-            ],
-            "tooltip": "",
-            "icons": []
-        },
-        {
-            "goal": "1 Arcane Egg",
-            "range": [],
-            "individual_limit": 1,
-            "board_categories": [
-                "act3"
-            ],
-            "line_categories": [
-                "relic",
-                "collection"
-            ],
-            "tooltip": "",
-            "icons": []
-        },
-        {
-            "goal": "Shadow Charger Journal Entry",
-            "range": [],
-            "individual_limit": 1,
-            "board_categories": [
-                "act3"
-            ],
-            "line_categories": [
-                "collection"
-            ],
-            "tooltip": "",
-            "icons": []
-        },
-        {
-            "goal": "Fight Seth",
-            "range": [],
-            "individual_limit": 1,
-            "board_categories": [
-                "silksoar"
-            ],
-            "line_categories": [
-                "fight"
-            ],
-            "tooltip": "",
-            "icons": []
-        },
-        {
-            "goal": "Pollen Heart",
-            "range": [],
-            "individual_limit": 1,
-            "board_categories": [
-                "silksoar"
-            ],
-            "line_categories": [
-                "fight",
-                "heart"
-            ],
-            "tooltip": "",
-            "icons": []
-        },
-        {
-            "goal": "Hunter's Heart",
-            "range": [],
-            "individual_limit": 1,
-            "board_categories": [
-                "silksoar"
-            ],
-            "line_categories": [
-                "fight",
-                "heart"
-            ],
-            "tooltip": "",
-            "icons": []
-        },
-        {
-            "goal": "Pale Stag",
-            "range": [],
-            "individual_limit": 1,
-            "board_categories": [
-                "silksoar"
-            ],
-            "line_categories": [
-                "fight"
-            ],
-            "tooltip": "",
-            "icons": []
-        },
-        {
-            "goal": "Inspect Magnetite in Brightvein",
-            "range": [],
-            "individual_limit": 1,
-            "board_categories": [
-                "silksoar"
-            ],
-            "line_categories": [
-                "collection",
-                "location"
-            ],
-            "tooltip": "",
-            "icons": []
-        },
-        {
-            "goal": "Verdania Fountain Orbs",
-            "range": [],
-            "individual_limit": 1,
-            "board_categories": [
-                "silksoar"
-            ],
-            "line_categories": [
-                "fight"
-            ],
-            "tooltip": "",
-            "icons": []
-        },
-        {
-            "goal": "Conjoined Heart",
-            "range": [],
-            "individual_limit": 1,
-            "board_categories": [
-                "silksoar"
-            ],
-            "line_categories": [
-                "fight",
-                "heart"
-            ],
-            "tooltip": "",
-            "icons": []
-        },
-        {
-            "goal": "Pale Nails",
-            "range": [],
-            "individual_limit": 1,
-            "board_categories": [
-                "silksoar"
-            ],
-            "line_categories": [
-                "upgrade"
-            ],
-            "tooltip": "",
-            "icons": []
-        },
-        {
-            "goal": "Clear First Coral Tower Arena",
-            "range": [],
-            "individual_limit": 1,
-            "board_categories": [
-                "silksoar"
-            ],
-            "line_categories": [
-                "fight",
-                "hard"
-            ],
-            "tooltip": "",
-            "icons": []
-        },
-        {
-            "goal": "Tormented Trobbio",
-            "range": [],
-            "individual_limit": 1,
-            "board_categories": [
-                "silksoar"
-            ],
-            "line_categories": [
-                "fight"
-            ],
-            "tooltip": "",
-            "icons": []
-        },
-        {
-            "goal": "Visit Styx's Nest",
-            "range": [],
-            "individual_limit": 1,
-            "board_categories": [
-                "silksoar"
-            ],
-            "line_categories": [
-                "location",
-                "npc"
-            ],
-            "tooltip": "",
-            "icons": []
-        },
-        {
-            "goal": "Talk to Mr. Mushroom",
-            "range": [],
-            "individual_limit": 1,
-            "board_categories": [
-                "silksoar"
-            ],
-            "line_categories": [
-                "npc"
-            ],
-            "tooltip": "",
-            "icons": []
-        },
-        {
-            "goal": "Surface Memento",
-            "range": [],
-            "individual_limit": 1,
-            "board_categories": [
-                "silksoar"
-            ],
-            "line_categories": [
-                "hard",
-                "collection",
-                "location"
-            ],
-            "tooltip": "",
-            "icons": []
-        },
-        {
-            "goal": "Imoba Journal Entry",
-            "range": [],
-            "individual_limit": 1,
-            "board_categories": [
-                "silksoar"
-            ],
-            "line_categories": [
-                "collection"
-            ],
-            "tooltip": "",
-            "icons": []
-        },
-        {
-            "goal": "Grey Memento",
-            "range": [],
-            "individual_limit": 1,
-            "board_categories": [
-                "silksoar"
-            ],
-            "line_categories": [
-                "fight"
-            ],
-            "tooltip": "",
-            "icons": []
-        },
-        {
-            "goal": "2 Mementos",
-            "range": [],
-            "individual_limit": 1,
-            "board_categories": [
-                "silksoar"
-            ],
-            "line_categories": [
-                "collection"
-            ],
-            "tooltip": "",
-            "icons": []
-        },
-        {
-            "goal": "Brightvein Mask Shard",
-            "range": [],
-            "individual_limit": 1,
-            "board_categories": [
-                "silksoar"
-            ],
-            "line_categories": [
-                "upgrade"
-            ],
-            "tooltip": "",
-            "icons": []
-        },
-        {
-            "goal": "Win A Race",
-            "range": [],
-            "individual_limit": 1,
-            "board_categories": [
-                "silksoar"
-            ],
-            "line_categories": [
-                "location",
-                "npc"
-            ],
-            "tooltip": "",
-            "icons": []
-        },
-        {
-            "goal": "Shaman Crest",
-            "range": [],
-            "individual_limit": 1,
-            "board_categories": [
-                "silksoar"
-            ],
-            "line_categories": [
-                "upgrade"
-            ],
             "tooltip": "",
             "icons": []
         }

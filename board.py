@@ -11,18 +11,21 @@ CAT_FILENAME = "categorized_v3.json"
 #Lockout.live formatting
 BOARD_TYPES = [
     'cloak', 'walljump', 'act2', 'dash', 'early', 'clawline', 
-    'faydown', 'craft', 'hardsave', 'melody', 'flea', "key", 'tool', 'act3', 'silksoar']
+    'faydown', 'craft', 'hardsave', 'melody', 'flea', "key", 'tool', 'expensive', 'act3', 'silksoar']
 
-#Ordered progression
-silkOrderedProg = ['early','dash','cloak','walljump', 'widow', 'act2', 'clawline','faydown', 'act3', 'silksoar']
-maxWeightScale = 2.15
+LL_PROGRESSION = {
+    "early" : "e",
+    "dash" : "e",
+    "cloak" : "e",
+    "walljump" : "m",
+    "widow" : "m",
+    "act2" : "l",
+    "clawline" : "l",
+    "faydown" : "n"
+}
 
-#Nine Sols Ordered progression - UNUSED
-NSOrderedProg = ['early', 'kuafu', 'goumang', 'yanlao', 'jiequan', 'fudie', 'smb']
+LL_EXCLUDE = ["act3", "silksoar", "silly", "missable", "itemsync"]
 
-#Default excluded tags
-DEF_NOTAGS = ["silly", "itemsync"]
-    
 LL_LIMITS = {
             "board" : {
                 "early" : 20,
@@ -37,7 +40,8 @@ LL_LIMITS = {
                 "flea" : 15,
                 "key" : 20,
                 "tool" : 30,
-                "melody" : 20
+                "melody" : 20,
+                "expensive" : 10
             },
             "line" : {
                 "quest" : 60,
@@ -50,6 +54,18 @@ LL_LIMITS = {
                 "relic" : 60
             }
         }
+
+#Ordered progression
+silkOrderedProg = ['early','dash','cloak','walljump', 'widow', 'act2', 'clawline','faydown', 'act3', 'silksoar']
+maxWeightScale = 2.15
+
+#Nine Sols Ordered progression - UNUSED
+NSOrderedProg = ['early', 'kuafu', 'goumang', 'yanlao', 'jiequan', 'fudie', 'smb']
+
+#Default excluded tags
+DEF_NOTAGS = ["silly", "itemsync"]
+    
+
 
 def progForcer(size=6):
     """
@@ -386,6 +402,10 @@ def lockoutFormat():
     mainList, _ = getAllGoals() #lockout.live doesn't acknowledge exclusions
     out = {
         "game_name" : "Hollow Knight: Silksong",
+        "schema_version" : 3,
+        "schema_mode" : "strict",
+        "set_name" : "Default Silksong Set",
+        "tag_names" : [],
         "limits" : LL_LIMITS
     }
     goalsList = []
@@ -395,17 +415,30 @@ def lockoutFormat():
         except KeyError:
             r = []
         totTypes = goalDic["progression"] + goalDic["types"]
+
+        skip = False
+        for t in totTypes: #yeah we iterate over this twice, whatever
+            if t in LL_EXCLUDE: 
+                skip = True
+                break
+        if skip:
+            continue #if goal should be excluded, exclude it
+
         bTypes = []
         lTypes = []
         for t in totTypes:
             if t == "widow":    #the difference between widow and walljump progression was causing balance issues
                 t = "walljump"  #get outta here
+
+            if t not in out["limits"]["board"].keys() and t not in out["limits"]["line"].keys():
+                out["limits"]["line"][t] = 100
             if t in BOARD_TYPES:
                 bTypes.append(t)
             else:
                 lTypes.append(t)
         newDic = {
             "goal" : goalDic["name"],
+            "progression" : [LL_PROGRESSION[goalDic["progression"][0]]],
             "range": r,
             "individual_limit": 1,
             "board_categories": bTypes,
