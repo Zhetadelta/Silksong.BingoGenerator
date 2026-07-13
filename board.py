@@ -31,13 +31,13 @@ LL_LIMITS = {
                 "early" : 20,
                 "dash"  : 20,
                 "cloak" : 30,
-                "walljump" : 25,
+                "walljump" : 30,
                 "act2" : 30,
                 "clawline" : 40,
                 "faydown" : 50,
                 "hardsave" : 20,
                 "craft" : 40,
-                "flea" : 15,
+                "flea" : 25,
                 "key" : 20,
                 "tool" : 30,
                 "melody" : 20,
@@ -436,8 +436,14 @@ def lockoutFormat():
                 bTypes.append(t)
             else:
                 lTypes.append(t)
+
+        if "fow" in goalDic.keys():
+            goalName = goalDic["fow"]
+        else:
+            goalName = goalDic["name"]
+
         newDic = {
-            "goal" : goalDic["name"],
+            "goal" : goalName,
             "progression" : [LL_PROGRESSION[goalDic["progression"][0]]],
             "range": r,
             "individual_limit": 1,
