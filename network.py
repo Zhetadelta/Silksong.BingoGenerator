@@ -50,7 +50,6 @@ ROOM_NAMES = [
     "Failure",
     "Triple GMS",
     "Early Second Skarrguard",
-    "Git Gud",
     "Proper Substance Use",
     "Mrs Streamer",
     "I Suggest Forcefem",
@@ -59,6 +58,7 @@ ROOM_NAMES = [
     "Forcefemmed",
     "Sometimes Its Not Our Turn to Talk",
     "Fourth Chorus Skip Skip Skip",
+    "Fourth Chorus Skip Skip Skip Skip",
     "Nyaaaaaa",
     "Pimpogos",
     "Save Me From Act 1",
@@ -77,7 +77,8 @@ ROOM_NAMES = [
     "Hornts in Boards",
     "BS2 is BS",
     "Canonically Plural Hornet",
-    "V bbbbbbbbbbbbb      vv v    b bb"
+    "V bbbbbbbbbbbbb      vv v    b bb",
+    "Spill Issue"
 ]
 
 TEAM_NAMES = [
