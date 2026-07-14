@@ -12,11 +12,15 @@ Add the bot to your user account or server via [this link!](https://discord.com/
 
 Very simple command that spits out a Bingosync-formatted list. Set the game to Custom (Advanced) and the variant to "Fixed Board" to use. Supports lockout-exclusive goals as well as progression-limiting for shorter games.
 
-- newroom or newcaravan
+- newbingosync, newbyngosink, newcaravan
 
-Bingyflea will generate a board AND handle the room creation for you. Has the same options as newboard!
+Bingyflea will generate a board AND handle the room creation for you on the appropriate site. Has the same options as newboard!
 
-The password for these rooms is always "fast".
+The password for these rooms, if needed, is always "fast".
+
+- newotherside
+
+Creates a 10x10 board for Get to the Other Side on Byngosink.
 
 - advancedboard
 
@@ -35,11 +39,11 @@ A goal must be a dictionary as follows:
 
 #### Possible types:
 
-"craft", "flea", "key", "tool", "melody", "quest", "locket", "upgrade", "fight", "npc", "location", "collection", "scattered", "relic", "heart", "hardsave", "blocking", "hard", "expensive", "silly"
+"craft", "flea", "key", "tool", "melody", "quest", "locket", "upgrade", "fight", "npc", "location", "collection", "scattered", "relic", "heart", "hardsave", "blocking", "hard", "expensive", "itemsync", "silly"
 
 #### Opt-in types
 
-The following types are excluded by default and must be opted into manually: Silly
+The following types are excluded by default and must be opted into manually: silly, itemsync
 
 - `"progression" : [string]` Progression stage when the goal is expected to be achievable. Goals must have at least one, but some (such as ranges) can have multiple.
 
