@@ -266,7 +266,7 @@ def bingosyncBoard(noTags=[], size = 36, **kwargs):
     """
     Generates a board and returns a bingosync formatted list.
     """
-    noTags.append(DEF_NOTAGS)
+    noTags += (DEF_NOTAGS)
 
     if "tagLimits" in kwargs.keys():
         limits = kwargs["tagLimits"]
@@ -300,7 +300,7 @@ def byngosinkBoard(noTags = [], size=100, gameType="GTTOS10", **kwargs):
     """
     Byngosink board format is the simplest: just a list of goals.
     """
-    noTags.append(DEF_NOTAGS)
+    noTags += (DEF_NOTAGS)
 
     if "tagLimits" in kwargs.keys():
         limits = kwargs["tagLimits"]
