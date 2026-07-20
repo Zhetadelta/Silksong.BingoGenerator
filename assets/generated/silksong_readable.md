@@ -208,8 +208,6 @@
 
 **Pay To Confess** | Progression level: ['act2'] | Other tags: ['location']
 
-**Underworks Ventrica** | Progression level: ['act2'] | Other tags: ['location']
-
 **Choral Chambers Ventrica** | Progression level: ['act2'] | Other tags: ['location']
 
 **High Halls Ventrica** | Progression level: ['clawline'] | Other tags: ['location']

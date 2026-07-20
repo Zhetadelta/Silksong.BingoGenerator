@@ -1740,22 +1740,6 @@
             "icons": []
         },
         {
-            "goal": "Underworks Ventrica",
-            "progression": [
-                "l"
-            ],
-            "range": [],
-            "individual_limit": 1,
-            "board_categories": [
-                "act2"
-            ],
-            "line_categories": [
-                "location"
-            ],
-            "tooltip": "",
-            "icons": []
-        },
-        {
             "goal": "Choral Chambers Ventrica",
             "progression": [
                 "l"
