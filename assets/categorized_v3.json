@@ -38,8 +38,7 @@
       ],
       "progression": [
         "cloak"
-      ],
-      "weight" : 0.5
+      ]
     },
     {
       "name": "4 Hunt Quests",
@@ -60,8 +59,7 @@
       ],
       "progression": [
         "widow"
-      ],
-      "weight" : 0.5
+      ]
     },
     {
       "name": "4 Wayfarer Quests",
@@ -149,8 +147,7 @@
       ],
       "progression": [
         "dash"
-      ],
-      "weight" : 0.5
+      ]
     },
     {
       "name": "5 Red Tools",
@@ -181,8 +178,7 @@
       ],
       "progression": [
         "early"
-      ],
-      "weight" : 0.5
+      ]
     },
     {
       "name": "5 Yellow Tools",
@@ -223,8 +219,7 @@
       ],
       "skip" : {
         "enemypogo" : "cloak"
-      },
-      "weight" : 0.5
+      }
     },
     {
       "name": "Barbed Bracelet & Fractured Mask",
@@ -245,8 +240,7 @@
       ],
       "progression": [
         "walljump"
-      ],
-      "weight" : 0.5
+      ]
     },
     {
       "name": "Compass, Pendant, Brooch",
@@ -255,8 +249,7 @@
       ],
       "progression": [
         "early"
-      ],
-      "weight" : 0.5
+      ]
     },
     {
       "name": "Warding Bell & Claw Mirror",
@@ -265,8 +258,7 @@
       ],
       "progression": [
         "act2"
-      ],
-      "weight" : 0.5
+      ]
     },
     {
       "name": "Warding Bell & Sawtooth Circlet",
@@ -345,8 +337,7 @@
       ],
       "progression": [
         "walljump"
-      ],
-      "weight" : 0.5
+      ]
     },
     {
       "name": "Pollip Pouch & Sting Shard",
@@ -466,8 +457,7 @@
       ],
       "progression": [
         "faydown"
-      ],
-      "weight" : 0.5
+      ]
     },
     {
       "name": "Conchcutter",
@@ -511,8 +501,7 @@
       ],
       "progression": [
         "early"
-      ],
-      "weight" : 0.5
+      ]
     },
     {
       "name": "Wanderer's Crest",
@@ -532,8 +521,7 @@
       ],
       "progression": [
         "cloak"
-      ],
-      "weight" : 0.5
+      ]
     },
     {
       "name": "Beast's Crest",
@@ -607,8 +595,7 @@
       ],
       "progression": [
         "faydown"
-      ],
-      "weight" : 0.5
+      ]
     },
     {
       "name": "Apostate Key",
@@ -776,8 +763,7 @@
       ],
       "progression": [
         "walljump"
-      ],
-      "weight" : 0.5
+      ]
     },
     {
       "name": "Raging Conchfly (Sands of Karak)",
@@ -827,8 +813,7 @@
       ],
       "progression": [
         "cloak"
-      ],
-      "weight" : 0.5
+      ]
     },
     {
       "name": "Cogwork Dancers",
@@ -931,8 +916,7 @@
       ],
       "progression": [
         "cloak"
-      ],
-      "weight" : 0.5
+      ]
     },
     {
       "name": "Cogwork Clapper Journal Entry",
@@ -950,8 +934,7 @@
       ],
       "progression": [
         "cloak"
-      ],
-      "weight" : 0.5
+      ]
     },
     {
       "name": "Voltvyrm",
@@ -1046,8 +1029,7 @@
       ],
       "progression": [
         "faydown"
-      ],
-      "weight" : 0.5
+      ]
     },
     {
       "name": "Buy From Grindle (No String)",
@@ -1078,8 +1060,7 @@
       ],
       "progression": [
         "act2"
-      ],
-      "weight" : 0.5
+      ]
     },
     {
       "name": "Underworks Ventrica",
@@ -1088,8 +1069,7 @@
       ],
       "progression": [
         "act2"
-      ],
-      "weight" : 0.5
+      ]
     },
     {
       "name": "Choral Chambers Ventrica",
@@ -1131,8 +1111,7 @@
       ],
       "progression": [
         "act2"
-      ],
-      "weight" : 0.5
+      ]
     },
     {
       "name": "Obtain 5 Craftmetal",
@@ -1161,8 +1140,7 @@
       ],
       "progression": [
         "act2"
-      ],
-      "weight" : 0.5
+      ]
     },
     {
       "name": "Vintage Nectar",
@@ -1231,8 +1209,7 @@
       ],
       "progression": [
         "walljump"
-      ],
-      "weight" : 0.5
+      ]
     },
     {
       "name": "Greymoor Fleas [2] + Kratt",
@@ -1260,8 +1237,7 @@
       ],
       "progression": [
         "walljump"
-      ],
-      "weight" : 0.5
+      ]
     },
     {
       "name": "Deep Docks Fleas [3]",
@@ -1370,8 +1346,7 @@
       ],
       "progression": [
         "widow"
-      ],
-      "weight" : 0.5
+      ]
     },
     {
       "name": "Three Citadel Fleas",
@@ -1438,8 +1413,7 @@
       ],
       "progression": [
         "walljump"
-      ],
-      "weight" : 0.5
+      ]
     },
     {
       "name": "Frey's Spool Fragment",
@@ -1457,8 +1431,7 @@
       ],
       "progression": [
         "act2"
-      ],
-      "weight" : 0.5
+      ]
     },
     {
       "name": "High Halls Spool Fragment",
@@ -1479,8 +1452,7 @@
       ],
       "progression": [
         "early"
-      ],
-      "weight" : 0.5
+      ]
     },
     {
       "name": "2 Spool Upgrades",
@@ -1540,8 +1512,7 @@
       ],
       "progression": [
         "walljump"
-      ],
-      "weight" : 0.5
+      ]
     },
     {
       "name": "Break 6 Shard Bundles (no purchasing)",
@@ -1581,8 +1552,7 @@
       ],
       "progression": [
         "cloak"
-      ],
-      "weight" : 0.5
+      ]
     },
     {
       "name": "1 Crafting Kit",
@@ -1592,8 +1562,7 @@
       ],
       "progression": [
         "dash"
-      ],
-      "weight" : 0.5
+      ]
     },
     {
       "name": "3 Tool Pouch Upgrades/Crafting Kits",
@@ -1637,7 +1606,6 @@
       "progression": [
         "cloak"
       ],
-      "weight" : 0.5,
       "fow" : "Obtain 3 Different Types of Relic"
     },
     {
@@ -1805,8 +1773,7 @@
       ],
       "progression": [
         "cloak"
-      ],
-      "weight" : 0.5
+      ]
     },
     {
       "name": "Massive Mossgrub Journal Entry",
@@ -1848,8 +1815,7 @@
       ],
       "progression": [
         "dash"
-      ],
-      "weight" : 0.5
+      ]
     },
     {
       "name": "Obtain 3 Beast Shards",
@@ -1898,8 +1864,7 @@
       ],
       "skip":{
         "beastboost" : "act2"
-      },
-      "weight" : 0.5
+      }
     },
     {
       "name": "1 Cogheart Piece",
@@ -1990,8 +1955,7 @@
       ],
       "progression": [
         "act2"
-      ],
-      "weight" : 0.5
+      ]
     },
     {
       "name": "Get Cursed",
