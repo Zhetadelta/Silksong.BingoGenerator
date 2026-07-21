@@ -204,7 +204,7 @@ async def newbingosync(interaction: discord.Interaction, lockout: bool = False, 
     bsSession = network.bingosyncClient()
     n, rId = bsSession.newRoom(json.dumps(thisBoard), lockout=lockout)
     bsSession.close()
-    await interaction.followup.send(f"Room: {n} created at https://bingosync.com//room/{rId}")
+    await interaction.followup.send(f"Room: {n} created at https://bingosync.com/room/{rId}")
 
 @client.tree.command()
 @app_commands.describe(preset="Tags to exclude based on preset categories.")
