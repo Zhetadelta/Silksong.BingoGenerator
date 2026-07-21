@@ -1,0 +1,108 @@
+{
+    "prog_options": ["early","hairpin","1skill","midgame","slingshot","endgame"],
+    "type_options": ["modifier", "npc", "collection", "scattered", "upgrade", "location", "relic", "datalog", "fight", "boss"],
+    "goals": [
+        {
+            "name": "Recall Asma's Voice",
+            "types": [
+                "npc"
+            ],
+            "progression": [
+                "1skill"
+            ]
+        },
+        {
+            "name": "Free Rad",
+            "types": [
+                "npc"
+            ],
+            "progression": [
+                "early"
+            ]
+        },
+        {
+            "name": "Sawlong",
+            "types": [
+                "boss",
+                "fight"
+            ],
+            "progression": [
+                "midgame"
+            ]
+        },
+        {
+            "name": "Aviaries Passepartout",
+            "types": [
+                "boss",
+                "fight"
+            ],
+            "progression": [
+                "hairpin"
+            ]
+        },
+        {
+            "name": "2 Candles",
+            "types": [
+                "collection",
+                "scattered"
+            ],
+            "progression": [
+                "1skill"
+            ]
+        },
+        {
+            "name": "3 Candles",
+            "types": [
+                "collection",
+                "scattered"
+            ],
+            "progression": [
+                "1skill"
+            ]
+        },
+        {
+            "name": "Promenade Legacy",
+            "types": [
+                "upgrade"
+            ],
+            "progression": [
+                "slingshot"
+            ]
+        },
+        {
+            "name": "Foundations Modifier Extension",
+            "types": [
+                "upgrade"
+            ],
+            "progression": [
+                "1skill"
+            ]
+        },
+        {
+            "name": "Both Belltower Passes",
+            "types": [
+                "collection"
+            ],
+            "progression": [
+                "midgame"
+            ]
+        },
+        {
+            "name": "Sail",
+            "types": [
+                "upgrade"
+            ],
+            "progression": [
+                "1skill"
+            ]
+        }
+    ],
+    "exclusions": [
+        {
+            "unique": [
+                "2 Candles",
+                "3 Candles"
+            ]
+        }
+    ]
+}
