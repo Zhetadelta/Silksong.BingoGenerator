@@ -72,7 +72,7 @@ def size_options():
     return [app_commands.Choice(name=str(i), value=str(i)) for i in [5,6]]
 
 def progStringToTags(progression):
-    if progression is None or "No Faydown (Default)":
+    if progression is None or progression.value == "No Faydown (Default)":
         noTags = ['faydown','act3', 'silksoar']
     elif progression.value == "Act 1 Only":
         noTags = ["act2", "clawline", "faydown", 'act3', 'silksoar']
@@ -196,11 +196,7 @@ async def newbingosync(interaction: discord.Interaction, lockout: bool = False, 
     noTags = progStringToTags(preset)
     if not lockout:
         noTags.append("lockout") #exclude lockout-only goals
-    if preset is not None and preset.value in ["Act 3 No Silk Soar", "Full Act 3"]:
-        print("forcing prog")
-        thisBoard = board.bingosyncBoard(noTags=noTags, **BOARD_KWARGS, noBlocking = pattern, size=25, forceProgression=True)
-    else:
-        thisBoard = board.bingosyncBoard(noTags=noTags, **BOARD_KWARGS, noBlocking = pattern, size=25)
+    thisBoard = board.bingosyncBoard(noTags=noTags, **BOARD_KWARGS, noBlocking = pattern, size=25)
     bsSession = network.bingosyncClient()
     n, rId = bsSession.newRoom(json.dumps(thisBoard), lockout=lockout)
     bsSession.close()
@@ -333,4 +329,7 @@ async def teams(interaction: discord.Interaction, players: str, teamsize: int):
     await interaction.response.send_message(out)
 
 if __name__ == "__main__":
-    client.run(config()["token"])
+    noTags = progStringToTags(app_commands.Choice(name="No Clawline", value="No Clawline"))
+    thisBoard = board.bingosyncBoard(noTags=noTags, **BOARD_KWARGS, noBlocking = False, size=25)
+    print(thisBoard)
+    #client.run(config()["token"])
