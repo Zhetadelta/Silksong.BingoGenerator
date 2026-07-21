@@ -105,24 +105,9 @@ def getAllGoals(noTags=[], goalsetPath = CAT_FILENAME, **kwargs):
         orderedProg = silkOrderedProg
 
     presentTags = [tag for tag in orderedProg if tag not in noTags] #ordered tags that arent excluded
-    if 'noProg' not in kwargs or not kwargs['noProg']: #progression scaling
-        linspace = [1 + x*(maxWeightScale-1)/(len(presentTags)-1) for x in range(len(presentTags))]
-        def weightScale(progString, types):
-            try:
-                if "scattered" not in types:
-                    return linspace[presentTags.index(progString)]
-                else:
-                    return linspace[-1] #scattered goals should be max weight
-            except ValueError: #progression is being excluded anyway
-                return 1
-    else: 
-        def weightScale(progString, types):
-            return 1
     for g in catList["goals"]: #add weight=1 to all non-weighted goals for later
         if "weight" not in g.keys():
-            g["weight"] = 1 * weightScale(g["progression"][0], g["types"])
-        else:
-            g["weight"] = g["weight"] * weightScale(g["progression"][0], g["types"])
+            g["weight"] = 1
         #check if we should exclude the goal based on options passed
         goalTags = g["types"] + g["progression"]
         for tag in goalTags:
@@ -167,7 +152,7 @@ def board(allGoals:dict, exclusionDic, size=25, fogOfWar=False,
     """
     goals = []
     progs = kwargs["keepProgression"] if "keepProgression" in kwargs.keys() else False
-    forcer = kwargs["forceProgression"] if "forceProgression" in kwargs.keys() else False
+    forcer = True #every board using progression forcing now
 
     if "priorGoals" in kwargs.keys(): #linked boards, apply exclusions now
         for goal in kwargs["priorGoals"]:
@@ -179,22 +164,21 @@ def board(allGoals:dict, exclusionDic, size=25, fogOfWar=False,
     if "game" not in kwargs.keys():
         orderedProg = silkOrderedProg
 
-    if forcer: #force all lines to have max progression
-        indices = progForcer(size=int(sqrt(size)))
-        indices.sort()
-        forceCount = len(indices)
-        forcedGoals = []
-        maxProg = "early"
-        for goal in allGoals:
-            if orderedProg.index(goal["progression"][0]) > orderedProg.index(maxProg):
-                maxProg = goal["progression"][0]
-        size -= forceCount
+    indices = progForcer(size=int(sqrt(size)))
+    indices.sort()
+    forceCount = len(indices)
+    forcedGoals = []
+    maxProg = "early"
+    for goal in allGoals:
+        if orderedProg.index(goal["progression"][0]) > orderedProg.index(maxProg):
+            maxProg = goal["progression"][0]
+    size -= forceCount
 
     while len(goals) < size:
         if len(allGoals) == 0: #critical failure
             raise EOFError("Out of goals! Try again.")
 
-        if forcer and forceCount > 0:
+        if forceCount > 0:
             newGoal = random.choices(allGoals, weights=[g["weight"] for g in allGoals])[0] #list comprehension to extract weights
             while newGoal["progression"][0] != maxProg:
                 newGoal = random.choices(allGoals, weights=[g["weight"] for g in allGoals])[0]
@@ -235,8 +219,8 @@ def board(allGoals:dict, exclusionDic, size=25, fogOfWar=False,
         else:
             goalName = newGoal["name"]
 
-        #handle forcer
-        if forcer and forceCount > 0:
+        #handle progression forcer
+        if forceCount > 0:
             if progs:
                 forcedGoals.append({"name" : goalName, "progression": newGoal["progression"]})
             else:
@@ -257,9 +241,8 @@ def board(allGoals:dict, exclusionDic, size=25, fogOfWar=False,
 
     random.shuffle(goals) #mix em all up when we're done
 
-    if forcer:
-        for i, index in enumerate(indices):
-            goals.insert(index, forcedGoals[i])
+    for i, index in enumerate(indices):
+        goals.insert(index, forcedGoals[i])
     return goals
 
 def bingosyncBoard(noTags=[], size = 36, **kwargs):
@@ -514,6 +497,6 @@ if __name__ == "__main__":
 
     ####Test board generation
     #thisBoard = linkedBoards(noTags=[[],[]], forceProgression=True)
-    thisBoard = byngosinkBoard(noTags=["silksoar","act3"],size=100)
+    thisBoard = byngosinkBoard(noTags=["silksoar","act3"],size=36)
     print(len(thisBoard))
     print(json.dumps(thisBoard))
