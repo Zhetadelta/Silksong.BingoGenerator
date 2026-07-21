@@ -329,7 +329,4 @@ async def teams(interaction: discord.Interaction, players: str, teamsize: int):
     await interaction.response.send_message(out)
 
 if __name__ == "__main__":
-    noTags = progStringToTags(app_commands.Choice(name="No Clawline", value="No Clawline"))
-    thisBoard = board.bingosyncBoard(noTags=noTags, **BOARD_KWARGS, noBlocking = False, size=25)
-    print(thisBoard)
-    #client.run(config()["token"])
+    client.run(config()["token"])
