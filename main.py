@@ -391,7 +391,7 @@ async def newdraftout(interaction: discord.Interaction, opponent:str, preset: Op
     """
     opp = client.get_user(int(opponent[2:-1]))
     noTags = progStringToTags(preset)
-    size = 36 if size is None else size.value**2
+    size = 36 if size is None else int(size.value)**2
     await interaction.response.send_message(view=DrafoutUI(noTags, size, interaction.user, opp, interaction))
 
 
