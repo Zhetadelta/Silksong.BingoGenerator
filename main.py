@@ -306,6 +306,7 @@ class DrafoutUI(discord.ui.View):
         if not self.init:
             self.init = True
             await self.rebuildMessage()
+            return
         
         await interact.response.defer(ephemeral=True)
         if self.generator.addGoal(self.currentOptions[0]): #nonzero until all goals picked YAY PYTHON
@@ -324,6 +325,7 @@ class DrafoutUI(discord.ui.View):
         if not self.init:
             self.init = True
             await self.rebuildMessage()
+            return
         
         await interact.response.defer(ephemeral=True)
         if self.generator.addGoal(self.currentOptions[1]): #nonzero until all goals picked YAY PYTHON
@@ -342,6 +344,7 @@ class DrafoutUI(discord.ui.View):
         if not self.init:
             self.init = True
             await self.rebuildMessage()
+            return
         
         await interact.response.defer(ephemeral=True)
         if self.generator.addGoal(self.currentOptions[2]): #nonzero until all goals picked YAY PYTHON
@@ -358,7 +361,7 @@ class DrafoutUI(discord.ui.View):
 
         goalString = ""
         for goal in self.generator.getList():
-            goalString += goal["name"]+"/n"
+            goalString += goal["name"]+"\n"
 
         embedDic = {
             "title" : self.name,

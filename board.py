@@ -506,7 +506,7 @@ class DraftoutGenerator():
         out = []
         while len(out) < count:
             newGoal = random.choices(self.goalSet, weights=[g["weight"] for g in self.goalSet])[0] #list comprehension to extract weights
-            while newGoal["progression"][0] != selectedProg:
+            while newGoal["progression"][0] != selectedProg or newGoal in out:
                 newGoal = random.choices(self.goalSet, weights=[g["weight"] for g in self.goalSet])[0]
             out.append(newGoal)
         return out
