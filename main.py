@@ -1,5 +1,5 @@
 import discord, board, os, json, network, random
-from discord import app_commands, File
+from discord import app_commands, File, Embed
 from typing import Optional
 
 CONFIG_PATH = os.path.join("config","settings.dat")
@@ -51,7 +51,9 @@ class newClient(discord.Client):
                 pass
         await self.tree.sync()
 
-client = newClient(intents = discord.Intents.default())
+ints = discord.Intents.default()
+ints.members = True
+client = newClient(intents = ints)
 
 @client.event
 async def on_ready():
@@ -271,13 +273,158 @@ async def newtriplingy(interaction: discord.Interaction, size: Optional[app_comm
     session.close()
     await interaction.followup.send(f"Act 1 room: {n1} at {baseName}/room/{rId1}\nAct 2 room: {n2} at {baseName}/room/{rId2}\nAct 3 room: {n3} at https://bingosync.com/room/{rId3}")
 
+class DrafoutUI(discord.ui.View):
+    def __init__(self, noTags, size, player1: discord.user, player2: discord.user, parentInteraction: discord.Interaction):
+        super().__init__(timeout=1800) #30 minutes
+        self.generator = board.DraftoutGenerator(noTags, size)
+        self.p1 = player1
+        self.p2 = player2
+        self.size = size
+        self.active = self.p1
+        self.color = int(discord.Colour.from_str(random.choice(network.TEAM_COLORS)))
+        self.name = random.choice(network.ROOM_NAMES)
+        self.currentOptions = self.generator.showGoals()
+        self.parentInteract = parentInteraction
+        self.init = False
+        self.message = None
+
+    def swapPlayer(self):
+        if self.active == self.p1:
+            self.active = self.p2
+        else:
+            self.active = self.p1
+
+    @discord.ui.button(style=discord.ButtonStyle.blurple, label="Option 1")
+    async def button1(self, interact : discord.Interaction, button : discord.ui.button):
+        if interact.user.id != self.active.id:
+            await interact.response.send_message("It's not your turn!", ephemeral=True)
+            return 
+
+        if not self.init:
+            self.init = True
+            await interact.response.defer(ephemeral=True)
+            await self.rebuildMessage()
+            return
+        
+        await interact.response.defer(ephemeral=True)
+        if self.generator.addGoal(self.currentOptions[0]): #nonzero until all goals picked YAY PYTHON
+            self.currentOptions = self.generator.showGoals()
+            self.swapPlayer()
+            await self.rebuildMessage()
+        else:
+            await interact.followup.send("All goals picked! Please wait while I make a room.")
+            await self.postRoom()
+
+    @discord.ui.button(style=discord.ButtonStyle.blurple, label="Option 2")
+    async def button2(self, interact : discord.Interaction, button : discord.ui.button):
+        if interact.user.id != self.active.id:
+            await interact.response.send_message("It's not your turn!", ephemeral=True)
+            return
+
+        if not self.init:
+            self.init = True
+            await interact.response.defer(ephemeral=True)
+            await self.rebuildMessage()
+            return
+        
+        await interact.response.defer(ephemeral=True)
+        if self.generator.addGoal(self.currentOptions[1]): #nonzero until all goals picked YAY PYTHON
+            self.currentOptions = self.generator.showGoals()
+            self.swapPlayer()
+            await self.rebuildMessage()
+        else:
+            await interact.followup.send("All goals picked! Please wait while I make a room.")
+            await self.postRoom()
+
+    @discord.ui.button(style=discord.ButtonStyle.blurple, label="Option 3")
+    async def button3(self, interact : discord.Interaction, button : discord.ui.button):
+        if interact.user.id != self.active.id:
+            await interact.response.send_message("It's not your turn!", ephemeral=True)
+            return 
+
+        if not self.init:
+            self.init = True
+            await interact.response.defer(ephemeral=True)
+            await self.rebuildMessage()
+            return
+        
+        await interact.response.defer(ephemeral=True)
+        if self.generator.addGoal(self.currentOptions[2]): #nonzero until all goals picked YAY PYTHON
+            self.currentOptions = self.generator.showGoals()
+            self.swapPlayer()
+            await self.rebuildMessage()
+        else:
+            await interact.followup.send("All goals picked! Please wait while I make a room.")
+            await self.postRoom()
+
+    async def rebuildMessage(self):
+        if self.message is None:
+            temp = await self.parentInteract.original_response()
+            self.message = await temp.fetch()
+
+        goalString = ""
+        for goal in self.generator.getList():
+            goalString += goal["name"]+"\n"
+
+        embedDic = {
+            "title" : self.name,
+            "color" : self.color,
+            "fields" : [
+                    {
+                        "name" : "Current goals:",
+                        "value" : goalString,
+                        "inline" : False
+                        },
+                    {
+                        "name" : "**Currently picking:**",
+                        "value" : self.active.display_name,
+                        "inline" : False
+                    },
+                    {
+                        "name" : "Option 1",
+                        "value" : self.currentOptions[0]["name"]
+                    },
+                    {
+                        "name" : "Option 2",
+                        "value" : self.currentOptions[1]["name"]
+                    },
+                    {
+                        "name" : "Option 3",
+                        "value" : self.currentOptions[2]["name"]
+                    }
+                ]
+        }
+
+        await self.message.edit(embed=discord.Embed.from_dict(embedDic))
+
+    async def postRoom(self):
+        if self.size == 25:
+            session = network.bingosyncClient()
+            baseName = "https://bingosync.com"
+        elif self.size == 36:
+            session = network.caravanClient()
+            baseName = "https://caravan.kobold60.com"
+        formattedBoard = []
+        for g in self.generator.getList():
+            formattedBoard.append({"name": g["name"]})
+        n, rId = session.newRoom(formattedBoard, roomName=self.name)
+        session.close()
+        await self.parentInteract.followup.send(f"Room: {n} created at {baseName}/room/{rId}")
+
 @client.tree.command()
-@app_commands.describe(tags="Comma-seperated tags to exclude from board generation")
-async def advancedboard(interaction: discord.Interaction, tags: str):
-    """Generates a new board with specific tags excluded."""
-    noTags = [t.strip() for t in tags.split(",")]
-    thisBoard = board.bingosyncBoard(noTags=noTags)
-    await interaction.response.send_message(json.dumps(thisBoard), ephemeral=True)
+@app_commands.describe(preset="Tags to exclude based on preset categories.")
+@app_commands.describe(opponent="Ping your opponent here!")
+@app_commands.choices(preset=prog_options())
+@app_commands.choices(size=size_options())
+async def newdraftout(interaction: discord.Interaction, opponent:str, preset: Optional[app_commands.Choice[str]] = None, size: Optional[app_commands.Choice[str]]=None):
+    """
+    Draft goals into a lockout board.
+    """
+    opp = client.get_user(int(opponent.strip()[2:-1]))
+    noTags = progStringToTags(preset)
+    size = 36 if size is None else int(size.value)**2
+    await interaction.response.send_message("Click any button to start!", view=DrafoutUI(noTags, size, interaction.user, opp, interaction))
+
 
 @client.tree.command()
 @app_commands.describe(hands="Comma-seperated list of names.")
