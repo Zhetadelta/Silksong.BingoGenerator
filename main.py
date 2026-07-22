@@ -314,7 +314,8 @@ class DrafoutUI(discord.ui.View):
             self.swapPlayer()
             await self.rebuildMessage()
         else:
-            interact.followup.send("All goals picked! Please wait while I make a room.")
+            await interact.followup.send("All goals picked! Please wait while I make a room.")
+            await self.postRoom()
 
     @discord.ui.button(style=discord.ButtonStyle.blurple, label="Option 2")
     async def button2(self, interact : discord.Interaction, button : discord.ui.button):
@@ -333,7 +334,8 @@ class DrafoutUI(discord.ui.View):
             self.swapPlayer()
             await self.rebuildMessage()
         else:
-            interact.followup.send("All goals picked! Please wait while I make a room.")
+            await interact.followup.send("All goals picked! Please wait while I make a room.")
+            await self.postRoom()
 
     @discord.ui.button(style=discord.ButtonStyle.blurple, label="Option 3")
     async def button3(self, interact : discord.Interaction, button : discord.ui.button):
@@ -352,7 +354,8 @@ class DrafoutUI(discord.ui.View):
             self.swapPlayer()
             await self.rebuildMessage()
         else:
-            interact.followup.send("All goals picked! Please wait while I make a room.")
+            await interact.followup.send("All goals picked! Please wait while I make a room.")
+            await self.postRoom()
 
     async def rebuildMessage(self):
         if self.message is None:

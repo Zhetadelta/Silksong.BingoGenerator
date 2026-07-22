@@ -519,6 +519,7 @@ class DraftoutGenerator():
         if exclusions: #exclusions is false if no exclusions found
             for excludedGoal in exclusions:
                 self.goalSet = removeGoalByName(self.goalSet, excludedGoal)
+        self.goalSet = removeGoalByName(self.goalSet, goal["name"])
         return self.goalsRemaining
     
     def getList(self):
