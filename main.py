@@ -351,7 +351,7 @@ class DrafoutUI(discord.ui.View):
 
     async def rebuildMessage(self):
         if self.message is None:
-            temp = await self.parentInteraction.original_response()
+            temp = await self.parentInteract.original_response()
             self.message = await temp.fetch()
 
         goalString = ""
