@@ -282,7 +282,7 @@ class DrafoutUI(discord.ui.View):
         self.p1 = player1
         self.p2 = player2
         self.active = self.p1
-        self.color = int(random.choice(network.TEAM_COLORS)[1:])
+        self.color = int(discord.Colour.from_str(random.choice(network.TEAM_COLORS)))
         self.name = random.choice(network.ROOM_NAMES)
         self.currentOptions = self.generator.showGoals()
         self.parentInteract = parentInteraction
