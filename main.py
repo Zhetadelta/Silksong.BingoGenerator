@@ -51,7 +51,9 @@ class newClient(discord.Client):
                 pass
         await self.tree.sync()
 
-client = newClient(intents = discord.Intents.default())
+ints = discord.Intents.default()
+ints.members = True
+client = newClient(intents = ints)
 
 @client.event
 async def on_ready():
