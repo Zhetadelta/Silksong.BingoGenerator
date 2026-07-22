@@ -492,6 +492,38 @@ def readableFormat():
             linesList.append(f"{boldName} | Progression level: {progression} | Other tags: {types}\n\n")
     return linesList
 
+class DraftoutGenerator():
+    def __init__(self, noTags, size, **kwargs):
+        self.goalsRemaining = size
+        self.noTags = noTags
+        self.goals = []
+        self.goalSet, self.exclusionDic = getAllGoals(noTags=noTags, goalsetPath=CAT_FILENAME)
+        self.presentProgs = [tag for tag in silkOrderedProg if tag not in noTags] #ordered tags that arent excluded
+        
+    def showGoals(self, count=3):
+        """Present 3 goals."""
+        selectedProg = random.choice(self.presentProgs)
+        out = []
+        while len(out) < count:
+            newGoal = random.choices(self.goalSet, weights=[g["weight"] for g in self.goalSet])[0] #list comprehension to extract weights
+            while newGoal["progression"][0] != selectedProg:
+                newGoal = random.choices(self.goalSet, weights=[g["weight"] for g in self.goalSet])[0]
+            out.append(newGoal)
+        return out
+    
+    def addGoal(self, goal):
+        """Adds goal to list and returns number of goals remaining."""
+        self.goals.append(goal)
+        self.goalsRemaining -= 1
+        exclusions = findExclusions(goal["name"], self.exclusionDic)
+        if exclusions: #exclusions is false if no exclusions found
+            for excludedGoal in exclusions:
+                self.goalSet = removeGoalByName(self.goalSet, excludedGoal)
+        return self.goalsRemaining
+    
+    def getList(self):
+        return self.goals
+
 if __name__ == "__main__":
     ####dump the current format for lockout.live
     with open(os.path.join(ASSETS_PATH,COMPUTED_SUBDIR,"silksong_lockoutlive.json"), "w") as f:
@@ -514,6 +546,13 @@ if __name__ == "__main__":
 
     ####Test board generation
     #thisBoard = linkedBoards(noTags=[[],[]], forceProgression=True)
-    thisBoard = byngosinkBoard(noTags=["silksoar","act3"],size=100)
-    print(len(thisBoard))
-    print(json.dumps(thisBoard))
+    #thisBoard = byngosinkBoard(noTags=["silksoar","act3"],size=100)
+    #print(len(thisBoard))
+    #print(json.dumps(thisBoard))
+    gen = DraftoutGenerator(["silksoar"],5)
+    goals = gen.showGoals()
+    print(goals)
+    gen.addGoal(goals[0])
+    gen.addGoal(goals[1])
+    print(gen.getList())
+
