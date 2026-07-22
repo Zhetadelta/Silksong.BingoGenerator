@@ -283,6 +283,7 @@ class DrafoutUI(discord.ui.View):
         self.generator = board.DraftoutGenerator(noTags, size)
         self.p1 = player1
         self.p2 = player2
+        self.size = size
         self.active = self.p1
         self.color = int(discord.Colour.from_str(random.choice(network.TEAM_COLORS)))
         self.name = random.choice(network.ROOM_NAMES)

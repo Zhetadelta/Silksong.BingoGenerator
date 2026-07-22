@@ -495,7 +495,7 @@ def readableFormat():
 class DraftoutGenerator():
     def __init__(self, noTags, size, **kwargs):
         self.goalsRemaining = size
-        self.noTags = noTags
+        self.noTags = noTags + DEF_NOTAGS
         self.goals = []
         self.goalSet, self.exclusionDic = getAllGoals(noTags=noTags, goalsetPath=CAT_FILENAME)
         self.presentProgs = [tag for tag in silkOrderedProg if tag not in noTags] #ordered tags that arent excluded
