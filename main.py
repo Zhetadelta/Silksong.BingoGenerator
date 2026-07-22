@@ -276,7 +276,7 @@ async def newtriplingy(interaction: discord.Interaction, size: Optional[app_comm
     await interaction.followup.send(f"Act 1 room: {n1} at {baseName}/room/{rId1}\nAct 2 room: {n2} at {baseName}/room/{rId2}\nAct 3 room: {n3} at https://bingosync.com/room/{rId3}")
 
 class DrafoutUI(discord.ui.View):
-    async def __init__(self, noTags, size, player1: discord.user, player2: discord.user, name, color, parentInteraction: discord.Interaction):
+    async def __init__(self, noTags, size, player1: discord.user, player2: discord.user, parentInteraction: discord.Interaction):
         super().__init__(timeout=1800) #30 minutes
         self.generator = board.DraftoutGenerator(noTags, size)
         self.p1 = player1
