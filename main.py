@@ -305,6 +305,7 @@ class DrafoutUI(discord.ui.View):
 
         if not self.init:
             self.init = True
+            await interact.response.defer(ephemeral=True)
             await self.rebuildMessage()
             return
         
@@ -325,6 +326,7 @@ class DrafoutUI(discord.ui.View):
 
         if not self.init:
             self.init = True
+            await interact.response.defer(ephemeral=True)
             await self.rebuildMessage()
             return
         
@@ -345,6 +347,7 @@ class DrafoutUI(discord.ui.View):
 
         if not self.init:
             self.init = True
+            await interact.response.defer(ephemeral=True)
             await self.rebuildMessage()
             return
         
