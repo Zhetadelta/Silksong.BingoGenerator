@@ -297,7 +297,7 @@ class DrafoutUI(discord.ui.View):
 
     @discord.ui.button(style=discord.ButtonStyle.blurple, label="Option 1")
     async def button1(self, interact : discord.Interaction, button : discord.ui.button):
-        if interact.user != self.active:
+        if interact.user.id != self.active.id:
             await interact.response.send_message("It's not your turn!", ephemeral=True)
             return 
 
@@ -315,7 +315,7 @@ class DrafoutUI(discord.ui.View):
 
     @discord.ui.button(style=discord.ButtonStyle.blurple, label="Option 2")
     async def button2(self, interact : discord.Interaction, button : discord.ui.button):
-        if interact.user != self.active:
+        if interact.user.id != self.active.id:
             await interact.response.send_message("It's not your turn!", ephemeral=True)
             return
 
@@ -333,7 +333,7 @@ class DrafoutUI(discord.ui.View):
 
     @discord.ui.button(style=discord.ButtonStyle.blurple, label="Option 3")
     async def button3(self, interact : discord.Interaction, button : discord.ui.button):
-        if interact.user != self.active:
+        if interact.user.id != self.active.id:
             await interact.response.send_message("It's not your turn!", ephemeral=True)
             return 
 
@@ -412,7 +412,7 @@ async def newdraftout(interaction: discord.Interaction, opponent:str, preset: Op
     """
     Draft goals into a lockout board.
     """
-    opp = client.get_user(int(opponent[2:-1]))
+    opp = client.get_user(int(opponent.strip()[2:-1]))
     noTags = progStringToTags(preset)
     size = 36 if size is None else int(size.value)**2
     await interaction.response.send_message("Click any button to start!", view=DrafoutUI(noTags, size, interaction.user, opp, interaction))
