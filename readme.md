@@ -22,10 +22,6 @@ The password for these rooms, if needed, is always "fast".
 
 Creates a 10x10 board for Get to the Other Side on Byngosink.
 
-- advancedboard
-
-Command that allows exclusion of arbitrary tags (types and/or progression) from goals. Ex: `flea, key, faydown` would generate a board without any flea goals, no simple key requirements, and no faydown cloak requirements.
-
 ## Goal contribution
 The current list of goals is "categorized_v3.json" in the Assets folder. To add a goal or exclusion, add any necessary lines in the relevant sections in that file.
 

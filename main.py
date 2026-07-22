@@ -276,14 +276,6 @@ async def newtriplingy(interaction: discord.Interaction, size: Optional[app_comm
     await interaction.followup.send(f"Act 1 room: {n1} at {baseName}/room/{rId1}\nAct 2 room: {n2} at {baseName}/room/{rId2}\nAct 3 room: {n3} at https://bingosync.com/room/{rId3}")
 
 @client.tree.command()
-@app_commands.describe(tags="Comma-seperated tags to exclude from board generation")
-async def advancedboard(interaction: discord.Interaction, tags: str):
-    """Generates a new board with specific tags excluded."""
-    noTags = [t.strip() for t in tags.split(",")]
-    thisBoard = board.bingosyncBoard(noTags=noTags)
-    await interaction.response.send_message(json.dumps(thisBoard), ephemeral=True)
-
-@client.tree.command()
 @app_commands.describe(hands="Comma-seperated list of names.")
 @app_commands.describe(brains="Comma-seperated list of names.")
 async def handbrainteams(interaction: discord.Interaction, hands: str, brains: str):
