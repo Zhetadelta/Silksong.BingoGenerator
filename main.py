@@ -276,7 +276,7 @@ async def newtriplingy(interaction: discord.Interaction, size: Optional[app_comm
     await interaction.followup.send(f"Act 1 room: {n1} at {baseName}/room/{rId1}\nAct 2 room: {n2} at {baseName}/room/{rId2}\nAct 3 room: {n3} at https://bingosync.com/room/{rId3}")
 
 class DrafoutUI(discord.ui.View):
-    async def __init__(self, noTags, size, player1: discord.user, player2: discord.user, parentInteraction: discord.Interaction):
+    def __init__(self, noTags, size, player1: discord.user, player2: discord.user, parentInteraction: discord.Interaction):
         super().__init__(timeout=1800) #30 minutes
         self.generator = board.DraftoutGenerator(noTags, size)
         self.p1 = player1
@@ -286,8 +286,8 @@ class DrafoutUI(discord.ui.View):
         self.name = random.choice(network.ROOM_NAMES)
         self.currentOptions = self.generator.showGoals()
         self.parentInteract = parentInteraction
+        self.init = False
         self.message = None
-        await self.rebuildMessage()
 
     def swapPlayer(self):
         if self.active == self.p1:
@@ -300,6 +300,10 @@ class DrafoutUI(discord.ui.View):
         if interact.user != self.active:
             await interact.response.send_message("It's not your turn!", ephemeral=True)
             return 
+
+        if not self.init:
+            self.init = True
+            await self.rebuildMessage()
         
         await interact.response.defer(ephemeral=True)
         if self.generator.addGoal(self.currentOptions[0]): #nonzero until all goals picked YAY PYTHON
@@ -314,6 +318,10 @@ class DrafoutUI(discord.ui.View):
         if interact.user != self.active:
             await interact.response.send_message("It's not your turn!", ephemeral=True)
             return
+
+        if not self.init:
+            self.init = True
+            await self.rebuildMessage()
         
         await interact.response.defer(ephemeral=True)
         if self.generator.addGoal(self.currentOptions[1]): #nonzero until all goals picked YAY PYTHON
@@ -328,6 +336,10 @@ class DrafoutUI(discord.ui.View):
         if interact.user != self.active:
             await interact.response.send_message("It's not your turn!", ephemeral=True)
             return 
+
+        if not self.init:
+            self.init = True
+            await self.rebuildMessage()
         
         await interact.response.defer(ephemeral=True)
         if self.generator.addGoal(self.currentOptions[2]): #nonzero until all goals picked YAY PYTHON
@@ -403,7 +415,7 @@ async def newdraftout(interaction: discord.Interaction, opponent:str, preset: Op
     opp = client.get_user(int(opponent[2:-1]))
     noTags = progStringToTags(preset)
     size = 36 if size is None else int(size.value)**2
-    await interaction.response.send_message(view=DrafoutUI(noTags, size, interaction.user, opp, interaction))
+    await interaction.response.send_message("Click any button to start!", view=DrafoutUI(noTags, size, interaction.user, opp, interaction))
 
 
 @client.tree.command()
