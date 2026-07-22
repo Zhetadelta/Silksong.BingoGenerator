@@ -276,7 +276,7 @@ async def newtriplingy(interaction: discord.Interaction, size: Optional[app_comm
     await interaction.followup.send(f"Act 1 room: {n1} at {baseName}/room/{rId1}\nAct 2 room: {n2} at {baseName}/room/{rId2}\nAct 3 room: {n3} at https://bingosync.com/room/{rId3}")
 
 class DrafoutUI(discord.ui.View):
-    def __init__(self, noTags, size, player1: discord.user, player2: discord.user, parentInteraction: discord.Interaction):
+    async def __init__(self, noTags, size, player1: discord.user, player2: discord.user, name, color, parentInteraction: discord.Interaction):
         super().__init__(timeout=1800) #30 minutes
         self.generator = board.DraftoutGenerator(noTags, size)
         self.p1 = player1
@@ -286,6 +286,14 @@ class DrafoutUI(discord.ui.View):
         self.name = random.choice(network.ROOM_NAMES)
         self.currentOptions = self.generator.showGoals()
         self.parentInteract = parentInteraction
+        self.message = None
+        await self.rebuildMessage()
+
+    def swapPlayer(self):
+        if self.active == self.p1:
+            self.active = self.p2
+        else:
+            self.active = self.p1
 
     @discord.ui.button(style=discord.ButtonStyle.blurple, label="Option 1")
     async def button1(self, interact : discord.Interaction, button : discord.ui.button):
@@ -296,6 +304,7 @@ class DrafoutUI(discord.ui.View):
         await interact.response.defer(ephemeral=True)
         if self.generator.addGoal(self.currentOptions[0]): #nonzero until all goals picked YAY PYTHON
             self.currentOptions = self.generator.showGoals()
+            self.swapPlayer()
             await self.rebuildMessage()
         else:
             interact.followup.send("All goals picked! Please wait while I make a room.")
@@ -309,6 +318,7 @@ class DrafoutUI(discord.ui.View):
         await interact.response.defer(ephemeral=True)
         if self.generator.addGoal(self.currentOptions[1]): #nonzero until all goals picked YAY PYTHON
             self.currentOptions = self.generator.showGoals()
+            self.swapPlayer()
             await self.rebuildMessage()
         else:
             interact.followup.send("All goals picked! Please wait while I make a room.")
@@ -322,6 +332,7 @@ class DrafoutUI(discord.ui.View):
         await interact.response.defer(ephemeral=True)
         if self.generator.addGoal(self.currentOptions[2]): #nonzero until all goals picked YAY PYTHON
             self.currentOptions = self.generator.showGoals()
+            self.swapPlayer()
             await self.rebuildMessage()
         else:
             interact.followup.send("All goals picked! Please wait while I make a room.")
