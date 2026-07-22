@@ -298,7 +298,7 @@ class DrafoutUI(discord.ui.View):
 
     @discord.ui.button(style=discord.ButtonStyle.blurple, label="Option 1")
     async def button1(self, interact : discord.Interaction, button : discord.ui.button):
-        if interact.user.id != self.active.id:
+        if not ((interact.user.id == self.p1.id and self.p1turn) or (interact.user.id == self.p2.id and not self.p1turn)):
             await interact.response.send_message("It's not your turn!", ephemeral=True)
             return 
 
@@ -334,7 +334,7 @@ class DrafoutUI(discord.ui.View):
 
     @discord.ui.button(style=discord.ButtonStyle.blurple, label="Option 3")
     async def button3(self, interact : discord.Interaction, button : discord.ui.button):
-        if interact.user.id != self.active.id:
+        if not ((interact.user.id == self.p1.id and self.p1turn) or (interact.user.id == self.p2.id and not self.p1turn)):
             await interact.response.send_message("It's not your turn!", ephemeral=True)
             return 
 
