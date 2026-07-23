@@ -408,7 +408,7 @@ class DrafoutUI(discord.ui.View):
         for g in self.generator.getList():
             formattedBoard.append({"name": g["name"]})
         random.shuffle(formattedBoard)
-        n, rId = session.newRoom(formattedBoard, roomName=self.name)
+        n, rId = session.newRoom(json.dumps(formattedBoard), roomName=self.name)
         session.close()
         await self.parentInteract.followup.send(f"Room: {n} created at {baseName}/room/{rId}")
 
