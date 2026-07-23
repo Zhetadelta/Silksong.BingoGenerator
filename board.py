@@ -486,6 +486,9 @@ class DraftoutGenerator():
     def showGoals(self, count=3):
         """Present 3 goals."""
         selectedProg = random.choice(self.presentProgs)
+        while len([g for g in self.goalSet if g["progression"][0] == selectedProg]) < 3:
+            self.presentProgs.remove(selectedProg)
+            selectedProg = random.choice(self.presentProgs)
         out = []
         while len(out) < count:
             newGoal = random.choices(self.goalSet, weights=[g["weight"] for g in self.goalSet])[0] #list comprehension to extract weights
