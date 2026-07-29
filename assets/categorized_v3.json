@@ -1958,6 +1958,16 @@
       ]
     },
     {
+      "name": "Listen to Pious Isamor",
+      "types": [
+        "fight",
+        "npc"
+      ],
+      "progression": [
+        "act2"
+      ]
+    },
+    {
       "name": "Get Cursed",
       "types": [
         "hardsave",
@@ -2487,7 +2497,8 @@
     {
       "unique": [
         "Trobbio",
-        "Vaultkeeper's Melody"
+        "Vaultkeeper's Melody",
+        "Listen to Pious Isamor"
       ]
     },
     {
