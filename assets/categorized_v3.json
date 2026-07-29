@@ -598,6 +598,15 @@
       ]
     },
     {
+      "name": "Heretic Key",
+      "types": [
+        "collection"
+      ],
+      "progression": [
+        "faydown"
+      ]
+    },
+    {
       "name": "Apostate Key",
       "types": [
         "collection"
@@ -2222,7 +2231,7 @@
       ]
     },
     {
-      "name": "Visit Styx's Nest",
+      "name": "Visit Styx's Mask Room",
       "types": [
         "location",
         "npc"
@@ -2492,6 +2501,14 @@
       ]
     },
     {
+      "limit":2,
+      "unique": [
+        "Heretic Key",
+        "Apostate Key",
+        "Slab Mask Shard"
+      ]
+    },
+    {
       "limit": 2,
       "unique": [
         "Talk to Shakra in Bilewater",
@@ -2593,11 +2610,11 @@
       ]
     },
     {
+      "pattern":true,
       "unique" : [
         "Last Judge",
         "Phantom"
-      ],
-      "pattern" : true 
+      ], 
     },
     {
       "pattern":true,
@@ -2615,9 +2632,17 @@
     },
     {
       "pattern":true,
-      "unique": [
+      "unique" : [
         "Fight Seth",
         "Pollen Heart"
+      ]
+    },
+    {
+      "pattern":true,
+      "unique": [
+        "Heretic Key",
+        "Apostate Key",
+        "Slab Mask Shard"
       ]
     }
   ]
