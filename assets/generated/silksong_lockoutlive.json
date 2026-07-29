@@ -37,7 +37,7 @@
     },
     "objectives": [
         {
-            "goal": "2 Donation Quests",
+            "goal": "2 Donation Wishes",
             "progression": [
                 "e"
             ],
@@ -53,7 +53,7 @@
             "icons": []
         },
         {
-            "goal": "3 Donation Quests",
+            "goal": "3 Donation Wishes",
             "progression": [
                 "e"
             ],
@@ -88,7 +88,7 @@
             "icons": []
         },
         {
-            "goal": "2 Hunt Quests",
+            "goal": "2 Hunt Wishes",
             "progression": [
                 "e"
             ],
@@ -105,7 +105,7 @@
             "icons": []
         },
         {
-            "goal": "4 Hunt Quests",
+            "goal": "4 Hunt Wishes",
             "progression": [
                 "e"
             ],
@@ -122,7 +122,7 @@
             "icons": []
         },
         {
-            "goal": "2 Wayfarer Quests",
+            "goal": "2 Wayfarer Wishes",
             "progression": [
                 "m"
             ],
@@ -140,7 +140,7 @@
             "icons": []
         },
         {
-            "goal": "4 Wayfarer Quests",
+            "goal": "4 Wayfarer Wishes",
             "progression": [
                 "l"
             ],
@@ -158,7 +158,7 @@
             "icons": []
         },
         {
-            "goal": "2 Gather Quests",
+            "goal": "2 Gather Wishes",
             "progression": [
                 "m"
             ],
@@ -175,7 +175,7 @@
             "icons": []
         },
         {
-            "goal": "3 Gather Quests",
+            "goal": "3 Gather Wishes",
             "progression": [
                 "m"
             ],
@@ -192,7 +192,7 @@
             "icons": []
         },
         {
-            "goal": "Complete 5 Quests",
+            "goal": "Complete 5 Wishes",
             "progression": [
                 "e"
             ],
@@ -208,7 +208,7 @@
             "icons": []
         },
         {
-            "goal": "Complete 7 Quests",
+            "goal": "Complete 7 Wishes",
             "progression": [
                 "m"
             ],

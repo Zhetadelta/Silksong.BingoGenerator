@@ -1,24 +1,24 @@
-**2 Donation Quests** | Progression level: ['cloak'] | Other tags: ['quest']
+**2 Donation Wishes** | Progression level: ['cloak'] | Other tags: ['quest']
 
-**3 Donation Quests** | Progression level: ['cloak'] | Other tags: ['quest', 'expensive']
+**3 Donation Wishes** | Progression level: ['cloak'] | Other tags: ['quest', 'expensive']
 
 **Bellhome Key** | Progression level: ['clawline'] | Other tags: ['expensive', 'quest', 'npc']
 
-**2 Hunt Quests** | Progression level: ['cloak'] | Other tags: ['quest', 'blocking']
+**2 Hunt Wishes** | Progression level: ['cloak'] | Other tags: ['quest', 'blocking']
 
-**4 Hunt Quests** | Progression level: ['cloak'] | Other tags: ['quest', 'blocking']
+**4 Hunt Wishes** | Progression level: ['cloak'] | Other tags: ['quest', 'blocking']
 
-**2 Wayfarer Quests** | Progression level: ['widow'] | Other tags: ['quest', 'flea', 'blocking']
+**2 Wayfarer Wishes** | Progression level: ['widow'] | Other tags: ['quest', 'flea', 'blocking']
 
-**4 Wayfarer Quests** | Progression level: ['act2'] | Other tags: ['quest', 'flea', 'blocking']
+**4 Wayfarer Wishes** | Progression level: ['act2'] | Other tags: ['quest', 'flea', 'blocking']
 
-**2 Gather Quests** | Progression level: ['walljump'] | Other tags: ['quest', 'blocking']
+**2 Gather Wishes** | Progression level: ['walljump'] | Other tags: ['quest', 'blocking']
 
-**3 Gather Quests** | Progression level: ['widow'] | Other tags: ['quest', 'blocking']
+**3 Gather Wishes** | Progression level: ['widow'] | Other tags: ['quest', 'blocking']
 
-**Complete 5 Quests** | Progression level: ['cloak'] | Other tags: ['quest']
+**Complete 5 Wishes** | Progression level: ['cloak'] | Other tags: ['quest']
 
-**Complete 7 Quests** | Progression level: ['walljump'] | Other tags: ['quest']
+**Complete 7 Wishes** | Progression level: ['walljump'] | Other tags: ['quest']
 
 **Break a Courier Item** | Progression level: ['act2'] | Other tags: ['quest']
 
@@ -444,7 +444,7 @@
 
 **Tormented Trobbio** | Progression level: ['silksoar'] | Other tags: ['fight']
 
-**Visit Styx's Nest** | Progression level: ['silksoar'] | Other tags: ['location', 'npc']
+**Visit Styx's Mask Room** | Progression level: ['silksoar'] | Other tags: ['location', 'npc']
 
 **Talk to Mr. Mushroom** | Progression level: ['silksoar'] | Other tags: ['npc']
 
