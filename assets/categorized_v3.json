@@ -1,7 +1,7 @@
 {
   "goals": [
     {
-      "name": "2 Donation Quests",
+      "name": "2 Donation Wishes",
       "types": [
         "quest"
       ],
@@ -10,7 +10,7 @@
       ]
     },
     {
-      "name": "3 Donation Quests",
+      "name": "3 Donation Wishes",
       "types": [
         "quest",
         "expensive"
@@ -31,7 +31,7 @@
       ]
     },
     {
-      "name": "2 Hunt Quests",
+      "name": "2 Hunt Wishes",
       "types": [
         "quest",
         "blocking"
@@ -41,7 +41,7 @@
       ]
     },
     {
-      "name": "4 Hunt Quests",
+      "name": "4 Hunt Wishes",
       "types": [
         "quest",
         "blocking"
@@ -51,7 +51,7 @@
       ]
     },
     {
-      "name": "2 Wayfarer Quests",
+      "name": "2 Wayfarer Wishes",
       "types": [
         "quest",
         "flea",
@@ -62,7 +62,7 @@
       ]
     },
     {
-      "name": "4 Wayfarer Quests",
+      "name": "4 Wayfarer Wishes",
       "types": [
         "quest",
         "flea",
@@ -73,7 +73,7 @@
       ]
     },
     {
-      "name": "2 Gather Quests",
+      "name": "2 Gather Wishes",
       "types": [
         "quest",
         "blocking"
@@ -83,7 +83,7 @@
       ]
     },
     {
-      "name": "3 Gather Quests",
+      "name": "3 Gather Wishes",
       "types": [
         "quest",
         "blocking"
@@ -93,7 +93,7 @@
       ]
     },
     {
-      "name": "Complete 5 Quests",
+      "name": "Complete 5 Wishes",
       "types": [
         "quest"
       ],
@@ -102,7 +102,7 @@
       ]
     },
     {
-      "name": "Complete 7 Quests",
+      "name": "Complete 7 Wishes",
       "types": [
         "quest"
       ],
@@ -2222,7 +2222,7 @@
       ]
     },
     {
-      "name": "Visit Styx's Nest",
+      "name": "Visit Styx's Mask Room",
       "types": [
         "location",
         "npc"
@@ -2310,32 +2310,32 @@
   "exclusions": [
     {
       "unique": [
-        "2 Donation Quests",
-        "3 Donation Quests"
+        "2 Donation Wishes",
+        "3 Donation Wishes"
       ]
     },
     {
       "unique": [
-        "2 Hunt Quests",
-        "4 Hunt Quests"
+        "2 Hunt Wishes",
+        "4 Hunt Wishes"
       ]
     },
     {
       "unique": [
-        "2 Wayfarer Quests",
-        "4 Wayfarer Quests"
+        "2 Wayfarer Wishes",
+        "4 Wayfarer Wishes"
       ]
     },
     {
       "unique": [
-        "2 Gather Quests",
-        "3 Gather Quests"
+        "2 Gather Wishes",
+        "3 Gather Wishes"
       ]
     },
     {
       "unique": [
-        "Complete 5 Quests",
-        "Complete 7 Quests"
+        "Complete 5 Wishes",
+        "Complete 7 Wishes"
       ]
     },
     {
@@ -2482,7 +2482,7 @@
       ]
     },
     {
-      "limit":2,
+      "limit": 2,
       "unique": [
         "Rosary Cannon",
         "Cogfly",
@@ -2529,7 +2529,7 @@
       ]
     },
     {
-      "unique" : [
+      "unique": [
         "Free 8 Fleas",
         "Free 10 Fleas",
         "Free 12 Fleas",
@@ -2538,20 +2538,20 @@
       ]
     },
     {
-      "unique" : [
+      "unique": [
         "1 Cogheart Piece",
         "2 Cogheart Pieces",
         "Activate Second Sentinel"
       ]
     },
     {
-      "unique" : [
+      "unique": [
         "Grand Gate Spool Fragment",
         "Last Judge"
       ]
     },
     {
-      "unique" : [
+      "unique": [
         "Crawbug Clearing",
         "1 Crafting Kit"
       ]
@@ -2593,22 +2593,22 @@
       ]
     },
     {
-      "unique" : [
+      "pattern":true,
+      "unique": [
         "Last Judge",
         "Phantom"
-      ],
-      "pattern" : true 
+      ], 
     },
     {
       "pattern":true,
-      "unique" : [
+      "unique": [
         "Weavelight & Injector Band",
         "Moss Mother Duo"
       ]
     },
     {
       "pattern":true,
-      "unique" : [
+      "unique": [
         "Cragglite Journal Entry",
         "Craggler"
       ]
@@ -2618,6 +2618,13 @@
       "unique": [
         "Fight Seth",
         "Pollen Heart"
+      ]
+    },
+    {
+      "pattern":true,
+      "unique": [
+        "Apostate Key",
+        "Slab Mask Shard"
       ]
     }
   ]
