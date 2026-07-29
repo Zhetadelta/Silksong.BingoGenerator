@@ -95,6 +95,223 @@
             "progression": [
                 "1skill"
             ]
+        },
+        {
+            "name": "Enter the Celestial Bay",
+            "types": [
+                "location"
+            ],
+            "progression": [
+                "midgame"
+            ]
+        },
+        {
+            "name": "Mend the Celestial Bay Overseer",
+            "types": [
+                "location"
+            ],
+            "progression": [
+                "midgame"
+            ]
+        },
+        {
+            "name": "Shoe Curio (Celestial Bay)",
+            "types": [
+                "relic"
+            ],
+            "progression": [
+                "midgame"
+            ]
+        },
+        {
+            "name": "3 Serial Numbers",
+            "types": [
+                "collection",
+                "scattered"
+            ],
+            "progression": [
+                "midgame"
+            ]
+        },
+        {
+            "name": "2 of Glitch Trail, Afterimage, and HV Discharge",
+            "types": [
+                "modifier",
+                "scattered"
+            ],
+            "progression": [
+                "slingshot"
+            ]
+        },
+        {
+            "name": "3 Flash Memories",
+            "types": [
+                "collection",
+                "scattered"
+            ],
+            "progression": [
+                "slingshot"
+            ]
+        },
+        {
+            "name": "Sol & Vin",
+            "types": [
+                "boss",
+                "fight"
+            ],
+            "progression": [
+                "slingshot"
+            ]
+        },
+        {
+            "name": "Severed Fingertip",
+            "types": [
+                "collection"
+            ],
+            "progression": [
+                "endgame"
+            ]
+        },
+        {
+            "name": "Connect Vaults' Shuttle Gate",
+            "types": [
+                "location"
+            ],
+            "progression": [
+                "endgame"
+            ]
+        },
+        {
+            "name": "Save 2 Scraplings (Not Rad)",
+            "types": [
+                "npc",
+                "location"
+            ],
+            "progression": [
+                "midgame"
+            ]
+        },
+        {
+            "name": "Save 3 Scraplings (Not Rad)",
+            "types": [
+                "npc",
+                "location"
+            ],
+            "progression": [
+                "midgame"
+            ]
+        },
+        {
+            "name": "Maintenence Hack & Nacre Drought",
+            "types": [
+                "modifier"
+            ],
+            "progression": [
+                "1skill"
+            ]
+        },
+        {
+            "name": "Kinetic Thrust & Wildcat",
+            "types": [
+                "modifier"
+            ],
+            "progression": [
+                "1skill"
+            ]
+        },
+        {
+            "name": "Oath to Ember",
+            "types": [
+                "modifier"
+            ],
+            "progression": [
+                "midgame"
+            ]
+        },
+        {
+            "name": "Splintering Dodge & Defragmentation",
+            "types": [
+                "modifier"
+            ],
+            "progression": [
+                "slingshot"
+            ]
+        },
+        {
+            "name": "Bird of Prey",
+            "types": [
+                "modifier"
+            ],
+            "progression": [
+                "midgame"
+            ]
+        },
+        {
+            "name": "Debbie",
+            "types": [
+                "boss"
+            ],
+            "progression": [
+                "midgame"
+            ]
+        },
+        {
+            "name": "Gratitude",
+            "types": [
+                "boss",
+                "modifier"
+            ],
+            "progression": [
+                "midgame"
+            ]
+        },
+        {
+            "name": "Upgrade Coating Once",
+            "types": [
+                "collection",
+                "upgrade"
+            ],
+            "progression": [
+                "1skill"
+            ]
+        },
+        {
+            "name": "Upgrade Coating Twice",
+            "types": [
+                "collection",
+                "upgrade"
+            ],
+            "progression": [
+                "midgame"
+            ]
+        },
+        {
+            "name": "Enhanced Dodge",
+            "types": [
+                "modifier",
+                "boss"
+            ],
+            "progression": [
+                "hairpin"
+            ]
+        },
+        {
+            "name": "Calderon",
+            "types": [
+                "boss"
+            ],
+            "progression": [
+                "1skill"
+            ]
+        },
+        {
+            "name": "Extra-coating Processor",
+            "types": [
+                "modifier"
+            ],
+            "progression": [
+                "slingshot"
+            ]
         }
     ],
     "exclusions": [
@@ -102,6 +319,24 @@
             "unique": [
                 "2 Candles",
                 "3 Candles"
+            ]
+        },
+        {
+            "unique": [
+                "Save 2 Scraplings (Not Rad)",
+                "Save 3 Scraplings (Not Rad)"
+            ]
+        },
+        {
+            "unique": [
+                "Debbie",
+                "Gratitude"
+            ]
+        },
+        {
+            "unique": [
+                "Upgrade Coating Once",
+                "Upgrade Coating Twice"
             ]
         }
     ]
