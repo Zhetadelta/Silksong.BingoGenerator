@@ -479,18 +479,18 @@ async def teams(interaction: discord.Interaction, players: str, teamsize: int):
 @client.tree.command()
 async def togglerole(interaction: discord.Interaction):
     """Adds (or removes) the Boop for Bing role."""
-    #try:
-    user = interaction.user
-    boopRoleid = config()["boopRole"]
-    boopRole = interaction.guild.get_role(boopRoleid)
-    if boopRole not in user.roles:
-        await user.add_roles(boopRole)
-        await interaction.response.send_message("Role added!", ephemeral=True)
-    else:
-        await user.remove_roles(boopRole)
-        await interaction.response.send_message("Role removed!", ephemeral=True)
-    #except:
-    #    await interaction.response.send_message("You need to run this command on the Silksong Bingo server. If you did, then it broke.", ephemeral=True)
+    try:
+        user = interaction.user
+        boopRoleid = config()["boopRole"]
+        boopRole = interaction.guild.get_role(boopRoleid)
+        if boopRole not in user.roles:
+            await user.add_roles(boopRole)
+            await interaction.response.send_message("Role added!", ephemeral=True)
+        else:
+            await user.remove_roles(boopRole)
+            await interaction.response.send_message("Role removed!", ephemeral=True)
+    except:
+        await interaction.response.send_message("You need to run this command on the Silksong Bingo server. If you did, then it broke.", ephemeral=True)
 
 
 if __name__ == "__main__":
