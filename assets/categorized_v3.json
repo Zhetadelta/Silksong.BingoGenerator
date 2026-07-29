@@ -598,15 +598,6 @@
       ]
     },
     {
-      "name": "Heretic Key",
-      "types": [
-        "collection"
-      ],
-      "progression": [
-        "faydown"
-      ]
-    },
-    {
       "name": "Apostate Key",
       "types": [
         "collection"
@@ -1958,16 +1949,6 @@
       ]
     },
     {
-      "name": "Listen to Pious Isamor",
-      "types": [
-        "fight",
-        "npc"
-      ],
-      "progression": [
-        "act2"
-      ]
-    },
-    {
       "name": "Get Cursed",
       "types": [
         "hardsave",
@@ -2497,26 +2478,17 @@
     {
       "unique": [
         "Trobbio",
-        "Vaultkeeper's Melody",
-        "Listen to Pious Isamor"
+        "Vaultkeeper's Melody"
       ]
     },
     {
-      "limit":2,
+      "limit": 2,
       "unique": [
         "Rosary Cannon",
         "Cogfly",
         "Disable the Clawmaidens",
         "High Halls Ventrica",
         "High Halls Spool Fragment"
-      ]
-    },
-    {
-      "limit":2,
-      "unique": [
-        "Heretic Key",
-        "Apostate Key",
-        "Slab Mask Shard"
       ]
     },
     {
@@ -2557,7 +2529,7 @@
       ]
     },
     {
-      "unique" : [
+      "unique": [
         "Free 8 Fleas",
         "Free 10 Fleas",
         "Free 12 Fleas",
@@ -2566,20 +2538,20 @@
       ]
     },
     {
-      "unique" : [
+      "unique": [
         "1 Cogheart Piece",
         "2 Cogheart Pieces",
         "Activate Second Sentinel"
       ]
     },
     {
-      "unique" : [
+      "unique": [
         "Grand Gate Spool Fragment",
         "Last Judge"
       ]
     },
     {
-      "unique" : [
+      "unique": [
         "Crawbug Clearing",
         "1 Crafting Kit"
       ]
@@ -2622,28 +2594,28 @@
     },
     {
       "pattern":true,
-      "unique" : [
+      "unique": [
         "Last Judge",
         "Phantom"
       ], 
     },
     {
       "pattern":true,
-      "unique" : [
+      "unique": [
         "Weavelight & Injector Band",
         "Moss Mother Duo"
       ]
     },
     {
       "pattern":true,
-      "unique" : [
+      "unique": [
         "Cragglite Journal Entry",
         "Craggler"
       ]
     },
     {
       "pattern":true,
-      "unique" : [
+      "unique": [
         "Fight Seth",
         "Pollen Heart"
       ]
@@ -2651,7 +2623,6 @@
     {
       "pattern":true,
       "unique": [
-        "Heretic Key",
         "Apostate Key",
         "Slab Mask Shard"
       ]
