@@ -2635,6 +2635,14 @@
         "Apostate Key",
         "Slab Mask Shard"
       ]
+    },
+    {
+      "pattern":true,
+      "unique": [
+        "Twisted Bud",
+        "Get Cursed",
+        "Witch Crest"
+      ]
     }
   ]
 }
