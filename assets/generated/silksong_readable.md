@@ -354,6 +354,8 @@
 
 **Massive Mossgrub Journal Entry** | Progression level: ['faydown'] | Other tags: ['collection']
 
+**Deep Diver Journal Entry** | Progression level: ['dash'] | Other tags: ['collection']
+
 **Vaultborn Journal Entry** | Progression level: ['act2'] | Other tags: ['collection', 'silly']
 
 **Slap Nuu** | Progression level: ['act2'] | Other tags: ['quest', 'collection', 'silly']

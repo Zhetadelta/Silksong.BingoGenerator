@@ -1779,6 +1779,15 @@
       }
     },
     {
+      "name": "Deep Diver Journal Entry",
+      "types": [
+        "collection"
+      ],
+      "progression": [
+        "dash"
+      ]
+    },
+    {
       "name": "Vaultborn Journal Entry",
       "types": [
         "collection",

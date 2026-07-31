@@ -2902,6 +2902,22 @@
             "icons": []
         },
         {
+            "goal": "Deep Diver Journal Entry",
+            "progression": [
+                "e"
+            ],
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "dash"
+            ],
+            "line_categories": [
+                "collection"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
             "goal": "Obtain 2 Beast Shards",
             "progression": [
                 "e"
