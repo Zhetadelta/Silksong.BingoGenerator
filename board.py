@@ -163,6 +163,8 @@ def board(allGoals:dict, exclusionDic, size=25, fogOfWar=False,
         orderedProg = silkOrderedProg
     elif kwargs["game"] == "mio" or kwargs["game"] == "MIO":
         orderedProg = mioOrderedProg
+    else:
+        orderedProg = silkOrderedProg
 
     indices = progForcer(size=int(sqrt(size)))
     indices.sort()
