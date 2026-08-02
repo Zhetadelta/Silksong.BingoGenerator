@@ -315,7 +315,7 @@
             ]
         },
         {
-            "name": "Enter The Blood's Sanctum From the West",
+            "name": "Open The Blood's Sanctum Locked Door",
             "types": [
                 "location"
             ],
@@ -343,9 +343,9 @@
             ]
         },
         {
-            "name": "Drop Through the Greenhouse Roof",
+            "name": "Greenhouse Roof Old Core",
             "types": [
-                "location"
+                "collection"
             ],
             "progression": [
                 "1skill"
