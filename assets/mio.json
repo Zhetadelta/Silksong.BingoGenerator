@@ -477,6 +477,15 @@
             "progression": [
                 "1skill"
             ]
+        },
+        {
+            "name": "Our Fault Pearl Record",
+            "types": [
+                "collection"
+            ],
+            "progression": [
+                "midgame"
+            ]
         }
     ],
     "exclusions": [
