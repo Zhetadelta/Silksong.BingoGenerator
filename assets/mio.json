@@ -334,12 +334,12 @@
             ]
         },
         {
-            "name": "Visit the Restored Statue",
+            "name": "Visit Stolen Heritage",
             "types": [
                 "location"
             ],
             "progression": [
-                "slingshot"
+                "midgame"
             ]
         },
         {
