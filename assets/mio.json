@@ -1,5 +1,5 @@
 {
-    "prog_options": ["early","hairpin","1skill","midgame","slingshot","endgame"],
+    "prog_options": ["early","hairpin","1skill","vaults","endgame"],
     "type_options": ["modifier", "npc", "collection", "scattered", "upgrade", "location", "relic", "datalog", "fight", "boss"],
     "goals": [
         {
@@ -27,7 +27,7 @@
                 "fight"
             ],
             "progression": [
-                "midgame"
+                "vaults"
             ]
         },
         {
@@ -67,7 +67,7 @@
                 "scattered"
             ],
             "progression": [
-                "midgame"
+                "1skill"
             ]
         },
         {
@@ -76,7 +76,7 @@
                 "upgrade"
             ],
             "progression": [
-                "slingshot"
+                "vaults"
             ]
         },
         {
@@ -94,7 +94,7 @@
                 "collection"
             ],
             "progression": [
-                "midgame"
+                "1skill"
             ]
         },
         {
@@ -112,7 +112,7 @@
                 "location"
             ],
             "progression": [
-                "midgame"
+                "1skill"
             ]
         },
         {
@@ -121,7 +121,7 @@
                 "location"
             ],
             "progression": [
-                "midgame"
+                "vaults"
             ]
         },
         {
@@ -131,7 +131,7 @@
                 "scattered"
             ],
             "progression": [
-                "midgame"
+                "vaults"
             ]
         },
         {
@@ -141,7 +141,7 @@
                 "scattered"
             ],
             "progression": [
-                "slingshot"
+                "vaults"
             ]
         },
         {
@@ -151,7 +151,7 @@
                 "scattered"
             ],
             "progression": [
-                "slingshot"
+                "vaults"
             ]
         },
         {
@@ -161,7 +161,7 @@
                 "fight"
             ],
             "progression": [
-                "slingshot"
+                "1skill"
             ]
         },
         {
@@ -189,7 +189,7 @@
                 "location"
             ],
             "progression": [
-                "midgame"
+                "1skill"
             ]
         },
         {
@@ -199,7 +199,7 @@
                 "location"
             ],
             "progression": [
-                "midgame"
+                "1skill"
             ]
         },
         {
@@ -226,7 +226,7 @@
                 "modifier"
             ],
             "progression": [
-                "midgame"
+                "vaults"
             ]
         },
         {
@@ -235,7 +235,7 @@
                 "modifier"
             ],
             "progression": [
-                "slingshot"
+                "vaults"
             ]
         },
         {
@@ -253,7 +253,7 @@
                 "boss"
             ],
             "progression": [
-                "midgame"
+                "vaults"
             ]
         },
         {
@@ -263,7 +263,7 @@
                 "modifier"
             ],
             "progression": [
-                "midgame"
+                "vaults"
             ]
         },
         {
@@ -283,7 +283,7 @@
                 "upgrade"
             ],
             "progression": [
-                "midgame"
+                "vaults"
             ]
         },
         {
@@ -311,7 +311,7 @@
                 "modifier"
             ],
             "progression": [
-                "slingshot"
+                "vaults"
             ]
         },
         {
@@ -330,7 +330,7 @@
                 "location"
             ],
             "progression": [
-                "midgame"
+                "1skill"
             ]
         },
         {
@@ -339,7 +339,7 @@
                 "location"
             ],
             "progression": [
-                "midgame"
+                "vaults"
             ]
         },
         {
@@ -348,7 +348,7 @@
                 "location"
             ],
             "progression": [
-                "midgame"
+                "1skill"
             ]
         },
         {
@@ -357,7 +357,7 @@
                 "collection"
             ],
             "progression": [
-                "slingshot"
+                "1skill"
             ]
         },
         {
@@ -412,7 +412,7 @@
                 "location"
             ],
             "progression": [
-                "midgame"
+                "1skill"
             ]
         },
         {
@@ -430,7 +430,7 @@
                 "location"
             ],
             "progression": [
-                "slingshot"
+                "vaults"
             ]
         },
         {
@@ -448,7 +448,7 @@
                 "boss"
             ],
             "progression": [
-                "slingshot"
+                "vaults"
             ]
         },
         {
@@ -457,7 +457,7 @@
                 "collection"
             ],
             "progression": [
-                "slingshot"
+                "1skill"
             ]
         },
         {
@@ -484,7 +484,7 @@
                 "collection"
             ],
             "progression": [
-                "midgame"
+                "1skill"
             ]
         }
     ],
