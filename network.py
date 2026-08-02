@@ -246,7 +246,7 @@ class bingosyncClient():
 
         self.csrfToken = self.session.cookies["csrftoken"]
 
-    def newRoom(self, boardJSON, hideCard = True, lockout=False, roomName=None, passphrase="fast", seed = ""):
+    def newRoom(self, boardJSON, hideCard = True, lockout=False, roomName=None, passphrase="fast", seed = "", game="silksong"):
         """
         Opens a new room and sets the instance roomId.
         """ 
@@ -260,7 +260,10 @@ class bingosyncClient():
             "seed": seed
         })
         if roomName is None:
-            formData["room_name"] = random.choice(ROOM_NAMES)
+            if game.lower() == "mio":
+                formData["room_name"] = random.choice(MIO_ROOM_NAMES)
+            else:
+                formData["room_name"] = random.choice(ROOM_NAMES)
         else:
             formData["room_name"] = roomName
         formData["csrfmiddlewaretoken"] = [self.csrfToken, self.csrfToken]

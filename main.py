@@ -70,6 +70,10 @@ def prog_options():
     opt = ["Act 1 Only", "No Clawline", "No Faydown (Default)", "Full Act 2", "Act 3 No Silk Soar", "Full Act 3", "Easier Mode", "Act 2 Only"]
     return [app_commands.Choice(name=i, value=i) for i in opt]
 
+def mio_prog_options():
+    opt = ["No Crucible (Default)", "No Vaults"]
+    return [app_commands.Choice(name=i, value=i) for i in opt]
+
 def size_options():
     return [app_commands.Choice(name=str(i), value=str(i)) for i in [5,6]]
 
@@ -90,6 +94,13 @@ def progStringToTags(progression):
         noTags = ["hard", "faydown", 'act3', 'silksoar']
     elif progression.value == "Act 2 Only":
         noTags = ["early", "dash", "cloak", "walljump", "widow", 'act3', 'silksoar']
+    return noTags
+
+def mioProgStringToTags(progression):
+    if progression is None or progression.value == "No Crucible (Default)":
+        noTags = []
+    elif progression.value == "No Vaults":
+        noTags = ["endgame", "vaults"]
     return noTags
 
 @client.tree.command()
@@ -272,6 +283,30 @@ async def newtriplingy(interaction: discord.Interaction, size: Optional[app_comm
     n3, rId3 = session.newRoom(json.dumps(act3Board), lockout=False)
     session.close()
     await interaction.followup.send(f"Act 1 room: {n1} at {baseName}/room/{rId1}\nAct 2 room: {n2} at {baseName}/room/{rId2}\nAct 3 room: {n3} at https://bingosync.com/room/{rId3}")
+
+@client.tree.command()
+@app_commands.choices(size=size_options())
+@app_commands.choices(preset=mio_prog_options())
+async def miobingo(interaction: discord.Interaction, preset: Optional[app_commands.Choice[str]]=None, size: Optional[app_commands.Choice[str]]=None):
+    """All-in-one command for Mio Bingo."""
+    await interaction.response.defer(thinking=True)
+    if size is None:
+        size = app_commands.Choice(name="5", value="5")
+    size = int(size.value)
+    if size == 5:
+        session = network.bingosyncClient()
+        baseName = "https://bingosync.com"
+    elif size == 6:
+        session = network.caravanClient()
+        baseName = "https://caravan.kobold60.com"
+
+    noTags = progStringToTags(preset)
+    thisBoard = board.bingosyncBoard(noTags=noTags, goalset="mio.json", **BOARD_KWARGS, size=size**2, game="mio")
+    bsSession = network.bingosyncClient()
+    n, rId = bsSession.newRoom(json.dumps(thisBoard), game="mio")
+    bsSession.close()
+    await interaction.followup.send(f"Room: {n} created at https://bingosync.com/room/{rId}")
+
 
 class DrafoutUI(discord.ui.View):
     def __init__(self, noTags, size, player1: discord.user, player2: discord.user, parentInteraction: discord.Interaction):

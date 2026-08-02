@@ -62,6 +62,9 @@ maxWeightScale = 2.15
 #Nine Sols Ordered progression - UNUSED
 NSOrderedProg = ['early', 'kuafu', 'goumang', 'yanlao', 'jiequan', 'fudie', 'smb']
 
+#Mio Ordered progression
+mioOrderedProg = ["early","hairpin","1skill","vaults","endgame"]
+
 #Default excluded tags
 DEF_NOTAGS = ["silly", "itemsync"]
     
@@ -101,10 +104,6 @@ def getAllGoals(noTags=[], goalsetPath = CAT_FILENAME, **kwargs):
     #can't modify list during iteration so keep track of removables here
     remGoals = []
 
-    if "game" not in kwargs.keys():
-        orderedProg = silkOrderedProg
-
-    presentTags = [tag for tag in orderedProg if tag not in noTags] #ordered tags that arent excluded
     for g in catList["goals"]: #add weight=1 to all non-weighted goals for later
         if "weight" not in g.keys():
             g["weight"] = 1
@@ -152,7 +151,6 @@ def board(allGoals:dict, exclusionDic, size=25, fogOfWar=False,
     """
     goals = []
     progs = kwargs["keepProgression"] if "keepProgression" in kwargs.keys() else False
-    forcer = True #every board using progression forcing now
 
     if "priorGoals" in kwargs.keys(): #linked boards, apply exclusions now
         for goal in kwargs["priorGoals"]:
@@ -163,6 +161,8 @@ def board(allGoals:dict, exclusionDic, size=25, fogOfWar=False,
 
     if "game" not in kwargs.keys():
         orderedProg = silkOrderedProg
+    elif kwargs["game"] == "mio" or kwargs["game"] == "MIO":
+        orderedProg = mioOrderedProg
 
     indices = progForcer(size=int(sqrt(size)))
     indices.sort()
@@ -267,13 +267,18 @@ def bingosyncBoard(noTags=[], size = 36, **kwargs):
     else:
         goalset = CAT_FILENAME
 
+    if "game" in kwargs.keys():
+        gameName = kwargs["game"]
+    else:
+        gameName = "silksong"
+
     if "forceProgression" in kwargs.keys() and kwargs["forceProgression"]:
         forcer = True
     else: 
         forcer = False
 
     boardList = board(*getAllGoals(noTags=noTags, goalsetPath=goalset), size=int(size), lockout=(not "lockout" in noTags), 
-        forceProgression=forcer, tagLimits=limits, pattern=pattern)
+        forceProgression=forcer, tagLimits=limits, pattern=pattern, game=gameName)
     out = []
     for name in boardList:
         out.append({"name": name})
