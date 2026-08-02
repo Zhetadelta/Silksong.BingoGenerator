@@ -61,6 +61,16 @@
             ]
         },
         {
+            "name": "5 Candles",
+            "types": [
+                "collection",
+                "scattered"
+            ],
+            "progression": [
+                "midgame"
+            ]
+        },
+        {
             "name": "Promenade Legacy",
             "types": [
                 "upgrade"
@@ -109,15 +119,6 @@
             "name": "Mend the Celestial Bay Overseer",
             "types": [
                 "location"
-            ],
-            "progression": [
-                "midgame"
-            ]
-        },
-        {
-            "name": "Shoe Curio (Celestial Bay)",
-            "types": [
-                "relic"
             ],
             "progression": [
                 "midgame"
@@ -312,13 +313,142 @@
             "progression": [
                 "slingshot"
             ]
+        },
+        {
+            "name": "Enter The Blood's Sanctum From the West",
+            "types": [
+                "location"
+            ],
+            "progression": [
+                "endgame"
+            ]
+        },
+        {
+            "name": "Talk to Capucine in Haven",
+            "types": [
+                "npc",
+                "location"
+            ],
+            "progression": [
+                "midgame"
+            ]
+        },
+        {
+            "name": "Visit the Restored Statue",
+            "types": [
+                "location"
+            ],
+            "progression": [
+                "slingshot"
+            ]
+        },
+        {
+            "name": "Drop Through the Greenhouse Roof",
+            "types": [
+                "location"
+            ],
+            "progression": [
+                "midgame"
+            ]
+        },
+        {
+            "name": "Collect the Scroll Curio",
+            "types": [
+                "collection"
+            ],
+            "progression": [
+                "slingshot"
+            ]
+        },
+        {
+            "name": "Poltergates",
+            "types": [
+                "boss"
+            ],
+            "progression": [
+                "1skill"
+            ]
+        },
+        {
+            "name": "Spin the Wheel",
+            "types": [
+                "location",
+                "collection"
+            ],
+            "progression": [
+                "endgame"
+            ]
+        },
+        {
+            "name": "Collect the Elephant Curio",
+            "types": [
+                "collection"
+            ],
+            "progression": [
+                "1skill"
+            ]
+        },
+        {
+            "name": "Makeshift Recovery",
+            "types": [
+                "modifier"
+            ],
+            "progression": [
+                "1skill"
+            ]
+        },
+        {
+            "name": "Sit at the Dwellings Gate",
+            "types": [
+                "location"
+            ],
+            "progression": [
+                "1skill"
+            ]
+        },
+        {
+            "name": "Play the Piano",
+            "types": [
+                "location"
+            ],
+            "progression": [
+                "midgame"
+            ]
+        },
+        {
+            "name": "Collect the Necklace Curio",
+            "types": [
+                "collection"
+            ],
+            "progression": [
+                "1skill"
+            ]
+        },
+        {
+            "name": "Mend the Vaults Overseer",
+            "types": [
+                "location"
+            ],
+            "progression": [
+                "slingshot"
+            ]
+        },
+        {
+            "name": "Repair the Waterfall Energy Crystal",
+            "types": [
+                "location"
+            ],
+            "progression": [
+                "1skill"
+            ]
         }
     ],
     "exclusions": [
         {
             "unique": [
                 "2 Candles",
-                "3 Candles"
+                "3 Candles",
+                "5 Candles"
             ]
         },
         {
