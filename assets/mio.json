@@ -174,7 +174,7 @@
             ]
         },
         {
-            "name": "Connect Vaults' Shuttle Gate",
+            "name": "Mend the Vaults' Shuttle Overseer",
             "types": [
                 "location"
             ],
@@ -437,6 +437,42 @@
             "name": "Repair the Waterfall Energy Crystal",
             "types": [
                 "location"
+            ],
+            "progression": [
+                "1skill"
+            ]
+        },
+        {
+            "name": "FRIENDS",
+            "types": [
+                "boss"
+            ],
+            "progression": [
+                "slingshot"
+            ]
+        },
+        {
+            "name": "Embedding Duty Flash Memory",
+            "types": [
+                "collection"
+            ],
+            "progression": [
+                "slingshot"
+            ]
+        },
+        {
+            "name": "Equivalent Exchange Flash Memory",
+            "types": [
+                "collection"
+            ],
+            "progression": [
+                "1skill"
+            ]
+        },
+        {
+            "name": "No Promise Traveller's Log",
+            "types": [
+                "collection"
             ],
             "progression": [
                 "1skill"
