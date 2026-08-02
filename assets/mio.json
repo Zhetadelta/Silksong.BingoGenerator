@@ -1,5 +1,5 @@
 {
-    "prog_options": ["early","hairpin","1skill","vaults","endgame"],
+    "prog_options": ["early","hairpin","1skill","vaults"],
     "type_options": ["modifier", "npc", "collection", "scattered", "upgrade", "location", "relic", "datalog", "fight", "boss"],
     "goals": [
         {
@@ -170,7 +170,7 @@
                 "collection"
             ],
             "progression": [
-                "endgame"
+                "vaults"
             ]
         },
         {
@@ -179,7 +179,7 @@
                 "location"
             ],
             "progression": [
-                "endgame"
+                "vaults"
             ]
         },
         {
@@ -320,7 +320,7 @@
                 "location"
             ],
             "progression": [
-                "endgame"
+                "vaults"
             ]
         },
         {
@@ -376,7 +376,7 @@
                 "collection"
             ],
             "progression": [
-                "endgame"
+                "vaults"
             ]
         },
         {

@@ -63,7 +63,7 @@ maxWeightScale = 2.15
 NSOrderedProg = ['early', 'kuafu', 'goumang', 'yanlao', 'jiequan', 'fudie', 'smb']
 
 #Mio Ordered progression
-mioOrderedProg = ["early","hairpin","1skill","vaults","endgame"]
+mioOrderedProg = ["early","hairpin","1skill","vaults"]
 
 #Default excluded tags
 DEF_NOTAGS = ["silly", "itemsync"]
@@ -541,10 +541,5 @@ if __name__ == "__main__":
     #thisBoard = byngosinkBoard(noTags=["silksoar","act3"],size=100)
     #print(len(thisBoard))
     #print(json.dumps(thisBoard))
-    gen = DraftoutGenerator(["silksoar"],5)
-    goals = gen.showGoals()
-    print(goals)
-    gen.addGoal(goals[0])
-    gen.addGoal(goals[1])
-    print(gen.getList())
-
+    gen = bingosyncBoard(game="mio", size=25, goalset="mio.json")
+    print(gen)

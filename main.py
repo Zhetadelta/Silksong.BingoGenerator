@@ -302,10 +302,9 @@ async def miobingo(interaction: discord.Interaction, preset: Optional[app_comman
 
     noTags = progStringToTags(preset)
     thisBoard = board.bingosyncBoard(noTags=noTags, goalset="mio.json", **BOARD_KWARGS, size=size**2, game="mio")
-    bsSession = network.bingosyncClient()
-    n, rId = bsSession.newRoom(json.dumps(thisBoard), game="mio")
-    bsSession.close()
-    await interaction.followup.send(f"Room: {n} created at https://bingosync.com/room/{rId}")
+    n, rId = session.newRoom(json.dumps(thisBoard), game="mio")
+    session.close()
+    await interaction.followup.send(f"Room: {n} created at {baseName}/room/{rId}")
 
 
 class DrafoutUI(discord.ui.View):
