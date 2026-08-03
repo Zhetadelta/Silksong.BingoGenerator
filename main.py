@@ -288,7 +288,7 @@ async def newtriplingy(interaction: discord.Interaction, size: Optional[app_comm
 @app_commands.choices(size=size_options())
 @app_commands.choices(preset=mio_prog_options())
 async def miobingo(interaction: discord.Interaction, preset: Optional[app_commands.Choice[str]]=None, size: Optional[app_commands.Choice[str]]=None):
-    """All-in-one command for Mio Bingo."""
+    """All-in-one command for Mio Bingo. Password is 'fast'."""
     await interaction.response.defer(thinking=True)
     if size is None:
         size = app_commands.Choice(name="5", value="5")
