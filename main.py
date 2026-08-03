@@ -62,9 +62,9 @@ async def on_ready():
 @client.tree.error
 async def on_app_command_error(interaction, error):
     try:
-        await interaction.response.send_message(f"The following error was encountered: {str(error)}", ephemeral=True)
+        await interaction.response.send_message(str(error), ephemeral=True)
     except:
-        await interaction.followup.send(f"The following error was encountered: {str(error)}", ephemeral=True)
+        await interaction.followup.send(str(error), ephemeral=True)
 
 def prog_options():
     opt = ["Act 1 Only", "No Clawline", "No Faydown (Default)", "Full Act 2", "Act 3 No Silk Soar", "Full Act 3", "Easier Mode", "Act 2 Only"]
