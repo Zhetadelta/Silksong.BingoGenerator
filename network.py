@@ -243,6 +243,8 @@ class bingosyncClient():
         })
         #Make a request to get them cookies
         r = self.session.get("https://bingosync.com/")
+        if r.status_code > 499: #server error
+            raise ConnectionError("Bingosync server error. Try Caravan (6x6) or byngosink (5x5, 6x6).")
 
         self.csrfToken = self.session.cookies["csrftoken"]
 
@@ -320,6 +322,8 @@ class caravanClient(bingosyncClient):
         })
         #Make a request to get them cookies
         r = self.session.get("https://caravan.kobold60.com/")
+        if r.status_code > 499: #server error
+            raise ConnectionError("Caravan server error. Try Bingosync (5x5) or byngosink (5x5, 6x6).")
 
         self.csrfToken = self.session.cookies["csrftoken"]
 
