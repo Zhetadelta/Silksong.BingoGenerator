@@ -2472,6 +2472,13 @@
     },
     {
       "unique": [
+        "3 Tool Pouch Upgrades/Crafting Kits",
+        "1 Tool Pouch Upgrade",
+        "1 Crafting Kit"
+      ]
+    },
+    {
+      "unique": [
         "Save Jubilana",
         "Weighted Belt & Ascendant's Grip"
       ]
@@ -2506,6 +2513,21 @@
         "Talk to Shakra in Bilewater",
         "Bilewater Mask Shard",
         "Quick Sling"
+      ]
+    },
+    {
+      "unique": [
+        "Raging Conchfly (Sands of Karak)",
+        "Conchcutter"
+      ]
+    },
+    {
+      "limit": 2,
+      "unique": [
+        "Raging Conchfly (Sands of Karak)",
+        "Conchcutter",
+        "Talk to Shakra in Sands of Karak",
+        "Crustnut"
       ]
     },
     {"unique": [
