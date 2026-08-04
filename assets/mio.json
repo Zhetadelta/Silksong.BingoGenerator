@@ -41,16 +41,6 @@
             ]
         },
         {
-            "name": "2 Candles",
-            "types": [
-                "collection",
-                "scattered"
-            ],
-            "progression": [
-                "1skill"
-            ]
-        },
-        {
             "name": "3 Candles",
             "types": [
                 "collection",
@@ -491,7 +481,6 @@
     "exclusions": [
         {
             "unique": [
-                "2 Candles",
                 "3 Candles",
                 "5 Candles"
             ]
