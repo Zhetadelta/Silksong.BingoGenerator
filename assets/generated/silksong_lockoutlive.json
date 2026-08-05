@@ -1943,12 +1943,12 @@
         {
             "goal": "2 Extra Masks",
             "progression": [
-                "n"
+                "l"
             ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "faydown"
+                "clawline"
             ],
             "line_categories": [
                 "upgrade"

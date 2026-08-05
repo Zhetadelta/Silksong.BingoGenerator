@@ -232,7 +232,7 @@
 
 **1 Extra Mask** | Progression level: ['widow'] | Other tags: ['upgrade']
 
-**2 Extra Masks** | Progression level: ['faydown'] | Other tags: ['upgrade']
+**2 Extra Masks** | Progression level: ['clawline'] | Other tags: ['upgrade']
 
 **Pay for a Flea Spa** | Progression level: ['walljump'] | Other tags: ['npc', 'flea']
 
