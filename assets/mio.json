@@ -1,6 +1,6 @@
 {
     "prog_options": ["early","hairpin","1skill","vaults"],
-    "type_options": ["modifier", "npc", "collection", "scattered", "upgrade", "location", "relic", "datalog", "fight", "boss"],
+    "type_options": ["modifier", "npc", "collection", "scattered", "upgrade", "location", "relic", "candle", "datalog", "fight", "boss"],
     "goals": [
         {
             "name": "Recall Asma's Voice",
@@ -44,7 +44,8 @@
             "name": "3 Candles",
             "types": [
                 "collection",
-                "scattered"
+                "scattered",
+                "candle"
             ],
             "progression": [
                 "1skill"
@@ -54,7 +55,8 @@
             "name": "5 Candles",
             "types": [
                 "collection",
-                "scattered"
+                "scattered",
+                "candle"
             ],
             "progression": [
                 "1skill"
@@ -475,6 +477,128 @@
             ],
             "progression": [
                 "1skill"
+            ]
+        },
+        {
+            "name":"Visit Deg's Body",
+            "types": [
+                "location"
+            ],
+            "progression": [
+                "vaults"
+            ]
+        },
+        {
+            "name":"Receive a Gifted Old Core",
+            "types": [
+                "npc",
+                "collection"
+            ],
+            "progression": [
+                "hairpin"
+            ]
+        },
+        {
+            "name":"Get Hired",
+            "types": [
+                "location"
+            ],
+            "progression": [
+                "1skill"
+            ]
+        },
+        {
+            "name":"4 Tomo Letters",
+            "types": [
+                "collection"
+            ],
+            "progression": [
+                "vaults"
+            ]
+        },
+        {
+            "name":"Enter All 3 Redacted Areas",
+            "types": [
+                "location"
+            ],
+            "progression": [
+                "vaults"
+            ]
+        },
+        {
+            "name":"Talk to 3 Librarians",
+            "types": [
+                "npc"
+            ],
+            "progression": [
+                "1skill"
+            ]
+        },
+        {
+            "name":"Visit Samsk's Hideout",
+            "types": [
+                "location"
+            ],
+            "progression": [
+                "1skill"
+            ]
+        },
+        {
+            "name":"Lost Unit Candle (Vaults)",
+            "types": [
+                "collection",
+                "candle"
+            ],
+            "progression": [
+                "vaults"
+            ]
+        },
+        {
+            "name":"Read A Planetary Report",
+            "types": [
+                "location"
+            ],
+            "progression": [
+                "1skill"
+            ]
+        },
+        {
+            "name":"Tuning Chamber Candle (Metropolis)",
+            "types": [
+                "collection",
+                "candle"
+            ],
+            "progression": [
+                "1skill"
+            ]
+        },
+        {
+            "name":"Promenade Modifier Extension",
+            "types": [
+                "upgrade",
+                "modifier"
+            ],
+            "progression": [
+                "vaults"
+            ]
+        },
+        {
+            "name":"Mend the Promenade Overseer",
+            "types": [
+                "boss"
+            ],
+            "progression": [
+                "hairpin"
+            ]
+        },
+        {
+            "name":"Kill the Feral Undergrowth Scorpion",
+            "types": [
+                "fight",
+                "location"
+            ],
+            "progression": [
+                "early"
             ]
         }
     ],

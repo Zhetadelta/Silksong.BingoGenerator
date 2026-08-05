@@ -461,11 +461,11 @@ def bingosyncFormat():
             goalsList.append({"name": goalDic["name"]})
     return goalsList
 
-def readableFormat():
+def readableFormat(filename=CAT_FILENAME):
     """
     Outputs a list of goals in nice, readable formatting.
     """
-    with open(os.path.join(ASSETS_PATH, CAT_FILENAME)) as f:
+    with open(os.path.join(ASSETS_PATH, filename)) as f:
         catList = json.load(f)
     linesList = []
     for goalDic in catList["goals"]:
@@ -531,6 +531,9 @@ if __name__ == "__main__":
     ####Generate sophont-readable list of goals
     with open(os.path.join(ASSETS_PATH,COMPUTED_SUBDIR,"silksong_readable.md"), "w") as f:
         f.writelines(readableFormat())
+
+    with open(os.path.join(ASSETS_PATH,COMPUTED_SUBDIR,"mio_readable.md"), "w") as f:
+        f.writelines(readableFormat(filename="mio.json"))
 
     ####Test bingosync format
     #print(json.dumps(bingosyncFormat()))
