@@ -1,16 +1,15 @@
-import discord, board, os, json, network, random
+import discord, os, json, network, random
 from discord import app_commands, File, Embed
 from typing import Optional
+from board import CaravanGenerator, ByngosinkGenerator, DraftoutGenerator, GameType, GameName
 
 CONFIG_PATH = os.path.join("config","settings.dat")
 
-BOARD_KWARGS = { #sensible defaults for new boards
-    "tagLimits" : {
+DEF_TAGLIMITS = {
         "craft" : 3,
         "flea" : 4,
-        "expensive" : 4
+        "expensive" : 2
     }
-}
 
 def config():
     if not os.path.exists(os.path.dirname(CONFIG_PATH)):
@@ -115,11 +114,9 @@ async def newboard(interaction: discord.Interaction, lockout: bool = False, pres
     if size is None:
         size = app_commands.Choice(name="5", value="5")
         
-    if preset is not None and preset.value in ["Act 3 No Silk Soar", "Full Act 3"]:
-        print("forcing prog")
-        thisBoard = board.bingosyncBoard(noTags=noTags, **BOARD_KWARGS, noBlocking = pattern, size=int(size.value)**2, forceProgression=True)
-    else:
-        thisBoard = board.bingosyncBoard(noTags=noTags, **BOARD_KWARGS, noBlocking = pattern, size=int(size.value)**2)
+    thisBoard = CaravanGenerator("categorized_v3.json", int(size.value), noTags=noTags, 
+                                     tagLimits=DEF_TAGLIMITS.copy(), patternBoard=pattern).export()
+
     await interaction.response.send_message(json.dumps(thisBoard), ephemeral=True)
 
 @client.tree.command()
@@ -132,11 +129,8 @@ async def newotherside(interaction: discord.Interaction, preset: Optional[app_co
 
     noTags = progStringToTags(preset)
     noTags.append("lockout")
-    size = 10
-    if preset is not None and preset.value in ["Act 3 No Silk Soar", "Full Act 3"]:
-        thisBoard = board.byngosinkBoard(noTags=noTags, size=int(size)**2, forceProgression=True, gameType="GTTOS10")
-    else:
-        thisBoard = board.byngosinkBoard(noTags=noTags, size=int(size)**2, gameType="GTTOS10")
+    thisBoard = ByngosinkGenerator("categorized_v3.json", 10, noTags=noTags,
+                                   gameType = GameType.GTTOS).export()
     session = network.byngosinkClient()
     n, url = session.newFixedRoom(thisBoard, "GTTOS10", gameName="Silksong", players=int(players))
 
@@ -151,19 +145,17 @@ async def newrosingy(interaction: discord.Interaction, preset: Optional[app_comm
     """Generates a new rosingy board. EXPERIMENTAL."""
     noTags = progStringToTags(preset)
     noTags.append("lockout")
+
     if size is None:
         size = app_commands.Choice(name="5", value="5")
-    size = int(size.value)
-    if size == 5:
+    if int(size.value) == 5:
         session = network.bingosyncClient()
         baseName = "https://bingosync.com"
-    elif size == 6:
+    elif int(size.value) == 6:
         session = network.caravanClient()
         baseName = "https://caravan.kobold60.com"
-    if preset is not None and preset.value in ["Act 3 No Silk Soar", "Full Act 3"]:
-        thisBoard = board.lockoutBoard(noTags=noTags, size=int(size.value)**2, forceProgression=True, goalset="rosingy.json", **BOARD_KWARGS)
-    else:
-        thisBoard = board.lockoutBoard(noTags=noTags, size=int(size.value)**2, goalset="rosingy.json", **BOARD_KWARGS)
+
+    thisBoard = CaravanGenerator("rosingy.json", int(size.value), noTags=noTags, tagLimits=DEF_TAGLIMITS.copy()).export()
     name, rId = session.newRoom(json.dumps(thisBoard), lockout=False)
     await interaction.response.send_message(f"Room: {name} created at {baseName}/{rId}")
 
@@ -187,12 +179,8 @@ async def newbyngosink(interaction: discord.Interaction, pattern: bool = False, 
     except ValueError:
         players = 0
     
-    if preset is not None and preset.value in ["Act 3 No Silk Soar", "Full Act 3"]:
-        thisBoard = board.byngosinkBoard(noTags=noTags, size=int(size.value)**2, gameType = "Non-Lockout",
-                                            **BOARD_KWARGS, noBlocking = pattern, forceProgression=True)
-    else:
-        thisBoard = board.byngosinkBoard(noTags=noTags, size=int(size.value)**2, gameType = "Non-Lockout", 
-                                            **BOARD_KWARGS, noBlocking = pattern)
+    thisBoard = ByngosinkGenerator("categorized_v3", int(size.value), noTags=noTags,
+                                   patternBoard=pattern, tagLimits=DEF_TAGLIMITS.copy()).export()
     
     session = network.byngosinkClient()
     type = "Non-Lockout" if size.value == "5" else "Bingo6"
@@ -208,8 +196,10 @@ async def newbingosync(interaction: discord.Interaction, lockout: bool = False, 
 
     noTags = progStringToTags(preset)
     if not lockout:
-        noTags.append("lockout") #exclude lockout-only goals
-    thisBoard = board.bingosyncBoard(noTags=noTags, **BOARD_KWARGS, noBlocking = pattern, size=25)
+        noTags.append("lockout") 
+
+    thisBoard = CaravanGenerator("categorized_v3.json", 5, noTags=noTags, tagLimits=DEF_TAGLIMITS.copy(),
+                                 patternBoard=pattern).export()
     bsSession = network.bingosyncClient()
     n, rId = bsSession.newRoom(json.dumps(thisBoard), lockout=lockout)
     bsSession.close()
@@ -225,11 +215,9 @@ async def newcaravan(interaction: discord.Interaction, lockout: bool = False, pa
     noTags = progStringToTags(preset)
     if not lockout:
         noTags.append("lockout") #exclude lockout-only goals
-    if preset is not None and preset.value in ["Act 3 No Silk Soar", "Full Act 3"]:
-        print("forcing prog")
-        thisBoard = board.bingosyncBoard(noTags=noTags, **BOARD_KWARGS, noBlocking = pattern, size=36, forceProgression=True)
-    else:
-        thisBoard = board.bingosyncBoard(noTags=noTags, **BOARD_KWARGS, noBlocking = pattern, size=36)
+
+    thisBoard = CaravanGenerator("categorized_v3.json", 6, noTags=noTags, tagLimits=DEF_TAGLIMITS.copy(),
+                                 patternBoard=pattern).export()
     bsSession = network.caravanClient()
     n, rId = bsSession.newRoom(json.dumps(thisBoard), lockout=lockout)
     bsSession.close()
@@ -251,7 +239,12 @@ async def newdoublingy(interaction: discord.Interaction, size: Optional[app_comm
         baseName = "https://caravan.kobold60.com"
     act1Tags = ["act2", "clawline", "faydown", 'act3', 'silksoar', "lockout"]
     act2Tags = ["early", "dash", "cloak", "walljump", "widow", 'act3', 'silksoar', "lockout"]
-    act1Board, act2Board = board.linkedBoards(noTags=(act1Tags, act2Tags), size=(size**2))
+
+    act1Board = CaravanGenerator("categorized_v3.json", size, noTags=act1Tags, tagLimits=DEF_TAGLIMITS.copy()).export()
+    act2Generator = CaravanGenerator("categorized_v3.json", size, noTags=act2Tags, tagLimits=DEF_TAGLIMITS.copy())
+    act2Generator.linkBoards(act1Board)
+    act2Board = act2Generator.export()
+
     n1, rId1 = session.newRoom(json.dumps(act1Board), lockout=False)
     n2, rId2 = session.newRoom(json.dumps(act2Board), lockout=False)
     session.close()
@@ -274,7 +267,16 @@ async def newtriplingy(interaction: discord.Interaction, size: Optional[app_comm
     act1Tags = ["act2", "clawline", "faydown", 'act3', 'silksoar', "lockout"]
     act2Tags = ["early", "dash", "cloak", "walljump", "widow", 'act3', 'silksoar', "lockout"]
     act3Tags = ["early", "dash", "cloak", "walljump", "widow", "lockout", "act2", "clawline", "faydown"]
-    act1Board, act2Board, act3Board = board.linkedBoards(noTags=(act1Tags, act2Tags, act3Tags), size=(size**2))
+
+    act1Board = CaravanGenerator("categorized_v3.json", size, noTags=act1Tags, tagLimits=DEF_TAGLIMITS.copy()).export()
+    act2Generator = CaravanGenerator("categorized_v3.json", size, noTags=act2Tags, tagLimits=DEF_TAGLIMITS.copy())
+    act2Generator.linkBoards(act1Board)
+    act2Board = act2Generator.export()
+    act3Generator = CaravanGenerator("categorized_v3.json", 5, noTags=act3Tags, tagLimits=DEF_TAGLIMITS.copy())
+    act3Generator.linkBoards(act1Board)
+    act3Generator.linkBoards(act2Board)
+    act3Board = act3Generator.export()
+
     n1, rId1 = session.newRoom(json.dumps(act1Board), lockout=False)
     n2, rId2 = session.newRoom(json.dumps(act2Board), lockout=False)
     if size == 6: #swap back to bingosync
@@ -299,9 +301,9 @@ async def miobingo(interaction: discord.Interaction, preset: Optional[app_comman
     elif size == 6:
         session = network.caravanClient()
         baseName = "https://caravan.kobold60.com"
-
     noTags = progStringToTags(preset)
-    thisBoard = board.bingosyncBoard(noTags=noTags, goalset="mio.json", **BOARD_KWARGS, size=size**2, game="mio")
+
+    thisBoard = CaravanGenerator("mio.json", size, noTags=noTags, gameName=GameName.Mio)
     n, rId = session.newRoom(json.dumps(thisBoard), game="mio")
     session.close()
     await interaction.followup.send(f"Room: {n} created at {baseName}/room/{rId}")
@@ -310,10 +312,10 @@ async def miobingo(interaction: discord.Interaction, preset: Optional[app_comman
 class DrafoutUI(discord.ui.View):
     def __init__(self, noTags, size, player1: discord.user, player2: discord.user, parentInteraction: discord.Interaction):
         super().__init__(timeout=1800) #30 minutes
-        self.generator = board.DraftoutGenerator(noTags, size)
+        self.generator = DraftoutGenerator(noTags, size)
         self.p1 = player1
         self.p2 = player2
-        self.size = size
+        self.totalSize = size**2
         self.active = self.p1
         self.color = int(discord.Colour.from_str(random.choice(network.TEAM_COLORS)))
         self.name = random.choice(network.ROOM_NAMES)
@@ -432,10 +434,10 @@ class DrafoutUI(discord.ui.View):
         await self.message.edit(embed=discord.Embed.from_dict(embedDic))
 
     async def postRoom(self):
-        if self.size == 25:
+        if self.totalSize == 25:
             session = network.bingosyncClient()
             baseName = "https://bingosync.com"
-        elif self.size == 36:
+        elif self.totalSize == 36:
             session = network.caravanClient()
             baseName = "https://caravan.kobold60.com"
         formattedBoard = []
@@ -457,7 +459,7 @@ async def newdraftout(interaction: discord.Interaction, opponent:str, preset: Op
     """
     opp = client.get_user(int(opponent.strip()[2:-1]))
     noTags = progStringToTags(preset)
-    size = 36 if size is None else int(size.value)**2
+    size = 5 if size is None else int(size.value)
     await interaction.response.send_message("Click any button to start!", view=DrafoutUI(noTags, size, interaction.user, opp, interaction))
 
 
