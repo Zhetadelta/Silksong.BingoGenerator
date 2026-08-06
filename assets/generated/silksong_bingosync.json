@@ -249,9 +249,6 @@
         "name": "Phantom"
     },
     {
-        "name": "Fail the Phantom Cutscene"
-    },
-    {
         "name": "Trobbio"
     },
     {
@@ -286,9 +283,6 @@
     },
     {
         "name": "Win a Loddie Minigame"
-    },
-    {
-        "name": "Fail a Loddie Minigame"
     },
     {
         "name": "Talk to Styx & Huntress"
@@ -414,9 +408,6 @@
         "name": "Talk to Vog"
     },
     {
-        "name": "Hit a Hoker with the Flea Bottle"
-    },
-    {
         "name": "Deep Docks Spool Fragments (2)"
     },
     {
@@ -537,12 +528,6 @@
         "name": "Deep Diver Journal Entry"
     },
     {
-        "name": "Vaultborn Journal Entry"
-    },
-    {
-        "name": "Slap Nuu"
-    },
-    {
         "name": "Obtain 2 Beast Shards"
     },
     {
@@ -592,12 +577,6 @@
     },
     {
         "name": "Witch Crest"
-    },
-    {
-        "name": "Barbed Bracelet & Magnetite Dice"
-    },
-    {
-        "name": "Claw Mirror & Injector Band"
     },
     {
         "name": "Cradle Map"

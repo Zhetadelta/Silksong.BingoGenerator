@@ -164,8 +164,6 @@
 
 **Phantom** | Progression level: ['widow'] | Other tags: ['fight']
 
-**Fail the Phantom Cutscene** | Progression level: ['widow'] | Other tags: ['fight', 'silly']
-
 **Trobbio** | Progression level: ['act2'] | Other tags: ['fight', 'tool', 'blocking']
 
 **Red Quill** | Progression level: ['act2'] | Other tags: ['location']
@@ -189,8 +187,6 @@
 **Free Green Prince** | Progression level: ['walljump'] | Other tags: ['npc', 'key']
 
 **Win a Loddie Minigame** | Progression level: ['widow'] | Other tags: ['npc']
-
-**Fail a Loddie Minigame** | Progression level: ['widow'] | Other tags: ['npc', 'silly']
 
 **Talk to Styx & Huntress** | Progression level: ['faydown'] | Other tags: ['npc', 'hardsave']
 
@@ -274,8 +270,6 @@
 
 **Talk to Vog** | Progression level: ['faydown'] | Other tags: ['flea', 'npc']
 
-**Hit a Hoker with the Flea Bottle** | Progression level: ['cloak'] | Other tags: ['flea', 'tool', 'quest', 'silly']
-
 **Deep Docks Spool Fragments (2)** | Progression level: ['clawline'] | Other tags: ['upgrade']
 
 **Greymoor Spool Fragment** | Progression level: ['walljump'] | Other tags: ['upgrade']
@@ -356,10 +350,6 @@
 
 **Deep Diver Journal Entry** | Progression level: ['dash'] | Other tags: ['collection']
 
-**Vaultborn Journal Entry** | Progression level: ['act2'] | Other tags: ['collection', 'silly']
-
-**Slap Nuu** | Progression level: ['act2'] | Other tags: ['quest', 'collection', 'silly']
-
 **Obtain 2 Beast Shards** | Progression level: ['dash'] | Other tags: ['fight']
 
 **Obtain 3 Beast Shards** | Progression level: ['widow'] | Other tags: ['fight']
@@ -393,10 +383,6 @@
 **Get Cursed** | Progression level: ['clawline'] | Other tags: ['hardsave', 'npc']
 
 **Witch Crest** | Progression level: ['clawline'] | Other tags: ['hardsave']
-
-**Barbed Bracelet & Magnetite Dice** | Progression level: ['widow'] | Other tags: ['tool', 'npc', 'itemsync']
-
-**Claw Mirror & Injector Band** | Progression level: ['act2'] | Other tags: ['tool', 'fight', 'itemsync']
 
 **Cradle Map** | Progression level: ['act3'] | Other tags: ['collection']
 
