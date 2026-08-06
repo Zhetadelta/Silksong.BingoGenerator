@@ -84,6 +84,7 @@ class Generator():
         with open(os.path.join(ASSETS_PATH, goalFilename)) as f: 
             goalsDic = json.load(f)
         self.goalSet, self.exclusionSet = self.getAllGoals(goalsDic)
+        self.baseSet = self.goalSet.copy()
         
     def totalCount(self):
         return self.size ** 2
@@ -165,7 +166,7 @@ class Generator():
 
     def getGoalProgression(self, goalName):
         """Get progression level of a goal from its name."""
-        for goal in self.goalSet:
+        for goal in self.baseSet:
             if goal["name"] == goalName or ("fow" in goal.keys() and goal["fow"] == goalName):
                 return goal["progression"][0]
 
@@ -251,6 +252,7 @@ class Generator():
             return goals
 
         elif self.gameType == GameType.GTTOS: #otherside formatting
+            goals += forcedGoals #combine them
             goals.sort(key=lambda goal: orderedProg.index(self.getGoalProgression(goal))) #sort by progression order
 
             arrangedBoard = ["placeholder"] * self.totalCount() #r1c1 is 0, r3c7 is 26, r10c10 is 99
@@ -424,5 +426,5 @@ if __name__ == "__main__":
     with open(os.path.join(ASSETS_PATH,COMPUTED_SUBDIR,"mio_readable.md"), "w") as f:
         f.writelines(GeneratorFormatter("mio.json").readableFormat())
 
-    print(ByngosinkGenerator("categorized_v3.json", 5, noTags=["faydown", "clawline", "act3", "silksoar"]).export())
+    print(ByngosinkGenerator("categorized_v3.json", 5, noTags=["faydown", "act3", "silksoar"], gameType=GameType.GTTOS).export())
     print(CaravanGenerator("mio.json",5,gameName=GameName.Mio).export())
