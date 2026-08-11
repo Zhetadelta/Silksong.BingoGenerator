@@ -1,5 +1,7 @@
 # BINGYFLEA
-A discord bot and associated codebase used to support [bingosync](https://bingosync.com/) and [lockout.live](https://lockout.live/) silksong play.
+A discord bot and associated codebase used to support [bingosync](https://bingosync.com/) and [lockout.live](https://lockout.live/) Silksong play.
+
+Many Silksong games can be found on [the official Silksong Bingo server.](https://discord.com/invite/676s7XCJZt)
 
 The up-to-date lockout.live and bingosync files live in assets/generated/.
 
