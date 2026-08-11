@@ -139,7 +139,7 @@
       ]
     },
     {
-      "name": "3 Red Tools",
+      "name": "Have 3 Red Tools",
       "types": [
         "tool",
         "craft",
@@ -150,7 +150,7 @@
       ]
     },
     {
-      "name": "5 Red Tools",
+      "name": "Have 5 Red Tools",
       "types": [
         "tool",
         "craft",
@@ -161,7 +161,7 @@
       ]
     },
     {
-      "name": "3 Blue Tools",
+      "name": "Have 3 Blue Tools",
       "types": [
         "tool",
         "blocking"
@@ -171,7 +171,7 @@
       ]
     },
     {
-      "name": "3 Yellow Tools",
+      "name": "Have 3 Yellow Tools",
       "types": [
         "tool",
         "blocking"
@@ -181,7 +181,7 @@
       ]
     },
     {
-      "name": "5 Yellow Tools",
+      "name": "Have 5 Yellow Tools",
       "types": [
         "tool",
         "blocking"
@@ -191,7 +191,7 @@
       ]
     },
     {
-      "name": "2 of each tool type",
+      "name": "Have 2 of Each Tool Type",
       "types": [
         "tool",
         "blocking"
@@ -2349,13 +2349,13 @@
     },
     {
       "unique": [
-        "3 Red Tools",
-        "5 Red Tools"
+        "Have 3 Red Tools",
+        "Have 5 Red Tools"
       ]
     },
     {
       "unique": [
-        "3 Red Tools",
+        "Have 3 Red Tools",
         "Straight, Threefold, and Long Pin"
       ]
     },
@@ -2367,8 +2367,8 @@
     },
     {
       "unique": [
-        "3 Yellow Tools",
-        "5 Yellow Tools"
+        "Have 3 Yellow Tools",
+        "Have 5 Yellow Tools"
       ]
     },
     {

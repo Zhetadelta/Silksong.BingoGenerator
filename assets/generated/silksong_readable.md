@@ -26,17 +26,17 @@
 
 **Volatile Flintbeetles** | Progression level: ['cloak'] | Other tags: ['quest', 'locket']
 
-**3 Red Tools** | Progression level: ['dash'] | Other tags: ['tool', 'craft', 'blocking']
+**Have 3 Red Tools** | Progression level: ['dash'] | Other tags: ['tool', 'craft', 'blocking']
 
-**5 Red Tools** | Progression level: ['cloak'] | Other tags: ['tool', 'craft', 'blocking']
+**Have 5 Red Tools** | Progression level: ['cloak'] | Other tags: ['tool', 'craft', 'blocking']
 
-**3 Blue Tools** | Progression level: ['dash'] | Other tags: ['tool', 'blocking']
+**Have 3 Blue Tools** | Progression level: ['dash'] | Other tags: ['tool', 'blocking']
 
-**3 Yellow Tools** | Progression level: ['early'] | Other tags: ['tool', 'blocking']
+**Have 3 Yellow Tools** | Progression level: ['early'] | Other tags: ['tool', 'blocking']
 
-**5 Yellow Tools** | Progression level: ['cloak'] | Other tags: ['tool', 'blocking']
+**Have 5 Yellow Tools** | Progression level: ['cloak'] | Other tags: ['tool', 'blocking']
 
-**2 of each tool type** | Progression level: ['dash'] | Other tags: ['tool', 'blocking']
+**Have 2 of Each Tool Type** | Progression level: ['dash'] | Other tags: ['tool', 'blocking']
 
 **Straight, Threefold, and Long Pin** | Progression level: ['cloak'] | Other tags: ['tool']
 

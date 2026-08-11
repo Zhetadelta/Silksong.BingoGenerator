@@ -273,7 +273,7 @@
             "icons": []
         },
         {
-            "goal": "3 Red Tools",
+            "goal": "Have 3 Red Tools",
             "progression": [
                 "e"
             ],
@@ -291,7 +291,7 @@
             "icons": []
         },
         {
-            "goal": "5 Red Tools",
+            "goal": "Have 5 Red Tools",
             "progression": [
                 "e"
             ],
@@ -309,7 +309,7 @@
             "icons": []
         },
         {
-            "goal": "3 Blue Tools",
+            "goal": "Have 3 Blue Tools",
             "progression": [
                 "e"
             ],
@@ -326,7 +326,7 @@
             "icons": []
         },
         {
-            "goal": "3 Yellow Tools",
+            "goal": "Have 3 Yellow Tools",
             "progression": [
                 "e"
             ],
@@ -343,7 +343,7 @@
             "icons": []
         },
         {
-            "goal": "5 Yellow Tools",
+            "goal": "Have 5 Yellow Tools",
             "progression": [
                 "e"
             ],
@@ -360,7 +360,7 @@
             "icons": []
         },
         {
-            "goal": "2 of each tool type",
+            "goal": "Have 2 of Each Tool Type",
             "progression": [
                 "e"
             ],
