@@ -179,7 +179,7 @@ async def newbyngosink(interaction: discord.Interaction, pattern: bool = False, 
     except ValueError:
         players = 0
     
-    thisBoard = ByngosinkGenerator("categorized_v3", int(size.value), noTags=noTags,
+    thisBoard = ByngosinkGenerator("categorized_v3.json", int(size.value), noTags=noTags,
                                    patternBoard=pattern, tagLimits=DEF_TAGLIMITS.copy()).export()
     
     session = network.byngosinkClient()
