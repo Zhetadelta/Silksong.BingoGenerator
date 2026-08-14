@@ -100,6 +100,8 @@ def mioProgStringToTags(progression):
         noTags = []
     elif progression.value == "No Vaults":
         noTags = ["endgame", "vaults"]
+    else:
+        noTags = []
     return noTags
 
 @client.tree.command()
@@ -303,7 +305,7 @@ async def miobingo(interaction: discord.Interaction, preset: Optional[app_comman
         baseName = "https://caravan.kobold60.com"
     noTags = progStringToTags(preset)
 
-    thisBoard = CaravanGenerator("mio.json", size, noTags=noTags, gameName=GameName.Mio)
+    thisBoard = CaravanGenerator("mio.json", size, noTags=noTags, gameName=GameName.Mio).export()
     n, rId = session.newRoom(json.dumps(thisBoard), game="mio")
     session.close()
     await interaction.followup.send(f"Room: {n} created at {baseName}/room/{rId}")
