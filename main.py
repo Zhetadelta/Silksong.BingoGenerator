@@ -303,12 +303,12 @@ async def miobingo(interaction: discord.Interaction, preset: Optional[app_comman
     elif size == 6:
         session = network.caravanClient()
         baseName = "https://caravan.kobold60.com"
-    noTags = progStringToTags(preset)
+    noTags = mioProgStringToTags(preset)
 
     thisBoard = CaravanGenerator("mio.json", size, noTags=noTags, gameName=GameName.Mio).export()
     n, rId = session.newRoom(json.dumps(thisBoard), game="mio")
     session.close()
-    await interaction.followup.send(f"Room: {n} created at {baseName}/room/{rId}")
+    await interaction.followup.send(f"Room: {n} created at {baseName}/room/{rId} with password 'fast'.")
 
 
 class DrafoutUI(discord.ui.View):
