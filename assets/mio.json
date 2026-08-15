@@ -600,6 +600,15 @@
             "progression": [
                 "early"
             ]
+        },
+        {
+            "name":"Terror of the Ledge Achievement",
+            "types": [
+                "location"
+            ],
+            "progression": [
+                "hairpin"
+            ]
         }
     ],
     "exclusions": [
