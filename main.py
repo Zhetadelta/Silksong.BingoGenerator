@@ -519,11 +519,11 @@ async def teams(interaction: discord.Interaction, players: str, teamsize: int):
     await interaction.response.send_message(out)
 
 @client.tree.command()
-async def togglerole(interaction: discord.Interaction, roleID: app_commands.Choice[int]):
+async def togglerole(interaction: discord.Interaction, roleid: app_commands.Choice[int]):
     """Adds (or removes) the Boop for Bing role."""
     try:
         user = interaction.user
-        boopRoleid = roleID.value
+        boopRoleid = roleid.value
         boopRole = interaction.guild.get_role(boopRoleid)
         if boopRole not in user.roles:
             await user.add_roles(boopRole)
