@@ -76,6 +76,10 @@ def mio_prog_options():
 def size_options():
     return [app_commands.Choice(name=str(i), value=str(i)) for i in [5,6]]
 
+def role_options():
+    return [app_commands.Choice(name="Boop for Bing", value=1494131607118811257),
+            app_commands.Choice(name="Ring for Rando", value=1538693410964381716)]
+
 def progStringToTags(progression):
     if progression is None or progression.value == "No Faydown (Default)":
         noTags = ['faydown','act3', 'silksoar']
@@ -515,11 +519,11 @@ async def teams(interaction: discord.Interaction, players: str, teamsize: int):
     await interaction.response.send_message(out)
 
 @client.tree.command()
-async def togglerole(interaction: discord.Interaction):
+async def togglerole(interaction: discord.Interaction, roleID: app_commands.Choice[int]):
     """Adds (or removes) the Boop for Bing role."""
     try:
         user = interaction.user
-        boopRoleid = config()["boopRole"]
+        boopRoleid = roleID.value
         boopRole = interaction.guild.get_role(boopRoleid)
         if boopRole not in user.roles:
             await user.add_roles(boopRole)
