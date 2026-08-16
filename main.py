@@ -519,6 +519,7 @@ async def teams(interaction: discord.Interaction, players: str, teamsize: int):
     await interaction.response.send_message(out)
 
 @client.tree.command()
+@app_commands.choices(roleid=role_options())
 async def togglerole(interaction: discord.Interaction, roleid: app_commands.Choice[int]):
     """Adds (or removes) the Boop for Bing role."""
     try:
