@@ -126,3 +126,5 @@
 
 **Kill the Feral Undergrowth Scorpion** | Progression level: ['early'] | Other tags: ['fight', 'location']
 
+**Terror of the Ledge Achievement** | Progression level: ['hairpin'] | Other tags: ['location']
+
