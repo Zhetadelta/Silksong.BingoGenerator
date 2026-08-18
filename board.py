@@ -426,5 +426,8 @@ if __name__ == "__main__":
     with open(os.path.join(ASSETS_PATH,COMPUTED_SUBDIR,"mio_readable.md"), "w") as f:
         f.writelines(GeneratorFormatter("mio.json").readableFormat())
 
+    with open(os.path.join(ASSETS_PATH,COMPUTED_SUBDIR,"silksong_rando_readable.md"), "w") as f:
+        f.writelines(GeneratorFormatter("silksong_rando.json").readableFormat())
+
     print(ByngosinkGenerator("categorized_v3.json", 5, noTags=["faydown", "act3", "silksoar"], gameType=GameType.GTTOS).export())
     print(CaravanGenerator("mio.json",5,gameName=GameName.Mio).export())
