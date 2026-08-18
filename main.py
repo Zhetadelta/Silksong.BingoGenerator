@@ -11,6 +11,8 @@ DEF_TAGLIMITS = {
         "expensive" : 2
     }
 
+SILKSONG_MAIN = "categorized_v3.json"
+
 def config():
     if not os.path.exists(os.path.dirname(CONFIG_PATH)):
         os.makedirs(os.path.dirname(CONFIG_PATH))
@@ -80,6 +82,10 @@ def role_options():
     return [app_commands.Choice(name="Boop for Bing", value="1494131607118811257"),
             app_commands.Choice(name="Ring for Rando", value="1538693410964381716")]
 
+def board_type_options():
+    opt = ["Pattern", "Rando"]
+    return [app_commands.Choice(name=i, value=i) for i in opt]
+
 def progStringToTags(progression):
     if progression is None or progression.value == "No Faydown (Default)":
         noTags = ['faydown','act3', 'silksoar']
@@ -120,7 +126,7 @@ async def newboard(interaction: discord.Interaction, lockout: bool = False, pres
     if size is None:
         size = app_commands.Choice(name="5", value="5")
         
-    thisBoard = CaravanGenerator("categorized_v3.json", int(size.value), noTags=noTags, 
+    thisBoard = CaravanGenerator(SILKSONG_MAIN, int(size.value), noTags=noTags, 
                                      tagLimits=DEF_TAGLIMITS.copy(), patternBoard=pattern).export()
 
     await interaction.response.send_message(json.dumps(thisBoard), ephemeral=True)
@@ -135,7 +141,7 @@ async def newotherside(interaction: discord.Interaction, preset: Optional[app_co
 
     noTags = progStringToTags(preset)
     noTags.append("lockout")
-    thisBoard = ByngosinkGenerator("categorized_v3.json", 10, noTags=noTags,
+    thisBoard = ByngosinkGenerator(SILKSONG_MAIN, 10, noTags=noTags,
                                    gameType = GameType.GTTOS).export()
     session = network.byngosinkClient()
     n, url = session.newFixedRoom(thisBoard, "GTTOS10", gameName="Silksong", players=int(players))
@@ -169,11 +175,19 @@ async def newrosingy(interaction: discord.Interaction, preset: Optional[app_comm
 @app_commands.describe(preset="Tags to exclude based on preset categories.")
 @app_commands.choices(preset=prog_options())
 @app_commands.choices(size=size_options())
+@app_commands.choices(type=board_type_options())
 @app_commands.describe(players="Number of teams to create. Don't fill out to create your own teams.")
-async def newbyngosink(interaction: discord.Interaction, pattern: bool = False, preset: Optional[app_commands.Choice[str]] = None, 
+async def newbyngosink(interaction: discord.Interaction, type: Optional[app_commands.Choice[str]] = None, preset: Optional[app_commands.Choice[str]] = None, 
                   players: Optional[str] = "0",  size: Optional[app_commands.Choice[str]] = None):
     """Generates a new board and creates a byngosink room."""
     await interaction.response.defer(thinking=True)
+
+    if type is not None:
+        fname = SILKSONG_MAIN if type.value is not "Rando" else "silksong_rando.json"
+        pattern = (type.value == "Pattern")
+    else:
+        pattern = False,
+        fname = SILKSONG_MAIN
 
     if size is None:
         size = app_commands.Choice(name="5", value="5")
@@ -185,7 +199,7 @@ async def newbyngosink(interaction: discord.Interaction, pattern: bool = False, 
     except ValueError:
         players = 0
     
-    thisBoard = ByngosinkGenerator("categorized_v3.json", int(size.value), noTags=noTags,
+    thisBoard = ByngosinkGenerator(fname, int(size.value), noTags=noTags,
                                    patternBoard=pattern, tagLimits=DEF_TAGLIMITS.copy()).export()
     
     session = network.byngosinkClient()
@@ -196,15 +210,24 @@ async def newbyngosink(interaction: discord.Interaction, pattern: bool = False, 
 @client.tree.command()
 @app_commands.describe(preset="Tags to exclude based on preset categories.")
 @app_commands.choices(preset=prog_options())
-async def newbingosync(interaction: discord.Interaction, lockout: bool = False, pattern: bool = False, preset: Optional[app_commands.Choice[str]] = None):
+@app_commands.choices(type=board_type_options())
+async def newbingosync(interaction: discord.Interaction, lockout: bool = False, type: Optional[app_commands.Choice[str]] = None,
+                       preset: Optional[app_commands.Choice[str]] = None):
     """Generates a new 5x5 board and creates a bingosync room with "fast" as the password."""
     await interaction.response.defer(thinking=True)
+
+    if type is not None:
+        fname = SILKSONG_MAIN if type.value is not "Rando" else "silksong_rando.json"
+        pattern = (type.value == "Pattern")
+    else:
+        pattern = False,
+        fname = SILKSONG_MAIN
 
     noTags = progStringToTags(preset)
     if not lockout:
         noTags.append("lockout") 
 
-    thisBoard = CaravanGenerator("categorized_v3.json", 5, noTags=noTags, tagLimits=DEF_TAGLIMITS.copy(),
+    thisBoard = CaravanGenerator(fname, 5, noTags=noTags, tagLimits=DEF_TAGLIMITS.copy(),
                                  patternBoard=pattern).export()
     bsSession = network.bingosyncClient()
     n, rId = bsSession.newRoom(json.dumps(thisBoard), lockout=lockout)
@@ -214,15 +237,23 @@ async def newbingosync(interaction: discord.Interaction, lockout: bool = False, 
 @client.tree.command()
 @app_commands.describe(preset="Tags to exclude based on preset categories.")
 @app_commands.choices(preset=prog_options())
-async def newcaravan(interaction: discord.Interaction, lockout: bool = False, pattern: bool = False, preset: Optional[app_commands.Choice[str]] = None):
+async def newcaravan(interaction: discord.Interaction, lockout: bool = False, type: Optional[app_commands.Choice[str]] = None, 
+                     preset: Optional[app_commands.Choice[str]] = None):
     """Generates a new 6x6 board and creates a caravan room with "fast" as the password."""
     await interaction.response.defer(thinking=True)
+
+    if type is not None:
+        fname = SILKSONG_MAIN if type.value is not "Rando" else "silksong_rando.json"
+        pattern = (type.value == "Pattern")
+    else:
+        pattern = False,
+        fname = SILKSONG_MAIN
 
     noTags = progStringToTags(preset)
     if not lockout:
         noTags.append("lockout") #exclude lockout-only goals
 
-    thisBoard = CaravanGenerator("categorized_v3.json", 6, noTags=noTags, tagLimits=DEF_TAGLIMITS.copy(),
+    thisBoard = CaravanGenerator(fname, 6, noTags=noTags, tagLimits=DEF_TAGLIMITS.copy(),
                                  patternBoard=pattern).export()
     bsSession = network.caravanClient()
     n, rId = bsSession.newRoom(json.dumps(thisBoard), lockout=lockout)
@@ -246,8 +277,8 @@ async def newdoublingy(interaction: discord.Interaction, size: Optional[app_comm
     act1Tags = ["act2", "clawline", "faydown", 'act3', 'silksoar', "lockout"]
     act2Tags = ["early", "dash", "cloak", "walljump", "widow", 'act3', 'silksoar', "lockout"]
 
-    act1Board = CaravanGenerator("categorized_v3.json", size, noTags=act1Tags, tagLimits=DEF_TAGLIMITS.copy()).export()
-    act2Generator = CaravanGenerator("categorized_v3.json", size, noTags=act2Tags, tagLimits=DEF_TAGLIMITS.copy())
+    act1Board = CaravanGenerator(SILKSONG_MAIN, size, noTags=act1Tags, tagLimits=DEF_TAGLIMITS.copy()).export()
+    act2Generator = CaravanGenerator(SILKSONG_MAIN, size, noTags=act2Tags, tagLimits=DEF_TAGLIMITS.copy())
     act2Generator.linkBoards(act1Board)
     act2Board = act2Generator.export()
 
@@ -274,11 +305,11 @@ async def newtriplingy(interaction: discord.Interaction, size: Optional[app_comm
     act2Tags = ["early", "dash", "cloak", "walljump", "widow", 'act3', 'silksoar', "lockout"]
     act3Tags = ["early", "dash", "cloak", "walljump", "widow", "lockout", "act2", "clawline", "faydown"]
 
-    act1Board = CaravanGenerator("categorized_v3.json", size, noTags=act1Tags, tagLimits=DEF_TAGLIMITS.copy()).export()
-    act2Generator = CaravanGenerator("categorized_v3.json", size, noTags=act2Tags, tagLimits=DEF_TAGLIMITS.copy())
+    act1Board = CaravanGenerator(SILKSONG_MAIN, size, noTags=act1Tags, tagLimits=DEF_TAGLIMITS.copy()).export()
+    act2Generator = CaravanGenerator(SILKSONG_MAIN, size, noTags=act2Tags, tagLimits=DEF_TAGLIMITS.copy())
     act2Generator.linkBoards(act1Board)
     act2Board = act2Generator.export()
-    act3Generator = CaravanGenerator("categorized_v3.json", 5, noTags=act3Tags, tagLimits=DEF_TAGLIMITS.copy())
+    act3Generator = CaravanGenerator(SILKSONG_MAIN, 5, noTags=act3Tags, tagLimits=DEF_TAGLIMITS.copy())
     act3Generator.linkBoards(act1Board)
     act3Generator.linkBoards(act2Board)
     act3Board = act3Generator.export()
