@@ -183,7 +183,7 @@ async def newbyngosink(interaction: discord.Interaction, type: Optional[app_comm
     await interaction.response.defer(thinking=True)
 
     if type is not None:
-        fname = SILKSONG_MAIN if type.value is not "Rando" else "silksong_rando.json"
+        fname = SILKSONG_MAIN if type.value != "Rando" else "silksong_rando.json"
         pattern = (type.value == "Pattern")
     else:
         pattern = False,
@@ -217,7 +217,7 @@ async def newbingosync(interaction: discord.Interaction, lockout: bool = False, 
     await interaction.response.defer(thinking=True)
 
     if type is not None:
-        fname = SILKSONG_MAIN if type.value is not "Rando" else "silksong_rando.json"
+        fname = SILKSONG_MAIN if type.value != "Rando" else "silksong_rando.json"
         pattern = (type.value == "Pattern")
     else:
         pattern = False,
@@ -243,7 +243,7 @@ async def newcaravan(interaction: discord.Interaction, lockout: bool = False, ty
     await interaction.response.defer(thinking=True)
 
     if type is not None:
-        fname = SILKSONG_MAIN if type.value is not "Rando" else "silksong_rando.json"
+        fname = SILKSONG_MAIN if type.value != "Rando" else "silksong_rando.json"
         pattern = (type.value == "Pattern")
     else:
         pattern = False,
