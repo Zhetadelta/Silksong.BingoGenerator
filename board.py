@@ -222,7 +222,7 @@ class Generator():
             if self.gameType in FOW_TYPES and "fow" in newGoal.keys():
                 goalName = newGoal["fow"]
             elif self.gameType == GameType.Rando and "rando" in newGoal.keys():
-                goalName = random.choice(newGoal["name"], newGoal["rando"])
+                goalName = random.choice([newGoal["name"], newGoal["rando"]])
             else:
                 goalName = newGoal["name"]
 
