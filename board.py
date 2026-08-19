@@ -281,7 +281,7 @@ class CaravanGenerator(Generator):
 class GeneratorFormatter(Generator):
     """Class with functions to export files. Don't use to generate boards."""
     def __init__(self, goalFilename):
-        super().__init__(goalFilename, 5, noTags = [], tagLimits = [], patternBoard=False, gameType=GameType.Bingo)
+        super().__init__(goalFilename, 5, noTags = [], tagLimits = [], gameType=GameType.Bingo)
 
     def board(self):
         raise NotImplementedError
