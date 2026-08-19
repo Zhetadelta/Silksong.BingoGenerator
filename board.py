@@ -59,7 +59,7 @@ LL_LIMITS = {
 #Default excluded tags
 DEF_NOTAGS = ["silly", "itemsync"]
 
-GameType = Enum('GameType', [('Bingo',1),('GTTOS',2)])
+GameType = Enum('GameType', [('Bingo',1),('GTTOS',2),('Rando',3),('Pattern',4)])
 FOW_TYPES = [GameType.GTTOS]
 
 GameName = Enum('GameName', [('Silksong',1),('Mio',2)])
@@ -71,13 +71,12 @@ orderedProgs = {
 class Generator():
     """Base class for generators."""
     def __init__(self, goalFilename, size, noTags = [], tagLimits = None, 
-                 patternBoard = False, gameName = GameName.Silksong, gameType = GameType.Bingo):
+                 gameName = GameName.Silksong, gameType = GameType.Bingo):
         self.size = size
         self.noTags = noTags
         self.noTags += DEF_NOTAGS
         self.tagLimits = tagLimits
-        self.patternBoard = patternBoard
-        if self.patternBoard:
+        if gameType == GameType.Pattern:
             self.noTags.append("blocking")
         self.gameName = gameName
         self.gameType = gameType
@@ -181,7 +180,10 @@ class Generator():
 
         orderedProg = orderedProgs[self.gameName]
         indices = self.forceIndices()
-        forceCount = len(indices)
+        if self.gameType != GameType.Rando:
+            forceCount = len(indices)
+        else:
+            forceCount = 0
         forcedGoals = []
         maxProg = "early"
         for prog in orderedProg:
@@ -216,6 +218,8 @@ class Generator():
 
             if self.gameType in FOW_TYPES and "fow" in newGoal.keys():
                 goalName = newGoal["fow"]
+            elif self.gameType == GameType.Rando and "rando" in newGoal.keys():
+                goalName = random.choice(newGoal["name"], newGoal["rando"])
             else:
                 goalName = newGoal["name"]
 
@@ -244,14 +248,7 @@ class Generator():
             except ValueError: #what
                 pass
 
-        if self.gameType == GameType.Bingo: #default setting
-            random.shuffle(goals) #mix em all up when we're done
-
-            for i, index in enumerate(indices):
-                goals.insert(index, forcedGoals[i])
-            return goals
-
-        elif self.gameType == GameType.GTTOS: #otherside formatting
+        if self.gameType == GameType.GTTOS: #otherside formatting
             goals += forcedGoals #combine them
             goals.sort(key=lambda goal: orderedProg.index(self.getGoalProgression(goal))) #sort by progression order
 
@@ -263,6 +260,13 @@ class Generator():
                     arrangedBoard[(order[i]*self.size)+setIndex] = goal
             assert "placeholder" not in arrangedBoard
             return arrangedBoard
+
+        else: #default setting
+            random.shuffle(goals) #mix em all up when we're done
+
+            for i, index in enumerate(indices):
+                goals.insert(index, forcedGoals[i])
+            return goals
 
 class ByngosinkGenerator(Generator):
     """Formats a generated board for Byngosink upload."""

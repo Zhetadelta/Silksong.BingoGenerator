@@ -114,11 +114,20 @@ def mioProgStringToTags(progression):
         noTags = []
     return noTags
 
+def silkTypeToParams(type):
+    """Returns (filename, GameType) tuple."""
+    if type is None:
+        return (SILKSONG_MAIN, GameType.Bingo)
+    elif type.value.strip().lower() == "rando":
+        return ("silksong_rando.json", GameType.Rando)
+    elif type.value.strip().lower() == "pattern":
+        return (SILKSONG_MAIN, GameType.Pattern)
+
 @client.tree.command()
 @app_commands.describe(preset="Tags to exclude based on preset categories.")
 @app_commands.choices(preset=prog_options())
 @app_commands.choices(size=size_options())
-async def newboard(interaction: discord.Interaction, lockout: bool = False, preset: Optional[app_commands.Choice[str]] = None, pattern: bool = False, size: Optional[app_commands.Choice[str]]=None):
+async def newboard(interaction: discord.Interaction, lockout: bool = False, preset: Optional[app_commands.Choice[str]] = None, size: Optional[app_commands.Choice[str]]=None):
     """Generates a new board for bingo."""
     noTags = progStringToTags(preset)
     if not lockout:
@@ -127,7 +136,7 @@ async def newboard(interaction: discord.Interaction, lockout: bool = False, pres
         size = app_commands.Choice(name="5", value="5")
         
     thisBoard = CaravanGenerator(SILKSONG_MAIN, int(size.value), noTags=noTags, 
-                                     tagLimits=DEF_TAGLIMITS.copy(), patternBoard=pattern).export()
+                                     tagLimits=DEF_TAGLIMITS.copy()).export()
 
     await interaction.response.send_message(json.dumps(thisBoard), ephemeral=True)
 
@@ -182,12 +191,7 @@ async def newbyngosink(interaction: discord.Interaction, type: Optional[app_comm
     """Generates a new board and creates a byngosink room."""
     await interaction.response.defer(thinking=True)
 
-    if type is not None:
-        fname = SILKSONG_MAIN if type.value != "Rando" else "silksong_rando.json"
-        pattern = (type.value == "Pattern")
-    else:
-        pattern = False,
-        fname = SILKSONG_MAIN
+    fname, gType = silkTypeToParams(type)
 
     if size is None:
         size = app_commands.Choice(name="5", value="5")
@@ -200,7 +204,7 @@ async def newbyngosink(interaction: discord.Interaction, type: Optional[app_comm
         players = 0
     
     thisBoard = ByngosinkGenerator(fname, int(size.value), noTags=noTags,
-                                   patternBoard=pattern, tagLimits=DEF_TAGLIMITS.copy()).export()
+                                   gameType=gType, tagLimits=DEF_TAGLIMITS.copy()).export()
     
     session = network.byngosinkClient()
     type = "Non-Lockout" if size.value == "5" else "Bingo6"
@@ -216,19 +220,14 @@ async def newbingosync(interaction: discord.Interaction, lockout: bool = False, 
     """Generates a new 5x5 board and creates a bingosync room with "fast" as the password."""
     await interaction.response.defer(thinking=True)
 
-    if type is not None:
-        fname = SILKSONG_MAIN if type.value != "Rando" else "silksong_rando.json"
-        pattern = (type.value == "Pattern")
-    else:
-        pattern = False,
-        fname = SILKSONG_MAIN
+    fname, gType = silkTypeToParams(type)
 
     noTags = progStringToTags(preset)
     if not lockout:
         noTags.append("lockout") 
 
     thisBoard = CaravanGenerator(fname, 5, noTags=noTags, tagLimits=DEF_TAGLIMITS.copy(),
-                                 patternBoard=pattern).export()
+                                 gameType=gType).export()
     bsSession = network.bingosyncClient()
     n, rId = bsSession.newRoom(json.dumps(thisBoard), lockout=lockout)
     bsSession.close()
@@ -242,19 +241,14 @@ async def newcaravan(interaction: discord.Interaction, lockout: bool = False, ty
     """Generates a new 6x6 board and creates a caravan room with "fast" as the password."""
     await interaction.response.defer(thinking=True)
 
-    if type is not None:
-        fname = SILKSONG_MAIN if type.value != "Rando" else "silksong_rando.json"
-        pattern = (type.value == "Pattern")
-    else:
-        pattern = False,
-        fname = SILKSONG_MAIN
+    fname, gType = silkTypeToParams(type)
 
     noTags = progStringToTags(preset)
     if not lockout:
         noTags.append("lockout") #exclude lockout-only goals
 
     thisBoard = CaravanGenerator(fname, 6, noTags=noTags, tagLimits=DEF_TAGLIMITS.copy(),
-                                 patternBoard=pattern).export()
+                                 gameType=gType).export()
     bsSession = network.caravanClient()
     n, rId = bsSession.newRoom(json.dumps(thisBoard), lockout=lockout)
     bsSession.close()
