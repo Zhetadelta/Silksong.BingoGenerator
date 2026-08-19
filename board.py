@@ -146,7 +146,7 @@ class Generator():
         exclus = []
         for exclusionGroup in self.exclusionSet:
             if goalName in exclusionGroup["unique"]:
-                if not self.patternBoard:
+                if self.gameType is not GameType.Pattern:
                     if "pattern" in exclusionGroup.keys() and exclusionGroup["pattern"]: #pattern-only exclusion
                         continue #skip this one
                 if "limit" not in exclusionGroup.keys() or exclusionGroup["limit"] == 1: #no limit or limit reached
