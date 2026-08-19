@@ -128,8 +128,11 @@ class Generator():
         for g in goalsDic["goals"]: #add weight=1 to all non-weighted goals for later
             if "weight" not in g.keys():
                 g["weight"] = 1
-            #check if we should exclude the goal based on options passed
-            goalTags = g["types"] + g["progression"]
+            if self.gameType == GameType.Rando: #remove progression field since it doesn't matter
+                goalTags = g["types"]
+            else:
+                #check if we should exclude the goal based on options passed
+                goalTags = g["types"] + g["progression"]
             for tag in goalTags:
                 if tag in self.noTags:
                     remGoals.append(g)
