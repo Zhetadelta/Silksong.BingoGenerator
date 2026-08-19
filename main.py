@@ -237,6 +237,7 @@ async def newbingosync(interaction: discord.Interaction, lockout: bool = False, 
 @client.tree.command()
 @app_commands.describe(preset="Tags to exclude based on preset categories.")
 @app_commands.choices(preset=prog_options())
+@app_commands.choices(type=board_type_options())
 async def newcaravan(interaction: discord.Interaction, lockout: bool = False, type: Optional[app_commands.Choice[str]] = None, 
                      preset: Optional[app_commands.Choice[str]] = None):
     """Generates a new 6x6 board and creates a caravan room with "fast" as the password."""
