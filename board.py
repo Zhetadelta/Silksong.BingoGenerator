@@ -266,9 +266,9 @@ class Generator():
 
         else: #default setting
             random.shuffle(goals) #mix em all up when we're done
-
-            for i, index in enumerate(indices):
-                goals.insert(index, forcedGoals[i])
+            if len(forcedGoals > 0): #if this was used
+                for i, index in enumerate(indices):
+                    goals.insert(index, forcedGoals[i])
             return goals
 
 class ByngosinkGenerator(Generator):
