@@ -266,7 +266,7 @@ class Generator():
 
         else: #default setting
             random.shuffle(goals) #mix em all up when we're done
-            if len(forcedGoals > 0): #if this was used
+            if len(forcedGoals) > 0: #if this was used
                 for i, index in enumerate(indices):
                     goals.insert(index, forcedGoals[i])
             return goals
