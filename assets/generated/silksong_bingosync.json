@@ -261,7 +261,7 @@
         "name": "Forebrothers Signis & Gron"
     },
     {
-        "name": "Defeat a Covetous Pilgrim"
+        "name": "Covetous Pilgrim Journal Entry"
     },
     {
         "name": "Cogwork Clapper Journal Entry"
@@ -552,7 +552,7 @@
         "name": "Activate Second Sentinel"
     },
     {
-        "name": "Meet Sherma in the Spa"
+        "name": "Open the Citadel Spa East Door"
     },
     {
         "name": "2 Silk Hearts"
@@ -573,9 +573,6 @@
         "name": "Get Cursed"
     },
     {
-        "name": "Witch Crest"
-    },
-    {
         "name": "Talk to Old Penitent"
     },
     {
@@ -591,7 +588,7 @@
         "name": "Listen to Pious Isamor"
     },
     {
-        "name": "Key of Heretic"
+        "name": "Heretic Key"
     },
     {
         "name": "Inspect Flintstone in Deep Docks"
@@ -609,16 +606,13 @@
         "name": "Fine Pins"
     },
     {
-        "name": "Garmond and Zaza"
+        "name": "Beat Garmond and Zaza"
     },
     {
         "name": "Kill Pebb"
     },
     {
         "name": "Upper Bilewater Flea"
-    },
-    {
-        "name": "Talk to Grishkin and Gilly"
     },
     {
         "name": "Cradle Map"

@@ -5,7 +5,7 @@
 
 **3 Donation Wishes** | Progression level: ['cloak'] | Other tags: ['quest', 'expensive']
 
-**Bellhome Key** | Progression level: ['clawline'] | Other tags: ['expensive', 'quest', 'npc']
+**Bellhome Key** | Progression level: ['act2'] | Other tags: ['expensive', 'quest', 'npc']
 
 **2 Hunt Wishes** | Progression level: ['cloak'] | Other tags: ['quest', 'blocking']
 
@@ -53,13 +53,13 @@
 
 **Warding Bell & Claw Mirror** | Progression level: ['act2'] | Other tags: ['tool']
 
-**Warding Bell & Sawtooth Circlet** | Progression level: ['clawline'] | Other tags: ['tool', 'craft']
+**Warding Bell & Sawtooth Circlet** | Progression level: ['clawline'] | Other tags: ['tool', 'craft', 'noforcing']
 
 **Magma Bell & Curveclaw** | Progression level: ['early'] | Other tags: ['tool', 'craft']
 
 **Weighted Belt & Ascendant's Grip** | Progression level: ['act2'] | Other tags: ['tool', 'expensive']
 
-**Scuttlebrace & Silkspeed** | Progression level: ['clawline'] | Other tags: ['tool', 'craft']
+**Scuttlebrace & Silkspeed** | Progression level: ['clawline'] | Other tags: ['tool', 'craft', 'noforcing']
 
 **Pimpillo & Voltvessels** | Progression level: ['faydown'] | Other tags: ['tool', 'craft']
 
@@ -77,13 +77,13 @@
 
 **Plasmium Phial** | Progression level: ['walljump'] | Other tags: ['tool', 'quest', 'key']
 
-**Memory Crystal** | Progression level: ['faydown'] | Other tags: ['tool']
+**Memory Crystal** | Progression level: ['faydown'] | Other tags: ['tool', 'noforcing']
 
 **Flintslate** | Progression level: ['walljump'] | Other tags: ['tool', 'key']
 
 **Repair Silkshot** | Progression level: ['widow'] | Other tags: ['tool', 'craft']
 
-**Multibinder** | Progression level: ['act2'] | Other tags: ['tool', 'quest', 'expensive']
+**Multibinder** | Progression level: ['widow'] | Other tags: ['tool', 'quest', 'expensive', 'noforcing']
 
 **Rosary Cannon** | Progression level: ['clawline'] | Other tags: ['tool', 'key']
 
@@ -91,13 +91,13 @@
 
 **Snare Setter** | Progression level: ['faydown'] | Other tags: ['tool']
 
-**Conchcutter** | Progression level: ['clawline'] | Other tags: ['tool', 'fight']
+**Conchcutter** | Progression level: ['clawline'] | Other tags: ['tool', 'fight', 'hard']
 
 **Pale Lake Craftmetal** | Progression level: ['faydown'] | Other tags: ['location', 'collection']
 
 **Upgrade Druid's Eye** | Progression level: ['faydown'] | Other tags: ['collection', 'scattered', 'tool']
 
-**Sell a Mossberry** | Progression level: ['early'] | Other tags: ['collection']
+**Sell a Mossberry** | Progression level: ['early'] | Other tags: ['collection', 'nolockout']
 
 **Wanderer's Crest** | Progression level: ['walljump'] | Other tags: ['upgrade', 'hardsave']
 
@@ -123,7 +123,7 @@
 
 **4 Silk Skills** | Progression level: ['act2'] | Other tags: ['upgrade', 'hardsave']
 
-**Farfields Escape Mask Shard** | Progression level: ['clawline'] | Other tags: ['upgrade', 'hard']
+**Farfields Escape Mask Shard** | Progression level: ['clawline'] | Other tags: ['upgrade', 'hard', 'noforcing']
 
 **Slab Mask Shard** | Progression level: ['faydown'] | Other tags: ['upgrade']
 
@@ -139,7 +139,7 @@
 
 **Wisp Thicket Mask Shard** | Progression level: ['faydown'] | Other tags: ['upgrade']
 
-**Mt. Fay Mask Shard** | Progression level: ['faydown'] | Other tags: ['upgrade']
+**Mt. Fay Mask Shard** | Progression level: ['faydown'] | Other tags: ['upgrade', 'noforcing']
 
 **Craggler** | Progression level: ['early'] | Other tags: ['fight']
 
@@ -153,7 +153,7 @@
 
 **Moss Mother Duo** | Progression level: ['widow'] | Other tags: ['fight']
 
-**Defeat a Rhinogrund** | Progression level: ['walljump'] | Other tags: ['fight', 'hard']
+**Defeat a Rhinogrund** | Progression level: ['walljump'] | Other tags: ['fight']
 
 **Disable the Clawmaidens** | Progression level: ['faydown'] | Other tags: ['fight']
 
@@ -175,7 +175,7 @@
 
 **Forebrothers Signis & Gron** | Progression level: ['clawline'] | Other tags: ['fight', 'hard', 'blocking']
 
-**Defeat a Covetous Pilgrim** | Progression level: ['cloak'] | Other tags: ['fight']
+**Covetous Pilgrim Journal Entry** | Progression level: ['cloak'] | Other tags: ['fight']
 
 **Cogwork Clapper Journal Entry** | Progression level: ['act2'] | Other tags: ['fight']
 
@@ -197,7 +197,7 @@
 
 **Talk to Loam** | Progression level: ['act2'] | Other tags: ['npc']
 
-**Talk to Mask Maker** | Progression level: ['faydown'] | Other tags: ['npc']
+**Talk to Mask Maker** | Progression level: ['faydown'] | Other tags: ['npc', 'noforcing']
 
 **Buy From Grindle (No String)** | Progression level: ['faydown'] | Other tags: ['npc']
 
@@ -213,7 +213,7 @@
 
 **Obtain 3 Craftmetal** | Progression level: ['act2'] | Other tags: ['collection', 'scattered', 'craft']
 
-**Obtain 5 Craftmetal** | Progression level: ['clawline'] | Other tags: ['collection', 'scattered', 'craft']
+**Obtain 5 Craftmetal** | Progression level: ['clawline'] | Other tags: ['collection', 'scattered', 'craft', 'noforcing']
 
 **Crustnut** | Progression level: ['clawline'] | Other tags: ['collection']
 
@@ -229,7 +229,7 @@
 
 **1 Extra Mask** | Progression level: ['widow'] | Other tags: ['upgrade']
 
-**2 Extra Masks** | Progression level: ['clawline'] | Other tags: ['upgrade']
+**2 Extra Masks** | Progression level: ['clawline'] | Other tags: ['upgrade', 'nolockout']
 
 **Pay for a Flea Spa** | Progression level: ['walljump'] | Other tags: ['npc', 'flea']
 
@@ -257,7 +257,7 @@
 
 **Meet Caravan at the Grand Gate [12]** | Progression level: ['act2'] | Other tags: ['flea']
 
-**Sinner's Road & Vaults Fleas [2]** | Progression level: ['clawline'] | Other tags: ['flea']
+**Sinner's Road & Vaults Fleas [2]** | Progression level: ['act2'] | Other tags: ['flea']
 
 **Sands of Karak Flea [1]** | Progression level: ['clawline'] | Other tags: ['flea']
 
@@ -265,7 +265,7 @@
 
 **Three Citadel Fleas** | Progression level: ['act2'] | Other tags: ['flea']
 
-**Mt. Fay Flea [1]** | Progression level: ['clawline'] | Other tags: ['flea']
+**Mt. Fay Flea [1]** | Progression level: ['faydown'] | Other tags: ['flea', 'noforcing']
 
 **Beat Big Flea** | Progression level: ['faydown'] | Other tags: ['fight']
 
@@ -279,13 +279,13 @@
 
 **Grand Gate Spool Fragment** | Progression level: ['act2'] | Other tags: ['upgrade']
 
-**High Halls Spool Fragment** | Progression level: ['faydown'] | Other tags: ['upgrade']
+**High Halls Spool Fragment** | Progression level: ['faydown'] | Other tags: ['upgrade', 'hard']
 
 **1 Spool Upgrade** | Progression level: ['early'] | Other tags: ['upgrade']
 
 **2 Spool Upgrades** | Progression level: ['walljump'] | Other tags: ['upgrade']
 
-**3 Spool Upgrades** | Progression level: ['clawline'] | Other tags: ['upgrade']
+**3 Spool Upgrades** | Progression level: ['clawline'] | Other tags: ['upgrade', 'noforcing']
 
 **Have 3 Rosary Necklaces (no purchasing)** | Progression level: ['act2'] | Other tags: ['collection', 'scattered']
 
@@ -295,7 +295,7 @@
 
 **Break 4 Shard Bundles (no purchasing)** | Progression level: ['walljump'] | Other tags: ['collection', 'scattered']
 
-**Break 6 Shard Bundles (no purchasing)** | Progression level: ['clawline'] | Other tags: ['collection', 'scattered']
+**Break 6 Shard Bundles (no purchasing)** | Progression level: ['clawline'] | Other tags: ['collection', 'scattered', 'noforcing']
 
 **Obtain 3 Silkeaters** | Progression level: ['walljump'] | Other tags: ['collection', 'scattered']
 
@@ -321,7 +321,7 @@
 
 **Obtain 4 Bone Scrolls** | Progression level: ['faydown'] | Other tags: ['collection', 'relic', 'scattered']
 
-**Talk to Shakra at 5 Locations** | Progression level: ['widow'] | Other tags: ['npc', 'missable']
+**Talk to Shakra at 5 Locations** | Progression level: ['widow'] | Other tags: ['npc', 'missable', 'nolockout']
 
 **Fix the Sinner's Road Bench** | Progression level: ['walljump'] | Other tags: ['location']
 
@@ -341,7 +341,7 @@
 
 **Skullwing Journal Entry** | Progression level: ['widow'] | Other tags: ['collection']
 
-**Cragglite Journal Entry** | Progression level: ['act2'] | Other tags: ['collection']
+**Cragglite Journal Entry** | Progression level: ['act2'] | Other tags: ['collection', 'nolockout']
 
 **Gromling Journal Entry** | Progression level: ['cloak'] | Other tags: ['collection', 'key']
 
@@ -357,11 +357,11 @@
 
 **Obtain 4 Beast Shards** | Progression level: ['act2'] | Other tags: ['fight']
 
-**Obtain 5 Beast Shards** | Progression level: ['faydown'] | Other tags: ['fight']
+**Obtain 5 Beast Shards** | Progression level: ['faydown'] | Other tags: ['fight', 'noforcing']
 
 **Bilewater Bellway** | Progression level: ['walljump'] | Other tags: ['location']
 
-**Talk to Forge Daughter and Twelfth Architect** | Progression level: ['clawline'] | Other tags: ['npc', 'blocking']
+**Talk to Forge Daughter and Twelfth Architect** | Progression level: ['clawline'] | Other tags: ['npc', 'blocking', 'noforcing']
 
 **1 Cogheart Piece** | Progression level: ['act2'] | Other tags: ['collection']
 
@@ -369,11 +369,11 @@
 
 **Activate Second Sentinel** | Progression level: ['faydown'] | Other tags: ['collection', 'npc']
 
-**Meet Sherma in the Spa** | Progression level: ['act2'] | Other tags: ['npc']
+**Open the Citadel Spa East Door** | Progression level: ['act2'] | Other tags: ['location']
 
 **2 Silk Hearts** | Progression level: ['faydown'] | Other tags: ['upgrade', 'fight', 'hardsave', 'hard']
 
-**Unravelled Journal Entry** | Progression level: ['faydown'] | Other tags: ['fight', 'hard']
+**Unravelled Journal Entry** | Progression level: ['clawline'] | Other tags: ['fight', 'hard']
 
 **Architect's Melody** | Progression level: ['clawline'] | Other tags: ['location', 'melody']
 
@@ -381,39 +381,35 @@
 
 **Vaultkeeper's Melody** | Progression level: ['act2'] | Other tags: ['fight', 'melody']
 
-**Get Cursed** | Progression level: ['clawline'] | Other tags: ['hardsave', 'npc']
+**Get Cursed** | Progression level: ['clawline'] | Other tags: ['hardsave', 'npc', 'nolockout']
 
-**Witch Crest** | Progression level: ['clawline'] | Other tags: ['hardsave']
-
-**Talk to Old Penitent** | Progression level: ['faydown'] | Other tags: ['npc', 'expensive']
+**Talk to Old Penitent** | Progression level: ['faydown'] | Other tags: ['npc']
 
 **2 Weaver Effigies** | Progression level: ['faydown'] | Other tags: ['collection', 'relic', 'scattered']
 
 **Kill 1 Shardillard** | Progression level: ['walljump'] | Other tags: ['fight']
 
-**Break 3 Wood Wasp Nests** | Progression level: ['walljump'] | Other tags: ['fight']
+**Break 3 Wood Wasp Nests** | Progression level: ['walljump'] | Other tags: ['location']
 
-**Listen to Pious Isamor** | Progression level: ['act2'] | Other tags: ['npc']
+**Listen to Pious Isamor** | Progression level: ['clawline'] | Other tags: ['npc', 'noforcing']
 
-**Key of Heretic** | Progression level: ['faydown'] | Other tags: ['collection']
+**Heretic Key** | Progression level: ['faydown'] | Other tags: ['collection']
 
 **Inspect Flintstone in Deep Docks** | Progression level: ['clawline'] | Other tags: ['bcollection', 'location']
 
-**Underworks Spool Fragments (2)** | Progression level: ['clawline'] | Other tags: ['upgrade']
+**Underworks Spool Fragments (2)** | Progression level: ['clawline'] | Other tags: ['upgrade', 'noforcing']
 
 **3 Psalm Cylinders** | Progression level: ['clawline'] | Other tags: ['collection', 'scattered', 'relic']
 
-**Wormways Memory Locket** | Progression level: ['walljump'] | Other tags: ['collection', 'locket', 'location']
+**Wormways Memory Locket** | Progression level: ['walljump'] | Other tags: ['collection', 'locket', 'location', 'key']
 
 **Fine Pins** | Progression level: ['act2'] | Other tags: ['quest']
 
-**Garmond and Zaza** | Progression level: ['clawline'] | Other tags: ['fight']
+**Beat Garmond and Zaza** | Progression level: ['clawline'] | Other tags: ['fight', 'missable']
 
 **Kill Pebb** | Progression level: ['walljump'] | Other tags: ['expensive', 'tool']
 
 **Upper Bilewater Flea** | Progression level: ['faydown'] | Other tags: ['flea']
-
-**Talk to Grishkin and Gilly** | Progression level: ['early'] | Other tags: ['npc']
 
 **Cradle Map** | Progression level: ['act3'] | Other tags: ['collection']
 

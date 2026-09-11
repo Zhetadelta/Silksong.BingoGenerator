@@ -72,7 +72,7 @@ orderedProgs = {
 class Generator():
     """Base class for generators."""
     def __init__(self, goalFilename, size, noTags = [], tagLimits = None, 
-                 gameName = GameName.Silksong, gameType = GameType.Bingo):
+                 gameName = GameName.Silksong, gameType = GameType.Bingo, lockout = False):
         self.size = size
         self.noTags = noTags
         self.noTags += DEF_NOTAGS
@@ -81,6 +81,11 @@ class Generator():
             self.noTags.append("blocking")
         self.gameName = gameName
         self.gameType = gameType
+        self.lockout = lockout
+        if self.lockout:
+            self.noTags.append("nolockout")
+        else:
+            self.noTags.append("lockout")
         with open(os.path.join(ASSETS_PATH, goalFilename)) as f: 
             goalsDic = json.load(f)
         self.goalSet, self.exclusionSet = self.getAllGoals(goalsDic)
@@ -228,7 +233,7 @@ class Generator():
                 goalName = newGoal["name"]
 
             #put it in the right bin
-            if len(forcedGoals) < forceCount and newGoal["progression"][0] == maxProg:
+            if len(forcedGoals) < forceCount and newGoal["progression"][0] == maxProg and not "noforcing" in goalTags:
                 forcedGoals.append(goalName)
             else:
                 goals.append(goalName)

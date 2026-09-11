@@ -121,7 +121,7 @@
 
 **Apostate Key** | Progression level: ['faydown'] | Other tags: ['collection']
 
-**Use a Simple Key in Deep Docks** | Progression level: ['early'] | Other tags: ['key', 'location', 'fight']
+**Open Deep Docks Key Door** | Progression level: ['early'] | Other tags: ['key', 'location', 'fight']
 
 **3 Silk Skills** | Progression level: ['widow'] | Other tags: ['upgrade', 'hardsave']
 
@@ -291,9 +291,9 @@
 
 **Break 8 Rosary Strings (no purchasing)** | Progression level: ['act2'] | Other tags: ['collection', 'scattered']
 
-**Break 4 Shard Bundles (no purchasing)** | Progression level: ['walljump'] | Other tags: ['collection', 'scattered']
+**Break 3 Shard Bundles (no purchasing)** | Progression level: ['walljump'] | Other tags: ['collection', 'scattered']
 
-**Break 6 Shard Bundles (no purchasing)** | Progression level: ['clawline'] | Other tags: ['collection', 'scattered']
+**Break 5 Shard Bundles (no purchasing)** | Progression level: ['clawline'] | Other tags: ['collection', 'scattered']
 
 **Obtain 3 Silkeaters** | Progression level: ['walljump'] | Other tags: ['collection', 'scattered']
 
@@ -425,11 +425,11 @@
 
 **4 Tool Pouch Upgrades/Crafting Kits** | Progression level: ['widow'] | Other tags: ['collection', 'scattered']
 
-**Defeat Marrow Arena** | Progression level: ['early'] | Other tags: ['fight']
+**Beat First Marrow Arena** | Progression level: ['early'] | Other tags: ['fight']
 
 **Karmelita Memory Locket** | Progression level: ['faydown'] | Other tags: ['locket']
 
-**3 Psalm Cylinders** | Progression level: ['act2'] | Other tags: ['collection', 'relic', 'scattered']
+**2 Psalm Cylinders** | Progression level: ['act2'] | Other tags: ['collection', 'relic', 'scattered']
 
 **Rune Rage** | Progression level: ['faydown'] | Other tags: ['upgrade', 'hardsave', 'fight', 'hard']
 
@@ -456,4 +456,6 @@
 **Hit Groal the Great** | Progression level: ['faydown'] | Other tags: ['fight']
 
 **Get or Check Throwing Ring** | Progression level: ['faydown'] | Other tags: ['collection', 'scattered', 'tool']
+
+**Shrine Guardian Seth** | Progression level: ['faydown'] | Other tags: ['collection', 'scattered', 'tool']
 
