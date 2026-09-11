@@ -60,7 +60,7 @@ LL_LIMITS = {
 #Default excluded tags
 DEF_NOTAGS = ["silly", "itemsync"]
 
-GameType = Enum('GameType', [('Bingo',1),('GTTOS',2),('Rando',3),('Pattern',4)])
+GameType = Enum('GameType', [('Bingo',1),('GTTOS',2),('Rando',3),('Pattern',4), ('NoForcing',10)])
 FOW_TYPES = [GameType.GTTOS]
 
 GameName = Enum('GameName', [('Silksong',1),('Mio',2)])
@@ -189,10 +189,10 @@ class Generator():
 
         orderedProg = orderedProgs[self.gameName]
         indices = self.forceIndices()
-        if self.gameType != GameType.Rando:
-            forceCount = len(indices)
-        else:
+        if self.gameType in [GameType.Rando, GameType.NoForcing]:
             forceCount = 0
+        else:
+            forceCount = len(indices)
         forcedGoals = []
         maxProg = "early"
         for prog in orderedProg:
@@ -217,7 +217,8 @@ class Generator():
                             self.removeGoalByName(newGoal["name"])
                             skip = True #remove goal from list and redraw
 
-            if goalsNeeded == 1 and len(forcedGoals) < forceCount and newGoal["progression"][0] != maxProg: 
+            elif (goalsNeeded <= forceCount - len(forcedGoals) and len(forcedGoals) < forceCount 
+                  and newGoal["progression"][0] != maxProg and "noforcing" not in goalTags): 
                 #need more max prog goals; unlikely to hit this code path but just in case.
                 skip = True
             if skip:
@@ -271,11 +272,14 @@ class Generator():
             return arrangedBoard
 
         else: #default setting
-            random.shuffle(goals) #mix em all up when we're done
-            if len(forcedGoals) > 0: #if this was used
-                for i, index in enumerate(indices):
-                    goals.insert(index, forcedGoals[i])
-            return goals
+            try:
+                random.shuffle(goals) #mix em all up when we're done
+                if len(forcedGoals) > 0: #if this was used
+                    for i, index in enumerate(indices):
+                        goals.insert(index, forcedGoals[i])
+                return goals
+            except IndexError:
+                return self.board()
 
 class ByngosinkGenerator(Generator):
     """Formats a generated board for Byngosink upload."""
@@ -442,5 +446,4 @@ if __name__ == "__main__":
     with open(os.path.join(ASSETS_PATH,COMPUTED_SUBDIR,"silksong_rando_readable.md"), "w") as f:
         f.writelines(GeneratorFormatter("silksong_rando.json").readableFormat())
 
-    print(ByngosinkGenerator("categorized_v3.json", 5, noTags=["faydown", "act3", "silksoar"], gameType=GameType.GTTOS).export())
-    print(CaravanGenerator("mio.json",5,gameName=GameName.Mio).export())
+    #do analysis
