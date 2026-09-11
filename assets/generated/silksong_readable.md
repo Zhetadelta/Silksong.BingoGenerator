@@ -371,7 +371,7 @@
 
 **Open the Citadel Spa East Door** | Progression level: ['act2'] | Other tags: ['location']
 
-**2 Silk Hearts** | Progression level: ['faydown'] | Other tags: ['upgrade', 'fight', 'hardsave', 'hard']
+**2 Silk Hearts** | Progression level: ['faydown'] | Other tags: ['upgrade', 'fight', 'hardsave', 'hard', 'noforcing']
 
 **Unravelled Journal Entry** | Progression level: ['clawline'] | Other tags: ['fight', 'hard']
 

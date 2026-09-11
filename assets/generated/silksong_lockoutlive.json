@@ -3099,7 +3099,8 @@
             "line_categories": [
                 "upgrade",
                 "fight",
-                "hard"
+                "hard",
+                "noforcing"
             ],
             "tooltip": "",
             "icons": []
