@@ -7,7 +7,7 @@ CONFIG_PATH = os.path.join("config","settings.dat")
 
 DEF_TAGLIMITS = {
         "craft" : 3,
-        "flea" : 4,
+        "flea" : 5,
         "expensive" : 2
     }
 
@@ -131,26 +131,23 @@ def silkTypeToParams(type):
 async def newboard(interaction: discord.Interaction, lockout: bool = False, preset: Optional[app_commands.Choice[str]] = None, size: Optional[app_commands.Choice[str]]=None):
     """Generates a new board for bingo."""
     noTags = progStringToTags(preset)
-    if not lockout:
-        noTags.append("lockout")
     if size is None:
         size = app_commands.Choice(name="5", value="5")
         
     thisBoard = CaravanGenerator(SILKSONG_MAIN, int(size.value), noTags=noTags, 
-                                     tagLimits=DEF_TAGLIMITS.copy()).export()
+                                     tagLimits=DEF_TAGLIMITS.copy(), lockout=lockout).export()
 
     await interaction.response.send_message(json.dumps(thisBoard), ephemeral=True)
 
 @client.tree.command()
 @app_commands.describe(preset="Tags to exclude based on preset categories.")
 @app_commands.choices(preset=prog_options())
-async def newotherside(interaction: discord.Interaction, preset: Optional[app_commands.Choice[str]] = None,
+async def otherside(interaction: discord.Interaction, preset: Optional[app_commands.Choice[str]] = None,
                        players: Optional[str] = "0"):
     """Generates a new board for byngosink's Get to the Other Side mode. Needs 100 goals!"""
     await interaction.response.defer(thinking=True)
 
     noTags = progStringToTags(preset)
-    noTags.append("lockout")
     thisBoard = ByngosinkGenerator(SILKSONG_MAIN, 10, noTags=noTags,
                                    gameType = GameType.GTTOS).export()
     session = network.byngosinkClient()
@@ -163,10 +160,9 @@ async def newotherside(interaction: discord.Interaction, preset: Optional[app_co
 @app_commands.choices(preset=prog_options())
 @app_commands.choices(size=size_options())
 @app_commands.describe(size="The side length of the board. Default: 5")
-async def newrosingy(interaction: discord.Interaction, preset: Optional[app_commands.Choice[str]] = None, size: Optional[app_commands.Choice[str]]=None):
+async def rosingy(interaction: discord.Interaction, preset: Optional[app_commands.Choice[str]] = None, size: Optional[app_commands.Choice[str]]=None):
     """Generates a new rosingy board. EXPERIMENTAL."""
     noTags = progStringToTags(preset)
-    noTags.append("lockout")
 
     if size is None:
         size = app_commands.Choice(name="5", value="5")
@@ -187,7 +183,7 @@ async def newrosingy(interaction: discord.Interaction, preset: Optional[app_comm
 @app_commands.choices(size=size_options())
 @app_commands.choices(type=board_type_options())
 @app_commands.describe(players="Number of teams to create. Don't fill out to create your own teams.")
-async def newbyngosink(interaction: discord.Interaction, type: Optional[app_commands.Choice[str]] = None, preset: Optional[app_commands.Choice[str]] = None, 
+async def byngosink(interaction: discord.Interaction, type: Optional[app_commands.Choice[str]] = None, preset: Optional[app_commands.Choice[str]] = None, 
                   players: Optional[str] = "0",  size: Optional[app_commands.Choice[str]] = None):
     """Generates a new board and creates a byngosink room."""
     await interaction.response.defer(thinking=True)
@@ -198,7 +194,6 @@ async def newbyngosink(interaction: discord.Interaction, type: Optional[app_comm
         size = app_commands.Choice(name="5", value="5")
 
     noTags = progStringToTags(preset)
-    noTags.append("lockout") #exclude lockout-only goals
     try:
         players = int(players)
     except ValueError:
@@ -216,7 +211,7 @@ async def newbyngosink(interaction: discord.Interaction, type: Optional[app_comm
 @app_commands.describe(preset="Tags to exclude based on preset categories.")
 @app_commands.choices(preset=prog_options())
 @app_commands.choices(type=board_type_options())
-async def newbingosync(interaction: discord.Interaction, lockout: bool = False, type: Optional[app_commands.Choice[str]] = None,
+async def bingosync(interaction: discord.Interaction, lockout: bool = False, type: Optional[app_commands.Choice[str]] = None,
                        preset: Optional[app_commands.Choice[str]] = None):
     """Generates a new 5x5 board and creates a bingosync room with "fast" as the password."""
     await interaction.response.defer(thinking=True)
@@ -224,11 +219,9 @@ async def newbingosync(interaction: discord.Interaction, lockout: bool = False, 
     fname, gType = silkTypeToParams(type)
 
     noTags = progStringToTags(preset)
-    if not lockout:
-        noTags.append("lockout") 
 
     thisBoard = CaravanGenerator(fname, 5, noTags=noTags, tagLimits=DEF_TAGLIMITS.copy(),
-                                 gameType=gType).export()
+                                 gameType=gType, lockout=lockout).export()
     bsSession = network.bingosyncClient()
     n, rId = bsSession.newRoom(json.dumps(thisBoard), lockout=lockout)
     bsSession.close()
@@ -238,7 +231,7 @@ async def newbingosync(interaction: discord.Interaction, lockout: bool = False, 
 @app_commands.describe(preset="Tags to exclude based on preset categories.")
 @app_commands.choices(preset=prog_options())
 @app_commands.choices(type=board_type_options())
-async def newcaravan(interaction: discord.Interaction, lockout: bool = False, type: Optional[app_commands.Choice[str]] = None, 
+async def caravan(interaction: discord.Interaction, lockout: bool = False, type: Optional[app_commands.Choice[str]] = None, 
                      preset: Optional[app_commands.Choice[str]] = None):
     """Generates a new 6x6 board and creates a caravan room with "fast" as the password."""
     await interaction.response.defer(thinking=True)
@@ -246,11 +239,9 @@ async def newcaravan(interaction: discord.Interaction, lockout: bool = False, ty
     fname, gType = silkTypeToParams(type)
 
     noTags = progStringToTags(preset)
-    if not lockout:
-        noTags.append("lockout") #exclude lockout-only goals
 
     thisBoard = CaravanGenerator(fname, 6, noTags=noTags, tagLimits=DEF_TAGLIMITS.copy(),
-                                 gameType=gType).export()
+                                 gameType=gType, lockout=lockout).export()
     bsSession = network.caravanClient()
     n, rId = bsSession.newRoom(json.dumps(thisBoard), lockout=lockout)
     bsSession.close()
@@ -258,7 +249,7 @@ async def newcaravan(interaction: discord.Interaction, lockout: bool = False, ty
 
 @client.tree.command()
 @app_commands.choices(size=size_options())
-async def newdoublingy(interaction: discord.Interaction, size: Optional[app_commands.Choice[str]]=None):
+async def doublingy(interaction: discord.Interaction, size: Optional[app_commands.Choice[str]]=None):
     """Generates a pair of doublingy rooms."""
     await interaction.response.defer(thinking=True)
     if size is None:
@@ -270,8 +261,8 @@ async def newdoublingy(interaction: discord.Interaction, size: Optional[app_comm
     elif size == 6:
         session = network.caravanClient()
         baseName = "https://caravan.kobold60.com"
-    act1Tags = ["act2", "clawline", "faydown", 'act3', 'silksoar', "lockout"]
-    act2Tags = ["early", "dash", "cloak", "walljump", "widow", 'act3', 'silksoar', "lockout"]
+    act1Tags = ["act2", "clawline", "faydown", 'act3', 'silksoar']
+    act2Tags = ["early", "dash", "cloak", "walljump", "widow", 'act3', 'silksoar']
 
     act1Board = CaravanGenerator(SILKSONG_MAIN, size, noTags=act1Tags, tagLimits=DEF_TAGLIMITS.copy()).export()
     act2Generator = CaravanGenerator(SILKSONG_MAIN, size, noTags=act2Tags, tagLimits=DEF_TAGLIMITS.copy())
@@ -285,7 +276,7 @@ async def newdoublingy(interaction: discord.Interaction, size: Optional[app_comm
     
 @client.tree.command()
 @app_commands.choices(size=size_options())
-async def newtriplingy(interaction: discord.Interaction, size: Optional[app_commands.Choice[str]]=None):
+async def triplingy(interaction: discord.Interaction, size: Optional[app_commands.Choice[str]]=None):
     """Generates a set of triplingy rooms."""
     await interaction.response.defer(thinking=True)
     if size is None:
@@ -297,9 +288,9 @@ async def newtriplingy(interaction: discord.Interaction, size: Optional[app_comm
     elif size == 6:
         session = network.caravanClient()
         baseName = "https://caravan.kobold60.com"
-    act1Tags = ["act2", "clawline", "faydown", 'act3', 'silksoar', "lockout"]
-    act2Tags = ["early", "dash", "cloak", "walljump", "widow", 'act3', 'silksoar', "lockout"]
-    act3Tags = ["early", "dash", "cloak", "walljump", "widow", "lockout", "act2", "clawline", "faydown"]
+    act1Tags = ["act2", "clawline", "faydown", 'act3', 'silksoar']
+    act2Tags = ["early", "dash", "cloak", "walljump", "widow", 'act3', 'silksoar']
+    act3Tags = ["early", "dash", "cloak", "walljump", "widow", "act2", "clawline", "faydown"]
 
     act1Board = CaravanGenerator(SILKSONG_MAIN, size, noTags=act1Tags, tagLimits=DEF_TAGLIMITS.copy()).export()
     act2Generator = CaravanGenerator(SILKSONG_MAIN, size, noTags=act2Tags, tagLimits=DEF_TAGLIMITS.copy())
@@ -486,7 +477,7 @@ class DrafoutUI(discord.ui.View):
 @app_commands.describe(opponent="Ping your opponent here!")
 @app_commands.choices(preset=prog_options())
 @app_commands.choices(size=size_options())
-async def newdraftout(interaction: discord.Interaction, opponent:str, preset: Optional[app_commands.Choice[str]] = None, size: Optional[app_commands.Choice[str]]=None):
+async def draftout(interaction: discord.Interaction, opponent:str, preset: Optional[app_commands.Choice[str]] = None, size: Optional[app_commands.Choice[str]]=None):
     """
     Draft goals into a lockout board.
     """
