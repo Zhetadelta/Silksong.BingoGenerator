@@ -639,7 +639,7 @@
       ]
     },
     {
-      "name": "Use a Simple Key in Deep Docks",
+      "name": "Open Deep Docks Key Door",
       "types": [
         "key",
         "location",
@@ -1503,7 +1503,7 @@
       ]
     },
     {
-      "name": "Break 4 Shard Bundles (no purchasing)",
+      "name": "Break 3 Shard Bundles (no purchasing)",
       "types": [
         "collection",
         "scattered"
@@ -1513,7 +1513,7 @@
       ]
     },
     {
-      "name": "Break 6 Shard Bundles (no purchasing)",
+      "name": "Break 5 Shard Bundles (no purchasing)",
       "types": [
         "collection",
         "scattered"
@@ -2219,7 +2219,7 @@
       ]
     },
     {
-      "name": "Defeat Marrow Arena",
+      "name": "Beat First Marrow Arena",
       "types": [
         "fight"
       ],
@@ -2237,7 +2237,7 @@
       ]
     },
     {
-      "name": "3 Psalm Cylinders",
+      "name": "2 Psalm Cylinders",
       "types": [
         "collection",
         "relic",
@@ -2376,6 +2376,17 @@
       "progression": [
         "faydown"
       ]
+    },
+    {
+      "name": "Shrine Guardian Seth",
+      "types": [
+        "collection",
+        "scattered",
+        "tool"
+      ],
+      "progression": [
+        "faydown"
+      ]
     }
   ],
   "exclusions": [
@@ -2438,8 +2449,8 @@
     },
     {
       "unique": [
-        "Break 6 Shard Bundles (no purchasing)",
-        "Break 4 Shard Bundles (no purchasing)"
+        "Break 3 Shard Bundles (no purchasing)",
+        "Break 5 Shard Bundles (no purchasing)"
       ]
     },
     {
@@ -2512,7 +2523,7 @@
     {
       "unique": [
         "Flintslate",
-        "Use a Simple Key in Deep Docks"
+        "Open Deep Docks Key Door"
       ]
     },
     {
@@ -2644,26 +2655,8 @@
     },
     {
       "unique": [
-        "3 Void Masses",
-        "6 Void Masses"
-      ]
-    },
-    {
-      "unique": [
         "Talk to Huntress",
         "Talk to Styx & Huntress"
-      ]
-    },
-    {
-      "limit": 4,
-      "unique": [
-        "Pollen Heart",
-        "Fight Seth",
-        "Clear First Coral Tower Arena",
-        "Hunter's Heart",
-        "Pale Stag",
-        "Verdania Fountain Orbs",
-        "Conjoined Heart"
       ]
     },
     {
