@@ -27,7 +27,7 @@
         "npc"
       ],
       "progression": [
-        "clawline"
+        "act2"
       ]
     },
     {
@@ -264,7 +264,8 @@
       "name": "Warding Bell & Sawtooth Circlet",
       "types": [
         "tool",
-        "craft"
+        "craft",
+        "noforcing"
       ],
       "progression": [
         "clawline"
@@ -297,7 +298,8 @@
       "name": "Scuttlebrace & Silkspeed",
       "types": [
         "tool",
-        "craft"
+        "craft",
+        "noforcing"
       ],
       "progression": [
         "clawline"
@@ -393,7 +395,8 @@
     {
       "name": "Memory Crystal",
       "types": [
-        "tool"
+        "tool",
+        "noforcing"
       ],
       "progression": [
         "faydown"
@@ -424,10 +427,11 @@
       "types": [
         "tool",
         "quest",
-        "expensive"
+        "expensive",
+        "noforcing"
       ],
       "progression": [
-        "act2"
+        "widow"
       ]
     },
     {
@@ -463,7 +467,8 @@
       "name": "Conchcutter",
       "types": [
         "tool",
-        "fight"
+        "fight",
+        "hard"
       ],
       "progression": [
         "clawline"
@@ -497,7 +502,8 @@
     {
       "name": "Sell a Mossberry",
       "types": [
-        "collection"
+        "collection",
+        "nolockout"
       ],
       "progression": [
         "early"
@@ -630,7 +636,8 @@
       "name": "Farfields Escape Mask Shard",
       "types": [
         "upgrade",
-        "hard"
+        "hard",
+        "noforcing"
       ],
       "progression": [
         "clawline"
@@ -709,7 +716,8 @@
     {
       "name": "Mt. Fay Mask Shard",
       "types": [
-        "upgrade"
+        "upgrade",
+        "noforcing"
       ],
       "progression": [
         "faydown"
@@ -775,8 +783,7 @@
     {
       "name": "Defeat a Rhinogrund",
       "types": [
-        "fight",
-        "hard"
+        "fight"
       ],
       "progression": [
         "walljump"
@@ -899,7 +906,7 @@
       ]
     },
     {
-      "name": "Defeat a Covetous Pilgrim",
+      "name": "Covetous Pilgrim Journal Entry",
       "types": [
         "fight"
       ],
@@ -1014,7 +1021,8 @@
     {
       "name": "Talk to Mask Maker",
       "types": [
-        "npc"
+        "npc",
+        "noforcing"
       ],
       "progression": [
         "faydown"
@@ -1098,7 +1106,8 @@
       "types": [
         "collection",
         "scattered",
-        "craft"
+        "craft",
+        "noforcing"
       ],
       "progression": [
         "clawline"
@@ -1175,7 +1184,8 @@
     {
       "name": "2 Extra Masks",
       "types": [
-        "upgrade"
+        "upgrade",
+        "nolockout"
       ],
       "progression": [
         "clawline"
@@ -1307,7 +1317,7 @@
         "flea"
       ],
       "progression": [
-        "clawline"
+        "act2"
       ]
     },
     {
@@ -1340,10 +1350,11 @@
     {
       "name": "Mt. Fay Flea [1]",
       "types": [
-        "flea"
+        "flea",
+        "noforcing"
       ],
       "progression": [
-        "clawline"
+        "faydown"
       ]
     },
     {
@@ -1416,7 +1427,8 @@
     {
       "name": "High Halls Spool Fragment",
       "types": [
-        "upgrade"
+        "upgrade",
+        "hard"
       ],
       "progression": [
         "faydown"
@@ -1446,7 +1458,8 @@
     {
       "name": "3 Spool Upgrades",
       "types": [
-        "upgrade"
+        "upgrade",
+        "noforcing"
       ],
       "progression": [
         "clawline"
@@ -1498,7 +1511,8 @@
       "name": "Break 6 Shard Bundles (no purchasing)",
       "types": [
         "collection",
-        "scattered"
+        "scattered",
+        "noforcing"
       ],
       "progression": [
         "clawline"
@@ -1635,7 +1649,8 @@
       "name": "Talk to Shakra at 5 Locations",
       "types": [
         "npc",
-        "missable"
+        "missable",
+        "nolockout"
       ],
       "progression": [
         "widow"
@@ -1730,7 +1745,8 @@
     {
       "name": "Cragglite Journal Entry",
       "types": [
-        "collection"
+        "collection",
+        "nolockout"
       ],
       "progression": [
         "act2"
@@ -1827,7 +1843,8 @@
     {
       "name": "Obtain 5 Beast Shards",
       "types": [
-        "fight"
+        "fight",
+        "noforcing"
       ],
       "progression": [
         "faydown"
@@ -1846,7 +1863,8 @@
       "name": "Talk to Forge Daughter and Twelfth Architect",
       "types": [
         "npc",
-        "blocking"
+        "blocking",
+        "noforcing"
       ],
       "progression": [
         "clawline"
@@ -1884,14 +1902,13 @@
       ]
     },
     {
-      "name": "Meet Sherma in the Spa",
+      "name": "Open the Citadel Spa East Door",
       "types": [
-        "npc"
+        "location"
       ],
       "progression": [
         "act2"
-      ],
-      "fow": "Meet Sherma in Songclave"
+      ]
     },
     {
       "name": "2 Silk Hearts",
@@ -1912,7 +1929,7 @@
         "hard"
       ],
       "progression": [
-        "faydown"
+        "clawline"
       ]
     },
     {
@@ -1950,16 +1967,8 @@
       "name": "Get Cursed",
       "types": [
         "hardsave",
-        "npc"
-      ],
-      "progression": [
-        "clawline"
-      ]
-    },
-    {
-      "name": "Witch Crest",
-      "types": [
-        "hardsave"
+        "npc",
+        "nolockout"
       ],
       "progression": [
         "clawline"
@@ -1990,8 +1999,7 @@
     {
       "name": "Talk to Old Penitent",
       "types": [
-        "npc",
-        "expensive"
+        "npc"
       ],
       "progression": [
         "faydown"
@@ -2020,7 +2028,7 @@
     {
       "name": "Break 3 Wood Wasp Nests",
       "types": [
-        "fight"
+        "location"
       ],
       "progression": [
         "walljump"
@@ -2029,14 +2037,15 @@
     {
       "name": "Listen to Pious Isamor",
       "types": [
-        "npc"
+        "npc",
+        "noforcing"
       ],
       "progression": [
-        "act2"
+        "clawline"
       ]
     },
     {
-      "name": "Key of Heretic",
+      "name": "Heretic Key",
       "types": [
         "collection"
       ],
@@ -2057,7 +2066,8 @@
     {
       "name": "Underworks Spool Fragments (2)",
       "types": [
-        "upgrade"
+        "upgrade",
+        "noforcing"
       ],
       "progression": [
         "clawline"
@@ -2079,7 +2089,8 @@
       "types": [
         "collection",
         "locket",
-        "location"
+        "location",
+        "key"
       ],
       "progression": [
         "walljump"
@@ -2095,12 +2106,16 @@
       ]
     },
     {
-      "name": "Garmond and Zaza",
+      "name": "Beat Garmond and Zaza",
       "types": [
-        "fight"
+        "fight",
+        "missable"
       ],
       "progression": [
         "clawline"
+      ],
+      "fow": [
+        "See Garmond and Zaza"
       ]
     },
     {
@@ -2120,15 +2135,6 @@
       ],
       "progression": [
         "faydown"
-      ]
-    },
-    {
-      "name": "Talk to Grishkin and Gilly",
-      "types": [
-        "npc"
-      ],
-      "progression": [
-        "early"
       ]
     },
     {

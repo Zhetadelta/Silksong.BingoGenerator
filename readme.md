@@ -37,15 +37,19 @@ A goal must be a dictionary as follows:
 
 #### Possible types:
 
-"craft", "flea", "key", "tool", "melody", "quest", "locket", "upgrade", "fight", "npc", "location", "collection", "scattered", "relic", "heart", "hardsave", "blocking", "hard", "expensive", "itemsync", "silly"
+"craft", "flea", "key", "tool", "melody", "quest", "locket", "upgrade", "fight", "npc", "location", "collection", "scattered", "relic", "heart", "hardsave", "blocking", "hard", "expensive", "noforcing", "nolockout", "itemsync", "silly"
 
-#### Opt-in types
+#### Special types
+
+The following types have a special impact on generation: 
+
+`noforcing` prevents a goal from being placed in the generator-calculated line-blocking spot. `nolockout` excludes the goal from being placed on lockout boards.
 
 The following types are excluded by default and must be opted into manually: silly, itemsync
 
 - `"progression" : [string]` Progression stage when the goal is expected to be achievable. Goals must have at least one, but some (such as ranges) can have multiple.
 
-#### Progression strings:
+#### Progression strings (Silksong):
 
 "early", "dash", "cloak", "walljump", "widow", "act2", "clawline", "faydown", "act3", "silksoar"
 
