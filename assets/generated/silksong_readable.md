@@ -1,3 +1,6 @@
+# Goalset Version: 3.0
+
+
 **2 Donation Wishes** | Progression level: ['cloak'] | Other tags: ['quest']
 
 **3 Donation Wishes** | Progression level: ['cloak'] | Other tags: ['quest', 'expensive']
@@ -111,8 +114,6 @@
 **Sharpdart** | Progression level: ['cloak'] | Other tags: ['upgrade', 'key', 'hardsave']
 
 **Evolved Hunter's Crest** | Progression level: ['widow'] | Other tags: ['upgrade', 'hardsave']
-
-**Faydown Cloak** | Progression level: ['faydown'] | Other tags: ['upgrade', 'hardsave', 'blocking']
 
 **Apostate Key** | Progression level: ['faydown'] | Other tags: ['collection']
 
@@ -383,6 +384,36 @@
 **Get Cursed** | Progression level: ['clawline'] | Other tags: ['hardsave', 'npc']
 
 **Witch Crest** | Progression level: ['clawline'] | Other tags: ['hardsave']
+
+**Talk to Old Penitent** | Progression level: ['faydown'] | Other tags: ['npc', 'expensive']
+
+**2 Weaver Effigies** | Progression level: ['faydown'] | Other tags: ['collection', 'relic', 'scattered']
+
+**Kill 1 Shardillard** | Progression level: ['walljump'] | Other tags: ['fight']
+
+**Break 3 Wood Wasp Nests** | Progression level: ['walljump'] | Other tags: ['fight']
+
+**Listen to Pious Isamor** | Progression level: ['act2'] | Other tags: ['npc']
+
+**Key of Heretic** | Progression level: ['faydown'] | Other tags: ['collection']
+
+**Inspect Flintstone in Deep Docks** | Progression level: ['clawline'] | Other tags: ['bcollection', 'location']
+
+**Underworks Spool Fragments (2)** | Progression level: ['clawline'] | Other tags: ['upgrade']
+
+**3 Psalm Cylinders** | Progression level: ['clawline'] | Other tags: ['collection', 'scattered', 'relic']
+
+**Wormways Memory Locket** | Progression level: ['walljump'] | Other tags: ['collection', 'locket', 'location']
+
+**Fine Pins** | Progression level: ['act2'] | Other tags: ['quest']
+
+**Garmond and Zaza** | Progression level: ['clawline'] | Other tags: ['fight']
+
+**Kill Pebb** | Progression level: ['walljump'] | Other tags: ['expensive', 'tool']
+
+**Upper Bilewater Flea** | Progression level: ['faydown'] | Other tags: ['flea']
+
+**Talk to Grishkin and Gilly** | Progression level: ['early'] | Other tags: ['npc']
 
 **Cradle Map** | Progression level: ['act3'] | Other tags: ['collection']
 

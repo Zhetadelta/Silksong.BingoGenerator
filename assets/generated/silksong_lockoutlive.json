@@ -32,7 +32,8 @@
             "relic": 60,
             "blocking": 100,
             "scattered": 100,
-            "hard": 100
+            "hard": 100,
+            "bcollection": 100
         }
     },
     "objectives": [
@@ -977,24 +978,6 @@
             ],
             "line_categories": [
                 "upgrade"
-            ],
-            "tooltip": "",
-            "icons": []
-        },
-        {
-            "goal": "Faydown Cloak",
-            "progression": [
-                "n"
-            ],
-            "range": [],
-            "individual_limit": 1,
-            "board_categories": [
-                "faydown",
-                "hardsave"
-            ],
-            "line_categories": [
-                "upgrade",
-                "blocking"
             ],
             "tooltip": "",
             "icons": []
@@ -3196,6 +3179,253 @@
                 "hardsave"
             ],
             "line_categories": [],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Talk to Old Penitent",
+            "progression": [
+                "n"
+            ],
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "faydown",
+                "expensive"
+            ],
+            "line_categories": [
+                "npc"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "2 Weaver Effigies",
+            "progression": [
+                "n"
+            ],
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "faydown"
+            ],
+            "line_categories": [
+                "collection",
+                "relic",
+                "scattered"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Kill 1 Shardillard",
+            "progression": [
+                "m"
+            ],
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "walljump"
+            ],
+            "line_categories": [
+                "fight"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Break 3 Wood Wasp Nests",
+            "progression": [
+                "m"
+            ],
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "walljump"
+            ],
+            "line_categories": [
+                "fight"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Listen to Pious Isamor",
+            "progression": [
+                "l"
+            ],
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "act2"
+            ],
+            "line_categories": [
+                "npc"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Key of Heretic",
+            "progression": [
+                "n"
+            ],
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "faydown"
+            ],
+            "line_categories": [
+                "collection"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Inspect Flintstone in Deep Docks",
+            "progression": [
+                "l"
+            ],
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "clawline"
+            ],
+            "line_categories": [
+                "bcollection",
+                "location"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Underworks Spool Fragments (2)",
+            "progression": [
+                "l"
+            ],
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "clawline"
+            ],
+            "line_categories": [
+                "upgrade"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "3 Psalm Cylinders",
+            "progression": [
+                "l"
+            ],
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "clawline"
+            ],
+            "line_categories": [
+                "collection",
+                "scattered",
+                "relic"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Wormways Memory Locket",
+            "progression": [
+                "m"
+            ],
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "walljump"
+            ],
+            "line_categories": [
+                "collection",
+                "locket",
+                "location"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Fine Pins",
+            "progression": [
+                "l"
+            ],
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "act2"
+            ],
+            "line_categories": [
+                "quest"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Garmond and Zaza",
+            "progression": [
+                "l"
+            ],
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "clawline"
+            ],
+            "line_categories": [
+                "fight"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Kill Pebb",
+            "progression": [
+                "m"
+            ],
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "walljump",
+                "expensive",
+                "tool"
+            ],
+            "line_categories": [],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Upper Bilewater Flea",
+            "progression": [
+                "n"
+            ],
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "faydown",
+                "flea"
+            ],
+            "line_categories": [],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Talk to Grishkin and Gilly",
+            "progression": [
+                "e"
+            ],
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "early"
+            ],
+            "line_categories": [
+                "npc"
+            ],
             "tooltip": "",
             "icons": []
         }

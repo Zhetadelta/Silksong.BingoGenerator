@@ -1,3 +1,6 @@
+# Goalset Version: 3.0
+
+
 **2 Donation Wishes** | Progression level: ['cloak'] | Other tags: ['quest']
 
 **3 Donation Wishes** | Progression level: ['cloak'] | Other tags: ['quest', 'expensive']
@@ -374,61 +377,17 @@
 
 **Witch Crest** | Progression level: ['clawline'] | Other tags: ['hardsave']
 
-**Cradle Map** | Progression level: ['act3'] | Other tags: ['collection']
-
-**Enter Act 3** | Progression level: ['act3'] | Other tags: ['hardsave', 'blocking']
-
 **Beastling Call** | Progression level: ['faydown'] | Other tags: ['fight', 'blocking']
-
-**3 Void Masses** | Progression level: ['act3'] | Other tags: ['collection', 'scattered']
-
-**6 Void Masses** | Progression level: ['act3'] | Other tags: ['collection', 'scattered']
-
-**Save Pinmaster Plinney** | Progression level: ['act3'] | Other tags: ['fight', 'npc', 'location']
-
-**Talk to Flick at Survivor's Camp** | Progression level: ['act3'] | Other tags: ['npc']
 
 **3 Non-Hunter Crests** | Progression level: ['act2'] | Other tags: ['upgrade', 'hardsave']
 
-**Defeat a Black-threaded Boss** | Progression level: ['act3'] | Other tags: ['fight']
-
 **Pin Badge** | Progression level: ['clawline'] | Other tags: ['fight']
-
-**Abyss Map** | Progression level: ['act3'] | Other tags: ['location']
-
-**Verdania Map** | Progression level: ['act3'] | Other tags: ['location']
-
-**1 Arcane Egg** | Progression level: ['act3'] | Other tags: ['relic', 'collection']
-
-**Shadow Charger Journal Entry** | Progression level: ['act3'] | Other tags: ['collection']
-
-**Fight Seth** | Progression level: ['silksoar'] | Other tags: ['fight']
-
-**Pollen Heart** | Progression level: ['silksoar'] | Other tags: ['fight', 'heart']
-
-**Hunter's Heart** | Progression level: ['silksoar'] | Other tags: ['fight', 'heart']
-
-**Pale Stag** | Progression level: ['silksoar'] | Other tags: ['fight']
 
 **Inspect Magnetite in Brightvein** | Progression level: ['faydown'] | Other tags: ['collection', 'location']
 
-**Verdania Fountain Orbs** | Progression level: ['silksoar'] | Other tags: ['fight']
-
-**Conjoined Heart** | Progression level: ['silksoar'] | Other tags: ['fight', 'heart']
-
-**Pale Nails** | Progression level: ['silksoar'] | Other tags: ['upgrade']
-
 **Clear First Coral Tower Arena** | Progression level: ['faydown'] | Other tags: ['fight', 'hard']
 
-**Tormented Trobbio** | Progression level: ['silksoar'] | Other tags: ['fight']
-
 **Visit Styx's Mask Room** | Progression level: ['faydown'] | Other tags: ['location', 'npc']
-
-**Talk to Mr. Mushroom** | Progression level: ['silksoar'] | Other tags: ['npc']
-
-**Surface Memento** | Progression level: ['silksoar'] | Other tags: ['hard', 'collection', 'location']
-
-**Imoba Journal Entry** | Progression level: ['silksoar'] | Other tags: ['collection']
 
 **Watcher at the Edge** | Progression level: ['faydown'] | Other tags: ['fight', 'hard']
 

@@ -8,6 +8,7 @@ ASSETS_PATH = "assets"
 COMPUTED_SUBDIR = "generated"
 GOALS_FILENAME = "silksong-v6.json"
 CAT_FILENAME = "categorized_v3.json"
+GOALSET_VER = "3.0"
 
 #Lockout.live formatting
 BOARD_TYPES = [
@@ -306,7 +307,7 @@ class GeneratorFormatter(Generator):
         """
         Outputs a list of goals in nice, readable formatting.
         """
-        linesList = []
+        linesList = [f"# Goalset Version: {GOALSET_VER}\n\n\n"]
         for goalDic in self.goalSet:
             if "range" in goalDic.keys():
                 for x in goalDic["range"]:

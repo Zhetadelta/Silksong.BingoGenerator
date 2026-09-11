@@ -587,17 +587,6 @@
       ]
     },
     {
-      "name": "Faydown Cloak",
-      "types": [
-        "upgrade",
-        "hardsave",
-        "blocking"
-      ],
-      "progression": [
-        "faydown"
-      ]
-    },
-    {
       "name": "Apostate Key",
       "types": [
         "collection"
@@ -1996,6 +1985,150 @@
       ],
       "progression": [
         "act2"
+      ]
+    },
+    {
+      "name": "Talk to Old Penitent",
+      "types": [
+        "npc",
+        "expensive"
+      ],
+      "progression": [
+        "faydown"
+      ]
+    },
+    {
+      "name": "2 Weaver Effigies",
+      "types": [
+        "collection",
+        "relic",
+        "scattered"
+      ],
+      "progression": [
+        "faydown"
+      ]
+    },
+    {
+      "name": "Kill 1 Shardillard",
+      "types": [
+        "fight"
+      ],
+      "progression": [
+        "walljump"
+      ]
+    },
+    {
+      "name": "Break 3 Wood Wasp Nests",
+      "types": [
+        "fight"
+      ],
+      "progression": [
+        "walljump"
+      ]
+    },
+    {
+      "name": "Listen to Pious Isamor",
+      "types": [
+        "npc"
+      ],
+      "progression": [
+        "act2"
+      ]
+    },
+    {
+      "name": "Key of Heretic",
+      "types": [
+        "collection"
+      ],
+      "progression": [
+        "faydown"
+      ]
+    },
+    {
+      "name": "Inspect Flintstone in Deep Docks",
+      "types": [
+        "bcollection",
+        "location"
+      ],
+      "progression": [
+        "clawline"
+      ]
+    },
+    {
+      "name": "Underworks Spool Fragments (2)",
+      "types": [
+        "upgrade"
+      ],
+      "progression": [
+        "clawline"
+      ]
+    },
+    {
+      "name": "3 Psalm Cylinders",
+      "types": [
+        "collection",
+        "scattered",
+        "relic"
+      ],
+      "progression": [
+        "clawline"
+      ]
+    },
+    {
+      "name": "Wormways Memory Locket",
+      "types": [
+        "collection",
+        "locket",
+        "location"
+      ],
+      "progression": [
+        "walljump"
+      ]
+    },
+    {
+      "name": "Fine Pins",
+      "types": [
+        "quest"
+      ],
+      "progression": [
+        "act2"
+      ]
+    },
+    {
+      "name": "Garmond and Zaza",
+      "types": [
+        "fight"
+      ],
+      "progression": [
+        "clawline"
+      ]
+    },
+    {
+      "name": "Kill Pebb",
+      "types": [
+        "expensive",
+        "tool"
+      ],
+      "progression": [
+        "walljump"
+      ]
+    },
+    {
+      "name": "Upper Bilewater Flea",
+      "types": [
+        "flea"
+      ],
+      "progression": [
+        "faydown"
+      ]
+    },
+    {
+      "name": "Talk to Grishkin and Gilly",
+      "types": [
+        "npc"
+      ],
+      "progression": [
+        "early"
       ]
     },
     {
