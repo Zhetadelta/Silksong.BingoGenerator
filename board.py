@@ -293,8 +293,8 @@ class CaravanGenerator(Generator):
 
 class GeneratorFormatter(Generator):
     """Class with functions to export files. Don't use to generate boards."""
-    def __init__(self, goalFilename):
-        super().__init__(goalFilename, 5, noTags = [], tagLimits = [], gameType=GameType.Bingo)
+    def __init__(self, goalFilename, gameName=GameName.Silksong):
+        super().__init__(goalFilename, 5, noTags = [], tagLimits = [], gameName=gameName, gameType=GameType.Bingo)
 
     def board(self):
         raise NotImplementedError
@@ -316,7 +316,10 @@ class GeneratorFormatter(Generator):
         """
         Outputs a list of goals in nice, readable formatting.
         """
-        linesList = [f"# Goalset Version: {GOALSET_VER}\n\n\n"]
+        if self.gameName == GameName.Silksong:
+            linesList = [f"# Goalset Version: {GOALSET_VER}\n\n\n"]
+        else:
+            linesList = []
         for goalDic in self.goalSet:
             if "range" in goalDic.keys():
                 for x in goalDic["range"]:
@@ -441,7 +444,7 @@ if __name__ == "__main__":
         f.writelines(GeneratorFormatter("categorized_v3.json").readableFormat())
 
     with open(os.path.join(ASSETS_PATH,COMPUTED_SUBDIR,"mio_readable.md"), "w") as f:
-        f.writelines(GeneratorFormatter("mio.json").readableFormat())
+        f.writelines(GeneratorFormatter("mio.json", gameName=GameName.Mio).readableFormat())
 
     with open(os.path.join(ASSETS_PATH,COMPUTED_SUBDIR,"silksong_rando_readable.md"), "w") as f:
         f.writelines(GeneratorFormatter("silksong_rando.json").readableFormat())

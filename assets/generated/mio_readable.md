@@ -1,6 +1,3 @@
-# Goalset Version: 3.0
-
-
 **Recall Asma's Voice** | Progression level: ['1skill'] | Other tags: ['npc']
 
 **Free Rad** | Progression level: ['early'] | Other tags: ['npc']
