@@ -77,6 +77,7 @@ class Generator():
         self.noTags = noTags
         self.noTags += DEF_NOTAGS
         self.tagLimits = tagLimits
+        self.baseTagLimits = self.tagLimits.copy()
         if gameType == GameType.Pattern:
             self.noTags.append("blocking")
         self.gameName = gameName
@@ -280,6 +281,7 @@ class Generator():
                 return goals
             except IndexError:
                 self.goalSet = self.baseSet.copy()
+                self.tagLimits = self.baseTagLimits.copy()
                 return self.board()
 
 class ByngosinkGenerator(Generator):
