@@ -217,7 +217,7 @@
 
 **Crustnut** | Progression level: ['clawline'] | Other tags: ['collection']
 
-**Mossberry Soup** | Progression level: ['act2'] | Other tags: ['collection']
+**Mossberry Stew** | Progression level: ['act2'] | Other tags: ['collection']
 
 **Vintage Nectar** | Progression level: ['act2'] | Other tags: ['npc', 'collection', 'expensive']
 
