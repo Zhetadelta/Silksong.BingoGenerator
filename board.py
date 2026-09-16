@@ -279,6 +279,7 @@ class Generator():
                         goals.insert(index, forcedGoals[i])
                 return goals
             except IndexError:
+                self.goalSet = self.baseSet.copy()
                 return self.board()
 
 class ByngosinkGenerator(Generator):
@@ -430,23 +431,30 @@ class DraftoutGenerator(Generator):
         return self.goals
 
 if __name__ == "__main__":
-    ####dump the current format for lockout.live
-    with open(os.path.join(ASSETS_PATH,COMPUTED_SUBDIR,"silksong_lockoutlive.json"), "w") as f:
-        json.dump(GeneratorFormatter("categorized_v3.json").lockoutFormat(), f, indent=4)
+ #   ####dump the current format for lockout.live
+    #with open(os.path.join(ASSETS_PATH,COMPUTED_SUBDIR,"silksong_lockoutlive.json"), "w") as f:
+        #json.dump(GeneratorFormatter("categorized_v3.json").lockoutFormat(), f, indent=4)
 
-    ####dump the current format for bingosync
-    with open(os.path.join(ASSETS_PATH,COMPUTED_SUBDIR,"silksong_bingosync.json"), "w") as f:
-        json.dump(GeneratorFormatter("categorized_v3.json").bingosyncFormat(), f, indent=4)
-    #print("File dumped.")
+    #####dump the current format for bingosync
+    #with open(os.path.join(ASSETS_PATH,COMPUTED_SUBDIR,"silksong_bingosync.json"), "w") as f:
+        #json.dump(GeneratorFormatter("categorized_v3.json").bingosyncFormat(), f, indent=4)
+    ##print("File dumped.")
 
-    ####Generate sophont-readable list of goals
-    with open(os.path.join(ASSETS_PATH,COMPUTED_SUBDIR,"silksong_readable.md"), "w") as f:
-        f.writelines(GeneratorFormatter("categorized_v3.json").readableFormat())
+    #####Generate sophont-readable list of goals
+    #with open(os.path.join(ASSETS_PATH,COMPUTED_SUBDIR,"silksong_readable.md"), "w") as f:
+        #f.writelines(GeneratorFormatter("categorized_v3.json").readableFormat())
 
-    with open(os.path.join(ASSETS_PATH,COMPUTED_SUBDIR,"mio_readable.md"), "w") as f:
-        f.writelines(GeneratorFormatter("mio.json", gameName=GameName.Mio).readableFormat())
+    #with open(os.path.join(ASSETS_PATH,COMPUTED_SUBDIR,"mio_readable.md"), "w") as f:
+        #f.writelines(GeneratorFormatter("mio.json", gameName=GameName.Mio).readableFormat())
 
-    with open(os.path.join(ASSETS_PATH,COMPUTED_SUBDIR,"silksong_rando_readable.md"), "w") as f:
-        f.writelines(GeneratorFormatter("silksong_rando.json").readableFormat())
+    #with open(os.path.join(ASSETS_PATH,COMPUTED_SUBDIR,"silksong_rando_readable.md"), "w") as f:
+        #f.writelines(GeneratorFormatter("silksong_rando.json").readableFormat())
 
-    #do analysis
+    #bug tracking
+    for i in range(50):
+        CaravanGenerator("categorized_v3.json", 5, noTags = ["hard", "faydown", 'act3', 'silksoar'], 
+                         tagLimits={
+            "craft" : 3,
+            "flea" : 5,
+            "expensive" : 2
+            }, gameType=GameType.Bingo, lockout=False).export()
