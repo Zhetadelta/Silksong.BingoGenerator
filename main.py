@@ -209,11 +209,12 @@ async def byngosink(interaction: discord.Interaction, type: Optional[app_command
 
 @client.tree.command()
 @app_commands.describe(preset="Tags to exclude based on preset categories.")
+@app_commands.describe(password="Password for the room. Defaults to 'fast'.")
 @app_commands.choices(preset=prog_options())
 @app_commands.choices(type=board_type_options())
 async def bingosync(interaction: discord.Interaction, lockout: bool = False, type: Optional[app_commands.Choice[str]] = None,
-                       preset: Optional[app_commands.Choice[str]] = None):
-    """Generates a new 5x5 board and creates a bingosync room with "fast" as the password."""
+                       preset: Optional[app_commands.Choice[str]] = None, password: Optional[str] = "fast"):
+    """Generates a new 5x5 board and creates a bingosync room with "fast" as the default password."""
     await interaction.response.defer(thinking=True)
 
     fname, gType = silkTypeToParams(type)
@@ -223,17 +224,18 @@ async def bingosync(interaction: discord.Interaction, lockout: bool = False, typ
     thisBoard = CaravanGenerator(fname, 5, noTags=noTags, tagLimits=DEF_TAGLIMITS.copy(),
                                  gameType=gType, lockout=lockout).export()
     bsSession = network.bingosyncClient()
-    n, rId = bsSession.newRoom(json.dumps(thisBoard), lockout=lockout)
+    n, rId = bsSession.newRoom(json.dumps(thisBoard), lockout=lockout, passphrase=password)
     bsSession.close()
     await interaction.followup.send(f"Room: {n} created at https://bingosync.com/room/{rId}")
 
 @client.tree.command()
 @app_commands.describe(preset="Tags to exclude based on preset categories.")
+@app_commands.describe(password="Password for the room. Defaults to 'fast'.")
 @app_commands.choices(preset=prog_options())
 @app_commands.choices(type=board_type_options())
 async def caravan(interaction: discord.Interaction, lockout: bool = False, type: Optional[app_commands.Choice[str]] = None, 
-                     preset: Optional[app_commands.Choice[str]] = None):
-    """Generates a new 6x6 board and creates a caravan room with "fast" as the password."""
+                     preset: Optional[app_commands.Choice[str]] = None, password: Optional[str] = "fast"):
+    """Generates a new 6x6 board and creates a caravan room with "fast" as the default password."""
     await interaction.response.defer(thinking=True)
 
     fname, gType = silkTypeToParams(type)
@@ -243,7 +245,7 @@ async def caravan(interaction: discord.Interaction, lockout: bool = False, type:
     thisBoard = CaravanGenerator(fname, 6, noTags=noTags, tagLimits=DEF_TAGLIMITS.copy(),
                                  gameType=gType, lockout=lockout).export()
     bsSession = network.caravanClient()
-    n, rId = bsSession.newRoom(json.dumps(thisBoard), lockout=lockout)
+    n, rId = bsSession.newRoom(json.dumps(thisBoard), lockout=lockout, passphrase=password)
     bsSession.close()
     await interaction.followup.send(f"Room: {n} created at https://caravan.kobold60.com/room/{rId}")
 
