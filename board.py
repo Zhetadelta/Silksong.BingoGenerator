@@ -77,7 +77,10 @@ class Generator():
         self.noTags = noTags
         self.noTags += DEF_NOTAGS
         self.tagLimits = tagLimits
-        self.baseTagLimits = self.tagLimits.copy()
+        if self.tagLimits is None:
+            self.baseTagLimits = None
+        else:
+            self.baseTagLimits = self.tagLimits.copy()
         if gameType == GameType.Pattern:
             self.noTags.append("blocking")
         self.gameName = gameName
