@@ -123,18 +123,27 @@ def silkTypeToParams(type):
         return ("silksong_rando.json", GameType.Rando)
     elif type.value.strip().lower() == "pattern":
         return (SILKSONG_MAIN, GameType.Pattern)
+    else:
+        return (SILKSONG_MAIN, GameType.Bingo)
 
 @client.tree.command()
 @app_commands.describe(preset="Tags to exclude based on preset categories.")
 @app_commands.choices(preset=prog_options())
 @app_commands.choices(size=size_options())
-async def newboard(interaction: discord.Interaction, lockout: bool = False, preset: Optional[app_commands.Choice[str]] = None, size: Optional[app_commands.Choice[str]]=None):
+@app_commands.choices(type=board_type_options())
+async def newboard(interaction: discord.Interaction, lockout: bool = False, 
+                   preset: Optional[app_commands.Choice[str]] = None, 
+                   size: Optional[app_commands.Choice[str]]=None,
+                   type: Optional[app_commands.Choice[str]]=None):
     """Generates a new board for bingo."""
+
+    fname, gType = silkTypeToParams(type)
+
     noTags = progStringToTags(preset)
     if size is None:
         size = app_commands.Choice(name="5", value="5")
         
-    thisBoard = CaravanGenerator(SILKSONG_MAIN, int(size.value), noTags=noTags, 
+    thisBoard = CaravanGenerator(fname, int(size.value), noTags=noTags, gameType=gType,
                                      tagLimits=DEF_TAGLIMITS.copy(), lockout=lockout).export()
 
     await interaction.response.send_message(json.dumps(thisBoard), ephemeral=True)
