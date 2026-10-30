@@ -243,7 +243,7 @@
       ]
     },
     {
-      "name": "Compass, Pendant, Brooch",
+      "name": "Compass, Pendant & Brooch",
       "types": [
         "tool"
       ],
@@ -2962,6 +2962,20 @@
         "Servitors Ignim & Boran Journal Entries",
         "Mt. Fay Mask Shard",
         "Talk to Mask Maker"
+      ]
+    },
+    {
+      "pattern":true,
+      "unique": [
+        "3 Donation Wishes",
+        "Hornet Statuette"
+      ]
+    },
+    {
+      "pattern":true,
+      "unique": [
+        "Have 3 Yellow Tools",
+        "Compass, Pendant & Brooch"
       ]
     }
   ]
