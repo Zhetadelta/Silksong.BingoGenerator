@@ -1338,7 +1338,7 @@
     {
       "name": "Mt. Fay Flea [1]",
       "types": [
-        "flea",
+        "flea"
       ],
       "progression": [
         "clawline"
@@ -2955,7 +2955,7 @@
       ]
     },
     {
-      "limit": 3
+      "limit": 3,
       "unique": [
         "Mt. Fay Flea [1]",
         "Memory Crystal",
