@@ -395,11 +395,10 @@
     {
       "name": "Memory Crystal",
       "types": [
-        "tool",
-        "noforcing"
+        "tool"
       ],
       "progression": [
-        "faydown"
+        "clawline"
       ]
     },
     {
@@ -461,17 +460,6 @@
       ],
       "progression": [
         "faydown"
-      ]
-    },
-    {
-      "name": "Conchcutter",
-      "types": [
-        "tool",
-        "fight",
-        "hard"
-      ],
-      "progression": [
-        "clawline"
       ]
     },
     {
@@ -1351,10 +1339,9 @@
       "name": "Mt. Fay Flea [1]",
       "types": [
         "flea",
-        "noforcing"
       ],
       "progression": [
-        "faydown"
+        "clawline"
       ]
     },
     {
@@ -2814,16 +2801,9 @@
       ]
     },
     {
-      "unique": [
-        "Raging Conchfly (Sands of Karak)",
-        "Conchcutter"
-      ]
-    },
-    {
       "limit": 2,
       "unique": [
         "Raging Conchfly (Sands of Karak)",
-        "Conchcutter",
         "Talk to Shakra in Sands of Karak",
         "Crustnut"
       ]
@@ -2858,6 +2838,7 @@
         "Shellwood + Vaults Mask Shards",
         "Blasted Steps Mask Shard",
         "Cogwork Core Mask Shard",
+        "Mt. Fay Mask Shard",
         "Brightvein Mask Shard"
       ]
     },
@@ -2971,6 +2952,16 @@
       "unique": [
         "Kill 1 Shardillard",
         "Kill 2 Shardillards"
+      ]
+    },
+    {
+      "limit": 3
+      "unique": [
+        "Mt. Fay Flea [1]",
+        "Memory Crystal",
+        "Servitors Ignim & Boran Journal Entries",
+        "Mt. Fay Mask Shard",
+        "Talk to Mask Maker"
       ]
     }
   ]
