@@ -41,7 +41,7 @@
 
 **Have 2 of Each Tool Type** | Progression level: ['dash'] | Other tags: ['tool', 'blocking']
 
-**Straight, Threefold, and Long Pin** | Progression level: ['cloak'] | Other tags: ['tool']
+**Straight, Threefold, & Long Pin** | Progression level: ['cloak'] | Other tags: ['tool']
 
 **Dead Bug's Purse & a Silkeater** | Progression level: ['walljump'] | Other tags: ['tool']
 
@@ -49,7 +49,7 @@
 
 **Magnetite Dice & Magnetite Brooch** | Progression level: ['walljump'] | Other tags: ['tool']
 
-**Compass, Pendant, Brooch** | Progression level: ['early'] | Other tags: ['tool']
+**Compass, Pendant & Brooch** | Progression level: ['early'] | Other tags: ['tool']
 
 **Warding Bell & Claw Mirror** | Progression level: ['act2'] | Other tags: ['tool']
 
@@ -77,7 +77,7 @@
 
 **Plasmium Phial** | Progression level: ['walljump'] | Other tags: ['tool', 'quest', 'key']
 
-**Memory Crystal** | Progression level: ['faydown'] | Other tags: ['tool', 'noforcing']
+**Memory Crystal** | Progression level: ['clawline'] | Other tags: ['tool']
 
 **Flintslate** | Progression level: ['walljump'] | Other tags: ['tool', 'key']
 
@@ -90,8 +90,6 @@
 **Cogfly** | Progression level: ['clawline'] | Other tags: ['tool', 'craft']
 
 **Snare Setter** | Progression level: ['faydown'] | Other tags: ['tool']
-
-**Conchcutter** | Progression level: ['clawline'] | Other tags: ['tool', 'fight', 'hard']
 
 **Pale Lake Craftmetal** | Progression level: ['faydown'] | Other tags: ['location', 'collection']
 
@@ -265,7 +263,7 @@
 
 **Three Citadel Fleas** | Progression level: ['act2'] | Other tags: ['flea']
 
-**Mt. Fay Flea [1]** | Progression level: ['faydown'] | Other tags: ['flea', 'noforcing']
+**Mt. Fay Flea [1]** | Progression level: ['clawline'] | Other tags: ['flea']
 
 **Beat Big Flea** | Progression level: ['faydown'] | Other tags: ['fight']
 
@@ -361,7 +359,7 @@
 
 **Bilewater Bellway** | Progression level: ['walljump'] | Other tags: ['location']
 
-**Talk to Forge Daughter and Twelfth Architect** | Progression level: ['clawline'] | Other tags: ['npc', 'blocking', 'noforcing']
+**Talk to Forge Daughter & Twelfth Architect** | Progression level: ['clawline'] | Other tags: ['npc', 'blocking', 'noforcing']
 
 **1 Cogheart Piece** | Progression level: ['act2'] | Other tags: ['collection']
 
@@ -389,6 +387,8 @@
 
 **Kill 1 Shardillard** | Progression level: ['walljump'] | Other tags: ['fight']
 
+**Kill 2 Shardillards** | Progression level: ['act2'] | Other tags: ['fight']
+
 **Break 3 Wood Wasp Nests** | Progression level: ['walljump'] | Other tags: ['location']
 
 **Listen to Pious Isamor** | Progression level: ['clawline'] | Other tags: ['npc', 'noforcing']
@@ -410,6 +410,36 @@
 **Kill Pebb** | Progression level: ['walljump'] | Other tags: ['expensive', 'tool']
 
 **Upper Bilewater Flea** | Progression level: ['faydown'] | Other tags: ['flea']
+
+**Hornet Statuette** | Progression level: ['act2'] | Other tags: ['expensive', 'quest']
+
+**Shellwood & Putrified Ducts Bellways** | Progression level: ['faydown'] | Other tags: ['location']
+
+**Inspect Voltridian in Voltnest** | Progression level: ['faydown'] | Other tags: ['location', 'collection']
+
+**Drapemite & Giant Drapemite Journal Entries** | Progression level: ['act2'] | Other tags: ['fight']
+
+**Clear Groal's Arena** | Progression level: ['faydown'] | Other tags: ['fight']
+
+**Save Sherma in Whiteward** | Progression level: ['act2'] | Other tags: ['quest', 'location', 'npc']
+
+**3 Choral Commandments** | Progression level: ['faydown'] | Other tags: ['relic']
+
+**Cogwork Core & Underworks Maps** | Progression level: ['act2'] | Other tags: ['collection']
+
+**Crustcrag Journal Entry** | Progression level: ['faydown'] | Other tags: ['fight']
+
+**Servitors Ignim & Boran Journal Entries** | Progression level: ['clawline'] | Other tags: ['fight']
+
+**Play Needolin for the 3 Pinstresses** | Progression level: ['faydown'] | Other tags: ['npc']
+
+**Hit the Far Fields Chest Lever** | Progression level: ['walljump'] | Other tags: ['location']
+
+**Wash off Muckmaggots in Water** | Progression level: ['walljump'] | Other tags: ['location']
+
+**Burning Bug Journal Entry** | Progression level: ['faydown'] | Other tags: ['collection', 'fight']
+
+**Wardenfly Journal Entry** | Progression level: ['walljump'] | Other tags: ['collection']
 
 **Cradle Map** | Progression level: ['act3'] | Other tags: ['collection']
 

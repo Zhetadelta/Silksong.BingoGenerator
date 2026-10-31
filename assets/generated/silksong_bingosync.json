@@ -60,7 +60,7 @@
         "name": "Have 2 of Each Tool Type"
     },
     {
-        "name": "Straight, Threefold, and Long Pin"
+        "name": "Straight, Threefold, & Long Pin"
     },
     {
         "name": "Dead Bug's Purse & a Silkeater"
@@ -72,7 +72,7 @@
         "name": "Magnetite Dice & Magnetite Brooch"
     },
     {
-        "name": "Compass, Pendant, Brooch"
+        "name": "Compass, Pendant & Brooch"
     },
     {
         "name": "Warding Bell & Claw Mirror"
@@ -133,9 +133,6 @@
     },
     {
         "name": "Snare Setter"
-    },
-    {
-        "name": "Conchcutter"
     },
     {
         "name": "Pale Lake Craftmetal"
@@ -540,7 +537,7 @@
         "name": "Bilewater Bellway"
     },
     {
-        "name": "Talk to Forge Daughter and Twelfth Architect"
+        "name": "Talk to Forge Daughter & Twelfth Architect"
     },
     {
         "name": "1 Cogheart Piece"
@@ -582,6 +579,9 @@
         "name": "Kill 1 Shardillard"
     },
     {
+        "name": "Kill 2 Shardillards"
+    },
+    {
         "name": "Break 3 Wood Wasp Nests"
     },
     {
@@ -613,6 +613,51 @@
     },
     {
         "name": "Upper Bilewater Flea"
+    },
+    {
+        "name": "Hornet Statuette"
+    },
+    {
+        "name": "Shellwood & Putrified Ducts Bellways"
+    },
+    {
+        "name": "Inspect Voltridian in Voltnest"
+    },
+    {
+        "name": "Drapemite & Giant Drapemite Journal Entries"
+    },
+    {
+        "name": "Clear Groal's Arena"
+    },
+    {
+        "name": "Save Sherma in Whiteward"
+    },
+    {
+        "name": "3 Choral Commandments"
+    },
+    {
+        "name": "Cogwork Core & Underworks Maps"
+    },
+    {
+        "name": "Crustcrag Journal Entry"
+    },
+    {
+        "name": "Servitors Ignim & Boran Journal Entries"
+    },
+    {
+        "name": "Play Needolin for the 3 Pinstresses"
+    },
+    {
+        "name": "Hit the Far Fields Chest Lever"
+    },
+    {
+        "name": "Wash off Muckmaggots in Water"
+    },
+    {
+        "name": "Burning Bug Journal Entry"
+    },
+    {
+        "name": "Wardenfly Journal Entry"
     },
     {
         "name": "Cradle Map"

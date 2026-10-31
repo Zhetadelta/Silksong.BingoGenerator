@@ -32,9 +32,9 @@
             "relic": 60,
             "blocking": 100,
             "noforcing": 100,
-            "hard": 100,
             "scattered": 100,
             "nolockout": 100,
+            "hard": 100,
             "bcollection": 100
         }
     },
@@ -380,7 +380,7 @@
             "icons": []
         },
         {
-            "goal": "Straight, Threefold, and Long Pin",
+            "goal": "Straight, Threefold, & Long Pin",
             "progression": [
                 "e"
             ],
@@ -440,7 +440,7 @@
             "icons": []
         },
         {
-            "goal": "Compass, Pendant, Brooch",
+            "goal": "Compass, Pendant & Brooch",
             "progression": [
                 "e"
             ],
@@ -673,17 +673,15 @@
         {
             "goal": "Memory Crystal",
             "progression": [
-                "n"
+                "l"
             ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "faydown",
+                "clawline",
                 "tool"
             ],
-            "line_categories": [
-                "noforcing"
-            ],
+            "line_categories": [],
             "tooltip": "",
             "icons": []
         },
@@ -782,24 +780,6 @@
                 "tool"
             ],
             "line_categories": [],
-            "tooltip": "",
-            "icons": []
-        },
-        {
-            "goal": "Conchcutter",
-            "progression": [
-                "l"
-            ],
-            "range": [],
-            "individual_limit": 1,
-            "board_categories": [
-                "clawline",
-                "tool"
-            ],
-            "line_categories": [
-                "fight",
-                "hard"
-            ],
             "tooltip": "",
             "icons": []
         },
@@ -2218,17 +2198,15 @@
         {
             "goal": "Mt. Fay Flea [1]",
             "progression": [
-                "n"
+                "l"
             ],
             "range": [],
             "individual_limit": 1,
             "board_categories": [
-                "faydown",
+                "clawline",
                 "flea"
             ],
-            "line_categories": [
-                "noforcing"
-            ],
+            "line_categories": [],
             "tooltip": "",
             "icons": []
         },
@@ -3003,7 +2981,7 @@
             "icons": []
         },
         {
-            "goal": "Talk to Forge Daughter and Twelfth Architect",
+            "goal": "Talk to Forge Daughter & Twelfth Architect",
             "progression": [
                 "l"
             ],
@@ -3243,6 +3221,22 @@
             "icons": []
         },
         {
+            "goal": "Kill 2 Shardillards",
+            "progression": [
+                "l"
+            ],
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "act2"
+            ],
+            "line_categories": [
+                "fight"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
             "goal": "Break 3 Wood Wasp Nests",
             "progression": [
                 "m"
@@ -3406,6 +3400,251 @@
                 "flea"
             ],
             "line_categories": [],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Hornet Statuette",
+            "progression": [
+                "l"
+            ],
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "act2",
+                "expensive"
+            ],
+            "line_categories": [
+                "quest"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Shellwood & Putrified Ducts Bellways",
+            "progression": [
+                "n"
+            ],
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "faydown"
+            ],
+            "line_categories": [
+                "location"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Inspect Voltridian in Voltnest",
+            "progression": [
+                "n"
+            ],
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "faydown"
+            ],
+            "line_categories": [
+                "location",
+                "collection"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Drapemite & Giant Drapemite Journal Entries",
+            "progression": [
+                "l"
+            ],
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "act2"
+            ],
+            "line_categories": [
+                "fight"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Clear Groal's Arena",
+            "progression": [
+                "n"
+            ],
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "faydown"
+            ],
+            "line_categories": [
+                "fight"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Save Sherma in Whiteward",
+            "progression": [
+                "l"
+            ],
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "act2"
+            ],
+            "line_categories": [
+                "quest",
+                "location",
+                "npc"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "3 Choral Commandments",
+            "progression": [
+                "n"
+            ],
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "faydown"
+            ],
+            "line_categories": [
+                "relic"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Cogwork Core & Underworks Maps",
+            "progression": [
+                "l"
+            ],
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "act2"
+            ],
+            "line_categories": [
+                "collection"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Crustcrag Journal Entry",
+            "progression": [
+                "n"
+            ],
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "faydown"
+            ],
+            "line_categories": [
+                "fight"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Servitors Ignim & Boran Journal Entries",
+            "progression": [
+                "l"
+            ],
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "clawline"
+            ],
+            "line_categories": [
+                "fight"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Play Needolin for the 3 Pinstresses",
+            "progression": [
+                "n"
+            ],
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "faydown"
+            ],
+            "line_categories": [
+                "npc"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Hit the Far Fields Chest Lever",
+            "progression": [
+                "m"
+            ],
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "walljump"
+            ],
+            "line_categories": [
+                "location"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Wash off Muckmaggots in Water",
+            "progression": [
+                "m"
+            ],
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "walljump"
+            ],
+            "line_categories": [
+                "location"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Burning Bug Journal Entry",
+            "progression": [
+                "n"
+            ],
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "faydown"
+            ],
+            "line_categories": [
+                "collection",
+                "fight"
+            ],
+            "tooltip": "",
+            "icons": []
+        },
+        {
+            "goal": "Wardenfly Journal Entry",
+            "progression": [
+                "m"
+            ],
+            "range": [],
+            "individual_limit": 1,
+            "board_categories": [
+                "walljump"
+            ],
+            "line_categories": [
+                "collection"
+            ],
             "tooltip": "",
             "icons": []
         }

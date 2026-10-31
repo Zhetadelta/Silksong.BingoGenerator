@@ -2172,7 +2172,7 @@
       ]
     },
     {
-      "name": "Hit Groal Once",
+      "name": "Clear Groal's Arena",
       "types": [
         "fight"
       ],
@@ -2265,7 +2265,7 @@
       ]
     },
     {
-      "name": "Burning Bug Journal Mastery [8]",
+      "name": "Burning Bug Journal Entry",
       "types": [
         "collection",
         "fight"
