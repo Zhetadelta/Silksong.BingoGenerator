@@ -201,7 +201,7 @@
       ]
     },
     {
-      "name": "Straight, Threefold, and Long Pin",
+      "name": "Straight, Threefold, & Long Pin",
       "types": [
         "tool"
       ],
@@ -243,7 +243,7 @@
       ]
     },
     {
-      "name": "Compass, Pendant, Brooch",
+      "name": "Compass, Pendant & Brooch",
       "types": [
         "tool"
       ],
@@ -395,11 +395,10 @@
     {
       "name": "Memory Crystal",
       "types": [
-        "tool",
-        "noforcing"
+        "tool"
       ],
       "progression": [
-        "faydown"
+        "clawline"
       ]
     },
     {
@@ -461,17 +460,6 @@
       ],
       "progression": [
         "faydown"
-      ]
-    },
-    {
-      "name": "Conchcutter",
-      "types": [
-        "tool",
-        "fight",
-        "hard"
-      ],
-      "progression": [
-        "clawline"
       ]
     },
     {
@@ -1350,11 +1338,10 @@
     {
       "name": "Mt. Fay Flea [1]",
       "types": [
-        "flea",
-        "noforcing"
+        "flea"
       ],
       "progression": [
-        "faydown"
+        "clawline"
       ]
     },
     {
@@ -1860,7 +1847,7 @@
       ]
     },
     {
-      "name": "Talk to Forge Daughter and Twelfth Architect",
+      "name": "Talk to Forge Daughter & Twelfth Architect",
       "types": [
         "npc",
         "blocking",
@@ -2027,6 +2014,15 @@
       ]
     },
     {
+      "name": "Kill 2 Shardillards",
+      "types": [
+        "fight"
+      ],
+      "progression": [
+        "act2"
+      ]
+    },
+    {
       "name": "Break 3 Wood Wasp Nests",
       "types": [
         "location"
@@ -2138,6 +2134,155 @@
         "faydown"
       ]
     },
+    {
+      "name": "Hornet Statuette",
+      "types": [
+        "expensive",
+        "quest"
+      ],
+      "progression": [
+        "act2"
+      ]
+    },    {
+      "name": "Shellwood & Putrified Ducts Bellways",
+      "types": [
+        "location"
+      ],
+      "progression": [
+        "faydown"
+      ]
+    },
+    {
+      "name": "Inspect Voltridian in Voltnest",
+      "types": [
+        "location",
+        "collection"
+      ],
+      "progression": [
+        "faydown"
+      ]
+    },
+    {
+      "name": "Drapemite & Giant Drapemite Journal Entries",
+      "types": [
+        "fight"
+      ],
+      "progression": [
+        "act2"
+      ]
+    },
+    {
+      "name": "Hit Groal Once",
+      "types": [
+        "fight"
+      ],
+      "progression": [
+        "faydown"
+      ]
+    },
+    {
+      "name": "Save Sherma in Whiteward",
+      "types": [
+        "quest",
+        "location",
+        "npc"
+      ],
+      "progression": [
+        "act2"
+      ]
+    },
+    {
+      "name": "3 Choral Commandments",
+      "types": [
+        "relic"
+      ],
+      "progression": [
+        "faydown"
+      ]
+    },
+    {
+      "name": "Cogwork Core & Underworks Maps",
+      "types": [
+        "collection"
+      ],
+      "progression": [
+        "act2"
+      ]
+    },
+    {
+      "name": "Whiteward & Vaults Maps",
+      "types": [
+        "collection",
+        "itemsync"
+      ],
+      "progression": [
+        "act2"
+      ]
+    },
+    {
+      "name": "Crustcrag Journal Entry",
+      "types": [
+        "fight"
+      ],
+      "progression": [
+        "faydown"
+      ]
+    },
+    {
+      "name": "Servitors Ignim & Boran Journal Entries",
+      "types": [
+        "fight"
+      ],
+      "progression": [
+        "clawline"
+      ]
+    },
+    {
+      "name": "Play Needolin for the 3 Pinstresses",
+      "types": [
+        "npc"
+      ],
+      "progression": [
+        "faydown"
+      ]
+    },
+    {
+      "name": "Hit the Far Fields Chest Lever",
+      "types": [
+        "location"
+      ],
+      "progression": [
+        "walljump"
+      ]
+    },
+    {
+      "name": "Wash off Muckmaggots in Water",
+      "types": [
+        "location"
+      ],
+      "progression": [
+        "walljump"
+      ]
+    },
+    {
+      "name": "Burning Bug Journal Mastery [8]",
+      "types": [
+        "collection",
+        "fight"
+      ],
+      "progression": [
+        "faydown"
+      ]
+    },
+    {
+      "name": "Wardenfly Journal Entry",
+      "types": [
+        "collection"
+      ],
+      "progression": [
+        "walljump"
+      ]
+    },   
     {
       "name": "Cradle Map",
       "types": [
@@ -2496,7 +2641,7 @@
     {
       "unique": [
         "Have 3 Red Tools",
-        "Straight, Threefold, and Long Pin"
+        "Straight, Threefold, & Long Pin"
       ]
     },
     {
@@ -2656,35 +2801,32 @@
       ]
     },
     {
-      "unique": [
-        "Raging Conchfly (Sands of Karak)",
-        "Conchcutter"
-      ]
-    },
-    {
       "limit": 2,
       "unique": [
         "Raging Conchfly (Sands of Karak)",
-        "Conchcutter",
         "Talk to Shakra in Sands of Karak",
         "Crustnut"
       ]
     },
-    {"unique": [
-      "1 Spool Upgrade",
-      "2 Spool Upgrades",
-      "3 Spool Upgrades"
-    ]},
+    {
+      "unique": [
+        "1 Spool Upgrade",
+        "2 Spool Upgrades",
+        "3 Spool Upgrades"
+      ]
+    },
     {
       "unique": [
         "1 Spool Upgrade",
         "Deep Docks Spool Fragments (2)"
       ]
     },
-    {"unique": [
-      "1 Extra Mask",
-      "2 Extra Masks"
-    ]},
+    {
+      "unique": [
+        "1 Extra Mask",
+        "2 Extra Masks"
+      ]
+    },
     {
       "limit": 4,
       "unique": [
@@ -2696,6 +2838,7 @@
         "Shellwood + Vaults Mask Shards",
         "Blasted Steps Mask Shard",
         "Cogwork Core Mask Shard",
+        "Mt. Fay Mask Shard",
         "Brightvein Mask Shard"
       ]
     },
@@ -2802,8 +2945,37 @@
       "pattern":true,
       "unique": [
         "Twisted Bud",
-        "Get Cursed",
-        "Witch Crest"
+        "Get Cursed"
+      ]
+    },
+    {
+      "unique": [
+        "Kill 1 Shardillard",
+        "Kill 2 Shardillards"
+      ]
+    },
+    {
+      "limit": 3,
+      "unique": [
+        "Mt. Fay Flea [1]",
+        "Memory Crystal",
+        "Servitors Ignim & Boran Journal Entries",
+        "Mt. Fay Mask Shard",
+        "Talk to Mask Maker"
+      ]
+    },
+    {
+      "pattern":true,
+      "unique": [
+        "3 Donation Wishes",
+        "Hornet Statuette"
+      ]
+    },
+    {
+      "pattern":true,
+      "unique": [
+        "Have 3 Yellow Tools",
+        "Compass, Pendant & Brooch"
       ]
     }
   ]
