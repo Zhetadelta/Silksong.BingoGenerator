@@ -73,7 +73,7 @@
       ]
     },
     {
-      "name": "Sell a Moss Berry",
+      "name": "Sell a Mossberry",
       "progression": [
         "early"
       ],
@@ -327,14 +327,14 @@
     {
       "name": "Defeat 2 Covetous Pilgrims",
       "progression": [
-        "faydown"
+        "act3"
       ],
       "types": [
         "rosingy"
       ]
     },
     {
-      "name": "Witch Chapel Weaver Effigy + String",
+      "name": "Witch Chapel Weaver Effigy & String",
       "progression": [
         "clawline"
       ],
@@ -591,16 +591,6 @@
       ]
     },
     {
-      "name": "The Wailing Mother",
-      "progression": [
-        "faydown"
-      ],
-      "types": [
-        "rosingy",
-        "quest"
-      ]
-    },
-    {
       "name": "Complete a Courier Delivery",
       "progression": [
         "walljump"
@@ -729,7 +719,7 @@
       ]
     },
     {
-      "name": "4 Psalm Cylinders",
+      "name": "3 Psalm Cylinders",
       "progression": [
         "act2"
       ],
@@ -976,15 +966,6 @@
       ]
     },
     {
-      "name": "Bonegrave Covetous Pilgrim",
-      "progression": [
-        "act3"
-      ],
-      "types": [
-        "rosingy"
-      ]
-    },
-    {
       "name": "Further Fields Pale Necklace",
       "progression": [
         "act3"
@@ -1052,7 +1033,7 @@
     {
       "unique": [
         "2 Psalm Cylinders",
-        "4 Psalm Cylinders"
+        "3 Psalm Cylinders"
       ]
     },
     {
@@ -1068,25 +1049,13 @@
         "Obtian 4 Heavy Necklaces",
         "The Terrible Tyrant",
         "Fine Pins",
-        "Cloaks of the Choir",
-        "The Wailing Mother"
+        "Cloaks of the Choir"
       ]
     },
     {
       "unique": [
         "Collect a Necklace, Relic, & Chest",
         "Collect 2 Necklaces, Relics, & Chests"
-      ]
-    },
-    {
-      "limit": 2,
-      "unique": [
-        "Defeat 2 Covetous Pilgrims",
-        "The Wailing Mother",
-        "Underworks Psalm Cylinder",
-        "Trails End",
-        "Complete a Courier Delivery",
-        "Witch Chapel Weaver Effigy + String"
       ]
     }
   ]
