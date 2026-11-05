@@ -2016,7 +2016,8 @@
     {
       "name": "Kill 2 Shardillards",
       "types": [
-        "fight"
+        "fight",
+        "experimental"
       ],
       "progression": [
         "act2"
@@ -2138,7 +2139,8 @@
       "name": "Hornet Statuette",
       "types": [
         "expensive",
-        "quest"
+        "quest",
+        "experimental"
       ],
       "progression": [
         "act2"
@@ -2146,7 +2148,8 @@
     },    {
       "name": "Shellwood & Putrified Ducts Bellways",
       "types": [
-        "location"
+        "location",
+        "experimental"
       ],
       "progression": [
         "faydown"
@@ -2156,7 +2159,8 @@
       "name": "Inspect Voltridian in Voltnest",
       "types": [
         "location",
-        "collection"
+        "collection",
+        "experimental"
       ],
       "progression": [
         "faydown"
@@ -2165,7 +2169,8 @@
     {
       "name": "Drapemite & Giant Drapemite Journal Entries",
       "types": [
-        "fight"
+        "fight",
+        "experimental"
       ],
       "progression": [
         "act2"
@@ -2174,7 +2179,8 @@
     {
       "name": "Clear Groal's Arena",
       "types": [
-        "fight"
+        "fight",
+        "experimental"
       ],
       "progression": [
         "faydown"
@@ -2185,7 +2191,8 @@
       "types": [
         "quest",
         "location",
-        "npc"
+        "npc",
+        "experimental"
       ],
       "progression": [
         "act2"
@@ -2194,7 +2201,8 @@
     {
       "name": "3 Choral Commandments",
       "types": [
-        "relic"
+        "relic",
+        "experimental"
       ],
       "progression": [
         "faydown"
@@ -2203,7 +2211,8 @@
     {
       "name": "Cogwork Core & Underworks Maps",
       "types": [
-        "collection"
+        "collection",
+        "experimental"
       ],
       "progression": [
         "act2"
@@ -2222,7 +2231,8 @@
     {
       "name": "Crustcrag Journal Entry",
       "types": [
-        "fight"
+        "fight",
+        "experimental"
       ],
       "progression": [
         "faydown"
@@ -2231,7 +2241,8 @@
     {
       "name": "Servitors Ignim & Boran Journal Entries",
       "types": [
-        "fight"
+        "fight",
+        "experimental"
       ],
       "progression": [
         "clawline"
@@ -2240,7 +2251,8 @@
     {
       "name": "Play Needolin for the 3 Pinstresses",
       "types": [
-        "npc"
+        "npc",
+        "experimental"
       ],
       "progression": [
         "faydown"
@@ -2249,7 +2261,8 @@
     {
       "name": "Hit the Far Fields Chest Lever",
       "types": [
-        "location"
+        "location",
+        "experimental"
       ],
       "progression": [
         "walljump"
@@ -2258,7 +2271,8 @@
     {
       "name": "Wash off Muckmaggots in Water",
       "types": [
-        "location"
+        "location",
+        "experimental"
       ],
       "progression": [
         "walljump"
@@ -2268,7 +2282,8 @@
       "name": "Burning Bug Journal Entry",
       "types": [
         "collection",
-        "fight"
+        "fight",
+        "experimental"
       ],
       "progression": [
         "faydown"
@@ -2277,7 +2292,9 @@
     {
       "name": "Wardenfly Journal Entry",
       "types": [
-        "collection"
+        "collection",
+        "fight",
+        "experimental"
       ],
       "progression": [
         "walljump"
