@@ -2,6 +2,7 @@ import discord, os, json, network, random
 from discord import app_commands, File, Embed
 from typing import Optional
 from board import CaravanGenerator, ByngosinkGenerator, DraftoutGenerator, GameType, GameName
+from datetime import datetime, timedelta
 
 CONFIG_PATH = os.path.join("config","settings.dat")
 
@@ -343,6 +344,35 @@ async def miobingo(interaction: discord.Interaction, preset: Optional[app_comman
     session.close()
     await interaction.followup.send(f"Room: {n} created at {baseName}/room/{rId} with password 'fast'.")
 
+@client.tree.command()
+@app_commands.describe(start_time="The starting time, following the format of HH:MM:SS")
+@app_commands.describe(end_time="The ending time, following the format of HH:MM:SS")
+async def time(interaction: discord.Interaction, start_time: str, end_time: str):
+    """Calculates the run time for a bingo session"""
+
+    # Parse the time to a datetime
+    try:
+        time_format = "%H:%M:%S"
+        parsed_start = datetime.strptime(start_time, time_format)
+        parsed_end = datetime.strptime(end_time, time_format)
+    except ValueError as err:
+        print(err)
+        await interaction.response.send_message("Times must be in the format of HH:MM:SS", ephemeral=True)
+        return
+
+    # The start time must always be before the end time.
+    # If it's not, then the end time is on the next day
+    if parsed_end < parsed_start:
+        parsed_end += timedelta(days=1)
+
+    time_difference_seconds = (parsed_end - parsed_start).seconds
+
+    # Calculate h:m:s format from the seconds
+    hours, remainder = divmod(time_difference_seconds, 60 * 60)
+    minutes, seconds = divmod(remainder, 60)
+
+    final_time_str = f"{hours}h {minutes}m {seconds}s"
+    await interaction.response.send_message(f"The calculated time is: `{final_time_str}`", ephemeral=True)
 
 class DrafoutUI(discord.ui.View):
     def __init__(self, noTags, size, player1: discord.user, player2: discord.user, parentInteraction: discord.Interaction):
