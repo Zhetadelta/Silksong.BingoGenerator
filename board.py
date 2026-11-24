@@ -187,22 +187,22 @@ class Generator():
         Generates a list of goals from the Generator's goalSet. Goals will have a name and optionally exclusions.
         Returns a list of goal names. Modifies the Generator's goalSet.
         """
-        goals = []
-        goalsNeeded = self.totalCount()
-        
-
-        orderedProg = orderedProgs[self.gameName]
+        goals = []        
+        forcedGoals = []
         indices = self.forceIndices()
+
         if self.gameType in [GameType.Rando, GameType.NoForcing]:
             forceCount = 0
         else:
             forceCount = len(indices)
-        forcedGoals = []
+
+        goalsNeeded = self.totalCount() - forceCount
+        
+        orderedProg = orderedProgs[self.gameName]
         maxProg = "early"
         for prog in orderedProg:
             if prog not in self.noTags:
                 maxProg = prog
-        goalsNeeded -= forceCount
 
         while goalsNeeded > 0:
             if len(self.goalSet) == 0: #critical failure
@@ -221,8 +221,8 @@ class Generator():
                             self.removeGoalByName(newGoal["name"])
                             skip = True #remove goal from list and redraw
 
-            elif (goalsNeeded <= forceCount - len(forcedGoals) and len(forcedGoals) < forceCount 
-                  and newGoal["progression"][0] != maxProg and "noforcing" not in goalTags): 
+            can_force_prog = len(forcedGoals) < forceCount and newGoal["progression"][0] == maxProg and "noforcing" not in goalTags
+            if not skip and goalsNeeded <= forceCount - len(forcedGoals) and not can_force_prog:
                 #need more max prog goals; unlikely to hit this code path but just in case.
                 skip = True
             if skip:
@@ -238,7 +238,7 @@ class Generator():
                 goalName = newGoal["name"]
 
             #put it in the right bin
-            if len(forcedGoals) < forceCount and newGoal["progression"][0] == maxProg and not "noforcing" in goalTags:
+            if can_force_prog:
                 forcedGoals.append(goalName)
             else:
                 goals.append(goalName)
@@ -261,6 +261,11 @@ class Generator():
                 self.removeGoalByName(newGoal["name"])
             except ValueError: #what
                 pass
+
+        # Ensure there are the right number of goals
+        total_goals = len(goals) + len(forcedGoals)
+        if total_goals != self.totalCount():
+            raise RuntimeError(f"Needed {self.totalCount()} goals, found {total_goals} instead.")
 
         if self.gameType == GameType.GTTOS: #otherside formatting
             goals += forcedGoals #combine them
